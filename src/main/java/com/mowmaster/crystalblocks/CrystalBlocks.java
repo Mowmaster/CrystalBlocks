@@ -1,5 +1,7 @@
-package com.example.crystalblocks;
+package com.mowmaster.crystalblocks;
 
+import com.mowmaster.crystalblocks.blocks.CrystalBlock;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
@@ -68,9 +70,15 @@ public class CrystalBlocks
     @Mod.EventBusSubscriber(bus=Mod.EventBusSubscriber.Bus.MOD)
     public static class RegistryEvents {
         @SubscribeEvent
-        public static void onBlocksRegistry(final RegistryEvent.Register<Block> blockRegistryEvent) {
-            // register a new block here
-            LOGGER.info("HELLO from Register Block");
+        public static void onItemsRegistry(final RegistryEvent.Register<Item> itemRegistryEvent)
+        {
+            CrystalBlock.onItemRegistryReady(itemRegistryEvent);
+        }
+
+        @SubscribeEvent
+        public static void onBlocksRegistry(final RegistryEvent.Register<Block> blockRegistryEvent)
+        {
+            CrystalBlock.onBlockRegistryReady(blockRegistryEvent);
         }
     }
 }
