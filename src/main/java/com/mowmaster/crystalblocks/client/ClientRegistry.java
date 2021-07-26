@@ -1,6 +1,7 @@
 package com.mowmaster.crystalblocks.client;
 
 import com.mowmaster.crystalblocks.blocks.CrystalBlock;
+import com.mowmaster.crystalblocks.items.ColorApplicator;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.ColorHandlerEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -18,5 +19,6 @@ public class ClientRegistry {
     public static void onItemColorsReady(ColorHandlerEvent.Item event)
     {
         CrystalBlock.handleItemColors(event);
+        ColorApplicator.handleItemColors(event);
     }
 }

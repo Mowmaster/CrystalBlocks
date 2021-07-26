@@ -1,6 +1,7 @@
 package com.mowmaster.crystalblocks;
 
 import com.mowmaster.crystalblocks.blocks.CrystalBlock;
+import com.mowmaster.crystalblocks.items.ColorApplicator;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -73,6 +74,7 @@ public class CrystalBlocks
         public static void onItemsRegistry(final RegistryEvent.Register<Item> itemRegistryEvent)
         {
             CrystalBlock.onItemRegistryReady(itemRegistryEvent);
+            ColorApplicator.onItemRegistryReady(itemRegistryEvent);
         }
 
         @SubscribeEvent
