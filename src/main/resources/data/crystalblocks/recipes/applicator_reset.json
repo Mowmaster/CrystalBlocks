@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "crystalblocks:applicator"
+    }
+  ],
+  "result": {
+    "item": "crystalblocks:applicator",
+    "count": 1
+  }
+}

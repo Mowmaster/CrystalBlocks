@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "S  ",
+    "SS ",
+    "SSS"
+  ],
+  "key": {
+    "S": {
+      "item": "crystalblocks:block_stone"
+    }
+  },
+  "result": {
+    "item": "crystalblocks:stair_stone",
+    "count": 8
+  }
+}

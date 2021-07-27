@@ -1,0 +1,8 @@
+{
+  "parent": "crystalblocks:block/default_stairs_outter",
+  "textures": {
+    "bottom": "crystalblocks:block/block_bricks",
+    "top": "crystalblocks:block/block_bricks",
+    "side": "crystalblocks:block/block_bricks"
+  }
+}

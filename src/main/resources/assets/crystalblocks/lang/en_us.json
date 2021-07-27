@@ -1,0 +1,14 @@
+{
+  "itemGroup.crystalblocks_tab": "Crystal Blocks",
+  "item.crystalblocks.applicator": "Color Applicator",
+  "item.crystalblocks.chisel": "Crystal Chisel",
+  "block.crystalblocks.block_stone": "Crystal Stone",
+  "block.crystalblocks.block_brick": "Crystal Brick",
+  "block.crystalblocks.block_bricks": "Crystal Bricks",
+  "block.crystalblocks.stair_stone": "Crystal Stone Stairs",
+  "block.crystalblocks.stair_brick": "Crystal Brick Stairs",
+  "block.crystalblocks.stair_bricks": "Crystal Bricks Stairs",
+  "block.crystalblocks.slab_stone": "Crystal Stone Slab",
+  "block.crystalblocks.slab_brick": "Crystal Brick Slab",
+  "block.crystalblocks.slab_bricks": "Crystal Bricks Slab"
+}

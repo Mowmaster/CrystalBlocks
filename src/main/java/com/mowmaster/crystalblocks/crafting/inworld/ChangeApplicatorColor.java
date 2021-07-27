@@ -21,6 +21,7 @@ import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
+import java.util.Arrays;
 import java.util.List;
 
 @Mod.EventBusSubscriber
@@ -86,6 +87,7 @@ public class ChangeApplicatorColor {
                 if(green>3)red/=3;
                 if(blue>3)red/=3;
 
+                List<Integer> list = ColorApplicator.getColorList(player.getItemInHand(hand));
                 if(black>0)
                 {
                     world.explode(player,null,null,pos.getX()+0.5,pos.getY()+2.0,pos.getZ()+0.5,0.0f,false, Explosion.BlockInteraction.NONE);
@@ -96,6 +98,7 @@ public class ChangeApplicatorColor {
                 {
                     world.explode(player,null,null,pos.getX()+0.5,pos.getY()+2.0,pos.getZ()+0.5,0.0f,false, Explosion.BlockInteraction.NONE);
                     ItemStack newStack = ColorReference.addColorToItemStack(player.getItemInHand(hand).copy(),red,green,blue);
+                    ColorApplicator.saveColorList(newStack,ColorApplicator.addSavedColor(player.getItemInHand(hand),ColorReference.getColor(Arrays.asList(red,green,blue))));
                     player.setItemInHand(hand,newStack);
                 }
             }

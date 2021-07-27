@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "S",
+    "S"
+  ],
+  "key": {
+    "S": {
+      "item": "crystalblocks:slab_bricks"
+    }
+  },
+  "result": {
+    "item": "crystalblocks:block_bricks",
+    "count": 1
+  }
+}

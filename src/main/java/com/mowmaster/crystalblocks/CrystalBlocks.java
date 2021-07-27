@@ -1,6 +1,10 @@
 package com.mowmaster.crystalblocks;
 
 import com.mowmaster.crystalblocks.blocks.CrystalBlock;
+import com.mowmaster.crystalblocks.blocks.CrystalSlab;
+import com.mowmaster.crystalblocks.blocks.CrystalStair;
+import com.mowmaster.crystalblocks.creativeTab.CrystalTab;
+import com.mowmaster.crystalblocks.items.ItemChisel;
 import com.mowmaster.crystalblocks.items.ColorApplicator;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -26,6 +30,8 @@ public class CrystalBlocks
 {
     // Directly reference a log4j logger.
     private static final Logger LOGGER = LogManager.getLogger();
+    public static final CrystalTab CRYSTAL_TAB = new CrystalTab();
+
 
     public CrystalBlocks() {
         // Register the setup method for modloading
@@ -73,14 +79,19 @@ public class CrystalBlocks
         @SubscribeEvent
         public static void onItemsRegistry(final RegistryEvent.Register<Item> itemRegistryEvent)
         {
-            CrystalBlock.onItemRegistryReady(itemRegistryEvent);
             ColorApplicator.onItemRegistryReady(itemRegistryEvent);
+            ItemChisel.onItemRegistryReady(itemRegistryEvent);
+            CrystalBlock.onItemRegistryReady(itemRegistryEvent);
+            CrystalStair.onItemRegistryReady(itemRegistryEvent);
+            CrystalSlab.onItemRegistryReady(itemRegistryEvent);
         }
 
         @SubscribeEvent
         public static void onBlocksRegistry(final RegistryEvent.Register<Block> blockRegistryEvent)
         {
             CrystalBlock.onBlockRegistryReady(blockRegistryEvent);
+            CrystalStair.onBlockRegistryReady(blockRegistryEvent);
+            CrystalSlab.onBlockRegistryReady(blockRegistryEvent);
         }
     }
 }

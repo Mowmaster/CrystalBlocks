@@ -3,6 +3,8 @@ package com.mowmaster.crystalblocks.reference;
 
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.properties.IntegerProperty;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -88,77 +90,74 @@ public class ColorReference
 
     public static List<Integer> getIntColor(int color)
     {
-        Map<Integer,String> COLORS_INT_REFERENCE = Map.ofEntries(
-                Map.entry(0,"0,0,0"),
-                Map.entry(85,"0,0,1"),
-                Map.entry(170,"0,0,2"),
-                Map.entry(255,"0,0,3"),
-                Map.entry(21760,"0,1,0"),
-                Map.entry(21845,"0,1,1"),
-                Map.entry(21930,"0,1,2"),
-                Map.entry(22015,"0,1,3"),
-                Map.entry(43520,"0,2,0"),
-                Map.entry(43605,"0,2,1"),
-                Map.entry(43690,"0,2,2"),
-                Map.entry(43775,"0,2,3"),
-                Map.entry(65280,"0,3,0"),
-                Map.entry(65365,"0,3,1"),
-                Map.entry(65450,"0,3,2"),
-                Map.entry(65535,"0,3,3"),
-                Map.entry(5570560,"1,0,0"),
-                Map.entry(5570645,"1,0,1"),
-                Map.entry(5570730,"1,0,2"),
-                Map.entry(5570815,"1,0,3"),
-                Map.entry(5592320,"1,1,0"),
-                Map.entry(5592405,"1,1,1"),
-                Map.entry(5592490,"1,1,2"),
-                Map.entry(5592575,"1,1,3"),
-                Map.entry(5614080,"1,2,0"),
-                Map.entry(5614165,"1,2,1"),
-                Map.entry(5614250,"1,2,2"),
-                Map.entry(5614335,"1,2,3"),
-                Map.entry(5635840,"1,3,0"),
-                Map.entry(5635925,"1,3,1"),
-                Map.entry(5636010,"1,3,2"),
-                Map.entry(5636095,"1,3,3"),
-                Map.entry(11141120,"2,0,0"),
-                Map.entry(11141205,"2,0,1"),
-                Map.entry(11141290,"2,0,2"),
-                Map.entry(11141375,"2,0,3"),
-                Map.entry(11162880,"2,1,0"),
-                Map.entry(11162965,"2,1,1"),
-                Map.entry(11163050,"2,1,2"),
-                Map.entry(11163135,"2,1,3"),
-                Map.entry(11184640,"2,2,0"),
-                Map.entry(11184725,"2,2,1"),
-                Map.entry(11184810,"2,2,2"),
-                Map.entry(11184895,"2,2,3"),
-                Map.entry(11206400,"2,3,0"),
-                Map.entry(11206485,"2,3,1"),
-                Map.entry(11206570,"2,3,2"),
-                Map.entry(11206655,"2,3,3"),
-                Map.entry(16711680,"3,0,0"),
-                Map.entry(16711765,"3,0,1"),
-                Map.entry(16711850,"3,0,2"),
-                Map.entry(16711935,"3,0,3"),
-                Map.entry(16733440,"3,1,0"),
-                Map.entry(16733525,"3,1,1"),
-                Map.entry(16733610,"3,1,2"),
-                Map.entry(16733695,"3,1,3"),
-                Map.entry(16755200,"3,2,0"),
-                Map.entry(16755285,"3,2,1"),
-                Map.entry(16755370,"3,2,2"),
-                Map.entry(16755455,"3,2,3"),
-                Map.entry(16776960,"3,3,0"),
-                Map.entry(16777045,"3,3,1"),
-                Map.entry(16777130,"3,3,2"),
-                Map.entry(16777215,"3,3,3")
+        Map<Integer,List<Integer>> COLORS_INT_REFERENCE = Map.ofEntries(
+                Map.entry(0,Arrays.asList(0,0,0)),
+                Map.entry(85,Arrays.asList(0,0,1)),
+                Map.entry(170,Arrays.asList(0,0,2)),
+                Map.entry(255,Arrays.asList(0,0,3)),
+                Map.entry(21760,Arrays.asList(0,1,0)),
+                Map.entry(21845,Arrays.asList(0,1,1)),
+                Map.entry(21930,Arrays.asList(0,1,2)),
+                Map.entry(22015,Arrays.asList(0,1,3)),
+                Map.entry(43520,Arrays.asList(0,2,0)),
+                Map.entry(43605,Arrays.asList(0,2,1)),
+                Map.entry(43690,Arrays.asList(0,2,2)),
+                Map.entry(43775,Arrays.asList(0,2,3)),
+                Map.entry(65280,Arrays.asList(0,3,0)),
+                Map.entry(65365,Arrays.asList(0,3,1)),
+                Map.entry(65450,Arrays.asList(0,3,2)),
+                Map.entry(65535,Arrays.asList(0,3,3)),
+                Map.entry(5570560,Arrays.asList(1,0,0)),
+                Map.entry(5570645,Arrays.asList(1,0,1)),
+                Map.entry(5570730,Arrays.asList(1,0,2)),
+                Map.entry(5570815,Arrays.asList(1,0,3)),
+                Map.entry(5592320,Arrays.asList(1,1,0)),
+                Map.entry(5592405,Arrays.asList(1,1,1)),
+                Map.entry(5592490,Arrays.asList(1,1,2)),
+                Map.entry(5592575,Arrays.asList(1,1,3)),
+                Map.entry(5614080,Arrays.asList(1,2,0)),
+                Map.entry(5614165,Arrays.asList(1,2,1)),
+                Map.entry(5614250,Arrays.asList(1,2,2)),
+                Map.entry(5614335,Arrays.asList(1,2,3)),
+                Map.entry(5635840,Arrays.asList(1,3,0)),
+                Map.entry(5635925,Arrays.asList(1,3,1)),
+                Map.entry(5636010,Arrays.asList(1,3,2)),
+                Map.entry(5636095,Arrays.asList(1,3,3)),
+                Map.entry(11141120,Arrays.asList(2,0,0)),
+                Map.entry(11141205,Arrays.asList(2,0,1)),
+                Map.entry(11141290,Arrays.asList(2,0,2)),
+                Map.entry(11141375,Arrays.asList(2,0,3)),
+                Map.entry(11162880,Arrays.asList(2,1,0)),
+                Map.entry(11162965,Arrays.asList(2,1,1)),
+                Map.entry(11163050,Arrays.asList(2,1,2)),
+                Map.entry(11163135,Arrays.asList(2,1,3)),
+                Map.entry(11184640,Arrays.asList(2,2,0)),
+                Map.entry(11184725,Arrays.asList(2,2,1)),
+                Map.entry(11184810,Arrays.asList(2,2,2)),
+                Map.entry(11184895,Arrays.asList(2,2,3)),
+                Map.entry(11206400,Arrays.asList(2,3,0)),
+                Map.entry(11206485,Arrays.asList(2,3,1)),
+                Map.entry(11206570,Arrays.asList(2,3,2)),
+                Map.entry(11206655,Arrays.asList(2,3,3)),
+                Map.entry(16711680,Arrays.asList(3,0,0)),
+                Map.entry(16711765,Arrays.asList(3,0,1)),
+                Map.entry(16711850,Arrays.asList(3,0,2)),
+                Map.entry(16711935,Arrays.asList(3,0,3)),
+                Map.entry(16733440,Arrays.asList(3,1,0)),
+                Map.entry(16733525,Arrays.asList(3,1,1)),
+                Map.entry(16733610,Arrays.asList(3,1,2)),
+                Map.entry(16733695,Arrays.asList(3,1,3)),
+                Map.entry(16755200,Arrays.asList(3,2,0)),
+                Map.entry(16755285,Arrays.asList(3,2,1)),
+                Map.entry(16755370,Arrays.asList(3,2,2)),
+                Map.entry(16755455,Arrays.asList(3,2,3)),
+                Map.entry(16776960,Arrays.asList(3,3,0)),
+                Map.entry(16777045,Arrays.asList(3,3,1)),
+                Map.entry(16777130,Arrays.asList(3,3,2)),
+                Map.entry(16777215,Arrays.asList(3,3,3))
         );
-//NO FING IDEA WHY THIS RETURNS NULL
-        System.out.println(COLORS_INT_REFERENCE.get(color));
-        String returner[] = COLORS_INT_REFERENCE.get(color).split(",");
-        System.out.println(returner);
-        return Arrays.asList(Integer.parseInt(returner[0]),Integer.parseInt(returner[1]),Integer.parseInt(returner[2]));
+
+        return COLORS_INT_REFERENCE.getOrDefault(color,Arrays.asList(3,3,3));
     }
 
     public static ItemStack addColorToItemStack(ItemStack stackIn, int r, int g, int b)
@@ -203,5 +202,25 @@ public class ColorReference
 
         return new int[]{3,3,3};
     }
+
+    public static final IntegerProperty COLOR_RED = IntegerProperty.create("color_red", 0, 3);
+    public static final IntegerProperty COLOR_GREEN = IntegerProperty.create("color_green", 0, 3);
+    public static final IntegerProperty COLOR_BLUE = IntegerProperty.create("color_blue", 0, 3);
+
+
+    public static List<Integer> getRGBFromState(BlockState state)
+    {
+        int r = 0;
+        int g = 0;
+        int b = 0;
+        if(state.getBlock().getRegistryName().getNamespace().equals(MODID))
+        {
+            if(state.hasProperty(COLOR_RED))r=state.getValue(COLOR_RED);
+            if(state.hasProperty(COLOR_GREEN))g=state.getValue(COLOR_GREEN);
+            if(state.hasProperty(COLOR_BLUE))b=state.getValue(COLOR_BLUE);
+        }
+        return Arrays.asList(r,g,b);
+    }
+
 
 }
