@@ -105,8 +105,6 @@ public class ColorApplicator extends Item {
         //Build Color List from NBT
         if(stackInHand.getItem() instanceof ColorApplicator)
         {
-
-
             List<Integer> list = getColorList(stackInHand);
             if(player.isCrouching() || player.getAbilities().flying)
             {

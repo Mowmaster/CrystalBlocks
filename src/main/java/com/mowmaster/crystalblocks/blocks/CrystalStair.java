@@ -1,6 +1,8 @@
 package com.mowmaster.crystalblocks.blocks;
 
 import com.mowmaster.crystalblocks.items.ColorApplicator;
+import com.mowmaster.crystalblocks.items.ItemChisel;
+import com.mowmaster.crystalblocks.reference.BlockReference;
 import com.mowmaster.crystalblocks.reference.ColorReference;
 import net.minecraft.core.BlockPos;
 import net.minecraft.resources.ResourceLocation;
@@ -102,6 +104,15 @@ public class CrystalStair extends StairBlock {
             p_60504_.setBlock(p_60505_,newState,3);
             //p_60504_.markAndNotifyBlock(p_60505_,null,p_60503_,newState,3,1);
             return InteractionResult.SUCCESS;
+        }
+
+        if(p_60506_.getItemInHand(p_60507_).getItem() instanceof ItemChisel)
+        {
+            if(p_60503_.getBlock() instanceof CrystalStair)
+            {
+                p_60504_.setBlock(p_60505_, BlockReference.getStair(p_60503_,false),3);
+                return InteractionResult.SUCCESS;
+            }
         }
 
         return super.use(p_60503_, p_60504_, p_60505_, p_60506_, p_60507_, p_60508_);

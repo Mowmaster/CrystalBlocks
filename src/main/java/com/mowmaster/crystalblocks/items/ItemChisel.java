@@ -4,6 +4,7 @@ import com.mowmaster.crystalblocks.blocks.CrystalBlock;
 import com.mowmaster.crystalblocks.blocks.CrystalSlab;
 import com.mowmaster.crystalblocks.blocks.CrystalStair;
 import com.mowmaster.crystalblocks.reference.BlockReference;
+import com.mowmaster.crystalblocks.reference.ColorReference;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
@@ -19,7 +20,11 @@ import net.minecraft.world.phys.Vec3;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 
+import java.util.Arrays;
+import java.util.List;
+
 import static com.mowmaster.crystalblocks.CrystalBlocks.CRYSTAL_TAB;
+import static com.mowmaster.crystalblocks.blocks.CrystalBlock.*;
 import static com.mowmaster.crystalblocks.reference.References.MODID;
 
 public class ItemChisel extends Item {
@@ -38,7 +43,6 @@ public class ItemChisel extends Item {
         if(stackInHand.getItem() instanceof ItemChisel)
         {
             HitResult result = player.pick(5,0,false);
-            //System.out.println(result.getType());
             if(result.getType().equals(HitResult.Type.BLOCK))
             {
 
@@ -53,39 +57,43 @@ public class ItemChisel extends Item {
                 BlockHitResult blockResult = world.clip(clipContext);
                 BlockState state = world.getBlockState(blockResult.getBlockPos());
 
-                if(state.getBlock() instanceof CrystalBlock)
+                //When flying, crouch doesnt seem to be recognised...
+                if(player.isCrouching() || player.getAbilities().flying)
                 {
-                    if(player.isCrouching() || player.getAbilities().flying)
+                    if(state.getBlock() instanceof CrystalBlock)
                     {
                         world.setBlock(blockResult.getBlockPos(), BlockReference.getBlock(state,true),3);
+                        return super.use(p_41432_, p_41433_, p_41434_);
                     }
-                    else if (!player.isCrouching() || player.getAbilities().flying)
-                    {
-                        world.setBlock(blockResult.getBlockPos(), BlockReference.getBlock(state,false),3);
-                    }
-                }
-                else if(state.getBlock() instanceof CrystalStair)
-                {
-                    if(player.isCrouching() || player.getAbilities().flying)
+                    else if(state.getBlock() instanceof CrystalStair)
                     {
                         world.setBlock(blockResult.getBlockPos(), BlockReference.getStair(state,true),3);
+                        return super.use(p_41432_, p_41433_, p_41434_);
                     }
-                    else if (!player.isCrouching() || player.getAbilities().flying)
-                    {
-                        world.setBlock(blockResult.getBlockPos(), BlockReference.getStair(state,false),3);
-                    }
-                }
-                else if(state.getBlock() instanceof CrystalSlab)
-                {
-                    if(player.isCrouching() || player.getAbilities().flying)
+                    else if(state.getBlock() instanceof CrystalSlab)
                     {
                         world.setBlock(blockResult.getBlockPos(), BlockReference.getSlab(state,true),3);
-                    }
-                    else if (!player.isCrouching() || player.getAbilities().flying)
-                    {
-                        world.setBlock(blockResult.getBlockPos(), BlockReference.getSlab(state,false),3);
+                        return super.use(p_41432_, p_41433_, p_41434_);
                     }
                 }
+                /*else
+                {
+                    if(state.getBlock() instanceof CrystalBlock)
+                    {
+                        world.setBlock(blockResult.getBlockPos(), BlockReference.getBlock(state,false),3);
+                        return super.use(p_41432_, p_41433_, p_41434_);
+                    }
+                    else if(state.getBlock() instanceof CrystalStair)
+                    {
+                        world.setBlock(blockResult.getBlockPos(), BlockReference.getStair(state,false),3);
+                        return super.use(p_41432_, p_41433_, p_41434_);
+                    }
+                    else if(state.getBlock() instanceof CrystalSlab)
+                    {
+                        world.setBlock(blockResult.getBlockPos(), BlockReference.getSlab(state,false),3);
+                        return super.use(p_41432_, p_41433_, p_41434_);
+                    }
+                }*/
             }
         }
         return super.use(p_41432_, p_41433_, p_41434_);

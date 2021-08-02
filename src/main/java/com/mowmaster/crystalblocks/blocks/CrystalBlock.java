@@ -1,6 +1,8 @@
 package com.mowmaster.crystalblocks.blocks;
 
 import com.mowmaster.crystalblocks.items.ColorApplicator;
+import com.mowmaster.crystalblocks.items.ItemChisel;
+import com.mowmaster.crystalblocks.reference.BlockReference;
 import com.mowmaster.crystalblocks.reference.ColorReference;
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
@@ -111,6 +113,15 @@ public class CrystalBlock extends Block {
             p_60504_.setBlock(p_60505_,newState,3);
             //p_60504_.markAndNotifyBlock(p_60505_,null,p_60503_,newState,3,1);
             return InteractionResult.SUCCESS;
+        }
+
+        if(p_60506_.getItemInHand(p_60507_).getItem() instanceof ItemChisel)
+        {
+            if(p_60503_.getBlock() instanceof CrystalBlock)
+            {
+                p_60504_.setBlock(p_60505_, BlockReference.getBlock(p_60503_,false),3);
+                return InteractionResult.SUCCESS;
+            }
         }
 
         return super.use(p_60503_, p_60504_, p_60505_, p_60506_, p_60507_, p_60508_);
