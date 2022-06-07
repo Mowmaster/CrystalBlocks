@@ -1,14 +1,24 @@
 {
-  "itemGroup.crystalblocks_tab": "Crystal Blocks",
-  "item.crystalblocks.applicator": "Color Applicator",
-  "item.crystalblocks.chisel": "Crystal Chisel",
-  "block.crystalblocks.block_stone": "Crystal Stone",
-  "block.crystalblocks.block_brick": "Crystal Brick",
-  "block.crystalblocks.block_bricks": "Crystal Bricks",
-  "block.crystalblocks.stair_stone": "Crystal Stone Stairs",
-  "block.crystalblocks.stair_brick": "Crystal Brick Stairs",
-  "block.crystalblocks.stair_bricks": "Crystal Bricks Stairs",
-  "block.crystalblocks.slab_stone": "Crystal Stone Slab",
-  "block.crystalblocks.slab_brick": "Crystal Brick Slab",
-  "block.crystalblocks.slab_bricks": "Crystal Bricks Slab"
+  
+  "block.crystalblocks.block_crystal_stone": "Crystal Stone",
+  "block.crystalblocks.block_crystal_stone.description": "§5 Made from Converting Stone with a Crystal Node, used in Crafting/Building - Can be Recolored with Applicator",
+  "block.crystalblocks.block_crystal_stone_slab": "Crystal Stone Slab",
+  "block.crystalblocks.block_crystal_stone_slab.description": "§5 Used in Crafting/Building - Can be Recolored with Applicator",
+  "block.crystalblocks.block_crystal_stone_stair": "Crystal Stone Stair",
+  "block.crystalblocks.block_crystal_stone_stair.description": "§5 Used in Crafting/Building - Can be Recolored with Applicator",
+
+  "block.crystalblocks.block_crystal_stone_brick": "Crystal Stone Brick",
+  "block.crystalblocks.block_crystal_stone_brick.description": "§5 Used in Crafting/Building - Can be Recolored with Applicator",
+  "block.crystalblocks.block_crystal_stone_brick_slab": "Crystal Stone Brick Slab",
+  "block.crystalblocks.block_crystal_stone_brick_slab.description": "§5 Used in Crafting/Building - Can be Recolored with Applicator",
+  "block.crystalblocks.block_crystal_stone_brick_stair": "Crystal Stone Brick Stair",
+  "block.crystalblocks.block_crystal_stone_brick_stair.description": "§5 Used in Crafting/Building - Can be Recolored with Applicator",
+
+  "block.crystalblocks.block_crystal_stone_bricks": "Crystal Stone Bricks",
+  "block.crystalblocks.block_crystal_stone_bricks.description": "§5 Used in Crafting/Building - Can be Recolored with Applicator",
+  "block.crystalblocks.block_crystal_stone_bricks_slab": "Crystal Stone Bricks Slab",
+  "block.crystalblocks.block_crystal_stone_bricks_slab.description": "§5 Used in Crafting/Building - Can be Recolored with Applicator",
+  "block.crystalblocks.block_crystal_stone_bricks_stair": "Crystal Stone Bricks Stair",
+  "block.crystalblocks.block_crystal_stone_bricks_stair.description": "§5 Used in Crafting/Building - Can be Recolored with Applicator"
+
 }
