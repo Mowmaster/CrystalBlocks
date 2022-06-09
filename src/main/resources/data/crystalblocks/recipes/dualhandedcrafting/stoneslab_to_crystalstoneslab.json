@@ -1,0 +1,17 @@
+{
+  "type": "mowlib:dualhandedcrafting",
+  "blockTarget": {
+    "item": "minecraft:stone_slab"
+  },
+  "mainhandTool": {
+    "item": "mowlib:applicator"
+  },
+  "consumeMainhandItem": false,
+  "offhandTool": {
+    "tag": "crystalblocks:pickaxes"
+  },
+  "consumeOffhandItem": true,
+  "result": {
+    "item": "crystalblocks:block_crystal_stone_slab"
+  }
+}
