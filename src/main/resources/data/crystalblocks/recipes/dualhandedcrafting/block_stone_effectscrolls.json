@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SSS",
+    "SAS",
+    "SSS"
+  ],
+  "key": {
+    "S": {
+      "tag": "forge:stone"
+    },
+    "A": {
+      "tag": "effectscrolls:crystals"
+    }
+  },
+  "result": {
+    "item": "crystalblocks:block_stone",
+    "count": 8
+  },
+
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "effectscrolls"
+    }
+  ]
+}
