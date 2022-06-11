@@ -1,6 +1,6 @@
 package com.mowmaster.crystalblocks.Blocks;
 
-import com.mowmaster.mowlib.Blocks.BaseColoredBlock;
+import com.mowmaster.mowlib.Blocks.BaseBlocks.BaseColoredBlock;
 import com.mowmaster.mowlib.MowLibUtils.ColorReference;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 

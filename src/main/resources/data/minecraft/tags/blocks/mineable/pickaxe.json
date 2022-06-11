@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "crystalblocks:block_crystal_stone",
+    "crystalblocks:block_crystal_stone_slab",
+    "crystalblocks:block_crystal_stone_stair",
+    "crystalblocks:block_crystal_stone_brick",
+    "crystalblocks:block_crystal_stone_brick_slab",
+    "crystalblocks:block_crystal_stone_brick_stair",
+    "crystalblocks:block_crystal_stone_bricks",
+    "crystalblocks:block_crystal_stone_bricks_slab",
+    "crystalblocks:block_crystal_stone_bricks_stair"
+  ]
+}
