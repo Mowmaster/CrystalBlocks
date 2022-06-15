@@ -10,7 +10,7 @@
       "tag": "forge:stone"
     },
     "A": {
-      "tag": "effectscrolls:crystals"
+      "item": "effectscrolls:item_crystal"
     }
   },
   "result": {
