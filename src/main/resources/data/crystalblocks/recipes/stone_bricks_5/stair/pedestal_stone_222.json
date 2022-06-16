@@ -1,0 +1,27 @@
+{
+
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "B  ",
+    "BB ",
+    "BBB"
+  ],
+  "key": {
+    "B": {
+      "item": "crystalblocks:block_crystal_stone_brick_1",
+      "type": "forge:nbt",
+      "nbt": {
+        "mowlib_color": 11184810
+      }
+    }
+  },
+  "result": {
+    "item": "crystalblocks:block_crystal_stone_brick_1_stair",
+    "type": "forge:nbt",
+    "nbt": {
+      "mowlib_color": 11184810
+    },
+    "count": 8
+  }
+
+}

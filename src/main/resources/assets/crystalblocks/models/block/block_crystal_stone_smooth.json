@@ -1,0 +1,7 @@
+{
+  "parent": "crystalblocks:block/block_crystal",
+  "textures": {
+    "1": "crystalblocks:blocks/stone_smooth",
+    "particle": "crystalblocks:blocks/stone_smooth"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "mowlib:dualhandedcrafting",
+  "blockTarget": {
+    "tag": "forge:stone"
+  },
+  "mainhandTool": {
+    "tag": "forge:rods"
+  },
+  "offhandTool": {
+    "tag": "forge:gems"
+  },
+  "result": {
+    "item": "crystalblocks:crystal_stone_chisel"
+  }
+}

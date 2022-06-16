@@ -2,6 +2,7 @@ package com.mowmaster.crystalblocks.Blocks;
 
 import com.mowmaster.mowlib.Items.ColorApplicator;
 import com.mowmaster.mowlib.MowLibUtils.ColorReference;
+import com.mowmaster.mowlib.api.IColorableBlock;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -37,14 +38,9 @@ import javax.annotation.Nullable;
 import java.util.List;
 
 import static com.mowmaster.mowlib.MowLibUtils.MessageUtils.getMowLibComponentLocalized;
-import static com.mowmaster.mowlib.MowLibUtils.MowLibReferences.MODID;
 
-public class BaseColoredSlabBlock extends SlabBlock
+public class BaseColoredSlabBlock extends SlabBlock implements IColorableBlock
 {
-    public static final IntegerProperty COLOR_RED = IntegerProperty.create("color_red", 0, 3);
-    public static final IntegerProperty COLOR_GREEN = IntegerProperty.create("color_green", 0, 3);
-    public static final IntegerProperty COLOR_BLUE = IntegerProperty.create("color_blue", 0, 3);
-
     public BaseColoredSlabBlock(Properties p_152915_)
     {
         super(p_152915_);

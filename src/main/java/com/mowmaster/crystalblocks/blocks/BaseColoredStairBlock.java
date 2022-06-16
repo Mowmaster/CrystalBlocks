@@ -2,6 +2,7 @@ package com.mowmaster.crystalblocks.Blocks;
 
 import com.mowmaster.mowlib.Items.ColorApplicator;
 import com.mowmaster.mowlib.MowLibUtils.ColorReference;
+import com.mowmaster.mowlib.api.IColorableBlock;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
@@ -31,14 +32,9 @@ import javax.annotation.Nullable;
 import java.util.List;
 
 import static com.mowmaster.mowlib.MowLibUtils.MessageUtils.getMowLibComponentLocalized;
-import static com.mowmaster.mowlib.MowLibUtils.MowLibReferences.MODID;
 
-public class BaseColoredStairBlock extends StairBlock
+public class BaseColoredStairBlock extends StairBlock implements IColorableBlock
 {
-    public static final IntegerProperty COLOR_RED = IntegerProperty.create("color_red", 0, 3);
-    public static final IntegerProperty COLOR_GREEN = IntegerProperty.create("color_green", 0, 3);
-    public static final IntegerProperty COLOR_BLUE = IntegerProperty.create("color_blue", 0, 3);
-
     public BaseColoredStairBlock(BlockState state, Properties p_152915_)
     {
         super(state,p_152915_);

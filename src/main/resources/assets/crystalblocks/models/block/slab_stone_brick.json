@@ -1,8 +1,0 @@
-{
-  "parent": "crystalblocks:block/default_slab",
-  "textures": {
-    "bottom": "crystalblocks:blocks/block_crystal_stone_brick",
-    "top": "crystalblocks:blocks/block_crystal_stone_brick",
-    "side": "crystalblocks:blocks/block_crystal_stone_brick"
-  }
-}

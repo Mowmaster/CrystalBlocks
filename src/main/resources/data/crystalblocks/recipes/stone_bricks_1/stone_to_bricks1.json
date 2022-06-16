@@ -1,0 +1,17 @@
+{
+  "type": "mowlib:dualhandedcrafting",
+  "blockTarget": {
+    "item": "crystalblocks:block_crystal_stone_smooth"
+  },
+  "mainhandTool": {
+    "item": "crystalblocks:crystal_stone_chisel"
+  },
+  "consumeMainhandItem": false,
+  "offhandTool": {
+    "tag": "mowlib:pickaxes"
+  },
+  "consumeOffhandItem": true,
+  "result": {
+    "item": "crystalblocks:block_crystal_stone_brick_1"
+  }
+}

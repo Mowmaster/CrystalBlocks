@@ -1,0 +1,17 @@
+{
+  "type": "mowlib:dualhandedcrafting",
+  "blockTarget": {
+    "item": "minecraft:stone_stairs"
+  },
+  "mainhandTool": {
+    "item": "mowlib:applicator"
+  },
+  "consumeMainhandItem": false,
+  "offhandTool": {
+    "tag": "mowlib:pickaxes"
+  },
+  "consumeOffhandItem": true,
+  "result": {
+    "item": "crystalblocks:block_crystal_stone_stair"
+  }
+}

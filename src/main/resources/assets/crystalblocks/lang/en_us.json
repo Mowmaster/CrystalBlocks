@@ -1,24 +1,43 @@
 {
-  
+  "block.crystalblocks.block_crystal_stone_cobble": "Crystal Cobble Stone",
+  "block.crystalblocks.block_crystal_stone_cobble_slab": "Crystal Cobble Stone Slab",
+  "block.crystalblocks.block_crystal_stone_cobble_stair": "Crystal Cobble Stone Stair",
+
   "block.crystalblocks.block_crystal_stone": "Crystal Stone",
-  "block.crystalblocks.block_crystal_stone.description": "§5 Made from Converting Stone with a Crystal Node, used in Crafting/Building - Can be Recolored with Applicator",
   "block.crystalblocks.block_crystal_stone_slab": "Crystal Stone Slab",
-  "block.crystalblocks.block_crystal_stone_slab.description": "§5 Used in Crafting/Building - Can be Recolored with Applicator",
   "block.crystalblocks.block_crystal_stone_stair": "Crystal Stone Stair",
-  "block.crystalblocks.block_crystal_stone_stair.description": "§5 Used in Crafting/Building - Can be Recolored with Applicator",
 
-  "block.crystalblocks.block_crystal_stone_brick": "Crystal Stone Brick",
-  "block.crystalblocks.block_crystal_stone_brick.description": "§5 Used in Crafting/Building - Can be Recolored with Applicator",
-  "block.crystalblocks.block_crystal_stone_brick_slab": "Crystal Stone Brick Slab",
-  "block.crystalblocks.block_crystal_stone_brick_slab.description": "§5 Used in Crafting/Building - Can be Recolored with Applicator",
-  "block.crystalblocks.block_crystal_stone_brick_stair": "Crystal Stone Brick Stair",
-  "block.crystalblocks.block_crystal_stone_brick_stair.description": "§5 Used in Crafting/Building - Can be Recolored with Applicator",
+  "block.crystalblocks.block_crystal_stone_smooth": "Crystal Smooth Stone",
+  "block.crystalblocks.block_crystal_stone_smooth_slab": "Crystal Smooth Stone Slab",
+  "block.crystalblocks.block_crystal_stone_smooth_stair": "Crystal Smooth Stone Stair",
 
-  "block.crystalblocks.block_crystal_stone_bricks": "Crystal Stone Bricks",
-  "block.crystalblocks.block_crystal_stone_bricks.description": "§5 Used in Crafting/Building - Can be Recolored with Applicator",
-  "block.crystalblocks.block_crystal_stone_bricks_slab": "Crystal Stone Bricks Slab",
-  "block.crystalblocks.block_crystal_stone_bricks_slab.description": "§5 Used in Crafting/Building - Can be Recolored with Applicator",
-  "block.crystalblocks.block_crystal_stone_bricks_stair": "Crystal Stone Bricks Stair",
-  "block.crystalblocks.block_crystal_stone_bricks_stair.description": "§5 Used in Crafting/Building - Can be Recolored with Applicator"
+  "block.crystalblocks.block_crystal_stone_brick_1": "Crystal Brick",
+  "block.crystalblocks.block_crystal_stone_brick_1_slab": "Crystal Brick Slab",
+  "block.crystalblocks.block_crystal_stone_brick_1_stair": "Crystal Brick Stair",
 
+  "block.crystalblocks.block_crystal_stone_brick_2": "Crystal Brick (2)",
+  "block.crystalblocks.block_crystal_stone_brick_2_slab": "Crystal Brick (2) Slab",
+  "block.crystalblocks.block_crystal_stone_brick_2_stair": "Crystal Brick (2) Stair",
+
+  "block.crystalblocks.block_crystal_stone_brick_3": "Crystal Brick (3)",
+  "block.crystalblocks.block_crystal_stone_brick_3_slab": "Crystal Brick (3) Slab",
+  "block.crystalblocks.block_crystal_stone_brick_3_stair": "Crystal Brick (3) Stair",
+
+  "block.crystalblocks.block_crystal_stone_brick_4": "Crystal Brick (4)",
+  "block.crystalblocks.block_crystal_stone_brick_4_slab": "Crystal Brick (4) Slab",
+  "block.crystalblocks.block_crystal_stone_brick_4_stair": "Crystal Brick (4) Stair",
+
+  "block.crystalblocks.block_crystal_stone_brick_5": "Crystal Brick (5)",
+  "block.crystalblocks.block_crystal_stone_brick_5_slab": "Crystal Brick (5) Slab",
+  "block.crystalblocks.block_crystal_stone_brick_5_stair": "Crystal Brick (5) Stair",
+
+  "block.crystalblocks.block_crystal_stone_pillar_1": "Crystal Pillar",
+  "block.crystalblocks.block_crystal_stone_pillar_1_slab": "Crystal Pillar Slab",
+  "block.crystalblocks.block_crystal_stone_pillar_1_stair": "Crystal Pillar Stair",
+
+  "block.crystalblocks.block_crystal_stone_pillar_2": "Crystal Pillar (2)",
+  "block.crystalblocks.block_crystal_stone_pillar_2_slab": "Crystal Pillar (2) Slab",
+  "block.crystalblocks.block_crystal_stone_pillar_2_stair": "Crystal Pillar (2) Stair",
+
+  "item.crystalblocks.crystal_stone_chisel": "Crystal Chisel"
 }
