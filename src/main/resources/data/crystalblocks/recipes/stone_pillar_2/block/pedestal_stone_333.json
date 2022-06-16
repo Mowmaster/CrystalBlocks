@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "S",
+    "B",
+    "S"
+  ],
+  "key": {
+    "S": {
+      "item": "crystalblocks:block_crystal_stone_smooth_slab",
+      "type": "forge:nbt",
+      "nbt": {
+        "mowlib_color": 16777215
+      }
+    },
+    "B": {
+      "item": "crystalblocks:block_crystal_stone_smooth",
+      "type": "forge:nbt",
+      "nbt": {
+        "mowlib_color": 16777215
+      }
+    }
+  },
+  "result": {
+    "item": "crystalblocks:block_crystal_stone_pillar_2",
+    "type": "forge:nbt",
+    "nbt": {
+      "mowlib_color": 16777215
+    },
+    "count": 2
+  }
+
+}

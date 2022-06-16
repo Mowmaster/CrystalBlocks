@@ -8,7 +8,7 @@
   ],
   "key": {
     "B": {
-      "item": "crystalblocks:block_crystal_stone_brick_1",
+      "item": "crystalblocks:block_crystal_stone_pillar_1",
       "type": "forge:nbt",
       "nbt": {
         "mowlib_color": 16755455
@@ -16,7 +16,7 @@
     }
   },
   "result": {
-    "item": "crystalblocks:block_crystal_stone_brick_1_stair",
+    "item": "crystalblocks:block_crystal_stone_pillar_1_stair",
     "type": "forge:nbt",
     "nbt": {
       "mowlib_color": 16755455

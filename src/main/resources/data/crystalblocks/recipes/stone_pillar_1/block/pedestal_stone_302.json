@@ -2,8 +2,9 @@
 
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "SS",
-    "SS"
+    "S",
+    "B",
+    "S"
   ],
   "key": {
     "S": {
@@ -12,15 +13,22 @@
       "nbt": {
         "mowlib_color": 16711850
       }
+    },
+    "B": {
+      "item": "crystalblocks:block_crystal_stone",
+      "type": "forge:nbt",
+      "nbt": {
+        "mowlib_color": 16711850
+      }
     }
   },
   "result": {
-    "item": "crystalblocks:block_crystal_stone_brick",
+    "item": "crystalblocks:block_crystal_stone_pillar_1",
     "type": "forge:nbt",
     "nbt": {
       "mowlib_color": 16711850
     },
-    "count": 4
+    "count": 2
   }
 
 }
