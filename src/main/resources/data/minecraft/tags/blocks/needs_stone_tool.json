@@ -1,0 +1,45 @@
+{
+  "replace": false,
+  "values": [
+    "crystalblocks:block_crystal_stone_cobble",
+    "crystalblocks:block_crystal_stone_cobble_slab",
+    "crystalblocks:block_crystal_stone_cobble_stair",
+
+    "crystalblocks:block_crystal_stone",
+    "crystalblocks:block_crystal_stone_slab",
+    "crystalblocks:block_crystal_stone_stair",
+
+    "crystalblocks:block_crystal_stone_smooth",
+    "crystalblocks:block_crystal_stone_smooth_slab",
+    "crystalblocks:block_crystal_stone_smooth_stair",
+
+    "crystalblocks:block_crystal_stone_brick_1",
+    "crystalblocks:block_crystal_stone_brick_1_slab",
+    "crystalblocks:block_crystal_stone_brick_1_stair",
+
+    "crystalblocks:block_crystal_stone_brick_2",
+    "crystalblocks:block_crystal_stone_brick_2_slab",
+    "crystalblocks:block_crystal_stone_brick_2_stair",
+
+    "crystalblocks:block_crystal_stone_brick_3",
+    "crystalblocks:block_crystal_stone_brick_3_slab",
+    "crystalblocks:block_crystal_stone_brick_3_stair",
+
+    "crystalblocks:block_crystal_stone_brick_4",
+    "crystalblocks:block_crystal_stone_brick_4_slab",
+    "crystalblocks:block_crystal_stone_brick_4_stair",
+
+
+    "crystalblocks:block_crystal_stone_brick_5",
+    "crystalblocks:block_crystal_stone_brick_5_slab",
+    "crystalblocks:block_crystal_stone_brick_5_stair",
+
+    "crystalblocks:block_crystal_stone_pillar_1",
+    "crystalblocks:block_crystal_stone_pillar_1_slab",
+    "crystalblocks:block_crystal_stone_pillar_1_stair",
+
+    "crystalblocks:block_crystal_stone_pillar_2",
+    "crystalblocks:block_crystal_stone_pillar_2_slab",
+    "crystalblocks:block_crystal_stone_pillar_2_stair"
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "type": "mowlib:dualhandedcrafting",
   "blockTarget": {
-    "item": "minecraft:stone"
+    "tag": "forge:stone"
   },
   "mainhandTool": {
     "item": "mowlib:applicator"

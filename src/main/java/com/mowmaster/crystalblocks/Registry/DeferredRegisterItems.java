@@ -19,6 +19,9 @@ public class DeferredRegisterItems
     public static final RegistryObject<Item> CHISEL = ITEMS.register("crystal_stone_chisel",
             () -> new Item(new Item.Properties().stacksTo(1).tab(MowLibTab.TAB_ITEMS)));
 
+    public static final RegistryObject<Item> TROWEL = ITEMS.register("crystal_stone_trowel",
+            () -> new Item(new Item.Properties().stacksTo(1).tab(MowLibTab.TAB_ITEMS)));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

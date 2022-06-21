@@ -1,7 +1,7 @@
 {
   "type": "mowlib:dualhandedcrafting",
   "blockTarget": {
-    "item": "crystalblocks:block_crystal_stone_stair"
+    "item": "crystalblocks:block_crystal_stone_brick_1_stair"
   },
   "mainhandTool": {
     "item": "crystalblocks:crystal_stone_chisel"
@@ -12,6 +12,6 @@
   },
   "consumeOffhandItem": true,
   "result": {
-    "item": "crystalblocks:block_crystal_stone_brick_1_stair"
+    "item": "crystalblocks:block_crystal_stone_brick_2_stair"
   }
 }

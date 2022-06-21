@@ -8,7 +8,7 @@
   },
   "consumeMainhandItem": false,
   "offhandTool": {
-    "item": "minecraft:furnace"
+    "tag": "minecraft:coals"
   },
   "consumeOffhandItem": false,
   "result": {

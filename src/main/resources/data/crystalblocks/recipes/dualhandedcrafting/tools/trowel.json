@@ -1,0 +1,15 @@
+{
+  "type": "mowlib:dualhandedcrafting",
+  "blockTarget": {
+    "item": "crystalblocks:block_crystal_stone"
+  },
+  "mainhandTool": {
+    "tag": "forge:rods"
+  },
+  "offhandTool": {
+    "tag": "forge:ingots/iron"
+  },
+  "result": {
+    "item": "crystalblocks:crystal_stone_trowel"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "mowlib:dualhandedcrafting",
+  "blockTarget": {
+    "item": "crystalblocks:block_crystal_stone_cobble"
+  },
+  "mainhandTool": {
+    "item": "crystalblocks:crystal_stone_chisel"
+  },
+  "consumeMainhandItem": false,
+  "offhandTool": {
+    "tag": "minecraft:coals"
+  },
+  "consumeOffhandItem": false,
+  "result": {
+    "item": "crystalblocks:block_crystal_stone"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "mowlib:dualhandedcrafting",
+  "blockTarget": {
+    "item": "crystalblocks:block_crystal_stone_brick_4"
+  },
+  "mainhandTool": {
+    "item": "crystalblocks:crystal_stone_trowel"
+  },
+  "consumeMainhandItem": false,
+  "offhandTool": {
+    "item": "minecraft:clay_ball"
+  },
+  "consumeOffhandItem": false,
+  "result": {
+    "item": "crystalblocks:block_crystal_stone_brick_3"
+  }
+}

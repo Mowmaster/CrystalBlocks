@@ -39,5 +39,6 @@
   "block.crystalblocks.block_crystal_stone_pillar_2_slab": "Crystal Pillar (2) Slab",
   "block.crystalblocks.block_crystal_stone_pillar_2_stair": "Crystal Pillar (2) Stair",
 
-  "item.crystalblocks.crystal_stone_chisel": "Crystal Chisel"
+  "item.crystalblocks.crystal_stone_chisel": "Crystal Chisel",
+  "item.crystalblocks.crystal_stone_trowel": "Iron Trowel"
 }
