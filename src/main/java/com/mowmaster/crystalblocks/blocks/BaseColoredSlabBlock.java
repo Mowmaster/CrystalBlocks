@@ -21,6 +21,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.Explosion;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SlabBlock;
@@ -30,11 +31,13 @@ import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.block.state.properties.SlabType;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluids;
+import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.HitResult;
 import net.minecraftforge.registries.ForgeRegistries;
 
 import javax.annotation.Nullable;
+import java.util.ArrayList;
 import java.util.List;
 
 import static com.mowmaster.mowlib.MowLibUtils.MessageUtils.getMowLibComponentLocalized;
@@ -162,6 +165,65 @@ public class BaseColoredSlabBlock extends SlabBlock implements IColorableBlock
         }
 
         return super.use(p_60503_, p_60504_, p_60505_, p_60506_, p_60507_, p_60508_);
+    }
+
+    //Should Fix Building Gadgets dropps issues
+    //https://github.com/Direwolf20-MC/MiningGadgets/blob/1.19/src/main/java/com/direwolf20/mininggadgets/common/tiles/RenderBlockTileEntity.java#L444
+    @Override
+    public List<ItemStack> getDrops(BlockState p_60537_, LootContext.Builder p_60538_) {
+        if (p_60537_.getBlock() instanceof BaseColoredSlabBlock) {
+            List<ItemStack> stacks = new ArrayList<>();
+            ItemStack itemstack = new ItemStack(this);
+            int getColor = ColorReference.getColorFromStateInt(p_60537_);
+            ItemStack newStack = ColorReference.addColorToItemStack(itemstack,getColor);
+            newStack.setCount(1);
+            stacks.add(newStack);
+            return stacks;
+        }
+        return super.getDrops(p_60537_, p_60538_);
+    }
+
+    @Override
+    public void onRemove(BlockState p_60515_, Level p_60516_, BlockPos p_60517_, BlockState p_60518_, boolean p_60519_) {
+        if(!p_60516_.isClientSide() && p_60519_)
+        {
+            if (p_60518_.getBlock() instanceof BaseColoredSlabBlock) {
+                if (!p_60516_.isClientSide) {
+                    ItemStack itemstack = new ItemStack(this);
+                    int getColor = ColorReference.getColorFromStateInt(p_60518_);
+                    ItemStack newStack = ColorReference.addColorToItemStack(itemstack,getColor);
+                    newStack.setCount(1);
+                    ItemEntity itementity = new ItemEntity(p_60516_, (double)p_60517_.getX() + 0.5D, (double)p_60517_.getY() + 0.5D, (double)p_60517_.getZ() + 0.5D, newStack);
+                    itementity.setDefaultPickUpDelay();
+                    p_60516_.addFreshEntity(itementity);
+                }
+            }
+        }
+        super.onRemove(p_60515_, p_60516_, p_60517_, p_60518_, p_60519_);
+    }
+
+    @Override
+    public boolean canDropFromExplosion(BlockState state, BlockGetter level, BlockPos pos, Explosion explosion) {
+        return true;
+    }
+
+    @Override
+    public void onBlockExploded(BlockState state, Level level, BlockPos pos, Explosion explosion) {
+        if(!level.isClientSide())
+        {
+            if (state.getBlock() instanceof BaseColoredSlabBlock) {
+                if (!level.isClientSide) {
+                    ItemStack itemstack = new ItemStack(this);
+                    int getColor = ColorReference.getColorFromStateInt(state);
+                    ItemStack newStack = ColorReference.addColorToItemStack(itemstack,getColor);
+                    newStack.setCount(1);
+                    ItemEntity itementity = new ItemEntity(level, (double)pos.getX() + 0.5D, (double)pos.getY() + 0.5D, (double)pos.getZ() + 0.5D, newStack);
+                    itementity.setDefaultPickUpDelay();
+                    level.addFreshEntity(itementity);
+                }
+            }
+        }
+        super.onBlockExploded(state, level, pos, explosion);
     }
 
     @Override
