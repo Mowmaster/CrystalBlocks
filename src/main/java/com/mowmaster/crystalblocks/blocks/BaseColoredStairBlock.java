@@ -37,6 +37,8 @@ import java.util.List;
 
 import static com.mowmaster.mowlib.MowLibUtils.MessageUtils.getMowLibComponentLocalized;
 
+import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
+
 public class BaseColoredStairBlock extends StairBlock implements IColorableBlock
 {
     public BaseColoredStairBlock(BlockState state, Properties p_152915_)
