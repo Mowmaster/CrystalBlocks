@@ -14,10 +14,15 @@ plugins {
     id 'maven-publish'
 }
 apply plugin: 'net.minecraftforge.gradle'
+//apply from: 'https://raw.githubusercontent.com/SizableShrimp/ForgeUpdatesRemapper/main/remapper.gradle'
+
+//Run this in terminal
+//gradlew -PUPDATE_SRGS="https://gist.githubusercontent.com/amadornes/e00ea624b3cccc84fbca0800f651b546/raw/raw_mappings.tsrg;https://gist.githubusercontent.com/SizableShrimp/882a671ff74256d150776da08c89ef72/raw/forge_1.19_renames.tsrg" updateEverything
 
 
 
-version = '0.1.6'
+
+version = '0.1.7'
 group = 'com.mowmaster.crystalblocks' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'crystalblocks'
 
@@ -157,15 +162,15 @@ dependencies {
     // Specify the version of Minecraft to use. If this is any group other than 'net.minecraft', it is assumed
     // that the dep is a ForgeGradle 'patcher' dependency, and its patches will be applied.
     // The userdev artifact is a special name and will get all sorts of transformations applied to it.
-    minecraft 'net.minecraftforge:forge:1.19-41.0.85'
+    minecraft 'net.minecraftforge:forge:1.19-41.0.100'
 
     // Real mod deobf dependency examples - these get remapped to your current mappings
     // compileOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}:api") // Adds JEI API as a compile dependency
     // runtimeOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}") // Adds the full JEI mod as a runtime dependency
     // implementation fg.deobf("com.tterrag.registrate:Registrate:MC${mc_version}-${registrate_version}") // Adds registrate as a dependency
 
-    compileOnly fg.deobf("curse.maven:mowlib-631455:3866132")
-    runtimeOnly fg.deobf("curse.maven:mowlib-631455:3866132")
+    compileOnly fg.deobf("curse.maven:mowlib-631455:3881810")
+    runtimeOnly fg.deobf("curse.maven:mowlib-631455:3881810")
     // Examples using mod jars from ./libs
     // implementation fg.deobf("blank:coolmod-${mc_version}:${coolmod_version}")
 
