@@ -2,6 +2,7 @@ package com.mowmaster.crystalblocks.Blocks;
 
 import com.mowmaster.mowlib.Items.ColorApplicator;
 import com.mowmaster.mowlib.MowLibUtils.MowLibColorReference;
+import com.mowmaster.mowlib.MowLibUtils.MowLibReferences;
 import com.mowmaster.mowlib.api.IColorableBlock;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
@@ -32,6 +33,7 @@ import javax.annotation.Nullable;
 import java.util.ArrayList;
 import java.util.List;
 
+import static com.mowmaster.crystalblocks.Util.References.MODID;
 import static com.mowmaster.mowlib.MowLibUtils.MowLibMessageUtils.getMowLibComponentLocalized;
 
 public class BaseColoredStairBlock extends StairBlock implements IColorableBlock
@@ -216,5 +218,6 @@ public class BaseColoredStairBlock extends StairBlock implements IColorableBlock
     public void appendHoverText(ItemStack p_49816_, @org.jetbrains.annotations.Nullable BlockGetter p_49817_, List<Component> p_49818_, TooltipFlag p_49819_) {
         super.appendHoverText(p_49816_, p_49817_, p_49818_, p_49819_);
 
+        p_49818_.add(Component.translatable(MODID + ".colortext").withStyle(ChatFormatting.GOLD).append(Component.translatable(MowLibReferences.MODID + "." + MowLibColorReference.getColorName(MowLibColorReference.getColorFromItemStackInt(p_49816_))).withStyle(ChatFormatting.WHITE)));
     }
 }
