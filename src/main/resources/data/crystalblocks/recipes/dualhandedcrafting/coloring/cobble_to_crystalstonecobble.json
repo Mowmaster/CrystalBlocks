@@ -8,7 +8,7 @@
   },
   "consumeMainhandItem": false,
   "offhandTool": {
-    "tag": "mowlib:pickaxes"
+    "tag": "forge:tools/pickaxes"
   },
   "consumeOffhandItem": true,
   "result": {
