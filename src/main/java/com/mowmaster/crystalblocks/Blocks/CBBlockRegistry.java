@@ -55,7 +55,7 @@ public class CBBlockRegistry
 
     public static final DeferredBlock<Block> CRYSTAL_STONE_GREEN = registerBlock("crystal_stone_green",
             properties -> new BaseCrystalStone(properties
-                    .mapColor(MapColor.COLOR_RED).sound(SoundType.STONE).strength(2f)
+                    .mapColor(MapColor.COLOR_GREEN).sound(SoundType.STONE).strength(2f)
                     .pushReaction(PushReaction.PUSH).requiresCorrectToolForDrops()));
     /*public static final DeferredBlock<Block> CRYSTAL_STONE_GREEN_STAIRS = registerBlock("crystal_stone_green_stairs", properties -> new StairBlock(
             CBBlockRegistry.CRYSTAL_STONE_RED.get().defaultBlockState(), properties.sound(SoundType.STONE).strength(2.0f, 3.0f).sound(SoundType.STONE))
@@ -90,7 +90,7 @@ public class CBBlockRegistry
 
     public static final DeferredBlock<Block> CRYSTAL_STONE_BLUE = registerBlock("crystal_stone_blue",
             properties -> new BaseCrystalStone(properties
-                    .mapColor(MapColor.COLOR_RED).sound(SoundType.STONE).strength(2f)
+                    .mapColor(MapColor.COLOR_BLUE).sound(SoundType.STONE).strength(2f)
                     .pushReaction(PushReaction.PUSH).requiresCorrectToolForDrops()));
     /*public static final DeferredBlock<Block> CRYSTAL_STONE_BLUE_STAIRS = registerBlock("crystal_stone_blue_stairs", properties -> new StairBlock(
             CBBlockRegistry.CRYSTAL_STONE_RED.get().defaultBlockState(), properties.sound(SoundType.STONE).strength(2.0f, 3.0f).sound(SoundType.STONE))
@@ -125,7 +125,7 @@ public class CBBlockRegistry
 
     public static final DeferredBlock<Block> CRYSTAL_STONE_WHITE = registerBlock("crystal_stone_white",
             properties -> new BaseCrystalStone(properties
-                    .mapColor(MapColor.COLOR_RED).sound(SoundType.STONE).strength(2f)
+                    .mapColor(MapColor.TERRACOTTA_WHITE).sound(SoundType.STONE).strength(2f)
                     .pushReaction(PushReaction.PUSH).requiresCorrectToolForDrops()));
     /*public static final DeferredBlock<Block> CRYSTAL_STONE_WHITE_STAIRS = registerBlock("crystal_stone_white_stairs", properties -> new StairBlock(
             CBBlockRegistry.CRYSTAL_STONE_RED.get().defaultBlockState(), properties.sound(SoundType.STONE).strength(2.0f, 3.0f).sound(SoundType.STONE))
@@ -160,7 +160,7 @@ public class CBBlockRegistry
 
     public static final DeferredBlock<Block> CRYSTAL_STONE_BLACK = registerBlock("crystal_stone_black",
             properties -> new BaseCrystalStone(properties
-                    .mapColor(MapColor.COLOR_RED).sound(SoundType.STONE).strength(2f)
+                    .mapColor(MapColor.COLOR_BLACK).sound(SoundType.STONE).strength(2f)
                     .pushReaction(PushReaction.PUSH).requiresCorrectToolForDrops()));
     /*public static final DeferredBlock<Block> CRYSTAL_STONE_BLACK_STAIRS = registerBlock("crystal_stone_black_stairs", properties -> new StairBlock(
             CBBlockRegistry.CRYSTAL_STONE_RED.get().defaultBlockState(), properties.sound(SoundType.STONE).strength(2.0f, 3.0f).sound(SoundType.STONE))
