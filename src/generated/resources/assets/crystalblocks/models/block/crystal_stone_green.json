@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:block/leaves",
+  "parent": "crystalblocks:block/tinted_cube_all",
   "textures": {
     "all": "crystalblocks:block/crystal_stone_green"
   }

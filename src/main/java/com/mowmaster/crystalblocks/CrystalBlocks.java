@@ -64,39 +64,39 @@ public class CrystalBlocks {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(CBBlockRegistry.CRYSTAL_STONE_RED);
-            /*event.accept(CBBlockRegistry.CRYSTAL_STONE_RED_STAIRS);
+            event.accept(CBBlockRegistry.CRYSTAL_STONE_RED_STAIRS);
             event.accept(CBBlockRegistry.CRYSTAL_STONE_RED_SLAB);
             event.accept(CBBlockRegistry.CRYSTAL_STONE_RED_WALL);
             event.accept(CBBlockRegistry.CRYSTAL_STONE_RED_BUTTON);
-            event.accept(CBBlockRegistry.CRYSTAL_STONE_RED_PRESSUREPLATE);*/
+            event.accept(CBBlockRegistry.CRYSTAL_STONE_RED_PRESSUREPLATE);
 
             event.accept(CBBlockRegistry.CRYSTAL_STONE_GREEN);
-            /*event.accept(CBBlockRegistry.CRYSTAL_STONE_GREEN_STAIRS);
+            event.accept(CBBlockRegistry.CRYSTAL_STONE_GREEN_STAIRS);
             event.accept(CBBlockRegistry.CRYSTAL_STONE_GREEN_SLAB);
             event.accept(CBBlockRegistry.CRYSTAL_STONE_GREEN_WALL);
             event.accept(CBBlockRegistry.CRYSTAL_STONE_GREEN_BUTTON);
-            event.accept(CBBlockRegistry.CRYSTAL_STONE_GREEN_PRESSUREPLATE);*/
+            event.accept(CBBlockRegistry.CRYSTAL_STONE_GREEN_PRESSUREPLATE);
 
             event.accept(CBBlockRegistry.CRYSTAL_STONE_BLUE);
-            /*event.accept(CBBlockRegistry.CRYSTAL_STONE_BLUE_STAIRS);
+            event.accept(CBBlockRegistry.CRYSTAL_STONE_BLUE_STAIRS);
             event.accept(CBBlockRegistry.CRYSTAL_STONE_BLUE_SLAB);
             event.accept(CBBlockRegistry.CRYSTAL_STONE_BLUE_WALL);
             event.accept(CBBlockRegistry.CRYSTAL_STONE_BLUE_BUTTON);
-            event.accept(CBBlockRegistry.CRYSTAL_STONE_BLUE_PRESSUREPLATE);*/
+            event.accept(CBBlockRegistry.CRYSTAL_STONE_BLUE_PRESSUREPLATE);
 
             event.accept(CBBlockRegistry.CRYSTAL_STONE_WHITE);
-            /*event.accept(CBBlockRegistry.CRYSTAL_STONE_WHITE_STAIRS);
+            event.accept(CBBlockRegistry.CRYSTAL_STONE_WHITE_STAIRS);
             event.accept(CBBlockRegistry.CRYSTAL_STONE_WHITE_SLAB);
             event.accept(CBBlockRegistry.CRYSTAL_STONE_WHITE_WALL);
             event.accept(CBBlockRegistry.CRYSTAL_STONE_WHITE_BUTTON);
-            event.accept(CBBlockRegistry.CRYSTAL_STONE_WHITE_PRESSUREPLATE);*/
+            event.accept(CBBlockRegistry.CRYSTAL_STONE_WHITE_PRESSUREPLATE);
 
             event.accept(CBBlockRegistry.CRYSTAL_STONE_BLACK);
-            /*event.accept(CBBlockRegistry.CRYSTAL_STONE_BLACK_STAIRS);
+            event.accept(CBBlockRegistry.CRYSTAL_STONE_BLACK_STAIRS);
             event.accept(CBBlockRegistry.CRYSTAL_STONE_BLACK_SLAB);
             event.accept(CBBlockRegistry.CRYSTAL_STONE_BLACK_WALL);
             event.accept(CBBlockRegistry.CRYSTAL_STONE_BLACK_BUTTON);
-            event.accept(CBBlockRegistry.CRYSTAL_STONE_BLACK_PRESSUREPLATE);*/
+            event.accept(CBBlockRegistry.CRYSTAL_STONE_BLACK_PRESSUREPLATE);
         }
     }
 

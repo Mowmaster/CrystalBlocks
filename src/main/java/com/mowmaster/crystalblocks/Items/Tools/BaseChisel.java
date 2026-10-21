@@ -7,6 +7,7 @@ import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -48,7 +49,7 @@ public class BaseChisel extends Item {
                 {
                     System.out.println("Dye Exists");
                     level.setBlockAndUpdate(context.getClickedPos(), DYE_MAPPER.get(offhand.getItem()).defaultBlockState());
-                    level.playSound(context.getPlayer(),context.getClickedPos(), SoundEvents.PUFFER_FISH_BLOW_UP, SoundSource.BLOCKS, 2f, 1f);
+                    level.playSound((Player) null,context.getClickedPos(), SoundEvents.PUFFER_FISH_BLOW_UP, SoundSource.BLOCKS, 2f, 1f);
                 }
             }
         }

@@ -1,0 +1,8 @@
+{
+  "parent": "crystalblocks:block/tinted_slab",
+  "textures": {
+    "bottom": "crystalblocks:block/crystal_stone_black",
+    "side": "crystalblocks:block/crystal_stone_black",
+    "top": "crystalblocks:block/crystal_stone_black"
+  }
+}

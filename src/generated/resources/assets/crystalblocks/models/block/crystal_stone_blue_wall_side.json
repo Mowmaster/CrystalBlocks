@@ -1,0 +1,6 @@
+{
+  "parent": "crystalblocks:block/tinted_wall_side",
+  "textures": {
+    "wall": "crystalblocks:block/crystal_stone_blue"
+  }
+}

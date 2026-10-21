@@ -1,0 +1,12 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "crystalblocks:block/crystal_stone_green_pressureplate",
+    "tints": [
+      {
+        "type": "minecraft:constant",
+        "value": -16711936
+      }
+    ]
+  }
+}

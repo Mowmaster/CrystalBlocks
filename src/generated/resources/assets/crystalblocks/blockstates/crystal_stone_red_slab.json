@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "crystalblocks:block/crystal_stone_red_slab"
+    },
+    "type=double": {
+      "model": "crystalblocks:block/crystal_stone_red"
+    },
+    "type=top": {
+      "model": "crystalblocks:block/crystal_stone_red_slab_top"
+    }
+  }
+}

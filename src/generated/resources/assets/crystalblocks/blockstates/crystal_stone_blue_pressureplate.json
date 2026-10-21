@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "crystalblocks:block/crystal_stone_blue_pressureplate"
+    },
+    "powered=true": {
+      "model": "crystalblocks:block/crystal_stone_blue_pressureplate_down"
+    }
+  }
+}

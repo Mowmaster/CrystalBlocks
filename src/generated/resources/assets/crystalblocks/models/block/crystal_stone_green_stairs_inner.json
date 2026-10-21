@@ -1,0 +1,8 @@
+{
+  "parent": "crystalblocks:block/tinted_inner_stairs",
+  "textures": {
+    "bottom": "crystalblocks:block/crystal_stone_green",
+    "side": "crystalblocks:block/crystal_stone_green",
+    "top": "crystalblocks:block/crystal_stone_green"
+  }
+}

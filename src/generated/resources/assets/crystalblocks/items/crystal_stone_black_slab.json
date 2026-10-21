@@ -1,0 +1,12 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "crystalblocks:block/crystal_stone_black_slab",
+    "tints": [
+      {
+        "type": "minecraft:constant",
+        "value": -14013910
+      }
+    ]
+  }
+}

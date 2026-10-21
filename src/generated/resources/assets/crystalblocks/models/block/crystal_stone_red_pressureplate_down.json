@@ -1,0 +1,6 @@
+{
+  "parent": "crystalblocks:block/tinted_pressure_plate_down",
+  "textures": {
+    "texture": "crystalblocks:block/crystal_stone_red"
+  }
+}

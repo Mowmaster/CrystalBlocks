@@ -1,0 +1,6 @@
+{
+  "parent": "crystalblocks:block/tinted_button_inventory",
+  "textures": {
+    "texture": "crystalblocks:block/crystal_stone_black"
+  }
+}

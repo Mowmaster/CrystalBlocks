@@ -1,0 +1,12 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "crystalblocks:block/crystal_stone_blue_stairs",
+    "tints": [
+      {
+        "type": "minecraft:constant",
+        "value": -16776961
+      }
+    ]
+  }
+}
