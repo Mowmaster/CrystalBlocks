@@ -6,6 +6,7 @@ import net.minecraft.client.data.models.model.TextureMapping;
 import net.minecraft.resources.Identifier;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.client.color.item.ItemTintSource;
+import net.minecraft.client.data.models.blockstates.MultiVariantGenerator;
 
 public class CBTintedBlockFamily
 {
@@ -88,6 +89,18 @@ public class CBTintedBlockFamily
                 BlockModelGenerators.plainVariant(top),
                 BlockModelGenerators.plainVariant(doubleSlab)));
         tintedItem(slab, bottom);
+        return this;
+    }
+
+    // One north-facing model, rotated for each FACING value
+    public CBTintedBlockFamily verticalSlab(Block verticalSlab)
+    {
+        Identifier model = CBModelTemplates.TINTED_VERTICAL_SLAB.create(verticalSlab, textures, blockModels.modelOutput);
+
+        blockModels.blockStateOutput.accept(MultiVariantGenerator.dispatch(verticalSlab,
+                        BlockModelGenerators.plainVariant(model).with(BlockModelGenerators.UV_LOCK))
+                .with(BlockModelGenerators.ROTATION_HORIZONTAL_FACING));
+        tintedItem(verticalSlab, model);
         return this;
     }
 

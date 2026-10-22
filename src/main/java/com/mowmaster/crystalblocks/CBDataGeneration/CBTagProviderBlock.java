@@ -25,14 +25,17 @@ public class CBTagProviderBlock extends BlockTagsProvider {
 
                 .add(CBBlockRegistry.TINTABLE_STONE.key())
                 .add(CBBlockRegistry.TINTABLE_STONE_STAIRS.key())
-                .add(CBBlockRegistry.TINTABLE_STONE_SLAB.key());
+                .add(CBBlockRegistry.TINTABLE_STONE_SLAB.key())
+                .add(CBBlockRegistry.TINTABLE_STONE_VERTICAL_SLAB.key())
+                .add(CBBlockRegistry.TINTABLE_STONE_WALL.key());
 
         tag(BlockTags.WALLS)
                 .add(CBBlockRegistry.CRYSTAL_STONE_RED_WALL.key())
                 .add(CBBlockRegistry.CRYSTAL_STONE_GREEN_WALL.key())
                 .add(CBBlockRegistry.CRYSTAL_STONE_BLUE_WALL.key())
                 .add(CBBlockRegistry.CRYSTAL_STONE_WHITE_WALL.key())
-                .add(CBBlockRegistry.CRYSTAL_STONE_BLACK_WALL.key());
+                .add(CBBlockRegistry.CRYSTAL_STONE_BLACK_WALL.key())
+                .add(CBBlockRegistry.TINTABLE_STONE_WALL.key());
 
         tag(BlockTags.STAIRS)
                 .add(CBBlockRegistry.TINTABLE_STONE_STAIRS.key());

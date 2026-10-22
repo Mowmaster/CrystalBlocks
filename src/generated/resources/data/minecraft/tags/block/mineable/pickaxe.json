@@ -7,6 +7,8 @@
     "crystalblocks:crystal_stone_black",
     "crystalblocks:tintable_stone",
     "crystalblocks:tintable_stone_stairs",
-    "crystalblocks:tintable_stone_slab"
+    "crystalblocks:tintable_stone_slab",
+    "crystalblocks:tintable_stone_vertical_slab",
+    "crystalblocks:tintable_stone_wall"
   ]
 }

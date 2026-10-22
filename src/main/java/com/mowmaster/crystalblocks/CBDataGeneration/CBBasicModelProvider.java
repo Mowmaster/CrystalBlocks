@@ -47,7 +47,9 @@ public class CBBasicModelProvider  extends ModelProvider {
 
         new CBTintedBlockFamily(blockModels, CBBlockRegistry.TINTABLE_STONE.get(), new Dye(0xFFFFFFFF))
                 .stairs(CBBlockRegistry.TINTABLE_STONE_STAIRS.get())
-                .twoToneSlab(CBBlockRegistry.TINTABLE_STONE_SLAB.get());
+                .twoToneSlab(CBBlockRegistry.TINTABLE_STONE_SLAB.get())
+                .verticalSlab(CBBlockRegistry.TINTABLE_STONE_VERTICAL_SLAB.get())
+                .wall(CBBlockRegistry.TINTABLE_STONE_WALL.get());
 
     }
 }

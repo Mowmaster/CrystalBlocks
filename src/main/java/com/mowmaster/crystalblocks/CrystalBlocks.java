@@ -87,6 +87,8 @@ public class CrystalBlocks {
             event.accept(CBBlockRegistry.TINTABLE_STONE);
             event.accept(CBBlockRegistry.TINTABLE_STONE_STAIRS);
             event.accept(CBBlockRegistry.TINTABLE_STONE_SLAB);
+            event.accept(CBBlockRegistry.TINTABLE_STONE_VERTICAL_SLAB);
+            event.accept(CBBlockRegistry.TINTABLE_STONE_WALL);
         }
     }
 

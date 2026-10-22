@@ -19,6 +19,8 @@ public class CBModelTemplates
     public static final ModelTemplate TINTED_SLAB_TOP = create("tinted_slab_top", "_top", TextureSlot.BOTTOM, TextureSlot.TOP, TextureSlot.SIDE);
     public static final ModelTemplate TINTED_SLAB_DOUBLE = create("tinted_slab_double", "_double", TextureSlot.BOTTOM, TextureSlot.TOP, TextureSlot.SIDE);
 
+    public static final ModelTemplate TINTED_VERTICAL_SLAB = create("tinted_vertical_slab", TextureSlot.BOTTOM, TextureSlot.TOP, TextureSlot.SIDE);
+
     public static final ModelTemplate TINTED_WALL_POST = create("tinted_wall_post", "_post", TextureSlot.WALL);
     public static final ModelTemplate TINTED_WALL_LOW_SIDE = create("tinted_wall_side", "_side", TextureSlot.WALL);
     public static final ModelTemplate TINTED_WALL_TALL_SIDE = create("tinted_wall_side_tall", "_side_tall", TextureSlot.WALL);
