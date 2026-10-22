@@ -1,5 +1,6 @@
 package com.mowmaster.crystalblocks;
 
+import com.mowmaster.crystalblocks.Blocks.CBBlockEntityRegistry;
 import com.mowmaster.crystalblocks.Blocks.CBBlockRegistry;
 import com.mowmaster.crystalblocks.Items.CBItemRegistry;
 import org.slf4j.Logger;
@@ -44,7 +45,7 @@ public class CrystalBlocks {
 
         CBItemRegistry.register(modEventBus);
         CBBlockRegistry.register(modEventBus);
-
+        CBBlockEntityRegistry.register(modEventBus);
 
         NeoForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::addCreative);
@@ -97,6 +98,8 @@ public class CrystalBlocks {
             event.accept(CBBlockRegistry.CRYSTAL_STONE_BLACK_WALL);
             event.accept(CBBlockRegistry.CRYSTAL_STONE_BLACK_BUTTON);
             event.accept(CBBlockRegistry.CRYSTAL_STONE_BLACK_PRESSUREPLATE);
+
+            event.accept(CBBlockRegistry.TINTABLE_STONE);
         }
     }
 

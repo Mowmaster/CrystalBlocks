@@ -3,6 +3,7 @@ package com.mowmaster.crystalblocks.CBDataGeneration;
 import com.mowmaster.crystalblocks.Blocks.CBBlockRegistry;
 import com.mowmaster.crystalblocks.CBReferences;
 import com.mowmaster.crystalblocks.Items.CBItemRegistry;
+import net.minecraft.client.color.item.Dye;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
 import net.minecraft.client.data.models.ModelProvider;
@@ -43,6 +44,8 @@ public class CBBasicModelProvider  extends ModelProvider {
                 .wall(CBBlockRegistry.CRYSTAL_STONE_BLACK_WALL.get())
                 .button(CBBlockRegistry.CRYSTAL_STONE_BLACK_BUTTON.get())
                 .pressurePlate(CBBlockRegistry.CRYSTAL_STONE_BLACK_PRESSUREPLATE.get());
+
+        new CBTintedBlockFamily(blockModels, CBBlockRegistry.TINTABLE_STONE.get(), new Dye(0xFFFFFFFF));
 
     }
 }

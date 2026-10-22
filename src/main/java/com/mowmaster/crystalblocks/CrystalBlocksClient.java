@@ -1,6 +1,7 @@
 package com.mowmaster.crystalblocks;
 
 import com.mowmaster.crystalblocks.Blocks.CBBlockRegistry;
+import com.mowmaster.crystalblocks.ClientSide.CBBlockEntityTintSource;
 import com.mowmaster.crystalblocks.CrystalBlocks;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.color.block.BlockTintSources;
@@ -72,5 +73,7 @@ public class CrystalBlocksClient {
         event.register(List.of(BlockTintSources.constant(2763306)), CBBlockRegistry.CRYSTAL_STONE_BLACK_WALL.get());
         event.register(List.of(BlockTintSources.constant(2763306)), CBBlockRegistry.CRYSTAL_STONE_BLACK_BUTTON.get());
         event.register(List.of(BlockTintSources.constant(2763306)), CBBlockRegistry.CRYSTAL_STONE_BLACK_PRESSUREPLATE.get());
+
+        event.register(List.of(new CBBlockEntityTintSource(0)), CBBlockRegistry.TINTABLE_STONE.get());
     }
 }

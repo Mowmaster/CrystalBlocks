@@ -1,5 +1,6 @@
 package com.mowmaster.crystalblocks.Blocks;
 
+import com.mowmaster.crystalblocks.Blocks.Colorable.CBTintableBlock;
 import com.mowmaster.crystalblocks.CBReferences;
 import com.mowmaster.crystalblocks.Items.CBItemRegistry;
 import net.minecraft.world.item.BlockItem;
@@ -73,6 +74,11 @@ public class CBBlockRegistry
     public static final DeferredBlock<Block> CRYSTAL_STONE_BLACK_PRESSUREPLATE = registerBlock("crystal_stone_black_pressureplate", properties -> new PressurePlateBlock(
                     BlockSetType.STONE, properties.sound(SoundType.STONE).strength(0.5f).noCollision().forceSolidOn().pushReaction(PushReaction.POPPED)));
     public static final DeferredBlock<Block> CRYSTAL_STONE_BLACK_SLAB = registerBlock("crystal_stone_black_slab", properties -> new SlabBlock(properties.sound(SoundType.STONE).strength(2.0f, 3.0f)));
+
+    public static final DeferredBlock<Block> TINTABLE_STONE = registerBlock("tintable_stone",
+            properties -> new CBTintableBlock(properties
+                    .mapColor(MapColor.STONE).sound(SoundType.STONE).strength(2f).requiresCorrectToolForDrops()));
+
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Function<BlockBehaviour.Properties, T> function)
     {

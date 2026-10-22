@@ -5,15 +5,36 @@ import net.minecraft.client.data.models.model.ItemModelUtils;
 import net.minecraft.client.data.models.model.TextureMapping;
 import net.minecraft.resources.Identifier;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.client.color.item.ItemTintSource;
 
 public class CBTintedBlockFamily
 {
     private final BlockModelGenerators blockModels;
-    private final int tint;
+    private final ItemTintSource itemTint;
     private final TextureMapping textures;
     private final Identifier fullBlockModel;
 
-    // Generates the tinted full cube for baseBlock. Every variant added after this reuses baseBlock's texture.
+    // Constant tint (your existing crystal stone colours)
+    public CBTintedBlockFamily(BlockModelGenerators blockModels, Block baseBlock, int tint)
+    {
+        this(blockModels, baseBlock, ItemModelUtils.constantTint(tint));
+    }
+
+    // Any item tint source, e.g. new Dye(...) for dyeable blocks
+    public CBTintedBlockFamily(BlockModelGenerators blockModels, Block baseBlock, ItemTintSource itemTint)
+    {
+        this.blockModels = blockModels;
+        this.itemTint = itemTint;
+        // Texture defaults to <modid>:block/<base block name>, e.g. crystalblocks:block/crystal_stone_red
+        this.textures = TextureMapping.cube(baseBlock);
+
+        this.fullBlockModel = CBModelTemplates.TINTED_CUBE_ALL.create(baseBlock, textures, blockModels.modelOutput);
+        blockModels.blockStateOutput.accept(
+                BlockModelGenerators.createSimpleBlock(baseBlock, BlockModelGenerators.plainVariant(fullBlockModel)));
+        tintedItem(baseBlock, fullBlockModel);
+    }
+
+    /*// Generates the tinted full cube for baseBlock. Every variant added after this reuses baseBlock's texture.
     public CBTintedBlockFamily(BlockModelGenerators blockModels, Block baseBlock, int tint)
     {
         this.blockModels = blockModels;
@@ -25,7 +46,7 @@ public class CBTintedBlockFamily
         blockModels.blockStateOutput.accept(
                 BlockModelGenerators.createSimpleBlock(baseBlock, BlockModelGenerators.plainVariant(fullBlockModel)));
         tintedItem(baseBlock, fullBlockModel);
-    }
+    }*/
 
     public CBTintedBlockFamily stairs(Block stairs)
     {
@@ -95,10 +116,9 @@ public class CBTintedBlockFamily
         return this;
     }
 
-    // Writes items/<name>.json pointing at the given model, with a constant tint on tint index 0
+    // Writes items/<name>.json pointing at the given model, with the family's tint on tint index 0
     private void tintedItem(Block block, Identifier model)
     {
-        blockModels.itemModelOutput.accept(block.asItem(),
-                ItemModelUtils.tintedModel(model, ItemModelUtils.constantTint(tint)));
+        blockModels.itemModelOutput.accept(block.asItem(), ItemModelUtils.tintedModel(model, itemTint));
     }
 }
