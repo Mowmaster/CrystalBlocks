@@ -80,5 +80,6 @@ public class CrystalBlocksClient {
                 CBBlockRegistry.TINTABLE_STONE_SLAB.get());
         event.register(List.of(new CBBlockEntityTintSource(0)), CBBlockRegistry.TINTABLE_STONE_VERTICAL_SLAB.get());
         event.register(List.of(new CBBlockEntityTintSource(0)), CBBlockRegistry.TINTABLE_STONE_WALL.get());
+        event.register(List.of(new CBBlockEntityTintSource(0)), CBBlockRegistry.TINTABLE_STONE_BUTTON.get());
     }
 }

@@ -49,7 +49,8 @@ public class CBBasicModelProvider  extends ModelProvider {
                 .stairs(CBBlockRegistry.TINTABLE_STONE_STAIRS.get())
                 .twoToneSlab(CBBlockRegistry.TINTABLE_STONE_SLAB.get())
                 .verticalSlab(CBBlockRegistry.TINTABLE_STONE_VERTICAL_SLAB.get())
-                .wall(CBBlockRegistry.TINTABLE_STONE_WALL.get());
+                .wall(CBBlockRegistry.TINTABLE_STONE_WALL.get())
+                .button(CBBlockRegistry.TINTABLE_STONE_BUTTON.get());
 
     }
 }

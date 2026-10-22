@@ -90,6 +90,9 @@ public class CBBlockRegistry
     public static final DeferredBlock<Block> TINTABLE_STONE_WALL = registerBlock("tintable_stone_wall",
             properties -> new CBTintableWall(properties
                     .mapColor(MapColor.STONE).sound(SoundType.STONE).strength(2f).requiresCorrectToolForDrops().forceSolidOn()));
+    public static final DeferredBlock<Block> TINTABLE_STONE_BUTTON = registerBlock("tintable_stone_button",
+            properties -> new CBTintableButton(BlockSetType.STONE, 20, properties
+                    .sound(SoundType.STONE).strength(0.5f).noCollision().forceSolidOn().pushReaction(PushReaction.POPPED)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Function<BlockBehaviour.Properties, T> function)
     {

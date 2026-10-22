@@ -27,7 +27,8 @@ public class CBTagProviderBlock extends BlockTagsProvider {
                 .add(CBBlockRegistry.TINTABLE_STONE_STAIRS.key())
                 .add(CBBlockRegistry.TINTABLE_STONE_SLAB.key())
                 .add(CBBlockRegistry.TINTABLE_STONE_VERTICAL_SLAB.key())
-                .add(CBBlockRegistry.TINTABLE_STONE_WALL.key());
+                .add(CBBlockRegistry.TINTABLE_STONE_WALL.key())
+                .add(CBBlockRegistry.TINTABLE_STONE_BUTTON.key());
 
         tag(BlockTags.WALLS)
                 .add(CBBlockRegistry.CRYSTAL_STONE_RED_WALL.key())
@@ -39,6 +40,9 @@ public class CBTagProviderBlock extends BlockTagsProvider {
 
         tag(BlockTags.STAIRS)
                 .add(CBBlockRegistry.TINTABLE_STONE_STAIRS.key());
+
+        tag(BlockTags.STONE_BUTTONS)
+                .add(CBBlockRegistry.TINTABLE_STONE_BUTTON.key());
 
         tag(CBTags.Blocks.CB_BLOCKS_DYABLE)
                 .add(CBBlockRegistry.CRYSTAL_STONE_RED.key())
