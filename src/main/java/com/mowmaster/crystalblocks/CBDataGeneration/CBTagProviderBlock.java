@@ -23,7 +23,9 @@ public class CBTagProviderBlock extends BlockTagsProvider {
                 .add(CBBlockRegistry.TINTABLE_STONE_VERTICAL_SLAB.key())
                 .add(CBBlockRegistry.TINTABLE_STONE_WALL.key())
                 .add(CBBlockRegistry.TINTABLE_STONE_BUTTON.key())
-                .add(CBBlockRegistry.TINTABLE_STONE_PRESSUREPLATE.key());
+                .add(CBBlockRegistry.TINTABLE_STONE_PRESSUREPLATE.key())
+                .add(CBBlockRegistry.TINTABLE_STONE_COLUMN.key())
+                .add(CBBlockRegistry.TINTABLE_STONE_HORIZONTAL_COLUMN.key());
 
         tag(BlockTags.WALLS)
                 .add(CBBlockRegistry.TINTABLE_STONE_WALL.key());

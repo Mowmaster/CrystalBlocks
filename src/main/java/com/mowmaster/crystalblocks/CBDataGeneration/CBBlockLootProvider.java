@@ -30,6 +30,8 @@ public class CBBlockLootProvider extends BlockLootSubProvider
         dropSelf(CBBlockRegistry.TINTABLE_STONE_WALL.get());
         dropSelf(CBBlockRegistry.TINTABLE_STONE_BUTTON.get());
         dropSelf(CBBlockRegistry.TINTABLE_STONE_PRESSUREPLATE.get());
+        dropSelf(CBBlockRegistry.TINTABLE_STONE_COLUMN.get());
+        dropSelf(CBBlockRegistry.TINTABLE_STONE_HORIZONTAL_COLUMN.get());
 
         // Drops 1, or 2 when the slab is a double slab
         add(CBBlockRegistry.TINTABLE_STONE_SLAB.get(), createSlabItemTable(CBBlockRegistry.TINTABLE_STONE_SLAB.get()));

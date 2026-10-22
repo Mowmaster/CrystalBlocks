@@ -40,6 +40,12 @@ public class CBBlockRegistry
     public static final DeferredBlock<Block> TINTABLE_STONE_PRESSUREPLATE = registerBlock("tintable_stone_pressureplate",
             properties -> new CBTintablePressurePlate(BlockSetType.STONE, properties
                     .sound(SoundType.STONE).strength(0.5f).noCollision().forceSolidOn().pushReaction(PushReaction.POPPED)));
+    public static final DeferredBlock<Block> TINTABLE_STONE_COLUMN = registerBlock("tintable_stone_column",
+            properties -> new CBTintableColumn(properties
+                    .mapColor(MapColor.STONE).sound(SoundType.STONE).strength(2f).requiresCorrectToolForDrops()));
+    public static final DeferredBlock<Block> TINTABLE_STONE_HORIZONTAL_COLUMN = registerBlock("tintable_stone_horizontal_column",
+            properties -> new CBTintableHorizontalColumn(properties
+                    .mapColor(MapColor.STONE).sound(SoundType.STONE).strength(2f).requiresCorrectToolForDrops()));
 
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Function<BlockBehaviour.Properties, T> function)

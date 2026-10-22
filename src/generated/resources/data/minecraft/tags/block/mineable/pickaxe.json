@@ -6,6 +6,8 @@
     "crystalblocks:tintable_stone_vertical_slab",
     "crystalblocks:tintable_stone_wall",
     "crystalblocks:tintable_stone_button",
-    "crystalblocks:tintable_stone_pressureplate"
+    "crystalblocks:tintable_stone_pressureplate",
+    "crystalblocks:tintable_stone_column",
+    "crystalblocks:tintable_stone_horizontal_column"
   ]
 }

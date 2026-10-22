@@ -1,0 +1,51 @@
+{
+  "parent": "minecraft:block/block",
+  "elements": [
+    {
+      "faces": {
+        "down": {
+          "cullface": "down",
+          "texture": "#bottom",
+          "tintindex": 0
+        },
+        "east": {
+          "texture": "#side",
+          "tintindex": 0
+        },
+        "north": {
+          "texture": "#side",
+          "tintindex": 0
+        },
+        "south": {
+          "texture": "#side",
+          "tintindex": 0
+        },
+        "up": {
+          "cullface": "up",
+          "texture": "#top",
+          "tintindex": 0
+        },
+        "west": {
+          "texture": "#side",
+          "tintindex": 0
+        }
+      },
+      "from": [
+        5,
+        0,
+        1
+      ],
+      "to": [
+        13,
+        16,
+        9
+      ]
+    }
+  ],
+  "textures": {
+    "bottom": "crystalblocks:block/tintable_stone",
+    "particle": "crystalblocks:block/tintable_stone",
+    "side": "crystalblocks:block/tintable_stone",
+    "top": "crystalblocks:block/tintable_stone"
+  }
+}

@@ -56,6 +56,8 @@ public class CrystalBlocks {
             event.accept(CBBlockRegistry.TINTABLE_STONE_WALL);
             event.accept(CBBlockRegistry.TINTABLE_STONE_BUTTON);
             event.accept(CBBlockRegistry.TINTABLE_STONE_PRESSUREPLATE);
+            event.accept(CBBlockRegistry.TINTABLE_STONE_COLUMN);
+            event.accept(CBBlockRegistry.TINTABLE_STONE_HORIZONTAL_COLUMN);
         }
     }
 
