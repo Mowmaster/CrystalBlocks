@@ -75,5 +75,6 @@ public class CrystalBlocksClient {
         event.register(List.of(BlockTintSources.constant(2763306)), CBBlockRegistry.CRYSTAL_STONE_BLACK_PRESSUREPLATE.get());
 
         event.register(List.of(new CBBlockEntityTintSource(0)), CBBlockRegistry.TINTABLE_STONE.get());
+        event.register(List.of(new CBBlockEntityTintSource(0)), CBBlockRegistry.TINTABLE_STONE_STAIRS.get());
     }
 }

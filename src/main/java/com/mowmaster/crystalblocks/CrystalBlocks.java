@@ -100,6 +100,7 @@ public class CrystalBlocks {
             event.accept(CBBlockRegistry.CRYSTAL_STONE_BLACK_PRESSUREPLATE);
 
             event.accept(CBBlockRegistry.TINTABLE_STONE);
+            event.accept(CBBlockRegistry.TINTABLE_STONE_STAIRS);
         }
     }
 
