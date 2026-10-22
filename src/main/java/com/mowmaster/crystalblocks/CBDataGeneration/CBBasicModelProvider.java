@@ -46,7 +46,8 @@ public class CBBasicModelProvider  extends ModelProvider {
                 .pressurePlate(CBBlockRegistry.CRYSTAL_STONE_BLACK_PRESSUREPLATE.get());
 
         new CBTintedBlockFamily(blockModels, CBBlockRegistry.TINTABLE_STONE.get(), new Dye(0xFFFFFFFF))
-                .stairs(CBBlockRegistry.TINTABLE_STONE_STAIRS.get());;
+                .stairs(CBBlockRegistry.TINTABLE_STONE_STAIRS.get())
+                .twoToneSlab(CBBlockRegistry.TINTABLE_STONE_SLAB.get());
 
     }
 }

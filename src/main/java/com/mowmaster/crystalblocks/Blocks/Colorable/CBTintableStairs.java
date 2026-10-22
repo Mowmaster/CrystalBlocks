@@ -22,6 +22,6 @@ public class CBTintableStairs extends StairBlock implements IColorableBlock
     protected @NotNull InteractionResult useItemOn(ItemStack stack, BlockState state, Level level, BlockPos pos,
                                                    Player player, InteractionHand hand, BlockHitResult hitResult)
     {
-        return tryDyeBlock(stack, level, pos, player);
+        return tryDyeBlock(stack, state, level, pos, player, hitResult);
     }
 }

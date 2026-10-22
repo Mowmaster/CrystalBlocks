@@ -76,6 +76,21 @@ public class CBTintedBlockFamily
         return this;
     }
 
+    // Slab whose double form tints each half separately: tintindex 0 = bottom half, 1 = top half
+    public CBTintedBlockFamily twoToneSlab(Block slab)
+    {
+        Identifier bottom = CBModelTemplates.TINTED_SLAB_BOTTOM.create(slab, textures, blockModels.modelOutput);
+        Identifier top = CBModelTemplates.TINTED_SLAB_TOP.create(slab, textures, blockModels.modelOutput);
+        Identifier doubleSlab = CBModelTemplates.TINTED_SLAB_DOUBLE.create(slab, textures, blockModels.modelOutput);
+
+        blockModels.blockStateOutput.accept(BlockModelGenerators.createSlab(slab,
+                BlockModelGenerators.plainVariant(bottom),
+                BlockModelGenerators.plainVariant(top),
+                BlockModelGenerators.plainVariant(doubleSlab)));
+        tintedItem(slab, bottom);
+        return this;
+    }
+
     public CBTintedBlockFamily wall(Block wall)
     {
         Identifier post = CBModelTemplates.TINTED_WALL_POST.create(wall, textures, blockModels.modelOutput);

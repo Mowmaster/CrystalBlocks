@@ -11,20 +11,54 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.EntityBlock;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.phys.BlockHitResult;
 
 // Implement this on any block (full block, stairs, slab, wall...) that can be dyed.
 // Extending EntityBlock means implementing this interface is all a block needs to get a CBTintBlockEntity.
 // EntityBlock#getTicker defaults to null, so the block entity never ticks.
 public interface IColorableBlock extends EntityBlock
 {
+    // Returned when there is no region to report
+    int NO_REGION = -1;
+
     @Override
     default BlockEntity newBlockEntity(BlockPos pos, BlockState state)
     {
         return new CBTintBlockEntity(pos, state);
     }
 
+    // ---- Tint regions: override these for blocks with more than one colour ----
+
+    // How many independently coloured regions this block has
+    default int getTintRegionCount()
+    {
+        return 1;
+    }
+
+    // Which region the player clicked
+    default int getTintRegion(BlockState state, BlockHitResult hit)
+    {
+        return 0;
+    }
+
+    // Which region a model face's "tintindex" reads its colour from
+    default int getRegionForTintIndex(BlockState state, int tintIndex)
+    {
+        return tintIndex;
+    }
+
+    // Called when this block's state changes but its block entity is kept (e.g. a slab becoming a double slab).
+    // Return the region that was just added, or NO_REGION if the change didn't add one.
+    default int getAddedRegion(BlockState oldState, BlockState newState)
+    {
+        return NO_REGION;
+    }
+
+    // ---- Dyeing ----
+
     // Call this from the block's useItemOn override.
-    default InteractionResult tryDyeBlock(ItemStack stack, Level level, BlockPos pos, Player player)
+    default InteractionResult tryDyeBlock(ItemStack stack, BlockState state, Level level, BlockPos pos,
+                                          Player player, BlockHitResult hit)
     {
         // NeoForge addition: handles vanilla dyes and modded items tagged as dyes. Returns null if not a dye.
         DyeColor dye = DyeColor.getColor(stack);
@@ -33,8 +67,8 @@ public interface IColorableBlock extends EntityBlock
 
         if (!level.isClientSide())
         {
-            tintEntity.setColor(mixDye(tintEntity.getColor(), dye));
-            //stack.consume(1, player); // does nothing in creative
+            int region = getTintRegion(state, hit);
+            tintEntity.setColor(region, mixDye(tintEntity.getColor(region), dye));
             level.playSound(null, pos, SoundEvents.DYE_USE, SoundSource.BLOCKS, 1f, 1f);
         }
         // SUCCESS on both sides so the client swings the arm
@@ -42,7 +76,7 @@ public interface IColorableBlock extends EntityBlock
     }
 
     // Same mixing maths as leather armour: average the channels, then restore the average brightness
-    // so mixing doesn't keep getting darker. An undyed block takes the dye colour directly.
+    // so mixing doesn't keep getting darker. An undyed region takes the dye colour directly.
     static int mixDye(int currentColor, DyeColor dye)
     {
         int dyeColor = dye.getTextureDiffuseColor() & 0xFFFFFF; // strip alpha, keep RGB
