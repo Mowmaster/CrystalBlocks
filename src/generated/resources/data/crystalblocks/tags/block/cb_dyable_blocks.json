@@ -1,9 +1,11 @@
 {
   "values": [
-    "crystalblocks:crystal_stone_red",
-    "crystalblocks:crystal_stone_green",
-    "crystalblocks:crystal_stone_blue",
-    "crystalblocks:crystal_stone_white",
-    "crystalblocks:crystal_stone_black"
+    "crystalblocks:tintable_stone",
+    "crystalblocks:tintable_stone_stairs",
+    "crystalblocks:tintable_stone_slab",
+    "crystalblocks:tintable_stone_vertical_slab",
+    "crystalblocks:tintable_stone_wall",
+    "crystalblocks:tintable_stone_button",
+    "crystalblocks:tintable_stone_pressureplate"
   ]
 }

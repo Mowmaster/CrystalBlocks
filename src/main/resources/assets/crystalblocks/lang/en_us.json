@@ -1,13 +1,17 @@
 {
-  "itemGroup.crystalblocks": "Example Mod Tab",
-  "block.crystalblocks.example_block": "Example Block",
-  "item.crystalblocks.example_item": "Example Item",
+  "itemGroup.crystalblocks": "Crystal Blocks",
 
-  "crystalblocks.configuration.title": "crystalblocks Configs",
-  "crystalblocks.configuration.section.crystalblocks.common.toml": "crystalblocks Configs",
-  "crystalblocks.configuration.section.crystalblocks.common.toml.title": "crystalblocks Configs",
-  "crystalblocks.configuration.items": "Item List",
-  "crystalblocks.configuration.logDirtBlock": "Log Dirt Block",
-  "crystalblocks.configuration.magicNumberIntroduction": "Magic Number Text",
-  "crystalblocks.configuration.magicNumber": "Magic Number"
+
+
+  "block.crystalblocks.tintable_stone": "Crystal Stone",
+  "block.crystalblocks.tintable_stone_stairs": "Crystal Stone Stairs",
+  "block.crystalblocks.tintable_stone_slab": "Crystal Stone Slab",
+  "block.crystalblocks.tintable_stone_vertical_slab": "Crystal Stone Slab (Vertical)",
+  "block.crystalblocks.tintable_stone_wall": "Crystal Stone Wall",
+  "block.crystalblocks.tintable_stone_button": "Crystal Stone Button",
+  "block.crystalblocks.tintable_stone_pressureplate": "Crystal Stone Pressure Plate",
+
+
+
+  "item.crystalblocks.base_chisel": "Chisel (Basic)"
 }

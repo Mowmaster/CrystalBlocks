@@ -19,38 +19,14 @@ public class CBBasicModelProvider  extends ModelProvider {
     protected void registerModels(BlockModelGenerators blockModels, ItemModelGenerators itemModels) {
 
         itemModels.generateFlatItem(CBItemRegistry.CRYSTAL_CHISEL_BASE.get(), ModelTemplates.FLAT_ITEM);
-        new CBTintedBlockFamily(blockModels, CBBlockRegistry.CRYSTAL_STONE_RED.get(), 16711680).stairs(CBBlockRegistry.CRYSTAL_STONE_RED_STAIRS.get())
-                .slab(CBBlockRegistry.CRYSTAL_STONE_RED_SLAB.get())
-                .wall(CBBlockRegistry.CRYSTAL_STONE_RED_WALL.get())
-                .button(CBBlockRegistry.CRYSTAL_STONE_RED_BUTTON.get())
-                .pressurePlate(CBBlockRegistry.CRYSTAL_STONE_RED_PRESSUREPLATE.get());;
-        new CBTintedBlockFamily(blockModels, CBBlockRegistry.CRYSTAL_STONE_GREEN.get(), 65280).stairs(CBBlockRegistry.CRYSTAL_STONE_GREEN_STAIRS.get())
-                .slab(CBBlockRegistry.CRYSTAL_STONE_GREEN_SLAB.get())
-                .wall(CBBlockRegistry.CRYSTAL_STONE_GREEN_WALL.get())
-                .button(CBBlockRegistry.CRYSTAL_STONE_GREEN_BUTTON.get())
-                .pressurePlate(CBBlockRegistry.CRYSTAL_STONE_GREEN_PRESSUREPLATE.get());
-        new CBTintedBlockFamily(blockModels, CBBlockRegistry.CRYSTAL_STONE_BLUE.get(), 255).stairs(CBBlockRegistry.CRYSTAL_STONE_BLUE_STAIRS.get())
-                .slab(CBBlockRegistry.CRYSTAL_STONE_BLUE_SLAB.get())
-                .wall(CBBlockRegistry.CRYSTAL_STONE_BLUE_WALL.get())
-                .button(CBBlockRegistry.CRYSTAL_STONE_BLUE_BUTTON.get())
-                .pressurePlate(CBBlockRegistry.CRYSTAL_STONE_BLUE_PRESSUREPLATE.get());
-        new CBTintedBlockFamily(blockModels, CBBlockRegistry.CRYSTAL_STONE_WHITE.get(), 16777215).stairs(CBBlockRegistry.CRYSTAL_STONE_WHITE_STAIRS.get())
-                .slab(CBBlockRegistry.CRYSTAL_STONE_WHITE_SLAB.get())
-                .wall(CBBlockRegistry.CRYSTAL_STONE_WHITE_WALL.get())
-                .button(CBBlockRegistry.CRYSTAL_STONE_WHITE_BUTTON.get())
-                .pressurePlate(CBBlockRegistry.CRYSTAL_STONE_WHITE_PRESSUREPLATE.get());
-        new CBTintedBlockFamily(blockModels, CBBlockRegistry.CRYSTAL_STONE_BLACK.get(), 2763306).stairs(CBBlockRegistry.CRYSTAL_STONE_BLACK_STAIRS.get())
-                .slab(CBBlockRegistry.CRYSTAL_STONE_BLACK_SLAB.get())
-                .wall(CBBlockRegistry.CRYSTAL_STONE_BLACK_WALL.get())
-                .button(CBBlockRegistry.CRYSTAL_STONE_BLACK_BUTTON.get())
-                .pressurePlate(CBBlockRegistry.CRYSTAL_STONE_BLACK_PRESSUREPLATE.get());
 
         new CBTintedBlockFamily(blockModels, CBBlockRegistry.TINTABLE_STONE.get(), new Dye(0xFFFFFFFF))
                 .stairs(CBBlockRegistry.TINTABLE_STONE_STAIRS.get())
                 .twoToneSlab(CBBlockRegistry.TINTABLE_STONE_SLAB.get())
                 .verticalSlab(CBBlockRegistry.TINTABLE_STONE_VERTICAL_SLAB.get())
                 .wall(CBBlockRegistry.TINTABLE_STONE_WALL.get())
-                .button(CBBlockRegistry.TINTABLE_STONE_BUTTON.get());
+                .button(CBBlockRegistry.TINTABLE_STONE_BUTTON.get())
+                .pressurePlate(CBBlockRegistry.TINTABLE_STONE_PRESSUREPLATE.get());
 
     }
 }

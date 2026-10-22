@@ -1,6 +1,0 @@
-{
-  "parent": "crystalblocks:block/tinted_button_pressed",
-  "textures": {
-    "texture": "crystalblocks:block/crystal_stone_black"
-  }
-}

@@ -17,25 +17,15 @@ public class CBTagProviderBlock extends BlockTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider provider) {
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
-                .add(CBBlockRegistry.CRYSTAL_STONE_RED.key())
-                .add(CBBlockRegistry.CRYSTAL_STONE_GREEN.key())
-                .add(CBBlockRegistry.CRYSTAL_STONE_BLUE.key())
-                .add(CBBlockRegistry.CRYSTAL_STONE_WHITE.key())
-                .add(CBBlockRegistry.CRYSTAL_STONE_BLACK.key())
-
                 .add(CBBlockRegistry.TINTABLE_STONE.key())
                 .add(CBBlockRegistry.TINTABLE_STONE_STAIRS.key())
                 .add(CBBlockRegistry.TINTABLE_STONE_SLAB.key())
                 .add(CBBlockRegistry.TINTABLE_STONE_VERTICAL_SLAB.key())
                 .add(CBBlockRegistry.TINTABLE_STONE_WALL.key())
-                .add(CBBlockRegistry.TINTABLE_STONE_BUTTON.key());
+                .add(CBBlockRegistry.TINTABLE_STONE_BUTTON.key())
+                .add(CBBlockRegistry.TINTABLE_STONE_PRESSUREPLATE.key());
 
         tag(BlockTags.WALLS)
-                .add(CBBlockRegistry.CRYSTAL_STONE_RED_WALL.key())
-                .add(CBBlockRegistry.CRYSTAL_STONE_GREEN_WALL.key())
-                .add(CBBlockRegistry.CRYSTAL_STONE_BLUE_WALL.key())
-                .add(CBBlockRegistry.CRYSTAL_STONE_WHITE_WALL.key())
-                .add(CBBlockRegistry.CRYSTAL_STONE_BLACK_WALL.key())
                 .add(CBBlockRegistry.TINTABLE_STONE_WALL.key());
 
         tag(BlockTags.STAIRS)
@@ -44,11 +34,16 @@ public class CBTagProviderBlock extends BlockTagsProvider {
         tag(BlockTags.STONE_BUTTONS)
                 .add(CBBlockRegistry.TINTABLE_STONE_BUTTON.key());
 
+        tag(BlockTags.STONE_PRESSURE_PLATES)
+                .add(CBBlockRegistry.TINTABLE_STONE_PRESSUREPLATE.key());
+
         tag(CBTags.Blocks.CB_BLOCKS_DYABLE)
-                .add(CBBlockRegistry.CRYSTAL_STONE_RED.key())
-                .add(CBBlockRegistry.CRYSTAL_STONE_GREEN.key())
-                .add(CBBlockRegistry.CRYSTAL_STONE_BLUE.key())
-                .add(CBBlockRegistry.CRYSTAL_STONE_WHITE.key())
-                .add(CBBlockRegistry.CRYSTAL_STONE_BLACK.key());
+                .add(CBBlockRegistry.TINTABLE_STONE.key())
+                .add(CBBlockRegistry.TINTABLE_STONE_STAIRS.key())
+                .add(CBBlockRegistry.TINTABLE_STONE_SLAB.key())
+                .add(CBBlockRegistry.TINTABLE_STONE_VERTICAL_SLAB.key())
+                .add(CBBlockRegistry.TINTABLE_STONE_WALL.key())
+                .add(CBBlockRegistry.TINTABLE_STONE_BUTTON.key())
+                .add(CBBlockRegistry.TINTABLE_STONE_PRESSUREPLATE.key());
     }
 }

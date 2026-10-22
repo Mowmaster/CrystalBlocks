@@ -1,6 +1,0 @@
-{
-  "parent": "crystalblocks:block/tinted_wall_post",
-  "textures": {
-    "wall": "crystalblocks:block/crystal_stone_white"
-  }
-}

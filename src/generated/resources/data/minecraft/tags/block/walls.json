@@ -1,10 +1,5 @@
 {
   "values": [
-    "crystalblocks:crystal_stone_red_wall",
-    "crystalblocks:crystal_stone_green_wall",
-    "crystalblocks:crystal_stone_blue_wall",
-    "crystalblocks:crystal_stone_white_wall",
-    "crystalblocks:crystal_stone_black_wall",
     "crystalblocks:tintable_stone_wall"
   ]
 }
