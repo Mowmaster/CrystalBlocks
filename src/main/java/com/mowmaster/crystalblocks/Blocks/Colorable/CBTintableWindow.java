@@ -3,6 +3,7 @@ package com.mowmaster.crystalblocks.Blocks.Colorable;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.util.RandomSource;
+import net.minecraft.util.StringRepresentable;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
@@ -35,11 +36,64 @@ public class CBTintableWindow extends Block implements IColorableBlock
     public static final int FRAME_REGION = 0; // tintindex 0, texture_one
     public static final int GLASS_REGION = 1; // tintindex 1, texture_two
 
-    // The side the window is looked at from. South and west look identical, so only north and east exist.
-    public static final EnumProperty<Direction> FACING = EnumProperty.create("facing", Direction.class, Direction.NORTH, Direction.EAST);
+    // The shape of an L-shaped corner window, named by the two directions its arms go.
+    // The models are made for NORTH_WEST and turned by yTurns for the others.
+    // firstArm / secondArm are where the base model's west / north arms end up after turning.
+    public enum BendType implements StringRepresentable
+    {
+        NONE("none", null, null, 0),
+        NORTH_WEST("north_west", Direction.WEST, Direction.NORTH, 0),
+        NORTH_EAST("north_east", Direction.NORTH, Direction.EAST, 1),
+        SOUTH_EAST("south_east", Direction.EAST, Direction.SOUTH, 2),
+        SOUTH_WEST("south_west", Direction.SOUTH, Direction.WEST, 3);
 
-    // Joined to another window (same facing) on that edge. Left/right are the model's north/south edges:
-    // facing east -> left = north, right = south. Facing north -> left = east, right = west.
+        private final String name;
+        private final Direction firstArm;
+        private final Direction secondArm;
+        private final int yTurns;
+
+        BendType(String name, Direction firstArm, Direction secondArm, int yTurns)
+        {
+            this.name = name;
+            this.firstArm = firstArm;
+            this.secondArm = secondArm;
+            this.yTurns = yTurns;
+        }
+
+        // The name shown in F3 and written in the blockstate file
+        @Override
+        public @NotNull String getSerializedName()
+        {
+            return name;
+        }
+
+        public Direction firstArm() { return firstArm; }
+        public Direction secondArm() { return secondArm; }
+        public int yTurns() { return yTurns; }
+
+        public boolean hasArm(Direction direction)
+        {
+            return direction == firstArm || direction == secondArm;
+        }
+
+        public static BendType withArms(Direction a, Direction b)
+        {
+            for (BendType bend : values())
+            {
+                if (bend != NONE && bend.hasArm(a) && bend.hasArm(b)) return bend;
+            }
+            return NONE;
+        }
+    }
+
+    // The side the window is looked at from. South and west look identical, so only north and east exist.
+    // Ignored while the window is bent.
+    public static final EnumProperty<Direction> FACING = EnumProperty.create("facing", Direction.class, Direction.NORTH, Direction.EAST);
+    public static final EnumProperty<BendType> BEND = EnumProperty.create("bend", BendType.class);
+
+    // Joined to another window on that edge. For straight windows, left/right are the model's north/south edges
+    // (facing east -> left = north, right = south; facing north -> left = east, right = west).
+    // For bends, left/right are the ends of the first/second arm and are always joined.
     public static final BooleanProperty UP = BlockStateProperties.UP;
     public static final BooleanProperty DOWN = BlockStateProperties.DOWN;
     public static final BooleanProperty LEFT = BooleanProperty.create("left");
@@ -54,27 +108,49 @@ public class CBTintableWindow extends Block implements IColorableBlock
     // false = clear cb_glass texture, true = tintable_glass texture (switched on the first time the glass is dyed)
     public static final BooleanProperty TINTED_GLASS = BooleanProperty.create("tinted_glass");
 
-    // In model space (the model as made = facing east). The frame is 4px thick (x 6-10).
+    // ---- Straight window boxes, in model space (the model as made = facing east). The frame is 4px thick (x 6-10). ----
     private static final CBPixelBox PANEL = new CBPixelBox(6, 0, 0, 10, 16, 16);
     private static final CBPixelBox FRAME_UP = new CBPixelBox(6, 14, 0, 10, 16, 16);
     private static final CBPixelBox FRAME_DOWN = new CBPixelBox(6, 0, 0, 10, 2, 16);
     private static final CBPixelBox FRAME_LEFT = new CBPixelBox(6, 0, 0, 10, 16, 2);
     private static final CBPixelBox FRAME_RIGHT = new CBPixelBox(6, 0, 14, 10, 16, 16);
-
-    // The 2x2 corner pieces; datagen builds the corner models from these same boxes
     public static final CBPixelBox CORNER_UP_LEFT = new CBPixelBox(6, 14, 0, 10, 16, 2);
     public static final CBPixelBox CORNER_UP_RIGHT = new CBPixelBox(6, 14, 14, 10, 16, 16);
     public static final CBPixelBox CORNER_DOWN_LEFT = new CBPixelBox(6, 0, 0, 10, 2, 2);
     public static final CBPixelBox CORNER_DOWN_RIGHT = new CBPixelBox(6, 0, 14, 10, 2, 16);
 
+    // ---- Bend boxes, in model space for NORTH_WEST: the west arm (z 6-10) and the north arm (x 6-10) ----
+    // The west arm also covers the centre square so the two arms meet cleanly
+    public static final CBPixelBox BEND_WEST_PANEL = new CBPixelBox(0, 0, 6, 10, 16, 10);
+    public static final CBPixelBox BEND_NORTH_PANEL = new CBPixelBox(6, 0, 0, 10, 16, 6);
+    public static final CBPixelBox BEND_TOP_WEST = new CBPixelBox(0, 14, 6, 10, 16, 10);
+    public static final CBPixelBox BEND_TOP_NORTH = new CBPixelBox(6, 14, 0, 10, 16, 6);
+    public static final CBPixelBox BEND_BOTTOM_WEST = new CBPixelBox(0, 0, 6, 10, 2, 10);
+    public static final CBPixelBox BEND_BOTTOM_NORTH = new CBPixelBox(6, 0, 0, 10, 2, 6);
+    // 2x2 pieces at the far end of each arm
+    public static final CBPixelBox BEND_FIRST_UP = new CBPixelBox(0, 14, 6, 2, 16, 10);
+    public static final CBPixelBox BEND_FIRST_DOWN = new CBPixelBox(0, 0, 6, 2, 2, 10);
+    public static final CBPixelBox BEND_SECOND_UP = new CBPixelBox(6, 14, 0, 10, 16, 2);
+    public static final CBPixelBox BEND_SECOND_DOWN = new CBPixelBox(6, 0, 0, 10, 2, 2);
+
     private static final VoxelShape SHAPE_EAST = PANEL.toShape();
     private static final VoxelShape SHAPE_NORTH = PANEL.rotateY(1).toShape();
+    private static final VoxelShape[] BEND_SHAPES = new VoxelShape[4];
+
+    static
+    {
+        for (int turns = 0; turns < 4; turns++)
+        {
+            BEND_SHAPES[turns] = CBPixelBox.union(List.of(BEND_WEST_PANEL.rotateY(turns), BEND_NORTH_PANEL.rotateY(turns)));
+        }
+    }
 
     public CBTintableWindow(Properties properties)
     {
         super(properties);
         registerDefaultState(stateDefinition.any()
                 .setValue(FACING, Direction.NORTH)
+                .setValue(BEND, BendType.NONE)
                 .setValue(UP, false).setValue(DOWN, false).setValue(LEFT, false).setValue(RIGHT, false)
                 .setValue(UP_LEFT, false).setValue(UP_RIGHT, false).setValue(DOWN_LEFT, false).setValue(DOWN_RIGHT, false)
                 .setValue(TINTED_GLASS, false));
@@ -83,7 +159,7 @@ public class CBTintableWindow extends Block implements IColorableBlock
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder)
     {
-        builder.add(FACING, UP, DOWN, LEFT, RIGHT, UP_LEFT, UP_RIGHT, DOWN_LEFT, DOWN_RIGHT, TINTED_GLASS);
+        builder.add(FACING, BEND, UP, DOWN, LEFT, RIGHT, UP_LEFT, UP_RIGHT, DOWN_LEFT, DOWN_RIGHT, TINTED_GLASS);
     }
 
     // ---- Directions ----
@@ -104,11 +180,19 @@ public class CBTintableWindow extends Block implements IColorableBlock
         return leftOf(facing).getOpposite();
     }
 
+    // A straight window facing north runs east-west (along X); facing east it runs north-south (along Z)
+    private static Direction.Axis runsAlong(Direction facing)
+    {
+        return facing == Direction.NORTH ? Direction.Axis.X : Direction.Axis.Z;
+    }
+
     // ---- Shape ----
 
     @Override
     protected @NotNull VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context)
     {
+        BendType bend = state.getValue(BEND);
+        if (bend != BendType.NONE) return BEND_SHAPES[bend.yTurns()];
         return state.getValue(FACING) == Direction.NORTH ? SHAPE_NORTH : SHAPE_EAST;
     }
 
@@ -123,11 +207,11 @@ public class CBTintableWindow extends Block implements IColorableBlock
         // Face the player; looking north or south both give a north-facing window
         Direction facing = context.getHorizontalDirection().getAxis() == Direction.Axis.X ? Direction.EAST : Direction.NORTH;
 
-        // Clicked on another window: match it, so extending a window just works
+        // Clicked on a straight window: match it, so extending a window just works
         if (!context.replacingClickedOnBlock())
         {
             BlockState against = level.getBlockState(pos.relative(context.getClickedFace().getOpposite()));
-            if (against.getBlock() instanceof CBTintableWindow)
+            if (against.getBlock() instanceof CBTintableWindow && against.getValue(BEND) == BendType.NONE)
             {
                 facing = against.getValue(FACING);
             }
@@ -135,7 +219,7 @@ public class CBTintableWindow extends Block implements IColorableBlock
         return withConnections(defaultBlockState().setValue(FACING, facing), level, pos);
     }
 
-    // A neighbour changed: re-check which edges are joined and which corners need filling
+    // A neighbour changed: re-check the shape, which edges are joined and which corners need filling
     @Override
     protected @NotNull BlockState updateShape(BlockState state, LevelReader level, ScheduledTickAccess scheduledTickAccess,
                                               BlockPos pos, Direction direction, BlockPos neighborPos,
@@ -146,6 +230,13 @@ public class CBTintableWindow extends Block implements IColorableBlock
 
     private static BlockState withConnections(BlockState state, LevelReader level, BlockPos pos)
     {
+        BendType bend = findBend(level, pos);
+        if (bend != BendType.NONE)
+        {
+            return withBendConnections(state.setValue(BEND, bend), level, pos, bend);
+        }
+
+        state = state.setValue(BEND, BendType.NONE);
         Direction facing = state.getValue(FACING);
         Direction left = leftOf(facing);
         Direction right = rightOf(facing);
@@ -167,11 +258,76 @@ public class CBTintableWindow extends Block implements IColorableBlock
                 .setValue(DOWN_RIGHT, down && joinedRight && !joinsTo(facing, level, pos.below(), right));
     }
 
-    // Is there a window with the same facing on that side of pos?
+    // A bend's arm ends are always joined (that's what made it a bend); above/below join only to the same kind of bend
+    private static BlockState withBendConnections(BlockState state, LevelReader level, BlockPos pos, BendType bend)
+    {
+        boolean up = isBend(level, pos.above(), bend);
+        boolean down = isBend(level, pos.below(), bend);
+        return state
+                .setValue(UP, up)
+                .setValue(DOWN, down)
+                .setValue(LEFT, true)
+                .setValue(RIGHT, true)
+                .setValue(UP_LEFT, up && !offersArm(level, pos.above(), bend.firstArm()))
+                .setValue(UP_RIGHT, up && !offersArm(level, pos.above(), bend.secondArm()))
+                .setValue(DOWN_LEFT, down && !offersArm(level, pos.below(), bend.firstArm()))
+                .setValue(DOWN_RIGHT, down && !offersArm(level, pos.below(), bend.secondArm()));
+    }
+
+    // Bend when there's exactly one in-line window on an east/west side and exactly one on a north/south side
+    private static BendType findBend(LevelReader level, BlockPos pos)
+    {
+        Direction xSide = null;
+        Direction zSide = null;
+        int xCount = 0;
+        int zCount = 0;
+        for (Direction side : Direction.Plane.HORIZONTAL)
+        {
+            if (!offersArm(level, pos, side)) continue;
+            if (side.getAxis() == Direction.Axis.X)
+            {
+                xSide = side;
+                xCount++;
+            }
+            else
+            {
+                zSide = side;
+                zCount++;
+            }
+        }
+        return xCount == 1 && zCount == 1 ? BendType.withArms(xSide, zSide) : BendType.NONE;
+    }
+
+    // Does the window on that side of pos line up with pos, so that pos could join to it?
+    private static boolean offersArm(LevelReader level, BlockPos pos, Direction side)
+    {
+        BlockState neighbor = level.getBlockState(pos.relative(side));
+        if (!(neighbor.getBlock() instanceof CBTintableWindow)) return false;
+
+        BendType neighborBend = neighbor.getValue(BEND);
+        if (neighborBend != BendType.NONE) return neighborBend.hasArm(side.getOpposite());
+        return runsAlong(neighbor.getValue(FACING)) == side.getAxis();
+    }
+
+    private static boolean isBend(LevelReader level, BlockPos pos, BendType bend)
+    {
+        BlockState state = level.getBlockState(pos);
+        return state.getBlock() instanceof CBTintableWindow && state.getValue(BEND) == bend;
+    }
+
+    // Can a straight window with this facing join to the window on that side of pos?
     private static boolean joinsTo(Direction facing, LevelReader level, BlockPos pos, Direction side)
     {
         BlockState neighbor = level.getBlockState(pos.relative(side));
-        return neighbor.getBlock() instanceof CBTintableWindow && neighbor.getValue(FACING) == facing;
+        if (!(neighbor.getBlock() instanceof CBTintableWindow)) return false;
+
+        BendType neighborBend = neighbor.getValue(BEND);
+        if (neighborBend != BendType.NONE)
+        {
+            // A straight window joins a bend only through the end of one of its arms
+            return side.getAxis().isHorizontal() && neighborBend.hasArm(side.getOpposite());
+        }
+        return neighbor.getValue(FACING) == facing;
     }
 
     // ---- Tint regions ----
@@ -187,7 +343,8 @@ public class CBTintableWindow extends Block implements IColorableBlock
     public int getTintRegion(BlockState state, BlockHitResult hit)
     {
         Vec3 pixel = CBPixelBox.pixelInside(hit);
-        int turns = yTurns(state.getValue(FACING));
+        BendType bend = state.getValue(BEND);
+        int turns = bend != BendType.NONE ? bend.yTurns() : yTurns(state.getValue(FACING));
         for (CBPixelBox frame : frameBoxes(state))
         {
             if (frame.rotateY(turns).contains(pixel)) return FRAME_REGION;
@@ -195,9 +352,21 @@ public class CBTintableWindow extends Block implements IColorableBlock
         return GLASS_REGION;
     }
 
+    // All frame boxes present in this state, in model space
     private static List<CBPixelBox> frameBoxes(BlockState state)
     {
         List<CBPixelBox> boxes = new ArrayList<>();
+        if (state.getValue(BEND) != BendType.NONE)
+        {
+            if (!state.getValue(UP)) { boxes.add(BEND_TOP_WEST); boxes.add(BEND_TOP_NORTH); }
+            if (!state.getValue(DOWN)) { boxes.add(BEND_BOTTOM_WEST); boxes.add(BEND_BOTTOM_NORTH); }
+            if (state.getValue(UP_LEFT)) boxes.add(BEND_FIRST_UP);
+            if (state.getValue(UP_RIGHT)) boxes.add(BEND_SECOND_UP);
+            if (state.getValue(DOWN_LEFT)) boxes.add(BEND_FIRST_DOWN);
+            if (state.getValue(DOWN_RIGHT)) boxes.add(BEND_SECOND_DOWN);
+            return boxes;
+        }
+
         if (!state.getValue(UP)) boxes.add(FRAME_UP);
         if (!state.getValue(DOWN)) boxes.add(FRAME_DOWN);
         if (!state.getValue(LEFT)) boxes.add(FRAME_LEFT);
@@ -227,10 +396,17 @@ public class CBTintableWindow extends Block implements IColorableBlock
 
     // ---- Rotation (structures, other mods' rotation tools) ----
 
-    // Left/right are relative to the facing, so some turns swap which neighbour counts as left
     @Override
     protected @NotNull BlockState rotate(BlockState state, Rotation rotation)
     {
+        // Turning a bend turns both arms; the first arm stays the first arm, so left/right keep their meaning
+        BendType bend = state.getValue(BEND);
+        if (bend != BendType.NONE)
+        {
+            return state.setValue(BEND, BendType.withArms(rotation.rotate(bend.firstArm()), rotation.rotate(bend.secondArm())));
+        }
+
+        // Straight: left/right are relative to the facing, so some turns swap which neighbour counts as left
         boolean facingEast = state.getValue(FACING) == Direction.EAST;
         return switch (rotation)
         {
@@ -248,6 +424,14 @@ public class CBTintableWindow extends Block implements IColorableBlock
     @Override
     protected @NotNull BlockState mirror(BlockState state, Mirror mirror)
     {
+        // Mirroring a bend swaps which arm comes first
+        BendType bend = state.getValue(BEND);
+        if (bend != BendType.NONE)
+        {
+            if (mirror == Mirror.NONE) return state;
+            return swapSides(state.setValue(BEND, BendType.withArms(mirror.mirror(bend.firstArm()), mirror.mirror(bend.secondArm()))));
+        }
+
         boolean facingEast = state.getValue(FACING) == Direction.EAST;
         return switch (mirror)
         {
