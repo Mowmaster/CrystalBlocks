@@ -32,5 +32,7 @@ public class CBBasicModelProvider  extends ModelProvider {
                 .accentedPillar(CBBlockRegistry.TINTABLE_STONE_ACCENTED_PILLAR.get())
                 .accentedPillarCap(CBBlockRegistry.TINTABLE_STONE_ACCENTED_PILLAR_CAP.get());
 
+        CBWindowModels.generate(blockModels, CBBlockRegistry.TINTABLE_STONE_WINDOW.get());
+
     }
 }

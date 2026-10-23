@@ -12,6 +12,12 @@ public class CBModelTemplates
     // Texture variables used by the hand-made accented models
     public static final TextureSlot TEXTURE_ONE = TextureSlot.create("texture_one");
     public static final TextureSlot TEXTURE_TWO = TextureSlot.create("texture_two");
+    public static final ModelTemplate WINDOW_FULL = create("window_tintable_singlepane_full", TEXTURE_ONE, TEXTURE_TWO);
+    public static final ModelTemplate WINDOW_ONE = create("window_tintable_singlepane_one", TEXTURE_ONE, TEXTURE_TWO);
+    public static final ModelTemplate WINDOW_TWO = create("window_tintable_singlepane_two", TEXTURE_ONE, TEXTURE_TWO);
+    public static final ModelTemplate WINDOW_THREE = create("window_tintable_singlepane_three", TEXTURE_ONE, TEXTURE_TWO);
+    public static final ModelTemplate WINDOW_FOUR = create("window_tintable_singlepane_four", TEXTURE_ONE, TEXTURE_TWO);
+    public static final ModelTemplate WINDOW_FIVE = create("window_tintable_singlepane_five", TEXTURE_ONE, TEXTURE_TWO);
 
     public static final ModelTemplate ACCENTED_PILLAR = create("accented_pillar", TEXTURE_ONE, TEXTURE_TWO);
     public static final ModelTemplate ACCENTED_PILLAR_CAP = create("accented_pillar_cap", TEXTURE_ONE, TEXTURE_TWO);

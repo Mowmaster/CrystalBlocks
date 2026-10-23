@@ -52,5 +52,8 @@ public class CrystalBlocksClient {
         event.register(List.of(new CBBlockEntityTintSource(0), new CBBlockEntityTintSource(1)),
                 CBBlockRegistry.TINTABLE_STONE_ACCENTED_PILLAR.get(),
                 CBBlockRegistry.TINTABLE_STONE_ACCENTED_PILLAR_CAP.get());
+        
+        event.register(List.of(new CBBlockEntityTintSource(0), new CBBlockEntityTintSource(1)),
+                CBBlockRegistry.TINTABLE_STONE_WINDOW.get());
     }
 }

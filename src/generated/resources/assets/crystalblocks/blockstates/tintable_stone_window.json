@@ -1,0 +1,984 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_window_full",
+        "y": 90
+      },
+      "when": {
+        "down": "false",
+        "facing": "north",
+        "left": "false",
+        "right": "false",
+        "tinted_glass": "false",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_window_full_tinted",
+        "y": 90
+      },
+      "when": {
+        "down": "false",
+        "facing": "north",
+        "left": "false",
+        "right": "false",
+        "tinted_glass": "true",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_window_one",
+        "x": 180,
+        "y": 90
+      },
+      "when": {
+        "down": "false",
+        "facing": "north",
+        "left": "false",
+        "right": "false",
+        "tinted_glass": "false",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_window_one_tinted",
+        "x": 180,
+        "y": 90
+      },
+      "when": {
+        "down": "false",
+        "facing": "north",
+        "left": "false",
+        "right": "false",
+        "tinted_glass": "true",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_window_one",
+        "y": 90
+      },
+      "when": {
+        "down": "true",
+        "facing": "north",
+        "left": "false",
+        "right": "false",
+        "tinted_glass": "false",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_window_one_tinted",
+        "y": 90
+      },
+      "when": {
+        "down": "true",
+        "facing": "north",
+        "left": "false",
+        "right": "false",
+        "tinted_glass": "true",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_window_two",
+        "y": 90
+      },
+      "when": {
+        "down": "true",
+        "facing": "north",
+        "left": "false",
+        "right": "false",
+        "tinted_glass": "false",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_window_two_tinted",
+        "y": 90
+      },
+      "when": {
+        "down": "true",
+        "facing": "north",
+        "left": "false",
+        "right": "false",
+        "tinted_glass": "true",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_window_one",
+        "x": 270,
+        "y": 90
+      },
+      "when": {
+        "down": "false",
+        "facing": "north",
+        "left": "true",
+        "right": "false",
+        "tinted_glass": "false",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_window_one_tinted",
+        "x": 270,
+        "y": 90
+      },
+      "when": {
+        "down": "false",
+        "facing": "north",
+        "left": "true",
+        "right": "false",
+        "tinted_glass": "true",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_window_three",
+        "y": 90
+      },
+      "when": {
+        "down": "false",
+        "facing": "north",
+        "left": "true",
+        "right": "false",
+        "tinted_glass": "false",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_window_three_tinted",
+        "y": 90
+      },
+      "when": {
+        "down": "false",
+        "facing": "north",
+        "left": "true",
+        "right": "false",
+        "tinted_glass": "true",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_window_three",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "down": "true",
+        "facing": "north",
+        "left": "true",
+        "right": "false",
+        "tinted_glass": "false",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_window_three_tinted",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "down": "true",
+        "facing": "north",
+        "left": "true",
+        "right": "false",
+        "tinted_glass": "true",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_window_four",
+        "x": 180,
+        "y": 90
+      },
+      "when": {
+        "down": "true",
+        "facing": "north",
+        "left": "true",
+        "right": "false",
+        "tinted_glass": "false",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_window_four_tinted",
+        "x": 180,
+        "y": 90
+      },
+      "when": {
+        "down": "true",
+        "facing": "north",
+        "left": "true",
+        "right": "false",
+        "tinted_glass": "true",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_window_one",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "down": "false",
+        "facing": "north",
+        "left": "false",
+        "right": "true",
+        "tinted_glass": "false",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_window_one_tinted",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "down": "false",
+        "facing": "north",
+        "left": "false",
+        "right": "true",
+        "tinted_glass": "true",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_window_three",
+        "x": 270,
+        "y": 90
+      },
+      "when": {
+        "down": "false",
+        "facing": "north",
+        "left": "false",
+        "right": "true",
+        "tinted_glass": "false",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_window_three_tinted",
+        "x": 270,
+        "y": 90
+      },
+      "when": {
+        "down": "false",
+        "facing": "north",
+        "left": "false",
+        "right": "true",
+        "tinted_glass": "true",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_window_three",
+        "x": 180,
+        "y": 90
+      },
+      "when": {
+        "down": "true",
+        "facing": "north",
+        "left": "false",
+        "right": "true",
+        "tinted_glass": "false",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_window_three_tinted",
+        "x": 180,
+        "y": 90
+      },
+      "when": {
+        "down": "true",
+        "facing": "north",
+        "left": "false",
+        "right": "true",
+        "tinted_glass": "true",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_window_four",
+        "y": 90
+      },
+      "when": {
+        "down": "true",
+        "facing": "north",
+        "left": "false",
+        "right": "true",
+        "tinted_glass": "false",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_window_four_tinted",
+        "y": 90
+      },
+      "when": {
+        "down": "true",
+        "facing": "north",
+        "left": "false",
+        "right": "true",
+        "tinted_glass": "true",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_window_two",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "down": "false",
+        "facing": "north",
+        "left": "true",
+        "right": "true",
+        "tinted_glass": "false",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_window_two_tinted",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "down": "false",
+        "facing": "north",
+        "left": "true",
+        "right": "true",
+        "tinted_glass": "true",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_window_four",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "down": "false",
+        "facing": "north",
+        "left": "true",
+        "right": "true",
+        "tinted_glass": "false",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_window_four_tinted",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "down": "false",
+        "facing": "north",
+        "left": "true",
+        "right": "true",
+        "tinted_glass": "true",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_window_four",
+        "x": 270,
+        "y": 90
+      },
+      "when": {
+        "down": "true",
+        "facing": "north",
+        "left": "true",
+        "right": "true",
+        "tinted_glass": "false",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_window_four_tinted",
+        "x": 270,
+        "y": 90
+      },
+      "when": {
+        "down": "true",
+        "facing": "north",
+        "left": "true",
+        "right": "true",
+        "tinted_glass": "true",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_window_five",
+        "y": 90
+      },
+      "when": {
+        "down": "true",
+        "facing": "north",
+        "left": "true",
+        "right": "true",
+        "tinted_glass": "false",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_window_five_tinted",
+        "y": 90
+      },
+      "when": {
+        "down": "true",
+        "facing": "north",
+        "left": "true",
+        "right": "true",
+        "tinted_glass": "true",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_window_corner_up_left",
+        "y": 90
+      },
+      "when": {
+        "facing": "north",
+        "up_left": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_window_corner_up_right",
+        "y": 90
+      },
+      "when": {
+        "facing": "north",
+        "up_right": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_window_corner_down_left",
+        "y": 90
+      },
+      "when": {
+        "down_left": "true",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_window_corner_down_right",
+        "y": 90
+      },
+      "when": {
+        "down_right": "true",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_window_full"
+      },
+      "when": {
+        "down": "false",
+        "facing": "east",
+        "left": "false",
+        "right": "false",
+        "tinted_glass": "false",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_window_full_tinted"
+      },
+      "when": {
+        "down": "false",
+        "facing": "east",
+        "left": "false",
+        "right": "false",
+        "tinted_glass": "true",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_window_one",
+        "x": 180
+      },
+      "when": {
+        "down": "false",
+        "facing": "east",
+        "left": "false",
+        "right": "false",
+        "tinted_glass": "false",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_window_one_tinted",
+        "x": 180
+      },
+      "when": {
+        "down": "false",
+        "facing": "east",
+        "left": "false",
+        "right": "false",
+        "tinted_glass": "true",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_window_one"
+      },
+      "when": {
+        "down": "true",
+        "facing": "east",
+        "left": "false",
+        "right": "false",
+        "tinted_glass": "false",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_window_one_tinted"
+      },
+      "when": {
+        "down": "true",
+        "facing": "east",
+        "left": "false",
+        "right": "false",
+        "tinted_glass": "true",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_window_two"
+      },
+      "when": {
+        "down": "true",
+        "facing": "east",
+        "left": "false",
+        "right": "false",
+        "tinted_glass": "false",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_window_two_tinted"
+      },
+      "when": {
+        "down": "true",
+        "facing": "east",
+        "left": "false",
+        "right": "false",
+        "tinted_glass": "true",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_window_one",
+        "x": 270
+      },
+      "when": {
+        "down": "false",
+        "facing": "east",
+        "left": "true",
+        "right": "false",
+        "tinted_glass": "false",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_window_one_tinted",
+        "x": 270
+      },
+      "when": {
+        "down": "false",
+        "facing": "east",
+        "left": "true",
+        "right": "false",
+        "tinted_glass": "true",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_window_three"
+      },
+      "when": {
+        "down": "false",
+        "facing": "east",
+        "left": "true",
+        "right": "false",
+        "tinted_glass": "false",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_window_three_tinted"
+      },
+      "when": {
+        "down": "false",
+        "facing": "east",
+        "left": "true",
+        "right": "false",
+        "tinted_glass": "true",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_window_three",
+        "x": 90
+      },
+      "when": {
+        "down": "true",
+        "facing": "east",
+        "left": "true",
+        "right": "false",
+        "tinted_glass": "false",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_window_three_tinted",
+        "x": 90
+      },
+      "when": {
+        "down": "true",
+        "facing": "east",
+        "left": "true",
+        "right": "false",
+        "tinted_glass": "true",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_window_four",
+        "x": 180
+      },
+      "when": {
+        "down": "true",
+        "facing": "east",
+        "left": "true",
+        "right": "false",
+        "tinted_glass": "false",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_window_four_tinted",
+        "x": 180
+      },
+      "when": {
+        "down": "true",
+        "facing": "east",
+        "left": "true",
+        "right": "false",
+        "tinted_glass": "true",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_window_one",
+        "x": 90
+      },
+      "when": {
+        "down": "false",
+        "facing": "east",
+        "left": "false",
+        "right": "true",
+        "tinted_glass": "false",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_window_one_tinted",
+        "x": 90
+      },
+      "when": {
+        "down": "false",
+        "facing": "east",
+        "left": "false",
+        "right": "true",
+        "tinted_glass": "true",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_window_three",
+        "x": 270
+      },
+      "when": {
+        "down": "false",
+        "facing": "east",
+        "left": "false",
+        "right": "true",
+        "tinted_glass": "false",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_window_three_tinted",
+        "x": 270
+      },
+      "when": {
+        "down": "false",
+        "facing": "east",
+        "left": "false",
+        "right": "true",
+        "tinted_glass": "true",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_window_three",
+        "x": 180
+      },
+      "when": {
+        "down": "true",
+        "facing": "east",
+        "left": "false",
+        "right": "true",
+        "tinted_glass": "false",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_window_three_tinted",
+        "x": 180
+      },
+      "when": {
+        "down": "true",
+        "facing": "east",
+        "left": "false",
+        "right": "true",
+        "tinted_glass": "true",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_window_four"
+      },
+      "when": {
+        "down": "true",
+        "facing": "east",
+        "left": "false",
+        "right": "true",
+        "tinted_glass": "false",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_window_four_tinted"
+      },
+      "when": {
+        "down": "true",
+        "facing": "east",
+        "left": "false",
+        "right": "true",
+        "tinted_glass": "true",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_window_two",
+        "x": 90
+      },
+      "when": {
+        "down": "false",
+        "facing": "east",
+        "left": "true",
+        "right": "true",
+        "tinted_glass": "false",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_window_two_tinted",
+        "x": 90
+      },
+      "when": {
+        "down": "false",
+        "facing": "east",
+        "left": "true",
+        "right": "true",
+        "tinted_glass": "true",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_window_four",
+        "x": 90
+      },
+      "when": {
+        "down": "false",
+        "facing": "east",
+        "left": "true",
+        "right": "true",
+        "tinted_glass": "false",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_window_four_tinted",
+        "x": 90
+      },
+      "when": {
+        "down": "false",
+        "facing": "east",
+        "left": "true",
+        "right": "true",
+        "tinted_glass": "true",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_window_four",
+        "x": 270
+      },
+      "when": {
+        "down": "true",
+        "facing": "east",
+        "left": "true",
+        "right": "true",
+        "tinted_glass": "false",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_window_four_tinted",
+        "x": 270
+      },
+      "when": {
+        "down": "true",
+        "facing": "east",
+        "left": "true",
+        "right": "true",
+        "tinted_glass": "true",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_window_five"
+      },
+      "when": {
+        "down": "true",
+        "facing": "east",
+        "left": "true",
+        "right": "true",
+        "tinted_glass": "false",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_window_five_tinted"
+      },
+      "when": {
+        "down": "true",
+        "facing": "east",
+        "left": "true",
+        "right": "true",
+        "tinted_glass": "true",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_window_corner_up_left"
+      },
+      "when": {
+        "facing": "east",
+        "up_left": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_window_corner_up_right"
+      },
+      "when": {
+        "facing": "east",
+        "up_right": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_window_corner_down_left"
+      },
+      "when": {
+        "down_left": "true",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_window_corner_down_right"
+      },
+      "when": {
+        "down_right": "true",
+        "facing": "east"
+      }
+    }
+  ]
+}

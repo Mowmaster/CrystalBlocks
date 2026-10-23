@@ -53,6 +53,11 @@ public class CBBlockRegistry
             properties -> new CBAccentedPillarCap(properties
                     .mapColor(MapColor.STONE).sound(SoundType.STONE).strength(2f).requiresCorrectToolForDrops()));
 
+    public static final DeferredBlock<Block> TINTABLE_STONE_WINDOW = registerBlock("tintable_stone_window",
+            properties -> new CBTintableWindow(properties
+                    .mapColor(MapColor.STONE).sound(SoundType.STONE).strength(2f).requiresCorrectToolForDrops()
+                    .noOcclusion()));
+
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Function<BlockBehaviour.Properties, T> function)
     {

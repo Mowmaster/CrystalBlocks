@@ -3,8 +3,8 @@ NeoForge 26.3.0.94, Minecraft 26.3. I’m coming from 1.20 and JDK 8. Explain ne
 - All blocks are "tintable": one non-ticking block entity (`CBTintBlockEntity`) stores an RGB colour per tint region.
 - Every dyeable block implements `IColorableBlock` (creates the block entity, handles dyeing with leather-armour mixing). Override `getTintRegionCount` / `getTintRegion` / `getRegionForTintIndex` / `getAddedRegion` for multi-region blocks (see `CBTintableSlab`).
 - Colouring is free (no dye consumed). There is no washing. Broken blocks always drop at the default colour (plain `dropSelf`, no `copy_components`).
-- Shapes done: full block, stairs, two-tone slab, vertical slab, wall, button, pressure plate, vertical column, horizontal column.
-- New shape checklist: block class + registry + `CBTintedBlockFamily` method + client tint source + pickaxe tag + loot table + creative tab + lang. `CBBlockEntityRegistry` picks up `IColorableBlock`s automatically.
+- Shapes done: full block, stairs, two-tone slab, vertical slab, wall, button, pressure plate, vertical column, horizontal column, accented pillar (wall/floor/ceiling), accented pillar cap.
+- Custom Blockbench models with body (tintindex 0) + accent (tintindex 1): extend `CBAccentedBlock`, list the model's element boxes (north-facing) as `CBPixelBox`es, and return the blockstate x/y quarter turns per state. Shapes, click-to-dye-region and datagen rotations all come from those. Hand-made parent models live in `models/block/` and use `texture_one` / `texture_two` (`CBModelTemplates.TEXTURE_ONE/TWO`).- New shape checklist: block class + registry + `CBTintedBlockFamily` method + client tint source + pickaxe tag + loot table + creative tab + lang. `CBBlockEntityRegistry` picks up `IColorableBlock`s automatically.
 - Datagen: models via `CBTintedBlockFamily` (hand-written `tinted_*` parent models, or `ExtendedModelTemplateBuilder` for generated ones). Recipes and loot tables go through `GatherDataRegistryEntriesEvent`.
 
 ## Ideas, not started

@@ -27,7 +27,8 @@ public class CBTagProviderBlock extends BlockTagsProvider {
                 .add(CBBlockRegistry.TINTABLE_STONE_COLUMN.key())
                 .add(CBBlockRegistry.TINTABLE_STONE_HORIZONTAL_COLUMN.key())
                 .add(CBBlockRegistry.TINTABLE_STONE_ACCENTED_PILLAR.key())
-                .add(CBBlockRegistry.TINTABLE_STONE_ACCENTED_PILLAR_CAP.key());
+                .add(CBBlockRegistry.TINTABLE_STONE_ACCENTED_PILLAR_CAP.key())
+                .add(CBBlockRegistry.TINTABLE_STONE_WINDOW.key());
 
         tag(BlockTags.WALLS)
                 .add(CBBlockRegistry.TINTABLE_STONE_WALL.key());
