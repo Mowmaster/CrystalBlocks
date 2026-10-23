@@ -14,6 +14,9 @@ import net.minecraft.client.data.models.model.TextureSlot;
 import net.minecraft.core.Direction;
 import net.neoforged.neoforge.client.model.generators.template.ExtendedModelTemplateBuilder;
 import com.mowmaster.crystalblocks.Blocks.Colorable.CBTintableHorizontalColumn;
+import com.mowmaster.crystalblocks.Blocks.Colorable.CBAccentedPillarCap;
+import net.minecraft.client.data.models.MultiVariant;
+import com.mowmaster.crystalblocks.Blocks.Colorable.CBAccentedPillar;
 
 public class CBTintedBlockFamily
 {
@@ -156,6 +159,65 @@ public class CBTintedBlockFamily
         // The item shows a centred north-south beam
         tintedItem(column, models[axisIndex(Direction.Axis.Z)][maxOffset / 2][maxOffset / 2]);
         return this;
+    }
+
+    public CBTintedBlockFamily accentedPillar(Block pillar)
+    {
+        Identifier model = CBModelTemplates.ACCENTED_PILLAR.create(pillar, accentTextures(), blockModels.modelOutput);
+        blockModels.blockStateOutput.accept(MultiVariantGenerator.dispatch(pillar)
+                .with(PropertyDispatch.initial(CBAccentedPillar.FACING, CBAccentedPillar.AXIS)
+                        .generate((facing, axis) -> rotatedVariant(model,
+                                CBAccentedPillar.xTurnsFor(facing),
+                                CBAccentedPillar.yTurnsFor(facing, axis)))));
+        twoToneItem(pillar, model);
+        return this;
+    }
+
+    public CBTintedBlockFamily accentedPillarCap(Block cap)
+    {
+        Identifier model = CBModelTemplates.ACCENTED_PILLAR_CAP.create(cap, accentTextures(), blockModels.modelOutput);
+        blockModels.blockStateOutput.accept(MultiVariantGenerator.dispatch(cap)
+                .with(PropertyDispatch.initial(CBAccentedPillarCap.FACING, CBAccentedPillarCap.HALF)
+                        .generate((facing, half) -> rotatedVariant(model,
+                                CBAccentedPillarCap.xTurnsFor(half),
+                                CBAccentedPillarCap.yTurnsFor(facing, half)))));
+        twoToneItem(cap, model);
+        return this;
+    }
+
+    // A north-facing model rotated by x then y quarter turns, the same order the game applies them
+    private static MultiVariant rotatedVariant(Identifier model, int xQuarterTurns, int yQuarterTurns)
+    {
+        MultiVariant variant = BlockModelGenerators.plainVariant(model);
+        variant = switch (xQuarterTurns % 4)
+        {
+            case 1 -> variant.with(BlockModelGenerators.X_ROT_90);
+            case 2 -> variant.with(BlockModelGenerators.X_ROT_180);
+            case 3 -> variant.with(BlockModelGenerators.X_ROT_270);
+            default -> variant;
+        };
+        return switch (yQuarterTurns % 4)
+        {
+            case 1 -> variant.with(BlockModelGenerators.Y_ROT_90);
+            case 2 -> variant.with(BlockModelGenerators.Y_ROT_180);
+            case 3 -> variant.with(BlockModelGenerators.Y_ROT_270);
+            default -> variant;
+        };
+    }
+
+    // Both texture variables use the family's base texture; the two tints are what make them look different
+    private TextureMapping accentTextures()
+    {
+        var texture = textures.get(TextureSlot.ALL);
+        return textures
+                .copyAndUpdate(CBModelTemplates.TEXTURE_ONE, texture)
+                .copyAndUpdate(CBModelTemplates.TEXTURE_TWO, texture);
+    }
+
+    // Item with both tint indexes using the family's item tint
+    private void twoToneItem(Block block, Identifier model)
+    {
+        blockModels.itemModelOutput.accept(block.asItem(), ItemModelUtils.tintedModel(model, itemTint, itemTint));
     }
 
     private static int axisIndex(Direction.Axis axis)

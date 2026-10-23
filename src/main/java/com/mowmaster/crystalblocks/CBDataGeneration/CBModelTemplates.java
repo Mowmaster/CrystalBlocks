@@ -9,6 +9,15 @@ import java.util.Optional;
 
 public class CBModelTemplates
 {
+    // Texture variables used by the hand-made accented models
+    public static final TextureSlot TEXTURE_ONE = TextureSlot.create("texture_one");
+    public static final TextureSlot TEXTURE_TWO = TextureSlot.create("texture_two");
+
+    public static final ModelTemplate ACCENTED_PILLAR = create("accented_pillar", TEXTURE_ONE, TEXTURE_TWO);
+    public static final ModelTemplate ACCENTED_PILLAR_CAP = create("accented_pillar_cap", TEXTURE_ONE, TEXTURE_TWO);
+
+
+
     public static final ModelTemplate TINTED_CUBE_ALL = create("tinted_cube_all", TextureSlot.ALL);
 
     public static final ModelTemplate TINTED_STAIRS_STRAIGHT = create("tinted_stairs", TextureSlot.BOTTOM, TextureSlot.TOP, TextureSlot.SIDE);

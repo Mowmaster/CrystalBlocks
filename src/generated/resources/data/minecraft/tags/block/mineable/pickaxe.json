@@ -8,6 +8,8 @@
     "crystalblocks:tintable_stone_button",
     "crystalblocks:tintable_stone_pressureplate",
     "crystalblocks:tintable_stone_column",
-    "crystalblocks:tintable_stone_horizontal_column"
+    "crystalblocks:tintable_stone_horizontal_column",
+    "crystalblocks:tintable_stone_accented_pillar",
+    "crystalblocks:tintable_stone_accented_pillar_cap"
   ]
 }

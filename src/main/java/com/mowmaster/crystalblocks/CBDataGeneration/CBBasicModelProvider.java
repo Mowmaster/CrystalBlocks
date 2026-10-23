@@ -28,7 +28,9 @@ public class CBBasicModelProvider  extends ModelProvider {
                 .button(CBBlockRegistry.TINTABLE_STONE_BUTTON.get())
                 .pressurePlate(CBBlockRegistry.TINTABLE_STONE_PRESSUREPLATE.get())
                 .column(CBBlockRegistry.TINTABLE_STONE_COLUMN.get())
-                .horizontalColumn(CBBlockRegistry.TINTABLE_STONE_HORIZONTAL_COLUMN.get());
+                .horizontalColumn(CBBlockRegistry.TINTABLE_STONE_HORIZONTAL_COLUMN.get())
+                .accentedPillar(CBBlockRegistry.TINTABLE_STONE_ACCENTED_PILLAR.get())
+                .accentedPillarCap(CBBlockRegistry.TINTABLE_STONE_ACCENTED_PILLAR_CAP.get());
 
     }
 }

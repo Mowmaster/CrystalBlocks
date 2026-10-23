@@ -1,10 +1,10 @@
 {
 	"format_version": "26.3",
 	"credit": "Made by Mowmaster using Blockbench",
+	"parent": "minecraft:block/block",
 	"textures": {
 		"0": "#texture_one",
-		"1": "#texture_two",
-		"particle": "texture_one"
+		"particle": "#texture_one"
 	},
 	"elements": [
 		{

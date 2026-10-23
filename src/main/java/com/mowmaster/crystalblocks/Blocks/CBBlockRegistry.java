@@ -46,6 +46,12 @@ public class CBBlockRegistry
     public static final DeferredBlock<Block> TINTABLE_STONE_HORIZONTAL_COLUMN = registerBlock("tintable_stone_horizontal_column",
             properties -> new CBTintableHorizontalColumn(properties
                     .mapColor(MapColor.STONE).sound(SoundType.STONE).strength(2f).requiresCorrectToolForDrops()));
+    public static final DeferredBlock<Block> TINTABLE_STONE_ACCENTED_PILLAR = registerBlock("tintable_stone_accented_pillar",
+            properties -> new CBAccentedPillar(properties
+                    .mapColor(MapColor.STONE).sound(SoundType.STONE).strength(2f).requiresCorrectToolForDrops()));
+    public static final DeferredBlock<Block> TINTABLE_STONE_ACCENTED_PILLAR_CAP = registerBlock("tintable_stone_accented_pillar_cap",
+            properties -> new CBAccentedPillarCap(properties
+                    .mapColor(MapColor.STONE).sound(SoundType.STONE).strength(2f).requiresCorrectToolForDrops()));
 
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Function<BlockBehaviour.Properties, T> function)

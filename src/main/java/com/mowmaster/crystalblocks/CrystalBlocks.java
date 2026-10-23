@@ -58,6 +58,8 @@ public class CrystalBlocks {
             event.accept(CBBlockRegistry.TINTABLE_STONE_PRESSUREPLATE);
             event.accept(CBBlockRegistry.TINTABLE_STONE_COLUMN);
             event.accept(CBBlockRegistry.TINTABLE_STONE_HORIZONTAL_COLUMN);
+            event.accept(CBBlockRegistry.TINTABLE_STONE_ACCENTED_PILLAR);
+            event.accept(CBBlockRegistry.TINTABLE_STONE_ACCENTED_PILLAR_CAP);
         }
     }
 

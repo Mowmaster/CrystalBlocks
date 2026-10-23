@@ -1,0 +1,52 @@
+{
+  "variants": {
+    "axis=x,facing=down": {
+      "model": "crystalblocks:block/tintable_stone_accented_pillar",
+      "x": 90,
+      "y": 90
+    },
+    "axis=x,facing=east": {
+      "model": "crystalblocks:block/tintable_stone_accented_pillar",
+      "y": 90
+    },
+    "axis=x,facing=north": {
+      "model": "crystalblocks:block/tintable_stone_accented_pillar"
+    },
+    "axis=x,facing=south": {
+      "model": "crystalblocks:block/tintable_stone_accented_pillar",
+      "y": 180
+    },
+    "axis=x,facing=up": {
+      "model": "crystalblocks:block/tintable_stone_accented_pillar",
+      "x": 270,
+      "y": 90
+    },
+    "axis=x,facing=west": {
+      "model": "crystalblocks:block/tintable_stone_accented_pillar",
+      "y": 270
+    },
+    "axis=z,facing=down": {
+      "model": "crystalblocks:block/tintable_stone_accented_pillar",
+      "x": 90
+    },
+    "axis=z,facing=east": {
+      "model": "crystalblocks:block/tintable_stone_accented_pillar",
+      "y": 90
+    },
+    "axis=z,facing=north": {
+      "model": "crystalblocks:block/tintable_stone_accented_pillar"
+    },
+    "axis=z,facing=south": {
+      "model": "crystalblocks:block/tintable_stone_accented_pillar",
+      "y": 180
+    },
+    "axis=z,facing=up": {
+      "model": "crystalblocks:block/tintable_stone_accented_pillar",
+      "x": 270
+    },
+    "axis=z,facing=west": {
+      "model": "crystalblocks:block/tintable_stone_accented_pillar",
+      "y": 270
+    }
+  }
+}
