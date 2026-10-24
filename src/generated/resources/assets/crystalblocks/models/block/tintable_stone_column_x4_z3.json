@@ -1,51 +1,16 @@
 {
-  "parent": "minecraft:block/block",
-  "elements": [
-    {
-      "faces": {
-        "down": {
-          "cullface": "down",
-          "texture": "#bottom",
-          "tintindex": 0
-        },
-        "east": {
-          "texture": "#side",
-          "tintindex": 0
-        },
-        "north": {
-          "texture": "#side",
-          "tintindex": 0
-        },
-        "south": {
-          "texture": "#side",
-          "tintindex": 0
-        },
-        "up": {
-          "cullface": "up",
-          "texture": "#top",
-          "tintindex": 0
-        },
-        "west": {
-          "texture": "#side",
-          "tintindex": 0
-        }
-      },
-      "from": [
-        4,
-        0,
-        3
-      ],
-      "to": [
-        12,
-        16,
-        11
-      ]
-    }
-  ],
+  "parent": "crystalblocks:block/column_template",
   "textures": {
-    "bottom": "crystalblocks:block/tintable_stone",
     "particle": "crystalblocks:block/tintable_stone",
-    "side": "crystalblocks:block/tintable_stone",
-    "top": "crystalblocks:block/tintable_stone"
+    "texture_one": "crystalblocks:block/tintable_stone",
+    "texture_two": "crystalblocks:block/tintable_stone"
+  },
+  "transform": {
+    "origin": "center",
+    "translation": [
+      0.0,
+      0.0,
+      -0.0625
+    ]
   }
 }

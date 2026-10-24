@@ -1,247 +1,2677 @@
 {
-  "variants": {
-    "x=0,z=0": {
-      "model": "crystalblocks:block/tintable_stone_column_x0_z0"
-    },
-    "x=0,z=1": {
-      "model": "crystalblocks:block/tintable_stone_column_x0_z1"
-    },
-    "x=0,z=2": {
-      "model": "crystalblocks:block/tintable_stone_column_x0_z2"
-    },
-    "x=0,z=3": {
-      "model": "crystalblocks:block/tintable_stone_column_x0_z3"
-    },
-    "x=0,z=4": {
-      "model": "crystalblocks:block/tintable_stone_column_x0_z4"
-    },
-    "x=0,z=5": {
-      "model": "crystalblocks:block/tintable_stone_column_x0_z5"
-    },
-    "x=0,z=6": {
-      "model": "crystalblocks:block/tintable_stone_column_x0_z6"
-    },
-    "x=0,z=7": {
-      "model": "crystalblocks:block/tintable_stone_column_x0_z7"
-    },
-    "x=0,z=8": {
-      "model": "crystalblocks:block/tintable_stone_column_x0_z8"
-    },
-    "x=1,z=0": {
-      "model": "crystalblocks:block/tintable_stone_column_x1_z0"
-    },
-    "x=1,z=1": {
-      "model": "crystalblocks:block/tintable_stone_column_x1_z1"
-    },
-    "x=1,z=2": {
-      "model": "crystalblocks:block/tintable_stone_column_x1_z2"
-    },
-    "x=1,z=3": {
-      "model": "crystalblocks:block/tintable_stone_column_x1_z3"
-    },
-    "x=1,z=4": {
-      "model": "crystalblocks:block/tintable_stone_column_x1_z4"
-    },
-    "x=1,z=5": {
-      "model": "crystalblocks:block/tintable_stone_column_x1_z5"
-    },
-    "x=1,z=6": {
-      "model": "crystalblocks:block/tintable_stone_column_x1_z6"
-    },
-    "x=1,z=7": {
-      "model": "crystalblocks:block/tintable_stone_column_x1_z7"
-    },
-    "x=1,z=8": {
-      "model": "crystalblocks:block/tintable_stone_column_x1_z8"
-    },
-    "x=2,z=0": {
-      "model": "crystalblocks:block/tintable_stone_column_x2_z0"
-    },
-    "x=2,z=1": {
-      "model": "crystalblocks:block/tintable_stone_column_x2_z1"
-    },
-    "x=2,z=2": {
-      "model": "crystalblocks:block/tintable_stone_column_x2_z2"
-    },
-    "x=2,z=3": {
-      "model": "crystalblocks:block/tintable_stone_column_x2_z3"
-    },
-    "x=2,z=4": {
-      "model": "crystalblocks:block/tintable_stone_column_x2_z4"
-    },
-    "x=2,z=5": {
-      "model": "crystalblocks:block/tintable_stone_column_x2_z5"
-    },
-    "x=2,z=6": {
-      "model": "crystalblocks:block/tintable_stone_column_x2_z6"
-    },
-    "x=2,z=7": {
-      "model": "crystalblocks:block/tintable_stone_column_x2_z7"
-    },
-    "x=2,z=8": {
-      "model": "crystalblocks:block/tintable_stone_column_x2_z8"
-    },
-    "x=3,z=0": {
-      "model": "crystalblocks:block/tintable_stone_column_x3_z0"
-    },
-    "x=3,z=1": {
-      "model": "crystalblocks:block/tintable_stone_column_x3_z1"
-    },
-    "x=3,z=2": {
-      "model": "crystalblocks:block/tintable_stone_column_x3_z2"
-    },
-    "x=3,z=3": {
-      "model": "crystalblocks:block/tintable_stone_column_x3_z3"
-    },
-    "x=3,z=4": {
-      "model": "crystalblocks:block/tintable_stone_column_x3_z4"
-    },
-    "x=3,z=5": {
-      "model": "crystalblocks:block/tintable_stone_column_x3_z5"
-    },
-    "x=3,z=6": {
-      "model": "crystalblocks:block/tintable_stone_column_x3_z6"
-    },
-    "x=3,z=7": {
-      "model": "crystalblocks:block/tintable_stone_column_x3_z7"
-    },
-    "x=3,z=8": {
-      "model": "crystalblocks:block/tintable_stone_column_x3_z8"
-    },
-    "x=4,z=0": {
-      "model": "crystalblocks:block/tintable_stone_column_x4_z0"
-    },
-    "x=4,z=1": {
-      "model": "crystalblocks:block/tintable_stone_column_x4_z1"
-    },
-    "x=4,z=2": {
-      "model": "crystalblocks:block/tintable_stone_column_x4_z2"
-    },
-    "x=4,z=3": {
-      "model": "crystalblocks:block/tintable_stone_column_x4_z3"
-    },
-    "x=4,z=4": {
-      "model": "crystalblocks:block/tintable_stone_column_x4_z4"
-    },
-    "x=4,z=5": {
-      "model": "crystalblocks:block/tintable_stone_column_x4_z5"
-    },
-    "x=4,z=6": {
-      "model": "crystalblocks:block/tintable_stone_column_x4_z6"
-    },
-    "x=4,z=7": {
-      "model": "crystalblocks:block/tintable_stone_column_x4_z7"
-    },
-    "x=4,z=8": {
-      "model": "crystalblocks:block/tintable_stone_column_x4_z8"
-    },
-    "x=5,z=0": {
-      "model": "crystalblocks:block/tintable_stone_column_x5_z0"
-    },
-    "x=5,z=1": {
-      "model": "crystalblocks:block/tintable_stone_column_x5_z1"
-    },
-    "x=5,z=2": {
-      "model": "crystalblocks:block/tintable_stone_column_x5_z2"
-    },
-    "x=5,z=3": {
-      "model": "crystalblocks:block/tintable_stone_column_x5_z3"
-    },
-    "x=5,z=4": {
-      "model": "crystalblocks:block/tintable_stone_column_x5_z4"
-    },
-    "x=5,z=5": {
-      "model": "crystalblocks:block/tintable_stone_column_x5_z5"
-    },
-    "x=5,z=6": {
-      "model": "crystalblocks:block/tintable_stone_column_x5_z6"
-    },
-    "x=5,z=7": {
-      "model": "crystalblocks:block/tintable_stone_column_x5_z7"
-    },
-    "x=5,z=8": {
-      "model": "crystalblocks:block/tintable_stone_column_x5_z8"
-    },
-    "x=6,z=0": {
-      "model": "crystalblocks:block/tintable_stone_column_x6_z0"
-    },
-    "x=6,z=1": {
-      "model": "crystalblocks:block/tintable_stone_column_x6_z1"
-    },
-    "x=6,z=2": {
-      "model": "crystalblocks:block/tintable_stone_column_x6_z2"
-    },
-    "x=6,z=3": {
-      "model": "crystalblocks:block/tintable_stone_column_x6_z3"
-    },
-    "x=6,z=4": {
-      "model": "crystalblocks:block/tintable_stone_column_x6_z4"
-    },
-    "x=6,z=5": {
-      "model": "crystalblocks:block/tintable_stone_column_x6_z5"
-    },
-    "x=6,z=6": {
-      "model": "crystalblocks:block/tintable_stone_column_x6_z6"
-    },
-    "x=6,z=7": {
-      "model": "crystalblocks:block/tintable_stone_column_x6_z7"
-    },
-    "x=6,z=8": {
-      "model": "crystalblocks:block/tintable_stone_column_x6_z8"
-    },
-    "x=7,z=0": {
-      "model": "crystalblocks:block/tintable_stone_column_x7_z0"
-    },
-    "x=7,z=1": {
-      "model": "crystalblocks:block/tintable_stone_column_x7_z1"
-    },
-    "x=7,z=2": {
-      "model": "crystalblocks:block/tintable_stone_column_x7_z2"
-    },
-    "x=7,z=3": {
-      "model": "crystalblocks:block/tintable_stone_column_x7_z3"
-    },
-    "x=7,z=4": {
-      "model": "crystalblocks:block/tintable_stone_column_x7_z4"
-    },
-    "x=7,z=5": {
-      "model": "crystalblocks:block/tintable_stone_column_x7_z5"
-    },
-    "x=7,z=6": {
-      "model": "crystalblocks:block/tintable_stone_column_x7_z6"
-    },
-    "x=7,z=7": {
-      "model": "crystalblocks:block/tintable_stone_column_x7_z7"
-    },
-    "x=7,z=8": {
-      "model": "crystalblocks:block/tintable_stone_column_x7_z8"
-    },
-    "x=8,z=0": {
-      "model": "crystalblocks:block/tintable_stone_column_x8_z0"
-    },
-    "x=8,z=1": {
-      "model": "crystalblocks:block/tintable_stone_column_x8_z1"
-    },
-    "x=8,z=2": {
-      "model": "crystalblocks:block/tintable_stone_column_x8_z2"
-    },
-    "x=8,z=3": {
-      "model": "crystalblocks:block/tintable_stone_column_x8_z3"
-    },
-    "x=8,z=4": {
-      "model": "crystalblocks:block/tintable_stone_column_x8_z4"
-    },
-    "x=8,z=5": {
-      "model": "crystalblocks:block/tintable_stone_column_x8_z5"
-    },
-    "x=8,z=6": {
-      "model": "crystalblocks:block/tintable_stone_column_x8_z6"
-    },
-    "x=8,z=7": {
-      "model": "crystalblocks:block/tintable_stone_column_x8_z7"
-    },
-    "x=8,z=8": {
-      "model": "crystalblocks:block/tintable_stone_column_x8_z8"
+  "multipart": [
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x0_z0",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "0",
+        "offset_z": "0"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x0_z1",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "0",
+        "offset_z": "1"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x0_z2",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "0",
+        "offset_z": "2"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x0_z3",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "0",
+        "offset_z": "3"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x0_z4",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "0",
+        "offset_z": "4"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x0_z5",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "0",
+        "offset_z": "5"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x0_z6",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "0",
+        "offset_z": "6"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x0_z7",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "0",
+        "offset_z": "7"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x0_z8",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "0",
+        "offset_z": "8"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x1_z0",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "1",
+        "offset_z": "0"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x1_z1",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "1",
+        "offset_z": "1"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x1_z2",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "1",
+        "offset_z": "2"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x1_z3",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "1",
+        "offset_z": "3"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x1_z4",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "1",
+        "offset_z": "4"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x1_z5",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "1",
+        "offset_z": "5"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x1_z6",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "1",
+        "offset_z": "6"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x1_z7",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "1",
+        "offset_z": "7"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x1_z8",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "1",
+        "offset_z": "8"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x2_z0",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "2",
+        "offset_z": "0"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x2_z1",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "2",
+        "offset_z": "1"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x2_z2",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "2",
+        "offset_z": "2"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x2_z3",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "2",
+        "offset_z": "3"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x2_z4",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "2",
+        "offset_z": "4"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x2_z5",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "2",
+        "offset_z": "5"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x2_z6",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "2",
+        "offset_z": "6"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x2_z7",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "2",
+        "offset_z": "7"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x2_z8",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "2",
+        "offset_z": "8"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x3_z0",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "3",
+        "offset_z": "0"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x3_z1",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "3",
+        "offset_z": "1"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x3_z2",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "3",
+        "offset_z": "2"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x3_z3",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "3",
+        "offset_z": "3"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x3_z4",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "3",
+        "offset_z": "4"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x3_z5",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "3",
+        "offset_z": "5"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x3_z6",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "3",
+        "offset_z": "6"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x3_z7",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "3",
+        "offset_z": "7"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x3_z8",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "3",
+        "offset_z": "8"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x4_z0",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "4",
+        "offset_z": "0"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x4_z1",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "4",
+        "offset_z": "1"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x4_z2",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "4",
+        "offset_z": "2"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x4_z3",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "4",
+        "offset_z": "3"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x4_z4",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "4",
+        "offset_z": "4"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x4_z5",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "4",
+        "offset_z": "5"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x4_z6",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "4",
+        "offset_z": "6"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x4_z7",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "4",
+        "offset_z": "7"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x4_z8",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "4",
+        "offset_z": "8"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x5_z0",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "5",
+        "offset_z": "0"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x5_z1",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "5",
+        "offset_z": "1"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x5_z2",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "5",
+        "offset_z": "2"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x5_z3",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "5",
+        "offset_z": "3"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x5_z4",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "5",
+        "offset_z": "4"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x5_z5",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "5",
+        "offset_z": "5"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x5_z6",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "5",
+        "offset_z": "6"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x5_z7",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "5",
+        "offset_z": "7"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x5_z8",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "5",
+        "offset_z": "8"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x6_z0",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "6",
+        "offset_z": "0"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x6_z1",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "6",
+        "offset_z": "1"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x6_z2",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "6",
+        "offset_z": "2"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x6_z3",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "6",
+        "offset_z": "3"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x6_z4",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "6",
+        "offset_z": "4"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x6_z5",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "6",
+        "offset_z": "5"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x6_z6",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "6",
+        "offset_z": "6"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x6_z7",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "6",
+        "offset_z": "7"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x6_z8",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "6",
+        "offset_z": "8"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x7_z0",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "7",
+        "offset_z": "0"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x7_z1",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "7",
+        "offset_z": "1"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x7_z2",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "7",
+        "offset_z": "2"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x7_z3",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "7",
+        "offset_z": "3"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x7_z4",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "7",
+        "offset_z": "4"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x7_z5",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "7",
+        "offset_z": "5"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x7_z6",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "7",
+        "offset_z": "6"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x7_z7",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "7",
+        "offset_z": "7"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x7_z8",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "7",
+        "offset_z": "8"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x8_z0",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "8",
+        "offset_z": "0"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x8_z1",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "8",
+        "offset_z": "1"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x8_z2",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "8",
+        "offset_z": "2"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x8_z3",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "8",
+        "offset_z": "3"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x8_z4",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "8",
+        "offset_z": "4"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x8_z5",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "8",
+        "offset_z": "5"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x8_z6",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "8",
+        "offset_z": "6"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x8_z7",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "8",
+        "offset_z": "7"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x8_z8",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "axis": "x",
+        "offset_x": "8",
+        "offset_z": "8"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x0_z0"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "0",
+        "offset_z": "0"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x0_z1"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "0",
+        "offset_z": "1"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x0_z2"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "0",
+        "offset_z": "2"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x0_z3"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "0",
+        "offset_z": "3"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x0_z4"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "0",
+        "offset_z": "4"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x0_z5"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "0",
+        "offset_z": "5"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x0_z6"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "0",
+        "offset_z": "6"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x0_z7"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "0",
+        "offset_z": "7"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x0_z8"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "0",
+        "offset_z": "8"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x1_z0"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "1",
+        "offset_z": "0"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x1_z1"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "1",
+        "offset_z": "1"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x1_z2"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "1",
+        "offset_z": "2"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x1_z3"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "1",
+        "offset_z": "3"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x1_z4"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "1",
+        "offset_z": "4"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x1_z5"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "1",
+        "offset_z": "5"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x1_z6"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "1",
+        "offset_z": "6"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x1_z7"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "1",
+        "offset_z": "7"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x1_z8"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "1",
+        "offset_z": "8"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x2_z0"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "2",
+        "offset_z": "0"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x2_z1"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "2",
+        "offset_z": "1"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x2_z2"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "2",
+        "offset_z": "2"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x2_z3"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "2",
+        "offset_z": "3"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x2_z4"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "2",
+        "offset_z": "4"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x2_z5"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "2",
+        "offset_z": "5"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x2_z6"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "2",
+        "offset_z": "6"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x2_z7"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "2",
+        "offset_z": "7"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x2_z8"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "2",
+        "offset_z": "8"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x3_z0"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "3",
+        "offset_z": "0"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x3_z1"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "3",
+        "offset_z": "1"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x3_z2"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "3",
+        "offset_z": "2"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x3_z3"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "3",
+        "offset_z": "3"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x3_z4"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "3",
+        "offset_z": "4"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x3_z5"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "3",
+        "offset_z": "5"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x3_z6"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "3",
+        "offset_z": "6"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x3_z7"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "3",
+        "offset_z": "7"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x3_z8"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "3",
+        "offset_z": "8"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x4_z0"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "4",
+        "offset_z": "0"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x4_z1"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "4",
+        "offset_z": "1"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x4_z2"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "4",
+        "offset_z": "2"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x4_z3"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "4",
+        "offset_z": "3"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x4_z4"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "4",
+        "offset_z": "4"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x4_z5"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "4",
+        "offset_z": "5"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x4_z6"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "4",
+        "offset_z": "6"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x4_z7"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "4",
+        "offset_z": "7"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x4_z8"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "4",
+        "offset_z": "8"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x5_z0"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "5",
+        "offset_z": "0"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x5_z1"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "5",
+        "offset_z": "1"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x5_z2"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "5",
+        "offset_z": "2"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x5_z3"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "5",
+        "offset_z": "3"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x5_z4"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "5",
+        "offset_z": "4"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x5_z5"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "5",
+        "offset_z": "5"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x5_z6"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "5",
+        "offset_z": "6"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x5_z7"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "5",
+        "offset_z": "7"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x5_z8"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "5",
+        "offset_z": "8"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x6_z0"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "6",
+        "offset_z": "0"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x6_z1"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "6",
+        "offset_z": "1"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x6_z2"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "6",
+        "offset_z": "2"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x6_z3"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "6",
+        "offset_z": "3"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x6_z4"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "6",
+        "offset_z": "4"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x6_z5"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "6",
+        "offset_z": "5"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x6_z6"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "6",
+        "offset_z": "6"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x6_z7"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "6",
+        "offset_z": "7"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x6_z8"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "6",
+        "offset_z": "8"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x7_z0"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "7",
+        "offset_z": "0"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x7_z1"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "7",
+        "offset_z": "1"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x7_z2"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "7",
+        "offset_z": "2"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x7_z3"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "7",
+        "offset_z": "3"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x7_z4"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "7",
+        "offset_z": "4"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x7_z5"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "7",
+        "offset_z": "5"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x7_z6"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "7",
+        "offset_z": "6"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x7_z7"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "7",
+        "offset_z": "7"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x7_z8"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "7",
+        "offset_z": "8"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x8_z0"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "8",
+        "offset_z": "0"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x8_z1"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "8",
+        "offset_z": "1"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x8_z2"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "8",
+        "offset_z": "2"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x8_z3"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "8",
+        "offset_z": "3"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x8_z4"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "8",
+        "offset_z": "4"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x8_z5"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "8",
+        "offset_z": "5"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x8_z6"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "8",
+        "offset_z": "6"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x8_z7"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "8",
+        "offset_z": "7"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x8_z8"
+      },
+      "when": {
+        "axis": "y",
+        "offset_x": "8",
+        "offset_z": "8"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x0_z0",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "0",
+        "offset_z": "0"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x0_z1",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "0",
+        "offset_z": "1"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x0_z2",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "0",
+        "offset_z": "2"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x0_z3",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "0",
+        "offset_z": "3"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x0_z4",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "0",
+        "offset_z": "4"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x0_z5",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "0",
+        "offset_z": "5"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x0_z6",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "0",
+        "offset_z": "6"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x0_z7",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "0",
+        "offset_z": "7"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x0_z8",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "0",
+        "offset_z": "8"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x1_z0",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "1",
+        "offset_z": "0"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x1_z1",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "1",
+        "offset_z": "1"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x1_z2",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "1",
+        "offset_z": "2"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x1_z3",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "1",
+        "offset_z": "3"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x1_z4",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "1",
+        "offset_z": "4"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x1_z5",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "1",
+        "offset_z": "5"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x1_z6",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "1",
+        "offset_z": "6"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x1_z7",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "1",
+        "offset_z": "7"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x1_z8",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "1",
+        "offset_z": "8"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x2_z0",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "2",
+        "offset_z": "0"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x2_z1",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "2",
+        "offset_z": "1"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x2_z2",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "2",
+        "offset_z": "2"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x2_z3",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "2",
+        "offset_z": "3"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x2_z4",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "2",
+        "offset_z": "4"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x2_z5",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "2",
+        "offset_z": "5"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x2_z6",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "2",
+        "offset_z": "6"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x2_z7",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "2",
+        "offset_z": "7"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x2_z8",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "2",
+        "offset_z": "8"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x3_z0",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "3",
+        "offset_z": "0"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x3_z1",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "3",
+        "offset_z": "1"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x3_z2",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "3",
+        "offset_z": "2"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x3_z3",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "3",
+        "offset_z": "3"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x3_z4",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "3",
+        "offset_z": "4"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x3_z5",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "3",
+        "offset_z": "5"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x3_z6",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "3",
+        "offset_z": "6"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x3_z7",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "3",
+        "offset_z": "7"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x3_z8",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "3",
+        "offset_z": "8"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x4_z0",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "4",
+        "offset_z": "0"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x4_z1",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "4",
+        "offset_z": "1"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x4_z2",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "4",
+        "offset_z": "2"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x4_z3",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "4",
+        "offset_z": "3"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x4_z4",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "4",
+        "offset_z": "4"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x4_z5",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "4",
+        "offset_z": "5"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x4_z6",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "4",
+        "offset_z": "6"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x4_z7",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "4",
+        "offset_z": "7"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x4_z8",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "4",
+        "offset_z": "8"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x5_z0",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "5",
+        "offset_z": "0"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x5_z1",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "5",
+        "offset_z": "1"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x5_z2",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "5",
+        "offset_z": "2"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x5_z3",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "5",
+        "offset_z": "3"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x5_z4",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "5",
+        "offset_z": "4"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x5_z5",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "5",
+        "offset_z": "5"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x5_z6",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "5",
+        "offset_z": "6"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x5_z7",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "5",
+        "offset_z": "7"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x5_z8",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "5",
+        "offset_z": "8"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x6_z0",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "6",
+        "offset_z": "0"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x6_z1",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "6",
+        "offset_z": "1"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x6_z2",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "6",
+        "offset_z": "2"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x6_z3",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "6",
+        "offset_z": "3"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x6_z4",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "6",
+        "offset_z": "4"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x6_z5",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "6",
+        "offset_z": "5"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x6_z6",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "6",
+        "offset_z": "6"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x6_z7",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "6",
+        "offset_z": "7"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x6_z8",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "6",
+        "offset_z": "8"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x7_z0",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "7",
+        "offset_z": "0"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x7_z1",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "7",
+        "offset_z": "1"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x7_z2",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "7",
+        "offset_z": "2"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x7_z3",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "7",
+        "offset_z": "3"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x7_z4",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "7",
+        "offset_z": "4"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x7_z5",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "7",
+        "offset_z": "5"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x7_z6",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "7",
+        "offset_z": "6"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x7_z7",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "7",
+        "offset_z": "7"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x7_z8",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "7",
+        "offset_z": "8"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x8_z0",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "8",
+        "offset_z": "0"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x8_z1",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "8",
+        "offset_z": "1"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x8_z2",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "8",
+        "offset_z": "2"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x8_z3",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "8",
+        "offset_z": "3"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x8_z4",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "8",
+        "offset_z": "4"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x8_z5",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "8",
+        "offset_z": "5"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x8_z6",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "8",
+        "offset_z": "6"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x8_z7",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "8",
+        "offset_z": "7"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_stone_column_x8_z8",
+        "x": 90
+      },
+      "when": {
+        "axis": "z",
+        "offset_x": "8",
+        "offset_z": "8"
+      }
     }
-  }
+  ]
 }
