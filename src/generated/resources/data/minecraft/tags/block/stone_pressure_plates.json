@@ -1,5 +1,8 @@
 {
   "values": [
-    "crystalblocks:tintable_stone_pressureplate"
+    "crystalblocks:tintable_stone_pressureplate",
+    "crystalblocks:tintable_brick_large_pressureplate",
+    "crystalblocks:tintable_brick_medium_pressureplate",
+    "crystalblocks:tintable_brick_small_pressureplate"
   ]
 }

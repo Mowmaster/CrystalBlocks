@@ -1,5 +1,10 @@
 {
   "values": [
-    "crystalblocks:tintable_stone_stairs"
+    "crystalblocks:tintable_stone_stairs",
+    "crystalblocks:tintable_brick_large_stairs",
+    "crystalblocks:tintable_brick_medium_stairs",
+    "crystalblocks:tintable_brick_small_stairs",
+    "crystalblocks:tintable_log_one_stairs",
+    "crystalblocks:tintable_metal_stairs"
   ]
 }

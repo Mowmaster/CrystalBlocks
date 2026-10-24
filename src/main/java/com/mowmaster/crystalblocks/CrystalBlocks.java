@@ -17,6 +17,9 @@ import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
+import com.mowmaster.crystalblocks.Blocks.CBBlockSet;
+import net.minecraft.world.level.block.Block;
+import net.neoforged.neoforge.registries.DeferredBlock;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
 @Mod(CBReferences.MODID)
@@ -49,18 +52,11 @@ public class CrystalBlocks {
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
-            event.accept(CBBlockRegistry.TINTABLE_STONE);
-            event.accept(CBBlockRegistry.TINTABLE_STONE_STAIRS);
-            event.accept(CBBlockRegistry.TINTABLE_STONE_SLAB);
-            event.accept(CBBlockRegistry.TINTABLE_STONE_VERTICAL_SLAB);
-            event.accept(CBBlockRegistry.TINTABLE_STONE_WALL);
-            event.accept(CBBlockRegistry.TINTABLE_STONE_BUTTON);
-            event.accept(CBBlockRegistry.TINTABLE_STONE_PRESSUREPLATE);
-            event.accept(CBBlockRegistry.TINTABLE_STONE_COLUMN);
-            event.accept(CBBlockRegistry.TINTABLE_STONE_HORIZONTAL_COLUMN);
-            event.accept(CBBlockRegistry.TINTABLE_STONE_ACCENTED_PILLAR);
-            event.accept(CBBlockRegistry.TINTABLE_STONE_ACCENTED_PILLAR_CAP);
-            event.accept(CBBlockRegistry.TINTABLE_STONE_WINDOW);
+            for (CBBlockSet set : CBBlockRegistry.SETS) {
+                for (DeferredBlock<Block> block : set.blocks()) {
+                    event.accept(block);
+                }
+            }
         }
     }
 

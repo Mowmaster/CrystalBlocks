@@ -4,60 +4,64 @@ import com.mowmaster.crystalblocks.Blocks.Colorable.*;
 import com.mowmaster.crystalblocks.CBReferences;
 import com.mowmaster.crystalblocks.Items.CBItemRegistry;
 import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.level.block.*;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.block.state.properties.BlockSetType;
-import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
+import java.util.List;
 import java.util.function.Function;
 
 public class CBBlockRegistry
 {
     public static final DeferredRegister.Blocks BCBLOCKS = DeferredRegister.createBlocks(CBReferences.MODID);
 
-    public static final DeferredBlock<Block> TINTABLE_STONE = registerBlock("tintable_stone",
-            properties -> new CBTintableBlock(properties
-                    .mapColor(MapColor.STONE).sound(SoundType.STONE).strength(2f).requiresCorrectToolForDrops()));
-    public static final DeferredBlock<Block> TINTABLE_STONE_STAIRS = registerBlock("tintable_stone_stairs",
-            properties -> new CBTintableStairs(CBBlockRegistry.TINTABLE_STONE.get().defaultBlockState(), properties
-                    .mapColor(MapColor.STONE).sound(SoundType.STONE).strength(2f).requiresCorrectToolForDrops()));
-    public static final DeferredBlock<Block> TINTABLE_STONE_SLAB = registerBlock("tintable_stone_slab",
-            properties -> new CBTintableSlab(properties
-                    .mapColor(MapColor.STONE).sound(SoundType.STONE).strength(2f).requiresCorrectToolForDrops()));
-    public static final DeferredBlock<Block> TINTABLE_STONE_VERTICAL_SLAB = registerBlock("tintable_stone_vertical_slab",
-            properties -> new CBTintableVerticalSlab(properties
-                    .mapColor(MapColor.STONE).sound(SoundType.STONE).strength(2f).requiresCorrectToolForDrops()));
-    public static final DeferredBlock<Block> TINTABLE_STONE_WALL = registerBlock("tintable_stone_wall",
-            properties -> new CBTintableWall(properties
-                    .mapColor(MapColor.STONE).sound(SoundType.STONE).strength(2f).requiresCorrectToolForDrops().forceSolidOn()));
-    public static final DeferredBlock<Block> TINTABLE_STONE_BUTTON = registerBlock("tintable_stone_button",
-            properties -> new CBTintableButton(BlockSetType.STONE, 20, properties
-                    .sound(SoundType.STONE).strength(0.5f).noCollision().forceSolidOn().pushReaction(PushReaction.POPPED)));
-    public static final DeferredBlock<Block> TINTABLE_STONE_PRESSUREPLATE = registerBlock("tintable_stone_pressureplate",
-            properties -> new CBTintablePressurePlate(BlockSetType.STONE, properties
-                    .sound(SoundType.STONE).strength(0.5f).noCollision().forceSolidOn().pushReaction(PushReaction.POPPED)));
-    public static final DeferredBlock<Block> TINTABLE_STONE_COLUMN = registerBlock("tintable_stone_column",
-            properties -> new CBTintableColumn(properties
-                    .mapColor(MapColor.STONE).sound(SoundType.STONE).strength(2f).requiresCorrectToolForDrops()));
-    public static final DeferredBlock<Block> TINTABLE_STONE_HORIZONTAL_COLUMN = registerBlock("tintable_stone_horizontal_column",
-            properties -> new CBTintableHorizontalColumn(properties
-                    .mapColor(MapColor.STONE).sound(SoundType.STONE).strength(2f).requiresCorrectToolForDrops()));
-    public static final DeferredBlock<Block> TINTABLE_STONE_ACCENTED_PILLAR = registerBlock("tintable_stone_accented_pillar",
-            properties -> new CBAccentedPillar(properties
-                    .mapColor(MapColor.STONE).sound(SoundType.STONE).strength(2f).requiresCorrectToolForDrops()));
-    public static final DeferredBlock<Block> TINTABLE_STONE_ACCENTED_PILLAR_CAP = registerBlock("tintable_stone_accented_pillar_cap",
-            properties -> new CBAccentedPillarCap(properties
-                    .mapColor(MapColor.STONE).sound(SoundType.STONE).strength(2f).requiresCorrectToolForDrops()));
+    // ---- Block sets: one line per texture. The name must match a texture in textures/block/ ----
+    public static final CBBlockSet STONE = registerSet("tintable_stone", "Crystal Stone", CBMaterial.STONE);
+    public static final CBBlockSet BRICK_LARGE = registerSet("tintable_brick_large", "Crystal Large Brick", CBMaterial.STONE);
+    public static final CBBlockSet BRICK_MEDIUM = registerSet("tintable_brick_medium", "Crystal Medium Brick", CBMaterial.STONE);
+    public static final CBBlockSet BRICK_SMALL = registerSet("tintable_brick_small", "Crystal Small Brick", CBMaterial.STONE);
+    public static final CBBlockSet LOG_ONE = registerSet("tintable_log_one", "Crystal Log", CBMaterial.WOOD);
+    public static final CBBlockSet METAL = registerSet("tintable_metal", "Crystal Metal", CBMaterial.METAL);
 
-    public static final DeferredBlock<Block> TINTABLE_STONE_WINDOW = registerBlock("tintable_stone_window",
-            properties -> new CBTintableWindow(properties
-                    .mapColor(MapColor.STONE).sound(SoundType.STONE).strength(2f).requiresCorrectToolForDrops()
-                    .noOcclusion()));
+    // Every set; datagen, tags, recipes, lang and the creative tab all loop over this
+    public static final List<CBBlockSet> SETS = List.of(STONE, BRICK_LARGE, BRICK_MEDIUM, BRICK_SMALL, LOG_ONE, METAL);
 
+    // Registers every shape for one texture
+    private static CBBlockSet registerSet(String name, String displayName, CBMaterial material)
+    {
+        DeferredBlock<Block> base = registerBlock(name,
+                properties -> new CBTintableBlock(material.apply(properties)));
+
+        return new CBBlockSet(name, displayName, material,
+                base,
+                registerBlock(name + "_stairs",
+                        properties -> new CBTintableStairs(base.get().defaultBlockState(), material.apply(properties))),
+                registerBlock(name + "_slab",
+                        properties -> new CBTintableSlab(material.apply(properties))),
+                registerBlock(name + "_vertical_slab",
+                        properties -> new CBTintableVerticalSlab(material.apply(properties))),
+                registerBlock(name + "_wall",
+                        properties -> new CBTintableWall(material.apply(properties).forceSolidOn())),
+                registerBlock(name + "_button",
+                        properties -> new CBTintableButton(material.setType(), material.buttonTicks(), properties
+                                .sound(material.sound()).strength(0.5f).noCollision().forceSolidOn().pushReaction(PushReaction.POPPED))),
+                registerBlock(name + "_pressureplate",
+                        properties -> new CBTintablePressurePlate(material.setType(), properties
+                                .sound(material.sound()).strength(0.5f).noCollision().forceSolidOn().pushReaction(PushReaction.POPPED))),
+                registerBlock(name + "_column",
+                        properties -> new CBTintableColumn(material.apply(properties))),
+                registerBlock(name + "_horizontal_column",
+                        properties -> new CBTintableHorizontalColumn(material.apply(properties))),
+                registerBlock(name + "_accented_pillar",
+                        properties -> new CBAccentedPillar(material.apply(properties))),
+                registerBlock(name + "_accented_pillar_cap",
+                        properties -> new CBAccentedPillarCap(material.apply(properties))),
+                registerBlock(name + "_window",
+                        properties -> new CBTintableWindow(material.apply(properties).noOcclusion())));
+    }
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Function<BlockBehaviour.Properties, T> function)
     {

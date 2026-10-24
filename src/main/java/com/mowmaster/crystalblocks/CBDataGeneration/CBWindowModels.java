@@ -81,7 +81,7 @@ public class CBWindowModels
             new FramePiece(CBTintableWindow.DOWN_RIGHT, "bend_second_down", CBTintableWindow.BEND_SECOND_DOWN)
     };
 
-    public static void generate(BlockModelGenerators blockModels, Block window)
+    public static void generate(BlockModelGenerators blockModels, Block window, String frameTexture)
     {
         // ---- Models (each created exactly once) ----
 
@@ -92,16 +92,16 @@ public class CBWindowModels
         {
             clearGlass.put(shape, shape.template.create(
                     ModelLocationUtils.getModelLocation(window, "_" + shape.name),
-                    textures("cb_glass"), blockModels.modelOutput));
+                    textures(frameTexture,"cb_glass"), blockModels.modelOutput));
             tintedGlass.put(shape, shape.template.create(
                     ModelLocationUtils.getModelLocation(window, "_" + shape.name + "_tinted"),
-                    textures("tintable_glass"), blockModels.modelOutput));
+                    textures(frameTexture,"tintable_glass"), blockModels.modelOutput));
         }
 
         // Fill pieces for both straight windows and bends
         Map<FramePiece, Identifier> pieceModels = new HashMap<>();
-        for (FramePiece piece : STRAIGHT_PIECES) pieceModels.put(piece, frameBoxModel(blockModels, window, piece));
-        for (FramePiece piece : BEND_PIECES) pieceModels.put(piece, frameBoxModel(blockModels, window, piece));
+        for (FramePiece piece : STRAIGHT_PIECES) pieceModels.put(piece, frameBoxModel(blockModels, window, frameTexture, piece));
+        for (FramePiece piece : BEND_PIECES) pieceModels.put(piece, frameBoxModel(blockModels, window, frameTexture, piece));
 
         // Bends: [joined above][joined below][tinted glass], 1 = yes
         Identifier[][][] bendModels = new Identifier[2][2][2];
@@ -114,7 +114,7 @@ public class CBWindowModels
                     String suffix = "_bend" + (up == 1 ? "_up" : "") + (down == 1 ? "_down" : "") + (tinted == 1 ? "_tinted" : "");
                     bendModels[up][down][tinted] = bendTemplate(up == 1, down == 1).create(
                             ModelLocationUtils.getModelLocation(window, suffix),
-                            textures(tinted == 1 ? "tintable_glass" : "cb_glass"), blockModels.modelOutput);
+                            textures(frameTexture, tinted == 1 ? "tintable_glass" : "cb_glass"), blockModels.modelOutput);
                 }
             }
         }
@@ -236,7 +236,7 @@ public class CBWindowModels
     }
 
     // A model containing a single frame box, using the frame texture and the frame's tint
-    private static Identifier frameBoxModel(BlockModelGenerators blockModels, Block window, FramePiece piece)
+    private static Identifier frameBoxModel(BlockModelGenerators blockModels, Block window, String frameTexture, FramePiece piece)
     {
         ExtendedModelTemplateBuilder builder = ExtendedModelTemplateBuilder.builder()
                 .parent(Identifier.withDefaultNamespace("block/block"))
@@ -244,7 +244,7 @@ public class CBWindowModels
                 .requiredTextureSlot(CBModelTemplates.TEXTURE_ONE);
         addFrame(builder, piece.box());
         return builder.build().create(ModelLocationUtils.getModelLocation(window, "_" + piece.name()),
-                textures("cb_glass"), blockModels.modelOutput);
+                textures(frameTexture, "cb_glass"), blockModels.modelOutput);
     }
 
     private static void addFrame(ExtendedModelTemplateBuilder builder, CBPixelBox box)
@@ -307,10 +307,10 @@ public class CBWindowModels
         };
     }
 
-    // texture_one is always the stone frame; texture_two is the given glass texture
-    private static TextureMapping textures(String glassTexture)
+    // texture_one is the set's frame texture; texture_two is the given glass texture
+    private static TextureMapping textures(String frameTexture, String glassTexture)
     {
-        Material frame = new Material(Identifier.fromNamespaceAndPath(CBReferences.MODID, "block/tintable_stone"));
+        Material frame = new Material(Identifier.fromNamespaceAndPath(CBReferences.MODID, "block/" + frameTexture));
         Material glass = new Material(Identifier.fromNamespaceAndPath(CBReferences.MODID, "block/" + glassTexture));
         return TextureMapping.cube(frame)
                 .put(CBModelTemplates.TEXTURE_ONE, frame)

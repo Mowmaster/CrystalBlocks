@@ -24,6 +24,7 @@ public class CBDataGenerator
         generator.addProvider(true, new CBBasicModelProvider(packOutput));
         generator.addProvider(true, new CBTagProviderItem(packOutput,lookupProvider));
         generator.addProvider(true, new CBTagProviderBlock(packOutput,lookupProvider));
+        generator.addProvider(true, new CBLanguageProvider(packOutput));
 
     }
 

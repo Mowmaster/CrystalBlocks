@@ -4,7 +4,6 @@ import com.mowmaster.crystalblocks.Blocks.CBBlockRegistry;
 import com.mowmaster.crystalblocks.ClientSide.CBBlockEntityTintSource;
 import com.mowmaster.crystalblocks.CrystalBlocks;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.color.block.BlockTintSources;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModContainer;
@@ -14,6 +13,10 @@ import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.neoforge.client.event.RegisterColorHandlersEvent;
 import net.neoforged.neoforge.client.gui.ConfigurationScreen;
 import net.neoforged.neoforge.client.gui.IConfigScreenFactory;
+import com.mowmaster.crystalblocks.Blocks.Colorable.IColorableBlock;
+import net.minecraft.client.color.block.BlockTintSource;
+import net.minecraft.world.level.block.Block;
+import java.util.ArrayList;
 
 import java.util.List;
 
@@ -36,24 +39,22 @@ public class CrystalBlocksClient {
         CrystalBlocks.LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
     }
 
+    // Every colourable block gets one tint source per tint region (region N = model tintindex N)
     @SubscribeEvent
     public static void registerTintBlocks(RegisterColorHandlersEvent.BlockTintSources event)
     {
-        event.register(List.of(new CBBlockEntityTintSource(0)), CBBlockRegistry.TINTABLE_STONE.get());
-        event.register(List.of(new CBBlockEntityTintSource(0)), CBBlockRegistry.TINTABLE_STONE_STAIRS.get());
-        event.register(List.of(new CBBlockEntityTintSource(0), new CBBlockEntityTintSource(1)),
-                CBBlockRegistry.TINTABLE_STONE_SLAB.get());
-        event.register(List.of(new CBBlockEntityTintSource(0)), CBBlockRegistry.TINTABLE_STONE_VERTICAL_SLAB.get());
-        event.register(List.of(new CBBlockEntityTintSource(0)), CBBlockRegistry.TINTABLE_STONE_WALL.get());
-        event.register(List.of(new CBBlockEntityTintSource(0)), CBBlockRegistry.TINTABLE_STONE_BUTTON.get());
-        event.register(List.of(new CBBlockEntityTintSource(0)), CBBlockRegistry.TINTABLE_STONE_PRESSUREPLATE.get());
-        event.register(List.of(new CBBlockEntityTintSource(0)), CBBlockRegistry.TINTABLE_STONE_COLUMN.get());
-        event.register(List.of(new CBBlockEntityTintSource(0)), CBBlockRegistry.TINTABLE_STONE_HORIZONTAL_COLUMN.get());
-        event.register(List.of(new CBBlockEntityTintSource(0), new CBBlockEntityTintSource(1)),
-                CBBlockRegistry.TINTABLE_STONE_ACCENTED_PILLAR.get(),
-                CBBlockRegistry.TINTABLE_STONE_ACCENTED_PILLAR_CAP.get());
-        
-        event.register(List.of(new CBBlockEntityTintSource(0), new CBBlockEntityTintSource(1)),
-                CBBlockRegistry.TINTABLE_STONE_WINDOW.get());
+        for (var holder : CBBlockRegistry.BCBLOCKS.getEntries())
+        {
+            Block block = holder.get();
+            if (block instanceof IColorableBlock colorable)
+            {
+                List<BlockTintSource> sources = new ArrayList<>();
+                for (int region = 0; region < colorable.getTintRegionCount(); region++)
+                {
+                    sources.add(new CBBlockEntityTintSource(region));
+                }
+                event.register(sources, block);
+            }
+        }
     }
 }

@@ -1,5 +1,10 @@
 {
   "values": [
-    "crystalblocks:tintable_stone_wall"
+    "crystalblocks:tintable_stone_wall",
+    "crystalblocks:tintable_brick_large_wall",
+    "crystalblocks:tintable_brick_medium_wall",
+    "crystalblocks:tintable_brick_small_wall",
+    "crystalblocks:tintable_log_one_wall",
+    "crystalblocks:tintable_metal_wall"
   ]
 }

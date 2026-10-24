@@ -11,6 +11,8 @@ import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Recipe;
 import net.minecraft.world.level.block.Blocks;
+import com.mowmaster.crystalblocks.Blocks.CBBlockSet;
+import net.minecraft.world.level.block.Block;
 
 public class CBBasicRecipeProvider extends RecipeProvider
 {
@@ -34,71 +36,81 @@ public class CBBasicRecipeProvider extends RecipeProvider
                 .define('S', Items.STICK)
                 .define('I', Items.IRON_INGOT)
                 .unlockedBy(getHasName(Items.IRON_INGOT), has(Items.IRON_INGOT))
-                .save(output, CBReferences.MODID+".base_chisel");
+                .save(output, CBReferences.MODID + ".base_chisel");
 
-        shaped(RecipeCategory.BUILDING_BLOCKS, CBBlockRegistry.TINTABLE_STONE.get(), 8)
+        // How each texture's base block is made. Add one for each new set.
+        shaped(RecipeCategory.BUILDING_BLOCKS, CBBlockRegistry.STONE.base().get(), 8)
                 .pattern("DDD")
                 .pattern("DID")
                 .pattern("DDD")
                 .define('D', Blocks.STONE)
                 .define('I', Items.AMETHYST_SHARD)
                 .unlockedBy(getHasName(Items.AMETHYST_SHARD), has(Items.AMETHYST_SHARD))
-                .save(output, CBReferences.MODID+".crystal_stone_from_amethyst");
+                .save(output, CBReferences.MODID + ".crystal_stone_from_amethyst");
 
-        shaped(RecipeCategory.BUILDING_BLOCKS, CBBlockRegistry.TINTABLE_STONE_SLAB.get(), 6)
+        // Shapes made from each base block, the same for every set
+        for (CBBlockSet set : CBBlockRegistry.SETS) {
+            shapeRecipes(set);
+        }
+    }
+
+    private void shapeRecipes(CBBlockSet set) {
+        Block base = set.base().get();
+        Block slab = set.slab().get();
+        Block verticalSlab = set.verticalSlab().get();
+        String id = CBReferences.MODID + "." + set.name();
+
+        shaped(RecipeCategory.BUILDING_BLOCKS, slab, 6)
                 .pattern("SSS")
-                .define('S', CBBlockRegistry.TINTABLE_STONE.get())
-                .unlockedBy(getHasName(CBBlockRegistry.TINTABLE_STONE.get()), has(CBBlockRegistry.TINTABLE_STONE.get()))
-                .save(output, CBReferences.MODID+".crystal_stone_slabs");
+                .define('S', base)
+                .unlockedBy(getHasName(base), has(base))
+                .save(output, id + "_slabs");
 
-        shaped(RecipeCategory.BUILDING_BLOCKS, CBBlockRegistry.TINTABLE_STONE.get(), 1)
+        shaped(RecipeCategory.BUILDING_BLOCKS, base, 1)
                 .pattern("S")
                 .pattern("S")
-                .define('S', CBBlockRegistry.TINTABLE_STONE_SLAB.get())
-                .unlockedBy(getHasName(CBBlockRegistry.TINTABLE_STONE_SLAB.get()), has(CBBlockRegistry.TINTABLE_STONE_SLAB.get()))
-                .save(output, CBReferences.MODID+".crystal_stone_from_slabs");
+                .define('S', slab)
+                .unlockedBy(getHasName(slab), has(slab))
+                .save(output, id + "_from_slabs");
 
-        shaped(RecipeCategory.BUILDING_BLOCKS, CBBlockRegistry.TINTABLE_STONE_VERTICAL_SLAB.get(), 6)
+        shaped(RecipeCategory.BUILDING_BLOCKS, verticalSlab, 6)
                 .pattern("S")
                 .pattern("S")
                 .pattern("S")
-                .define('S', CBBlockRegistry.TINTABLE_STONE.get())
-                .unlockedBy(getHasName(CBBlockRegistry.TINTABLE_STONE.get()), has(CBBlockRegistry.TINTABLE_STONE.get()))
-                .save(output, CBReferences.MODID+".crystal_stone_slabs_vertical");
-        shaped(RecipeCategory.BUILDING_BLOCKS, CBBlockRegistry.TINTABLE_STONE.get(), 1)
+                .define('S', base)
+                .unlockedBy(getHasName(base), has(base))
+                .save(output, id + "_slabs_vertical");
+
+        shaped(RecipeCategory.BUILDING_BLOCKS, base, 1)
                 .pattern("SS")
-                .define('S', CBBlockRegistry.TINTABLE_STONE_VERTICAL_SLAB.get())
-                .unlockedBy(getHasName(CBBlockRegistry.TINTABLE_STONE_VERTICAL_SLAB.get()), has(CBBlockRegistry.TINTABLE_STONE_VERTICAL_SLAB.get()))
-                .save(output, CBReferences.MODID+".crystal_stone_from_slabs_vertical");
+                .define('S', verticalSlab)
+                .unlockedBy(getHasName(verticalSlab), has(verticalSlab))
+                .save(output, id + "_from_slabs_vertical");
 
-        shaped(RecipeCategory.BUILDING_BLOCKS, CBBlockRegistry.TINTABLE_STONE_STAIRS.get(), 8)
+        shaped(RecipeCategory.BUILDING_BLOCKS, set.stairs().get(), 8)
                 .pattern("S  ")
                 .pattern("SS ")
                 .pattern("SSS")
-                .define('S', CBBlockRegistry.TINTABLE_STONE.get())
-                .unlockedBy(getHasName(CBBlockRegistry.TINTABLE_STONE.get()), has(CBBlockRegistry.TINTABLE_STONE.get()))
-                .save(output, CBReferences.MODID+".crystal_stone_stairs");
+                .define('S', base)
+                .unlockedBy(getHasName(base), has(base))
+                .save(output, id + "_stairs");
 
-        shaped(RecipeCategory.BUILDING_BLOCKS, CBBlockRegistry.TINTABLE_STONE_WALL.get(), 12)
+        shaped(RecipeCategory.BUILDING_BLOCKS, set.wall().get(), 12)
                 .pattern("SSS")
                 .pattern("SSS")
-                .define('S', CBBlockRegistry.TINTABLE_STONE.get())
-                .unlockedBy(getHasName(CBBlockRegistry.TINTABLE_STONE.get()), has(CBBlockRegistry.TINTABLE_STONE.get()))
-                .save(output, CBReferences.MODID+".crystal_stone_wall");
+                .define('S', base)
+                .unlockedBy(getHasName(base), has(base))
+                .save(output, id + "_wall");
 
-        shaped(RecipeCategory.BUILDING_BLOCKS, CBBlockRegistry.TINTABLE_STONE_PRESSUREPLATE.get(), 8)
+        shaped(RecipeCategory.BUILDING_BLOCKS, set.pressurePlate().get(), 8)
                 .pattern("SS")
-                .define('S', CBBlockRegistry.TINTABLE_STONE.get())
-                .unlockedBy(getHasName(CBBlockRegistry.TINTABLE_STONE.get()), has(CBBlockRegistry.TINTABLE_STONE.get()))
-                .save(output, CBReferences.MODID+".crystal_stone_pressureplate");
+                .define('S', base)
+                .unlockedBy(getHasName(base), has(base))
+                .save(output, id + "_pressureplate");
 
-        shapeless(RecipeCategory.BUILDING_BLOCKS,CBBlockRegistry.TINTABLE_STONE_BUTTON.get() ,8)
-                .requires(CBBlockRegistry.TINTABLE_STONE.get())
-                .unlockedBy(getHasName(CBBlockRegistry.TINTABLE_STONE.get()), has(CBBlockRegistry.TINTABLE_STONE.get()))
-                .save(output, CBReferences.MODID+".crystal_stone_button");
-
-
-
-
+        shapeless(RecipeCategory.BUILDING_BLOCKS, set.button().get(), 8)
+                .requires(base)
+                .unlockedBy(getHasName(base), has(base))
+                .save(output, id + "_button");
     }
 }

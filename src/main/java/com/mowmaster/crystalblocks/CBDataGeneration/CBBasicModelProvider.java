@@ -9,6 +9,7 @@ import net.minecraft.client.data.models.ItemModelGenerators;
 import net.minecraft.client.data.models.ModelProvider;
 import net.minecraft.client.data.models.model.ModelTemplates;
 import net.minecraft.data.PackOutput;
+import com.mowmaster.crystalblocks.Blocks.CBBlockSet;
 
 public class CBBasicModelProvider  extends ModelProvider {
     public CBBasicModelProvider(PackOutput output) {
@@ -20,19 +21,21 @@ public class CBBasicModelProvider  extends ModelProvider {
 
         itemModels.generateFlatItem(CBItemRegistry.CRYSTAL_CHISEL_BASE.get(), ModelTemplates.FLAT_ITEM);
 
-        new CBTintedBlockFamily(blockModels, CBBlockRegistry.TINTABLE_STONE.get(), new Dye(0xFFFFFFFF))
-                .stairs(CBBlockRegistry.TINTABLE_STONE_STAIRS.get())
-                .twoToneSlab(CBBlockRegistry.TINTABLE_STONE_SLAB.get())
-                .verticalSlab(CBBlockRegistry.TINTABLE_STONE_VERTICAL_SLAB.get())
-                .wall(CBBlockRegistry.TINTABLE_STONE_WALL.get())
-                .button(CBBlockRegistry.TINTABLE_STONE_BUTTON.get())
-                .pressurePlate(CBBlockRegistry.TINTABLE_STONE_PRESSUREPLATE.get())
-                .column(CBBlockRegistry.TINTABLE_STONE_COLUMN.get())
-                .horizontalColumn(CBBlockRegistry.TINTABLE_STONE_HORIZONTAL_COLUMN.get())
-                .accentedPillar(CBBlockRegistry.TINTABLE_STONE_ACCENTED_PILLAR.get())
-                .accentedPillarCap(CBBlockRegistry.TINTABLE_STONE_ACCENTED_PILLAR_CAP.get());
+        for (CBBlockSet set : CBBlockRegistry.SETS) {
+            new CBTintedBlockFamily(blockModels, set.base().get(), new Dye(0xFFFFFFFF))
+                    .stairs(set.stairs().get())
+                    .twoToneSlab(set.slab().get())
+                    .verticalSlab(set.verticalSlab().get())
+                    .wall(set.wall().get())
+                    .button(set.button().get())
+                    .pressurePlate(set.pressurePlate().get())
+                    .column(set.column().get())
+                    .horizontalColumn(set.horizontalColumn().get())
+                    .accentedPillar(set.accentedPillar().get())
+                    .accentedPillarCap(set.accentedPillarCap().get());
 
-        CBWindowModels.generate(blockModels, CBBlockRegistry.TINTABLE_STONE_WINDOW.get());
-
+            // The window's frame uses the set's own texture
+            CBWindowModels.generate(blockModels, set.window().get(), set.name());
+        }
     }
 }

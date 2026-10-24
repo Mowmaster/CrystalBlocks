@@ -1,0 +1,11 @@
+Adding a texture from now on
+Add the PNG to textures/block/, for example tintable_marble.png.
+Add one line in CBBlockRegistry:
+public static final CBBlockSet MARBLE = registerSet("tintable_marble", "Crystal Marble", CBMaterial.STONE);
+
+and add MARBLE to the SETS list.
+
+Optionally, add a base block recipe in buildRecipes.
+Run datagen.
+
+That’s it. Models, window, tags, loot, lang, tints, the creative tab and shape recipes all follow automatically.
