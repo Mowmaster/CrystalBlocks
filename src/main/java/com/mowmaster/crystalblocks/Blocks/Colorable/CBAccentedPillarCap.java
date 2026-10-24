@@ -36,7 +36,13 @@ public class CBAccentedPillarCap extends CBAccentedBlock
 
     public CBAccentedPillarCap(Properties properties)
     {
-        super(properties, BODY, ACCENT);
+        this(properties, List.of(BODY, ACCENT));
+    }
+
+    // For caps with the same placement and rotation but a different model (e.g. the stepped cap)
+    protected CBAccentedPillarCap(Properties properties, List<List<CBPixelBox>> regionBoxes)
+    {
+        super(properties, regionBoxes);
         registerDefaultState(stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(HALF, Half.BOTTOM));
     }
 
@@ -74,16 +80,19 @@ public class CBAccentedPillarCap extends CBAccentedBlock
 
     // ---- Placement ----
 
-    // Like vanilla stairs but flipped: the upright cap (overhang at the top) goes on the upper half
     @Override
     public BlockState getStateForPlacement(BlockPlaceContext context)
     {
-        Direction clickedFace = context.getClickedFace();
         double hitY = context.getClickLocation().y - context.getClickedPos().getY();
-        Half half = clickedFace != Direction.DOWN && (clickedFace == Direction.UP || hitY <= 0.5)
-                ? Half.TOP
-                : Half.BOTTOM;
+        Half half = placedHalf(context.getClickedFace(), hitY);
         return defaultBlockState().setValue(FACING, context.getHorizontalDirection()).setValue(HALF, half);
+    }
+
+    // Like vanilla stairs but flipped: this model has its overhang at the top, so the upright cap goes on the upper half
+    protected Half placedHalf(Direction clickedFace, double hitY)
+    {
+        boolean lowerHalf = clickedFace != Direction.DOWN && (clickedFace == Direction.UP || hitY <= 0.5);
+        return lowerHalf ? Half.TOP : Half.BOTTOM;
     }
 
     // ---- Rotation (structures, other mods' rotation tools) ----

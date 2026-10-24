@@ -35,6 +35,8 @@ public class CBLanguageProvider extends LanguageProvider
             addBlock(set.horizontalColumn(), name + " Column (Horizontal)");
             addBlock(set.accentedPillar(), name + " Accented Pillar");
             addBlock(set.accentedPillarCap(), name + " Accented Pillar Cap");
+            addBlock(set.steppedPillar(), name + " Stepped Pillar");
+            addBlock(set.steppedPillarCap(), name + " Stepped Pillar Cap");
             addBlock(set.window(), name + " Window");
         }
     }

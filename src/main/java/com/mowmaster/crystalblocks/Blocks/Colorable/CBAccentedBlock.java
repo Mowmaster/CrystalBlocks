@@ -15,30 +15,36 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.NotNull;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-// Base for blocks built from a custom model with a body (tintindex 0) and an accent (tintindex 1).
-// Subclasses give the model's element boxes (as modelled, facing north), their block state properties,
-// their placement rule, and how the model is rotated in each state.
+// Base for blocks built from a custom model whose parts are tinted separately.
+// Each region is a list of the model's element boxes (as modelled, facing north) whose faces use that tintindex.
+// Subclasses give their block state properties, their placement rule, and how the model is rotated in each state.
 public abstract class CBAccentedBlock extends Block implements IColorableBlock
 {
     public static final int BODY_REGION = 0;
     public static final int ACCENT_REGION = 1;
 
-    private final List<CBPixelBox> accentBoxes;
+    // regionBoxes.get(n) = the element boxes tinted by tintindex n
+    private final List<List<CBPixelBox>> regionBoxes;
     private final Map<BlockState, VoxelShape> shapes = new HashMap<>();
 
+    // Two regions: a body (tintindex 0) and an accent (tintindex 1)
     protected CBAccentedBlock(Properties properties, List<CBPixelBox> bodyBoxes, List<CBPixelBox> accentBoxes)
     {
+        this(properties, List.of(bodyBoxes, accentBoxes));
+    }
+
+    // Any number of regions, in tintindex order
+    protected CBAccentedBlock(Properties properties, List<List<CBPixelBox>> regionBoxes)
+    {
         super(properties);
-        this.accentBoxes = accentBoxes;
+        this.regionBoxes = regionBoxes;
 
         // Build the outline/collision shape for every state once, up front
-        List<CBPixelBox> allBoxes = new ArrayList<>(bodyBoxes);
-        allBoxes.addAll(accentBoxes);
+        List<CBPixelBox> allBoxes = regionBoxes.stream().flatMap(List::stream).toList();
         for (BlockState state : stateDefinition.getPossibleStates())
         {
             shapes.put(state, CBPixelBox.union(placeBoxes(allBoxes, state)));
@@ -64,17 +70,21 @@ public abstract class CBAccentedBlock extends Block implements IColorableBlock
     @Override
     public int getTintRegionCount()
     {
-        return 2;
+        return regionBoxes.size();
     }
 
-    // Dye whichever part was clicked
+    // Dye whichever part was clicked. Higher regions are checked first, so smaller detail parts
+    // win over the parts they sit on.
     @Override
     public int getTintRegion(BlockState state, BlockHitResult hit)
     {
         Vec3 pixel = CBPixelBox.pixelInside(hit);
-        for (CBPixelBox box : placeBoxes(accentBoxes, state))
+        for (int region = regionBoxes.size() - 1; region >= 0; region--)
         {
-            if (box.contains(pixel)) return ACCENT_REGION;
+            for (CBPixelBox box : placeBoxes(regionBoxes.get(region), state))
+            {
+                if (box.contains(pixel)) return region;
+            }
         }
         return BODY_REGION;
     }

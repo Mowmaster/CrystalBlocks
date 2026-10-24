@@ -32,7 +32,9 @@ public class CBBasicModelProvider  extends ModelProvider {
                     .column(set.column().get())
                     .horizontalColumn(set.horizontalColumn().get())
                     .accentedPillar(set.accentedPillar().get())
-                    .accentedPillarCap(set.accentedPillarCap().get());
+                    .accentedPillarCap(set.accentedPillarCap().get())
+                    .steppedPillar(set.steppedPillar().get())
+                    .steppedPillarCap(set.steppedPillarCap().get());
 
             // The window's frame uses the set's own texture
             CBWindowModels.generate(blockModels, set.window().get(), set.name());

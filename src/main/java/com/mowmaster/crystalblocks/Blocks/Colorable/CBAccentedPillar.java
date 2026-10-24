@@ -29,7 +29,13 @@ public class CBAccentedPillar extends CBAccentedBlock
 
     public CBAccentedPillar(Properties properties)
     {
-        super(properties, BODY, ACCENT);
+        this(properties, List.of(BODY, ACCENT));
+    }
+
+    // For pillars with the same placement and rotation but a different model (e.g. the stepped pillar)
+    protected CBAccentedPillar(Properties properties, List<List<CBPixelBox>> regionBoxes)
+    {
+        super(properties, regionBoxes);
         registerDefaultState(stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(AXIS, Direction.Axis.Z));
     }
 

@@ -59,6 +59,10 @@ public class CBBlockRegistry
                         properties -> new CBAccentedPillar(material.apply(properties))),
                 registerBlock(name + "_accented_pillar_cap",
                         properties -> new CBAccentedPillarCap(material.apply(properties))),
+                registerBlock(name + "_stepped_pillar",
+                        properties -> new CBSteppedPillar(material.apply(properties))),
+                registerBlock(name + "_stepped_pillar_cap",
+                        properties -> new CBSteppedPillarCap(material.apply(properties))),
                 registerBlock(name + "_window",
                         properties -> new CBTintableWindow(material.apply(properties).noOcclusion())));
     }

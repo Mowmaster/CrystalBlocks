@@ -18,6 +18,8 @@ import com.mowmaster.crystalblocks.Blocks.Colorable.CBAccentedPillarCap;
 import net.minecraft.client.data.models.MultiVariant;
 import com.mowmaster.crystalblocks.Blocks.Colorable.CBAccentedPillar;
 
+import java.util.Arrays;
+
 public class CBTintedBlockFamily
 {
     private final BlockModelGenerators blockModels;
@@ -164,25 +166,61 @@ public class CBTintedBlockFamily
     public CBTintedBlockFamily accentedPillar(Block pillar)
     {
         Identifier model = CBModelTemplates.ACCENTED_PILLAR.create(pillar, accentTextures(), blockModels.modelOutput);
-        blockModels.blockStateOutput.accept(MultiVariantGenerator.dispatch(pillar)
-                .with(PropertyDispatch.initial(CBAccentedPillar.FACING, CBAccentedPillar.AXIS)
-                        .generate((facing, axis) -> rotatedVariant(model,
-                                CBAccentedPillar.xTurnsFor(facing),
-                                CBAccentedPillar.yTurnsFor(facing, axis)))));
-        twoToneItem(pillar, model);
+        pillarBlockState(pillar, model);
+        multiToneItem(pillar, model, 2);
         return this;
     }
 
     public CBTintedBlockFamily accentedPillarCap(Block cap)
     {
         Identifier model = CBModelTemplates.ACCENTED_PILLAR_CAP.create(cap, accentTextures(), blockModels.modelOutput);
+        capBlockState(cap, model);
+        multiToneItem(cap, model, 2);
+        return this;
+    }
+
+    public CBTintedBlockFamily steppedPillar(Block pillar)
+    {
+        Identifier model = CBModelTemplates.STEPPED_PILLAR.create(pillar, accentTextures(), blockModels.modelOutput);
+        pillarBlockState(pillar, model);
+        multiToneItem(pillar, model, 4);
+        return this;
+    }
+
+    public CBTintedBlockFamily steppedPillarCap(Block cap)
+    {
+        Identifier model = CBModelTemplates.STEPPED_PILLAR_CAP.create(cap, accentTextures(), blockModels.modelOutput);
+        capBlockState(cap, model);
+        multiToneItem(cap, model, 4);
+        return this;
+    }
+
+    // Wall / floor / ceiling pillar rotations (shared by every CBAccentedPillar)
+    private void pillarBlockState(Block pillar, Identifier model)
+    {
+        blockModels.blockStateOutput.accept(MultiVariantGenerator.dispatch(pillar)
+                .with(PropertyDispatch.initial(CBAccentedPillar.FACING, CBAccentedPillar.AXIS)
+                        .generate((facing, axis) -> rotatedVariant(model,
+                                CBAccentedPillar.xTurnsFor(facing),
+                                CBAccentedPillar.yTurnsFor(facing, axis)))));
+    }
+
+    // Stair-like cap rotations (shared by every CBAccentedPillarCap)
+    private void capBlockState(Block cap, Identifier model)
+    {
         blockModels.blockStateOutput.accept(MultiVariantGenerator.dispatch(cap)
                 .with(PropertyDispatch.initial(CBAccentedPillarCap.FACING, CBAccentedPillarCap.HALF)
                         .generate((facing, half) -> rotatedVariant(model,
                                 CBAccentedPillarCap.xTurnsFor(half),
                                 CBAccentedPillarCap.yTurnsFor(facing, half)))));
-        twoToneItem(cap, model);
-        return this;
+    }
+
+    // Item with every tint index using the family's item tint
+    private void multiToneItem(Block block, Identifier model, int tintCount)
+    {
+        ItemTintSource[] tints = new ItemTintSource[tintCount];
+        Arrays.fill(tints, itemTint);
+        blockModels.itemModelOutput.accept(block.asItem(), ItemModelUtils.tintedModel(model, tints));
     }
 
     // A north-facing model rotated by x then y quarter turns, the same order the game applies them
@@ -212,12 +250,6 @@ public class CBTintedBlockFamily
         return textures
                 .copyAndUpdate(CBModelTemplates.TEXTURE_ONE, texture)
                 .copyAndUpdate(CBModelTemplates.TEXTURE_TWO, texture);
-    }
-
-    // Item with both tint indexes using the family's item tint
-    private void twoToneItem(Block block, Identifier model)
-    {
-        blockModels.itemModelOutput.accept(block.asItem(), ItemModelUtils.tintedModel(model, itemTint, itemTint));
     }
 
     private static int axisIndex(Direction.Axis axis)

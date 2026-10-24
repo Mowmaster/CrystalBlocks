@@ -21,12 +21,14 @@ public record CBBlockSet(
         DeferredBlock<Block> horizontalColumn,
         DeferredBlock<Block> accentedPillar,
         DeferredBlock<Block> accentedPillarCap,
+        DeferredBlock<Block> steppedPillar,
+        DeferredBlock<Block> steppedPillarCap,
         DeferredBlock<Block> window)
 {
     // Every block in the set, in creative tab order
     public List<DeferredBlock<Block>> blocks()
     {
         return List.of(base, stairs, slab, verticalSlab, wall, button, pressurePlate,
-                column, horizontalColumn, accentedPillar, accentedPillarCap, window);
+                column, horizontalColumn, accentedPillar, accentedPillarCap, steppedPillar, steppedPillarCap, window);
     }
 }
