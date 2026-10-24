@@ -28,6 +28,20 @@ public class CBBlockRegistry
 
     // Every set; datagen, tags, recipes, lang and the creative tab all loop over this
     public static final List<CBBlockSet> SETS = List.of(STONE, BRICK_LARGE, BRICK_MEDIUM, BRICK_SMALL, LOG_ONE, METAL);
+    // ---- Bolted supports: fixed textures (metal + stone, or metal + log), registered once each ----
+    public static final DeferredBlock<Block> BOLTED_CORNER_SUPPORT_CAP = registerBlock("bolted_corner_support_cap",
+            properties -> new CBBoltedCornerSupportCap(CBMaterial.METAL.apply(properties)));
+    public static final DeferredBlock<Block> BOLTED_I_BEAM = registerBlock("bolted_i_beam",
+            properties -> new CBBoltedIBeam(CBMaterial.METAL.apply(properties)));
+    public static final DeferredBlock<Block> BOLTED_I_BEAM_CAP = registerBlock("bolted_i_beam_cap",
+            properties -> new CBBoltedIBeamCap(CBMaterial.METAL.apply(properties)));
+    public static final DeferredBlock<Block> BOLTED_SUPPORT_BEAM = registerBlock("bolted_support_beam",
+            properties -> new CBBoltedSupportBeam(CBMaterial.METAL.apply(properties)));
+    public static final DeferredBlock<Block> BOLTED_SUPPORT_BEAM_CAP = registerBlock("bolted_support_beam_cap",
+            properties -> new CBBoltedSupportBeamCap(CBMaterial.METAL.apply(properties)));
+
+    public static final List<DeferredBlock<Block>> BOLTED = List.of(BOLTED_CORNER_SUPPORT_CAP,
+            BOLTED_I_BEAM, BOLTED_I_BEAM_CAP, BOLTED_SUPPORT_BEAM, BOLTED_SUPPORT_BEAM_CAP);
 
     // Registers every shape for one texture
     private static CBBlockSet registerSet(String name, String displayName, CBMaterial material)
@@ -53,8 +67,6 @@ public class CBBlockRegistry
                                 .sound(material.sound()).strength(0.5f).noCollision().forceSolidOn().pushReaction(PushReaction.POPPED))),
                 registerBlock(name + "_column",
                         properties -> new CBTintableColumn(material.apply(properties))),
-                registerBlock(name + "_horizontal_column",
-                        properties -> new CBTintableHorizontalColumn(material.apply(properties))),
                 registerBlock(name + "_accented_pillar",
                         properties -> new CBAccentedPillar(material.apply(properties))),
                 registerBlock(name + "_accented_pillar_cap",

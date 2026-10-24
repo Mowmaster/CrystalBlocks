@@ -34,6 +34,10 @@ public class CBTagProviderBlock extends BlockTagsProvider {
             tag(BlockTags.WALLS).add(set.wall().key());
             tag(material.buttonTag()).add(set.button().key());
             tag(material.pressurePlateTag()).add(set.pressurePlate().key());
+            for (DeferredBlock<Block> block : CBBlockRegistry.BOLTED) {
+                tag(CBMaterial.METAL.mineableTag()).add(block.key());
+                tag(CBTags.Blocks.CB_BLOCKS_DYABLE).add(block.key());
+            }
         }
     }
 }

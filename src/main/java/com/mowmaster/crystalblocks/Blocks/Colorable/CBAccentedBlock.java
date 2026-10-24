@@ -53,10 +53,9 @@ public abstract class CBAccentedBlock extends Block implements IColorableBlock
 
     // The model's rotation in this state, in quarter turns, exactly as the blockstate file rotates it:
     // x is applied first, then y. Datagen uses the same values, so shapes and visuals always match.
-    protected abstract int xQuarterTurns(BlockState state);
+    public abstract int xQuarterTurns(BlockState state);
 
-    protected abstract int yQuarterTurns(BlockState state);
-
+    public abstract int yQuarterTurns(BlockState state);
     // Moves north-facing model boxes to where they actually are for this state
     protected List<CBPixelBox> placeBoxes(List<CBPixelBox> boxes, BlockState state)
     {

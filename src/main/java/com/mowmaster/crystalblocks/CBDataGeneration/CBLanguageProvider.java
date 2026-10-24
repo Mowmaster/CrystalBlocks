@@ -32,12 +32,16 @@ public class CBLanguageProvider extends LanguageProvider
             addBlock(set.button(), name + " Button");
             addBlock(set.pressurePlate(), name + " Pressure Plate");
             addBlock(set.column(), name + " Column");
-            addBlock(set.horizontalColumn(), name + " Column (Horizontal)");
             addBlock(set.accentedPillar(), name + " Accented Pillar");
             addBlock(set.accentedPillarCap(), name + " Accented Pillar Cap");
             addBlock(set.steppedPillar(), name + " Stepped Pillar");
             addBlock(set.steppedPillarCap(), name + " Stepped Pillar Cap");
             addBlock(set.window(), name + " Window");
         }
+        addBlock(CBBlockRegistry.BOLTED_CORNER_SUPPORT_CAP, "Bolted Corner Support");
+        addBlock(CBBlockRegistry.BOLTED_I_BEAM, "Bolted I-Beam");
+        addBlock(CBBlockRegistry.BOLTED_I_BEAM_CAP, "Bolted I-Beam Cap");
+        addBlock(CBBlockRegistry.BOLTED_SUPPORT_BEAM, "Bolted Support Beam");
+        addBlock(CBBlockRegistry.BOLTED_SUPPORT_BEAM_CAP, "Bolted Support Beam Cap");
     }
 }

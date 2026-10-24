@@ -67,15 +67,21 @@ public class CBAccentedPillarCap extends CBAccentedBlock
     }
 
     @Override
-    protected int xQuarterTurns(BlockState state)
+    public int xQuarterTurns(BlockState state)
     {
         return xTurnsFor(state.getValue(HALF));
     }
 
     @Override
-    protected int yQuarterTurns(BlockState state)
+    public int yQuarterTurns(BlockState state)
     {
-        return yTurnsFor(state.getValue(FACING), state.getValue(HALF));
+        return yTurnsFor(state.getValue(FACING), state.getValue(HALF)) + extraYTurns();
+    }
+
+    // For cap models made facing a different way (e.g. with their back on the south side)
+    protected int extraYTurns()
+    {
+        return 0;
     }
 
     // ---- Placement ----

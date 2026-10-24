@@ -69,13 +69,13 @@ public class CBAccentedPillar extends CBAccentedBlock
     }
 
     @Override
-    protected int xQuarterTurns(BlockState state)
+    public int xQuarterTurns(BlockState state)
     {
         return xTurnsFor(state.getValue(FACING));
     }
 
     @Override
-    protected int yQuarterTurns(BlockState state)
+    public int yQuarterTurns(BlockState state)
     {
         return yTurnsFor(state.getValue(FACING), state.getValue(AXIS));
     }

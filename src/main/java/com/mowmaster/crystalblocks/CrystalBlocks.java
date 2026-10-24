@@ -57,6 +57,9 @@ public class CrystalBlocks {
                     event.accept(block);
                 }
             }
+            for (DeferredBlock<Block> block : CBBlockRegistry.BOLTED) {
+                event.accept(block);
+            }
         }
     }
 

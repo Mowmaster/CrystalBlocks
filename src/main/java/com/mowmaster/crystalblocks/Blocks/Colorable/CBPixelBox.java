@@ -13,6 +13,21 @@ import java.util.List;
 // A box in pixel coordinates (0-16), matching a model element's "from" and "to"
 public record CBPixelBox(double minX, double minY, double minZ, double maxX, double maxY, double maxZ)
 {
+    public CBPixelBox offset(double dx, double dy, double dz)
+    {
+        return new CBPixelBox(minX + dx, minY + dy, minZ + dz, maxX + dx, maxY + dy, maxZ + dz);
+    }
+
+    public double min(Direction.Axis axis)
+    {
+        return axis.choose(minX, minY, minZ);
+    }
+
+    public double max(Direction.Axis axis)
+    {
+        return axis.choose(maxX, maxY, maxZ);
+    }
+
     // Matches a blockstate "x" rotation of quarterTurns x 90 degrees: one turn moves a north-facing back to face down
     public CBPixelBox rotateX(int quarterTurns)
     {

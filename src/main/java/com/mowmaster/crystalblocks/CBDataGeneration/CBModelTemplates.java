@@ -23,7 +23,7 @@ public class CBModelTemplates
     public static final ModelTemplate ACCENTED_PILLAR_CAP = create("accented_pillar_cap", TEXTURE_ONE, TEXTURE_TWO);
     public static final ModelTemplate STEPPED_PILLAR = create("stepped_pillar", TEXTURE_ONE);
     public static final ModelTemplate STEPPED_PILLAR_CAP = create("stepped_pillar_cap", TEXTURE_ONE);
-
+    public static final ModelTemplate BOLTED_CORNER_SUPPORT_CAP = create("bolted_corner_support_cap", TEXTURE_ONE, TEXTURE_TWO);
 
     public static final ModelTemplate TINTED_CUBE_ALL = create("tinted_cube_all", TextureSlot.ALL);
 
