@@ -1,0 +1,8 @@
+{
+  "parent": "crystalblocks:block/tinted_vertical_slab",
+  "textures": {
+    "bottom": "crystalblocks:block/tintable_brick_medium",
+    "side": "crystalblocks:block/tintable_brick_medium",
+    "top": "crystalblocks:block/tintable_brick_medium"
+  }
+}

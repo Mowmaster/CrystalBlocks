@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "condition": {
+        "type": "minecraft:survives_explosion"
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "crystalblocks:bolted_i_beam_cap"
+        }
+      ],
+      "rolls": 1
+    }
+  ],
+  "random_sequence": "crystalblocks:blocks/bolted_i_beam_cap"
+}

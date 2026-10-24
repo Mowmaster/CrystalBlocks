@@ -1,0 +1,38 @@
+{
+  "variants": {
+    "facing=east,half=bottom": {
+      "model": "crystalblocks:block/bolted_corner_support_cap_textured",
+      "y": 270
+    },
+    "facing=east,half=top": {
+      "model": "crystalblocks:block/bolted_corner_support_cap_textured",
+      "x": 180,
+      "y": 90
+    },
+    "facing=north,half=bottom": {
+      "model": "crystalblocks:block/bolted_corner_support_cap_textured",
+      "y": 180
+    },
+    "facing=north,half=top": {
+      "model": "crystalblocks:block/bolted_corner_support_cap_textured",
+      "x": 180
+    },
+    "facing=south,half=bottom": {
+      "model": "crystalblocks:block/bolted_corner_support_cap_textured"
+    },
+    "facing=south,half=top": {
+      "model": "crystalblocks:block/bolted_corner_support_cap_textured",
+      "x": 180,
+      "y": 180
+    },
+    "facing=west,half=bottom": {
+      "model": "crystalblocks:block/bolted_corner_support_cap_textured",
+      "y": 90
+    },
+    "facing=west,half=top": {
+      "model": "crystalblocks:block/bolted_corner_support_cap_textured",
+      "x": 180,
+      "y": 270
+    }
+  }
+}

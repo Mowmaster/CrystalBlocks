@@ -1,0 +1,16 @@
+{
+  "parent": "crystalblocks:block/bolted_i_beam",
+  "textures": {
+    "particle": "crystalblocks:block/tintable_metal",
+    "texture_one": "crystalblocks:block/tintable_metal",
+    "texture_two": "crystalblocks:block/tintable_stone"
+  },
+  "transform": {
+    "origin": "center",
+    "translation": [
+      0.1875,
+      0.0,
+      -0.0625
+    ]
+  }
+}

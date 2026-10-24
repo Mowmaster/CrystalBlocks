@@ -1,0 +1,23 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "crystalblocks:block/tintable_brick_small_vertical_slab",
+      "uvlock": true,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "crystalblocks:block/tintable_brick_small_vertical_slab",
+      "uvlock": true
+    },
+    "facing=south": {
+      "model": "crystalblocks:block/tintable_brick_small_vertical_slab",
+      "uvlock": true,
+      "y": 180
+    },
+    "facing=west": {
+      "model": "crystalblocks:block/tintable_brick_small_vertical_slab",
+      "uvlock": true,
+      "y": 270
+    }
+  }
+}

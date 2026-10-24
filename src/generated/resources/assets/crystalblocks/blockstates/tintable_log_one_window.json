@@ -1,0 +1,1588 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_full",
+        "y": 90
+      },
+      "when": {
+        "bend": "none",
+        "down": "false",
+        "facing": "north",
+        "left": "false",
+        "right": "false",
+        "tinted_glass": "false",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_full_tinted",
+        "y": 90
+      },
+      "when": {
+        "bend": "none",
+        "down": "false",
+        "facing": "north",
+        "left": "false",
+        "right": "false",
+        "tinted_glass": "true",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_one",
+        "x": 180,
+        "y": 90
+      },
+      "when": {
+        "bend": "none",
+        "down": "false",
+        "facing": "north",
+        "left": "false",
+        "right": "false",
+        "tinted_glass": "false",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_one_tinted",
+        "x": 180,
+        "y": 90
+      },
+      "when": {
+        "bend": "none",
+        "down": "false",
+        "facing": "north",
+        "left": "false",
+        "right": "false",
+        "tinted_glass": "true",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_one",
+        "y": 90
+      },
+      "when": {
+        "bend": "none",
+        "down": "true",
+        "facing": "north",
+        "left": "false",
+        "right": "false",
+        "tinted_glass": "false",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_one_tinted",
+        "y": 90
+      },
+      "when": {
+        "bend": "none",
+        "down": "true",
+        "facing": "north",
+        "left": "false",
+        "right": "false",
+        "tinted_glass": "true",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_two",
+        "y": 90
+      },
+      "when": {
+        "bend": "none",
+        "down": "true",
+        "facing": "north",
+        "left": "false",
+        "right": "false",
+        "tinted_glass": "false",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_two_tinted",
+        "y": 90
+      },
+      "when": {
+        "bend": "none",
+        "down": "true",
+        "facing": "north",
+        "left": "false",
+        "right": "false",
+        "tinted_glass": "true",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_one",
+        "x": 270,
+        "y": 90
+      },
+      "when": {
+        "bend": "none",
+        "down": "false",
+        "facing": "north",
+        "left": "true",
+        "right": "false",
+        "tinted_glass": "false",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_one_tinted",
+        "x": 270,
+        "y": 90
+      },
+      "when": {
+        "bend": "none",
+        "down": "false",
+        "facing": "north",
+        "left": "true",
+        "right": "false",
+        "tinted_glass": "true",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_three",
+        "y": 90
+      },
+      "when": {
+        "bend": "none",
+        "down": "false",
+        "facing": "north",
+        "left": "true",
+        "right": "false",
+        "tinted_glass": "false",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_three_tinted",
+        "y": 90
+      },
+      "when": {
+        "bend": "none",
+        "down": "false",
+        "facing": "north",
+        "left": "true",
+        "right": "false",
+        "tinted_glass": "true",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_three",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "bend": "none",
+        "down": "true",
+        "facing": "north",
+        "left": "true",
+        "right": "false",
+        "tinted_glass": "false",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_three_tinted",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "bend": "none",
+        "down": "true",
+        "facing": "north",
+        "left": "true",
+        "right": "false",
+        "tinted_glass": "true",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_four",
+        "x": 180,
+        "y": 90
+      },
+      "when": {
+        "bend": "none",
+        "down": "true",
+        "facing": "north",
+        "left": "true",
+        "right": "false",
+        "tinted_glass": "false",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_four_tinted",
+        "x": 180,
+        "y": 90
+      },
+      "when": {
+        "bend": "none",
+        "down": "true",
+        "facing": "north",
+        "left": "true",
+        "right": "false",
+        "tinted_glass": "true",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_one",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "bend": "none",
+        "down": "false",
+        "facing": "north",
+        "left": "false",
+        "right": "true",
+        "tinted_glass": "false",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_one_tinted",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "bend": "none",
+        "down": "false",
+        "facing": "north",
+        "left": "false",
+        "right": "true",
+        "tinted_glass": "true",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_three",
+        "x": 270,
+        "y": 90
+      },
+      "when": {
+        "bend": "none",
+        "down": "false",
+        "facing": "north",
+        "left": "false",
+        "right": "true",
+        "tinted_glass": "false",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_three_tinted",
+        "x": 270,
+        "y": 90
+      },
+      "when": {
+        "bend": "none",
+        "down": "false",
+        "facing": "north",
+        "left": "false",
+        "right": "true",
+        "tinted_glass": "true",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_three",
+        "x": 180,
+        "y": 90
+      },
+      "when": {
+        "bend": "none",
+        "down": "true",
+        "facing": "north",
+        "left": "false",
+        "right": "true",
+        "tinted_glass": "false",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_three_tinted",
+        "x": 180,
+        "y": 90
+      },
+      "when": {
+        "bend": "none",
+        "down": "true",
+        "facing": "north",
+        "left": "false",
+        "right": "true",
+        "tinted_glass": "true",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_four",
+        "y": 90
+      },
+      "when": {
+        "bend": "none",
+        "down": "true",
+        "facing": "north",
+        "left": "false",
+        "right": "true",
+        "tinted_glass": "false",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_four_tinted",
+        "y": 90
+      },
+      "when": {
+        "bend": "none",
+        "down": "true",
+        "facing": "north",
+        "left": "false",
+        "right": "true",
+        "tinted_glass": "true",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_two",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "bend": "none",
+        "down": "false",
+        "facing": "north",
+        "left": "true",
+        "right": "true",
+        "tinted_glass": "false",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_two_tinted",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "bend": "none",
+        "down": "false",
+        "facing": "north",
+        "left": "true",
+        "right": "true",
+        "tinted_glass": "true",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_four",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "bend": "none",
+        "down": "false",
+        "facing": "north",
+        "left": "true",
+        "right": "true",
+        "tinted_glass": "false",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_four_tinted",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "bend": "none",
+        "down": "false",
+        "facing": "north",
+        "left": "true",
+        "right": "true",
+        "tinted_glass": "true",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_four",
+        "x": 270,
+        "y": 90
+      },
+      "when": {
+        "bend": "none",
+        "down": "true",
+        "facing": "north",
+        "left": "true",
+        "right": "true",
+        "tinted_glass": "false",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_four_tinted",
+        "x": 270,
+        "y": 90
+      },
+      "when": {
+        "bend": "none",
+        "down": "true",
+        "facing": "north",
+        "left": "true",
+        "right": "true",
+        "tinted_glass": "true",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_five",
+        "y": 90
+      },
+      "when": {
+        "bend": "none",
+        "down": "true",
+        "facing": "north",
+        "left": "true",
+        "right": "true",
+        "tinted_glass": "false",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_five_tinted",
+        "y": 90
+      },
+      "when": {
+        "bend": "none",
+        "down": "true",
+        "facing": "north",
+        "left": "true",
+        "right": "true",
+        "tinted_glass": "true",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_corner_up_left",
+        "y": 90
+      },
+      "when": {
+        "bend": "none",
+        "facing": "north",
+        "up_left": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_corner_up_right",
+        "y": 90
+      },
+      "when": {
+        "bend": "none",
+        "facing": "north",
+        "up_right": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_corner_down_left",
+        "y": 90
+      },
+      "when": {
+        "bend": "none",
+        "down_left": "true",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_corner_down_right",
+        "y": 90
+      },
+      "when": {
+        "bend": "none",
+        "down_right": "true",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_full"
+      },
+      "when": {
+        "bend": "none",
+        "down": "false",
+        "facing": "east",
+        "left": "false",
+        "right": "false",
+        "tinted_glass": "false",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_full_tinted"
+      },
+      "when": {
+        "bend": "none",
+        "down": "false",
+        "facing": "east",
+        "left": "false",
+        "right": "false",
+        "tinted_glass": "true",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_one",
+        "x": 180
+      },
+      "when": {
+        "bend": "none",
+        "down": "false",
+        "facing": "east",
+        "left": "false",
+        "right": "false",
+        "tinted_glass": "false",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_one_tinted",
+        "x": 180
+      },
+      "when": {
+        "bend": "none",
+        "down": "false",
+        "facing": "east",
+        "left": "false",
+        "right": "false",
+        "tinted_glass": "true",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_one"
+      },
+      "when": {
+        "bend": "none",
+        "down": "true",
+        "facing": "east",
+        "left": "false",
+        "right": "false",
+        "tinted_glass": "false",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_one_tinted"
+      },
+      "when": {
+        "bend": "none",
+        "down": "true",
+        "facing": "east",
+        "left": "false",
+        "right": "false",
+        "tinted_glass": "true",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_two"
+      },
+      "when": {
+        "bend": "none",
+        "down": "true",
+        "facing": "east",
+        "left": "false",
+        "right": "false",
+        "tinted_glass": "false",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_two_tinted"
+      },
+      "when": {
+        "bend": "none",
+        "down": "true",
+        "facing": "east",
+        "left": "false",
+        "right": "false",
+        "tinted_glass": "true",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_one",
+        "x": 270
+      },
+      "when": {
+        "bend": "none",
+        "down": "false",
+        "facing": "east",
+        "left": "true",
+        "right": "false",
+        "tinted_glass": "false",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_one_tinted",
+        "x": 270
+      },
+      "when": {
+        "bend": "none",
+        "down": "false",
+        "facing": "east",
+        "left": "true",
+        "right": "false",
+        "tinted_glass": "true",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_three"
+      },
+      "when": {
+        "bend": "none",
+        "down": "false",
+        "facing": "east",
+        "left": "true",
+        "right": "false",
+        "tinted_glass": "false",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_three_tinted"
+      },
+      "when": {
+        "bend": "none",
+        "down": "false",
+        "facing": "east",
+        "left": "true",
+        "right": "false",
+        "tinted_glass": "true",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_three",
+        "x": 90
+      },
+      "when": {
+        "bend": "none",
+        "down": "true",
+        "facing": "east",
+        "left": "true",
+        "right": "false",
+        "tinted_glass": "false",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_three_tinted",
+        "x": 90
+      },
+      "when": {
+        "bend": "none",
+        "down": "true",
+        "facing": "east",
+        "left": "true",
+        "right": "false",
+        "tinted_glass": "true",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_four",
+        "x": 180
+      },
+      "when": {
+        "bend": "none",
+        "down": "true",
+        "facing": "east",
+        "left": "true",
+        "right": "false",
+        "tinted_glass": "false",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_four_tinted",
+        "x": 180
+      },
+      "when": {
+        "bend": "none",
+        "down": "true",
+        "facing": "east",
+        "left": "true",
+        "right": "false",
+        "tinted_glass": "true",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_one",
+        "x": 90
+      },
+      "when": {
+        "bend": "none",
+        "down": "false",
+        "facing": "east",
+        "left": "false",
+        "right": "true",
+        "tinted_glass": "false",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_one_tinted",
+        "x": 90
+      },
+      "when": {
+        "bend": "none",
+        "down": "false",
+        "facing": "east",
+        "left": "false",
+        "right": "true",
+        "tinted_glass": "true",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_three",
+        "x": 270
+      },
+      "when": {
+        "bend": "none",
+        "down": "false",
+        "facing": "east",
+        "left": "false",
+        "right": "true",
+        "tinted_glass": "false",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_three_tinted",
+        "x": 270
+      },
+      "when": {
+        "bend": "none",
+        "down": "false",
+        "facing": "east",
+        "left": "false",
+        "right": "true",
+        "tinted_glass": "true",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_three",
+        "x": 180
+      },
+      "when": {
+        "bend": "none",
+        "down": "true",
+        "facing": "east",
+        "left": "false",
+        "right": "true",
+        "tinted_glass": "false",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_three_tinted",
+        "x": 180
+      },
+      "when": {
+        "bend": "none",
+        "down": "true",
+        "facing": "east",
+        "left": "false",
+        "right": "true",
+        "tinted_glass": "true",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_four"
+      },
+      "when": {
+        "bend": "none",
+        "down": "true",
+        "facing": "east",
+        "left": "false",
+        "right": "true",
+        "tinted_glass": "false",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_four_tinted"
+      },
+      "when": {
+        "bend": "none",
+        "down": "true",
+        "facing": "east",
+        "left": "false",
+        "right": "true",
+        "tinted_glass": "true",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_two",
+        "x": 90
+      },
+      "when": {
+        "bend": "none",
+        "down": "false",
+        "facing": "east",
+        "left": "true",
+        "right": "true",
+        "tinted_glass": "false",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_two_tinted",
+        "x": 90
+      },
+      "when": {
+        "bend": "none",
+        "down": "false",
+        "facing": "east",
+        "left": "true",
+        "right": "true",
+        "tinted_glass": "true",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_four",
+        "x": 90
+      },
+      "when": {
+        "bend": "none",
+        "down": "false",
+        "facing": "east",
+        "left": "true",
+        "right": "true",
+        "tinted_glass": "false",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_four_tinted",
+        "x": 90
+      },
+      "when": {
+        "bend": "none",
+        "down": "false",
+        "facing": "east",
+        "left": "true",
+        "right": "true",
+        "tinted_glass": "true",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_four",
+        "x": 270
+      },
+      "when": {
+        "bend": "none",
+        "down": "true",
+        "facing": "east",
+        "left": "true",
+        "right": "true",
+        "tinted_glass": "false",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_four_tinted",
+        "x": 270
+      },
+      "when": {
+        "bend": "none",
+        "down": "true",
+        "facing": "east",
+        "left": "true",
+        "right": "true",
+        "tinted_glass": "true",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_five"
+      },
+      "when": {
+        "bend": "none",
+        "down": "true",
+        "facing": "east",
+        "left": "true",
+        "right": "true",
+        "tinted_glass": "false",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_five_tinted"
+      },
+      "when": {
+        "bend": "none",
+        "down": "true",
+        "facing": "east",
+        "left": "true",
+        "right": "true",
+        "tinted_glass": "true",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_corner_up_left"
+      },
+      "when": {
+        "bend": "none",
+        "facing": "east",
+        "up_left": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_corner_up_right"
+      },
+      "when": {
+        "bend": "none",
+        "facing": "east",
+        "up_right": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_corner_down_left"
+      },
+      "when": {
+        "bend": "none",
+        "down_left": "true",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_corner_down_right"
+      },
+      "when": {
+        "bend": "none",
+        "down_right": "true",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_bend"
+      },
+      "when": {
+        "bend": "north_west",
+        "down": "false",
+        "tinted_glass": "false",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_bend_tinted"
+      },
+      "when": {
+        "bend": "north_west",
+        "down": "false",
+        "tinted_glass": "true",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_bend_down"
+      },
+      "when": {
+        "bend": "north_west",
+        "down": "true",
+        "tinted_glass": "false",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_bend_down_tinted"
+      },
+      "when": {
+        "bend": "north_west",
+        "down": "true",
+        "tinted_glass": "true",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_bend_up"
+      },
+      "when": {
+        "bend": "north_west",
+        "down": "false",
+        "tinted_glass": "false",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_bend_up_tinted"
+      },
+      "when": {
+        "bend": "north_west",
+        "down": "false",
+        "tinted_glass": "true",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_bend_up_down"
+      },
+      "when": {
+        "bend": "north_west",
+        "down": "true",
+        "tinted_glass": "false",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_bend_up_down_tinted"
+      },
+      "when": {
+        "bend": "north_west",
+        "down": "true",
+        "tinted_glass": "true",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_bend_first_up"
+      },
+      "when": {
+        "bend": "north_west",
+        "up_left": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_bend_second_up"
+      },
+      "when": {
+        "bend": "north_west",
+        "up_right": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_bend_first_down"
+      },
+      "when": {
+        "bend": "north_west",
+        "down_left": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_bend_second_down"
+      },
+      "when": {
+        "bend": "north_west",
+        "down_right": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_bend",
+        "y": 90
+      },
+      "when": {
+        "bend": "north_east",
+        "down": "false",
+        "tinted_glass": "false",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_bend_tinted",
+        "y": 90
+      },
+      "when": {
+        "bend": "north_east",
+        "down": "false",
+        "tinted_glass": "true",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_bend_down",
+        "y": 90
+      },
+      "when": {
+        "bend": "north_east",
+        "down": "true",
+        "tinted_glass": "false",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_bend_down_tinted",
+        "y": 90
+      },
+      "when": {
+        "bend": "north_east",
+        "down": "true",
+        "tinted_glass": "true",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_bend_up",
+        "y": 90
+      },
+      "when": {
+        "bend": "north_east",
+        "down": "false",
+        "tinted_glass": "false",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_bend_up_tinted",
+        "y": 90
+      },
+      "when": {
+        "bend": "north_east",
+        "down": "false",
+        "tinted_glass": "true",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_bend_up_down",
+        "y": 90
+      },
+      "when": {
+        "bend": "north_east",
+        "down": "true",
+        "tinted_glass": "false",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_bend_up_down_tinted",
+        "y": 90
+      },
+      "when": {
+        "bend": "north_east",
+        "down": "true",
+        "tinted_glass": "true",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_bend_first_up",
+        "y": 90
+      },
+      "when": {
+        "bend": "north_east",
+        "up_left": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_bend_second_up",
+        "y": 90
+      },
+      "when": {
+        "bend": "north_east",
+        "up_right": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_bend_first_down",
+        "y": 90
+      },
+      "when": {
+        "bend": "north_east",
+        "down_left": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_bend_second_down",
+        "y": 90
+      },
+      "when": {
+        "bend": "north_east",
+        "down_right": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_bend",
+        "y": 180
+      },
+      "when": {
+        "bend": "south_east",
+        "down": "false",
+        "tinted_glass": "false",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_bend_tinted",
+        "y": 180
+      },
+      "when": {
+        "bend": "south_east",
+        "down": "false",
+        "tinted_glass": "true",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_bend_down",
+        "y": 180
+      },
+      "when": {
+        "bend": "south_east",
+        "down": "true",
+        "tinted_glass": "false",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_bend_down_tinted",
+        "y": 180
+      },
+      "when": {
+        "bend": "south_east",
+        "down": "true",
+        "tinted_glass": "true",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_bend_up",
+        "y": 180
+      },
+      "when": {
+        "bend": "south_east",
+        "down": "false",
+        "tinted_glass": "false",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_bend_up_tinted",
+        "y": 180
+      },
+      "when": {
+        "bend": "south_east",
+        "down": "false",
+        "tinted_glass": "true",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_bend_up_down",
+        "y": 180
+      },
+      "when": {
+        "bend": "south_east",
+        "down": "true",
+        "tinted_glass": "false",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_bend_up_down_tinted",
+        "y": 180
+      },
+      "when": {
+        "bend": "south_east",
+        "down": "true",
+        "tinted_glass": "true",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_bend_first_up",
+        "y": 180
+      },
+      "when": {
+        "bend": "south_east",
+        "up_left": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_bend_second_up",
+        "y": 180
+      },
+      "when": {
+        "bend": "south_east",
+        "up_right": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_bend_first_down",
+        "y": 180
+      },
+      "when": {
+        "bend": "south_east",
+        "down_left": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_bend_second_down",
+        "y": 180
+      },
+      "when": {
+        "bend": "south_east",
+        "down_right": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_bend",
+        "y": 270
+      },
+      "when": {
+        "bend": "south_west",
+        "down": "false",
+        "tinted_glass": "false",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_bend_tinted",
+        "y": 270
+      },
+      "when": {
+        "bend": "south_west",
+        "down": "false",
+        "tinted_glass": "true",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_bend_down",
+        "y": 270
+      },
+      "when": {
+        "bend": "south_west",
+        "down": "true",
+        "tinted_glass": "false",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_bend_down_tinted",
+        "y": 270
+      },
+      "when": {
+        "bend": "south_west",
+        "down": "true",
+        "tinted_glass": "true",
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_bend_up",
+        "y": 270
+      },
+      "when": {
+        "bend": "south_west",
+        "down": "false",
+        "tinted_glass": "false",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_bend_up_tinted",
+        "y": 270
+      },
+      "when": {
+        "bend": "south_west",
+        "down": "false",
+        "tinted_glass": "true",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_bend_up_down",
+        "y": 270
+      },
+      "when": {
+        "bend": "south_west",
+        "down": "true",
+        "tinted_glass": "false",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_bend_up_down_tinted",
+        "y": 270
+      },
+      "when": {
+        "bend": "south_west",
+        "down": "true",
+        "tinted_glass": "true",
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_bend_first_up",
+        "y": 270
+      },
+      "when": {
+        "bend": "south_west",
+        "up_left": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_bend_second_up",
+        "y": 270
+      },
+      "when": {
+        "bend": "south_west",
+        "up_right": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_bend_first_down",
+        "y": 270
+      },
+      "when": {
+        "bend": "south_west",
+        "down_left": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/tintable_log_one_window_bend_second_down",
+        "y": 270
+      },
+      "when": {
+        "bend": "south_west",
+        "down_right": "true"
+      }
+    }
+  ]
+}

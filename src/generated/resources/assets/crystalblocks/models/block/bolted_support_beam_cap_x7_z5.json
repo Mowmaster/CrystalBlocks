@@ -1,0 +1,16 @@
+{
+  "parent": "crystalblocks:block/bolted_support_beam_cap",
+  "textures": {
+    "particle": "crystalblocks:block/tintable_metal",
+    "texture_one": "crystalblocks:block/tintable_metal",
+    "texture_two": "crystalblocks:block/tintable_log_one"
+  },
+  "transform": {
+    "origin": "center",
+    "translation": [
+      0.1875,
+      0.0,
+      0.0625
+    ]
+  }
+}

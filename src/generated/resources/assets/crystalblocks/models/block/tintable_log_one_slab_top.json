@@ -1,0 +1,8 @@
+{
+  "parent": "crystalblocks:block/tinted_slab_top",
+  "textures": {
+    "bottom": "crystalblocks:block/tintable_log_one",
+    "side": "crystalblocks:block/tintable_log_one",
+    "top": "crystalblocks:block/tintable_log_one"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "crystalblocks:block/window_tintable_singlepane_four",
+  "textures": {
+    "texture_one": "crystalblocks:block/tintable_metal",
+    "texture_two": "crystalblocks:block/cb_glass"
+  }
+}

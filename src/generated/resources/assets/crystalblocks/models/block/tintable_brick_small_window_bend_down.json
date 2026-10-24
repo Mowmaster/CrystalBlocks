@@ -1,0 +1,130 @@
+{
+  "parent": "minecraft:block/block",
+  "elements": [
+    {
+      "faces": {
+        "down": {
+          "texture": "#texture_one",
+          "tintindex": 0
+        },
+        "east": {
+          "texture": "#texture_one",
+          "tintindex": 0
+        },
+        "north": {
+          "texture": "#texture_one",
+          "tintindex": 0
+        },
+        "south": {
+          "texture": "#texture_one",
+          "tintindex": 0
+        },
+        "up": {
+          "texture": "#texture_one",
+          "tintindex": 0
+        },
+        "west": {
+          "texture": "#texture_one",
+          "tintindex": 0
+        }
+      },
+      "from": [
+        0,
+        14,
+        6
+      ],
+      "to": [
+        10,
+        16,
+        10
+      ]
+    },
+    {
+      "faces": {
+        "down": {
+          "texture": "#texture_one",
+          "tintindex": 0
+        },
+        "east": {
+          "texture": "#texture_one",
+          "tintindex": 0
+        },
+        "north": {
+          "texture": "#texture_one",
+          "tintindex": 0
+        },
+        "south": {
+          "texture": "#texture_one",
+          "tintindex": 0
+        },
+        "up": {
+          "texture": "#texture_one",
+          "tintindex": 0
+        },
+        "west": {
+          "texture": "#texture_one",
+          "tintindex": 0
+        }
+      },
+      "from": [
+        6,
+        14,
+        0
+      ],
+      "to": [
+        10,
+        16,
+        6
+      ]
+    },
+    {
+      "faces": {
+        "north": {
+          "texture": "#texture_two",
+          "tintindex": 1
+        },
+        "south": {
+          "texture": "#texture_two",
+          "tintindex": 1
+        }
+      },
+      "from": [
+        0,
+        0,
+        8
+      ],
+      "to": [
+        8,
+        14,
+        8
+      ]
+    },
+    {
+      "faces": {
+        "east": {
+          "texture": "#texture_two",
+          "tintindex": 1
+        },
+        "west": {
+          "texture": "#texture_two",
+          "tintindex": 1
+        }
+      },
+      "from": [
+        8,
+        0,
+        0
+      ],
+      "to": [
+        8,
+        14,
+        8
+      ]
+    }
+  ],
+  "textures": {
+    "particle": "crystalblocks:block/tintable_brick_small",
+    "texture_one": "crystalblocks:block/tintable_brick_small",
+    "texture_two": "crystalblocks:block/cb_glass"
+  }
+}

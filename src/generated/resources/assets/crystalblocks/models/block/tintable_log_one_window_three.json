@@ -1,0 +1,7 @@
+{
+  "parent": "crystalblocks:block/window_tintable_singlepane_three",
+  "textures": {
+    "texture_one": "crystalblocks:block/tintable_log_one",
+    "texture_two": "crystalblocks:block/cb_glass"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "S": "crystalblocks:tintable_brick_small"
+  },
+  "pattern": [
+    "SS"
+  ],
+  "result": {
+    "count": 8,
+    "id": "crystalblocks:tintable_brick_small_pressureplate"
+  }
+}

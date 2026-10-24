@@ -1,0 +1,7 @@
+{
+  "parent": "crystalblocks:block/accented_pillar_cap",
+  "textures": {
+    "texture_one": "crystalblocks:block/tintable_log_one",
+    "texture_two": "crystalblocks:block/tintable_log_one"
+  }
+}

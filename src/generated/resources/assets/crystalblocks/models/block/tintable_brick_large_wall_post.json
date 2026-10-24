@@ -1,0 +1,6 @@
+{
+  "parent": "crystalblocks:block/tinted_wall_post",
+  "textures": {
+    "wall": "crystalblocks:block/tintable_brick_large"
+  }
+}

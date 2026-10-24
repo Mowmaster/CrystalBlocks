@@ -1,0 +1,6 @@
+{
+  "parent": "crystalblocks:block/tinted_button_inventory",
+  "textures": {
+    "texture": "crystalblocks:block/tintable_brick_medium"
+  }
+}

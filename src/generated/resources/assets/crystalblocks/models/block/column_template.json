@@ -1,0 +1,45 @@
+{
+  "parent": "minecraft:block/block",
+  "elements": [
+    {
+      "faces": {
+        "down": {
+          "cullface": "down",
+          "texture": "#texture_one",
+          "tintindex": 0
+        },
+        "east": {
+          "texture": "#texture_one",
+          "tintindex": 0
+        },
+        "north": {
+          "texture": "#texture_one",
+          "tintindex": 0
+        },
+        "south": {
+          "texture": "#texture_one",
+          "tintindex": 0
+        },
+        "up": {
+          "cullface": "up",
+          "texture": "#texture_one",
+          "tintindex": 0
+        },
+        "west": {
+          "texture": "#texture_one",
+          "tintindex": 0
+        }
+      },
+      "from": [
+        4,
+        0,
+        4
+      ],
+      "to": [
+        12,
+        16,
+        12
+      ]
+    }
+  ]
+}

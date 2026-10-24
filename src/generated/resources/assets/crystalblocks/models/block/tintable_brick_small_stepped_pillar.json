@@ -1,0 +1,6 @@
+{
+  "parent": "crystalblocks:block/stepped_pillar",
+  "textures": {
+    "texture_one": "crystalblocks:block/tintable_brick_small"
+  }
+}

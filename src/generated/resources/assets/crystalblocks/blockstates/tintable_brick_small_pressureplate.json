@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "crystalblocks:block/tintable_brick_small_pressureplate"
+    },
+    "powered=true": {
+      "model": "crystalblocks:block/tintable_brick_small_pressureplate_down"
+    }
+  }
+}

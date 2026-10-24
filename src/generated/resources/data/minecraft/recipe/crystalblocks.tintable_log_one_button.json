@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    "crystalblocks:tintable_log_one"
+  ],
+  "result": {
+    "count": 8,
+    "id": "crystalblocks:tintable_log_one_button"
+  }
+}

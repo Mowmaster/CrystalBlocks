@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipes": "minecraft:crystalblocks.tintable_log_one_button"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_tintable_log_one": {
+      "conditions": {
+        "items": [
+          {
+            "items": "crystalblocks:tintable_log_one"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_tintable_log_one"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:crystalblocks.tintable_log_one_button"
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "crystalblocks:block/bolted_corner_support_cap",
+  "textures": {
+    "texture_one": "crystalblocks:block/tintable_metal",
+    "texture_two": "crystalblocks:block/tintable_stone"
+  }
+}

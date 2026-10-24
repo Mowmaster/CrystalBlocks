@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "crystalblocks:block/tintable_log_one_slab"
+    },
+    "type=double": {
+      "model": "crystalblocks:block/tintable_log_one_slab_double"
+    },
+    "type=top": {
+      "model": "crystalblocks:block/tintable_log_one_slab_top"
+    }
+  }
+}

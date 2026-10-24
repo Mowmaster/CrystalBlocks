@@ -1,0 +1,6 @@
+{
+  "parent": "crystalblocks:block/tinted_cube_all",
+  "textures": {
+    "all": "crystalblocks:block/tintable_brick_small"
+  }
+}

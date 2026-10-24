@@ -1,0 +1,6 @@
+{
+  "parent": "crystalblocks:block/tinted_pressure_plate_up",
+  "textures": {
+    "texture": "crystalblocks:block/tintable_brick_medium"
+  }
+}

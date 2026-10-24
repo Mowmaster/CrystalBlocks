@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "crystalblocks:block/tintable_brick_medium_slab"
+    },
+    "type=double": {
+      "model": "crystalblocks:block/tintable_brick_medium_slab_double"
+    },
+    "type=top": {
+      "model": "crystalblocks:block/tintable_brick_medium_slab_top"
+    }
+  }
+}

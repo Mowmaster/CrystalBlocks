@@ -1,0 +1,11 @@
+{
+  "parent": "crystalblocks:block/column_template",
+  "textures": {
+    "particle": "crystalblocks:block/tintable_brick_large",
+    "texture_one": "crystalblocks:block/tintable_brick_large",
+    "texture_two": "crystalblocks:block/tintable_brick_large"
+  },
+  "transform": {
+    "origin": "center"
+  }
+}

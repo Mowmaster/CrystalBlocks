@@ -1,0 +1,16 @@
+{
+  "parent": "crystalblocks:block/column_template",
+  "textures": {
+    "particle": "crystalblocks:block/tintable_metal",
+    "texture_one": "crystalblocks:block/tintable_metal",
+    "texture_two": "crystalblocks:block/tintable_metal"
+  },
+  "transform": {
+    "origin": "center",
+    "translation": [
+      0.1875,
+      0.0,
+      -0.0625
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "S": "crystalblocks:tintable_metal_vertical_slab"
+  },
+  "pattern": [
+    "SS"
+  ],
+  "result": {
+    "id": "crystalblocks:tintable_metal"
+  }
+}
