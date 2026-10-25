@@ -1,7 +1,7 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "crystalblocks:block/bolted_i_beam_cap_x4_z2",
+    "model": "crystalblocks:block/bolted_i_beam_cap_x4_z2_t0",
     "tints": [
       {
         "type": "minecraft:dye",

@@ -2,7 +2,7 @@
   "multipart": [
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x0_z0",
+        "model": "crystalblocks:block/tintable_brick_small_column_x0_z0_t0",
         "x": 90,
         "y": 90
       },
@@ -14,7 +14,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x0_z1",
+        "model": "crystalblocks:block/tintable_brick_small_column_x0_z1_t0",
         "x": 90,
         "y": 90
       },
@@ -26,7 +26,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x0_z2",
+        "model": "crystalblocks:block/tintable_brick_small_column_x0_z2_t0",
         "x": 90,
         "y": 90
       },
@@ -38,7 +38,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x0_z3",
+        "model": "crystalblocks:block/tintable_brick_small_column_x0_z3_t0",
         "x": 90,
         "y": 90
       },
@@ -50,7 +50,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x0_z4",
+        "model": "crystalblocks:block/tintable_brick_small_column_x0_z4_t0",
         "x": 90,
         "y": 90
       },
@@ -62,7 +62,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x0_z5",
+        "model": "crystalblocks:block/tintable_brick_small_column_x0_z5_t0",
         "x": 90,
         "y": 90
       },
@@ -74,7 +74,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x0_z6",
+        "model": "crystalblocks:block/tintable_brick_small_column_x0_z6_t0",
         "x": 90,
         "y": 90
       },
@@ -86,7 +86,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x0_z7",
+        "model": "crystalblocks:block/tintable_brick_small_column_x0_z7_t0",
         "x": 90,
         "y": 90
       },
@@ -98,7 +98,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x0_z8",
+        "model": "crystalblocks:block/tintable_brick_small_column_x0_z8_t0",
         "x": 90,
         "y": 90
       },
@@ -110,7 +110,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x1_z0",
+        "model": "crystalblocks:block/tintable_brick_small_column_x1_z0_t0",
         "x": 90,
         "y": 90
       },
@@ -122,7 +122,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x1_z1",
+        "model": "crystalblocks:block/tintable_brick_small_column_x1_z1_t0",
         "x": 90,
         "y": 90
       },
@@ -134,7 +134,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x1_z2",
+        "model": "crystalblocks:block/tintable_brick_small_column_x1_z2_t0",
         "x": 90,
         "y": 90
       },
@@ -146,7 +146,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x1_z3",
+        "model": "crystalblocks:block/tintable_brick_small_column_x1_z3_t0",
         "x": 90,
         "y": 90
       },
@@ -158,7 +158,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x1_z4",
+        "model": "crystalblocks:block/tintable_brick_small_column_x1_z4_t0",
         "x": 90,
         "y": 90
       },
@@ -170,7 +170,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x1_z5",
+        "model": "crystalblocks:block/tintable_brick_small_column_x1_z5_t0",
         "x": 90,
         "y": 90
       },
@@ -182,7 +182,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x1_z6",
+        "model": "crystalblocks:block/tintable_brick_small_column_x1_z6_t0",
         "x": 90,
         "y": 90
       },
@@ -194,7 +194,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x1_z7",
+        "model": "crystalblocks:block/tintable_brick_small_column_x1_z7_t0",
         "x": 90,
         "y": 90
       },
@@ -206,7 +206,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x1_z8",
+        "model": "crystalblocks:block/tintable_brick_small_column_x1_z8_t0",
         "x": 90,
         "y": 90
       },
@@ -218,7 +218,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x2_z0",
+        "model": "crystalblocks:block/tintable_brick_small_column_x2_z0_t0",
         "x": 90,
         "y": 90
       },
@@ -230,7 +230,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x2_z1",
+        "model": "crystalblocks:block/tintable_brick_small_column_x2_z1_t0",
         "x": 90,
         "y": 90
       },
@@ -242,7 +242,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x2_z2",
+        "model": "crystalblocks:block/tintable_brick_small_column_x2_z2_t0",
         "x": 90,
         "y": 90
       },
@@ -254,7 +254,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x2_z3",
+        "model": "crystalblocks:block/tintable_brick_small_column_x2_z3_t0",
         "x": 90,
         "y": 90
       },
@@ -266,7 +266,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x2_z4",
+        "model": "crystalblocks:block/tintable_brick_small_column_x2_z4_t0",
         "x": 90,
         "y": 90
       },
@@ -278,7 +278,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x2_z5",
+        "model": "crystalblocks:block/tintable_brick_small_column_x2_z5_t0",
         "x": 90,
         "y": 90
       },
@@ -290,7 +290,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x2_z6",
+        "model": "crystalblocks:block/tintable_brick_small_column_x2_z6_t0",
         "x": 90,
         "y": 90
       },
@@ -302,7 +302,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x2_z7",
+        "model": "crystalblocks:block/tintable_brick_small_column_x2_z7_t0",
         "x": 90,
         "y": 90
       },
@@ -314,7 +314,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x2_z8",
+        "model": "crystalblocks:block/tintable_brick_small_column_x2_z8_t0",
         "x": 90,
         "y": 90
       },
@@ -326,7 +326,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x3_z0",
+        "model": "crystalblocks:block/tintable_brick_small_column_x3_z0_t0",
         "x": 90,
         "y": 90
       },
@@ -338,7 +338,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x3_z1",
+        "model": "crystalblocks:block/tintable_brick_small_column_x3_z1_t0",
         "x": 90,
         "y": 90
       },
@@ -350,7 +350,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x3_z2",
+        "model": "crystalblocks:block/tintable_brick_small_column_x3_z2_t0",
         "x": 90,
         "y": 90
       },
@@ -362,7 +362,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x3_z3",
+        "model": "crystalblocks:block/tintable_brick_small_column_x3_z3_t0",
         "x": 90,
         "y": 90
       },
@@ -374,7 +374,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x3_z4",
+        "model": "crystalblocks:block/tintable_brick_small_column_x3_z4_t0",
         "x": 90,
         "y": 90
       },
@@ -386,7 +386,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x3_z5",
+        "model": "crystalblocks:block/tintable_brick_small_column_x3_z5_t0",
         "x": 90,
         "y": 90
       },
@@ -398,7 +398,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x3_z6",
+        "model": "crystalblocks:block/tintable_brick_small_column_x3_z6_t0",
         "x": 90,
         "y": 90
       },
@@ -410,7 +410,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x3_z7",
+        "model": "crystalblocks:block/tintable_brick_small_column_x3_z7_t0",
         "x": 90,
         "y": 90
       },
@@ -422,7 +422,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x3_z8",
+        "model": "crystalblocks:block/tintable_brick_small_column_x3_z8_t0",
         "x": 90,
         "y": 90
       },
@@ -434,7 +434,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x4_z0",
+        "model": "crystalblocks:block/tintable_brick_small_column_x4_z0_t0",
         "x": 90,
         "y": 90
       },
@@ -446,7 +446,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x4_z1",
+        "model": "crystalblocks:block/tintable_brick_small_column_x4_z1_t0",
         "x": 90,
         "y": 90
       },
@@ -458,7 +458,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x4_z2",
+        "model": "crystalblocks:block/tintable_brick_small_column_x4_z2_t0",
         "x": 90,
         "y": 90
       },
@@ -470,7 +470,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x4_z3",
+        "model": "crystalblocks:block/tintable_brick_small_column_x4_z3_t0",
         "x": 90,
         "y": 90
       },
@@ -482,7 +482,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x4_z4",
+        "model": "crystalblocks:block/tintable_brick_small_column_x4_z4_t0",
         "x": 90,
         "y": 90
       },
@@ -494,7 +494,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x4_z5",
+        "model": "crystalblocks:block/tintable_brick_small_column_x4_z5_t0",
         "x": 90,
         "y": 90
       },
@@ -506,7 +506,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x4_z6",
+        "model": "crystalblocks:block/tintable_brick_small_column_x4_z6_t0",
         "x": 90,
         "y": 90
       },
@@ -518,7 +518,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x4_z7",
+        "model": "crystalblocks:block/tintable_brick_small_column_x4_z7_t0",
         "x": 90,
         "y": 90
       },
@@ -530,7 +530,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x4_z8",
+        "model": "crystalblocks:block/tintable_brick_small_column_x4_z8_t0",
         "x": 90,
         "y": 90
       },
@@ -542,7 +542,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x5_z0",
+        "model": "crystalblocks:block/tintable_brick_small_column_x5_z0_t0",
         "x": 90,
         "y": 90
       },
@@ -554,7 +554,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x5_z1",
+        "model": "crystalblocks:block/tintable_brick_small_column_x5_z1_t0",
         "x": 90,
         "y": 90
       },
@@ -566,7 +566,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x5_z2",
+        "model": "crystalblocks:block/tintable_brick_small_column_x5_z2_t0",
         "x": 90,
         "y": 90
       },
@@ -578,7 +578,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x5_z3",
+        "model": "crystalblocks:block/tintable_brick_small_column_x5_z3_t0",
         "x": 90,
         "y": 90
       },
@@ -590,7 +590,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x5_z4",
+        "model": "crystalblocks:block/tintable_brick_small_column_x5_z4_t0",
         "x": 90,
         "y": 90
       },
@@ -602,7 +602,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x5_z5",
+        "model": "crystalblocks:block/tintable_brick_small_column_x5_z5_t0",
         "x": 90,
         "y": 90
       },
@@ -614,7 +614,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x5_z6",
+        "model": "crystalblocks:block/tintable_brick_small_column_x5_z6_t0",
         "x": 90,
         "y": 90
       },
@@ -626,7 +626,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x5_z7",
+        "model": "crystalblocks:block/tintable_brick_small_column_x5_z7_t0",
         "x": 90,
         "y": 90
       },
@@ -638,7 +638,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x5_z8",
+        "model": "crystalblocks:block/tintable_brick_small_column_x5_z8_t0",
         "x": 90,
         "y": 90
       },
@@ -650,7 +650,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x6_z0",
+        "model": "crystalblocks:block/tintable_brick_small_column_x6_z0_t0",
         "x": 90,
         "y": 90
       },
@@ -662,7 +662,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x6_z1",
+        "model": "crystalblocks:block/tintable_brick_small_column_x6_z1_t0",
         "x": 90,
         "y": 90
       },
@@ -674,7 +674,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x6_z2",
+        "model": "crystalblocks:block/tintable_brick_small_column_x6_z2_t0",
         "x": 90,
         "y": 90
       },
@@ -686,7 +686,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x6_z3",
+        "model": "crystalblocks:block/tintable_brick_small_column_x6_z3_t0",
         "x": 90,
         "y": 90
       },
@@ -698,7 +698,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x6_z4",
+        "model": "crystalblocks:block/tintable_brick_small_column_x6_z4_t0",
         "x": 90,
         "y": 90
       },
@@ -710,7 +710,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x6_z5",
+        "model": "crystalblocks:block/tintable_brick_small_column_x6_z5_t0",
         "x": 90,
         "y": 90
       },
@@ -722,7 +722,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x6_z6",
+        "model": "crystalblocks:block/tintable_brick_small_column_x6_z6_t0",
         "x": 90,
         "y": 90
       },
@@ -734,7 +734,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x6_z7",
+        "model": "crystalblocks:block/tintable_brick_small_column_x6_z7_t0",
         "x": 90,
         "y": 90
       },
@@ -746,7 +746,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x6_z8",
+        "model": "crystalblocks:block/tintable_brick_small_column_x6_z8_t0",
         "x": 90,
         "y": 90
       },
@@ -758,7 +758,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x7_z0",
+        "model": "crystalblocks:block/tintable_brick_small_column_x7_z0_t0",
         "x": 90,
         "y": 90
       },
@@ -770,7 +770,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x7_z1",
+        "model": "crystalblocks:block/tintable_brick_small_column_x7_z1_t0",
         "x": 90,
         "y": 90
       },
@@ -782,7 +782,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x7_z2",
+        "model": "crystalblocks:block/tintable_brick_small_column_x7_z2_t0",
         "x": 90,
         "y": 90
       },
@@ -794,7 +794,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x7_z3",
+        "model": "crystalblocks:block/tintable_brick_small_column_x7_z3_t0",
         "x": 90,
         "y": 90
       },
@@ -806,7 +806,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x7_z4",
+        "model": "crystalblocks:block/tintable_brick_small_column_x7_z4_t0",
         "x": 90,
         "y": 90
       },
@@ -818,7 +818,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x7_z5",
+        "model": "crystalblocks:block/tintable_brick_small_column_x7_z5_t0",
         "x": 90,
         "y": 90
       },
@@ -830,7 +830,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x7_z6",
+        "model": "crystalblocks:block/tintable_brick_small_column_x7_z6_t0",
         "x": 90,
         "y": 90
       },
@@ -842,7 +842,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x7_z7",
+        "model": "crystalblocks:block/tintable_brick_small_column_x7_z7_t0",
         "x": 90,
         "y": 90
       },
@@ -854,7 +854,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x7_z8",
+        "model": "crystalblocks:block/tintable_brick_small_column_x7_z8_t0",
         "x": 90,
         "y": 90
       },
@@ -866,7 +866,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x8_z0",
+        "model": "crystalblocks:block/tintable_brick_small_column_x8_z0_t0",
         "x": 90,
         "y": 90
       },
@@ -878,7 +878,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x8_z1",
+        "model": "crystalblocks:block/tintable_brick_small_column_x8_z1_t0",
         "x": 90,
         "y": 90
       },
@@ -890,7 +890,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x8_z2",
+        "model": "crystalblocks:block/tintable_brick_small_column_x8_z2_t0",
         "x": 90,
         "y": 90
       },
@@ -902,7 +902,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x8_z3",
+        "model": "crystalblocks:block/tintable_brick_small_column_x8_z3_t0",
         "x": 90,
         "y": 90
       },
@@ -914,7 +914,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x8_z4",
+        "model": "crystalblocks:block/tintable_brick_small_column_x8_z4_t0",
         "x": 90,
         "y": 90
       },
@@ -926,7 +926,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x8_z5",
+        "model": "crystalblocks:block/tintable_brick_small_column_x8_z5_t0",
         "x": 90,
         "y": 90
       },
@@ -938,7 +938,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x8_z6",
+        "model": "crystalblocks:block/tintable_brick_small_column_x8_z6_t0",
         "x": 90,
         "y": 90
       },
@@ -950,7 +950,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x8_z7",
+        "model": "crystalblocks:block/tintable_brick_small_column_x8_z7_t0",
         "x": 90,
         "y": 90
       },
@@ -962,7 +962,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x8_z8",
+        "model": "crystalblocks:block/tintable_brick_small_column_x8_z8_t0",
         "x": 90,
         "y": 90
       },
@@ -974,7 +974,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x0_z0"
+        "model": "crystalblocks:block/tintable_brick_small_column_x0_z0_t0"
       },
       "when": {
         "axis": "y",
@@ -984,7 +984,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x0_z1"
+        "model": "crystalblocks:block/tintable_brick_small_column_x0_z1_t0"
       },
       "when": {
         "axis": "y",
@@ -994,7 +994,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x0_z2"
+        "model": "crystalblocks:block/tintable_brick_small_column_x0_z2_t0"
       },
       "when": {
         "axis": "y",
@@ -1004,7 +1004,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x0_z3"
+        "model": "crystalblocks:block/tintable_brick_small_column_x0_z3_t0"
       },
       "when": {
         "axis": "y",
@@ -1014,7 +1014,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x0_z4"
+        "model": "crystalblocks:block/tintable_brick_small_column_x0_z4_t0"
       },
       "when": {
         "axis": "y",
@@ -1024,7 +1024,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x0_z5"
+        "model": "crystalblocks:block/tintable_brick_small_column_x0_z5_t0"
       },
       "when": {
         "axis": "y",
@@ -1034,7 +1034,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x0_z6"
+        "model": "crystalblocks:block/tintable_brick_small_column_x0_z6_t0"
       },
       "when": {
         "axis": "y",
@@ -1044,7 +1044,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x0_z7"
+        "model": "crystalblocks:block/tintable_brick_small_column_x0_z7_t0"
       },
       "when": {
         "axis": "y",
@@ -1054,7 +1054,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x0_z8"
+        "model": "crystalblocks:block/tintable_brick_small_column_x0_z8_t0"
       },
       "when": {
         "axis": "y",
@@ -1064,7 +1064,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x1_z0"
+        "model": "crystalblocks:block/tintable_brick_small_column_x1_z0_t0"
       },
       "when": {
         "axis": "y",
@@ -1074,7 +1074,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x1_z1"
+        "model": "crystalblocks:block/tintable_brick_small_column_x1_z1_t0"
       },
       "when": {
         "axis": "y",
@@ -1084,7 +1084,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x1_z2"
+        "model": "crystalblocks:block/tintable_brick_small_column_x1_z2_t0"
       },
       "when": {
         "axis": "y",
@@ -1094,7 +1094,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x1_z3"
+        "model": "crystalblocks:block/tintable_brick_small_column_x1_z3_t0"
       },
       "when": {
         "axis": "y",
@@ -1104,7 +1104,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x1_z4"
+        "model": "crystalblocks:block/tintable_brick_small_column_x1_z4_t0"
       },
       "when": {
         "axis": "y",
@@ -1114,7 +1114,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x1_z5"
+        "model": "crystalblocks:block/tintable_brick_small_column_x1_z5_t0"
       },
       "when": {
         "axis": "y",
@@ -1124,7 +1124,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x1_z6"
+        "model": "crystalblocks:block/tintable_brick_small_column_x1_z6_t0"
       },
       "when": {
         "axis": "y",
@@ -1134,7 +1134,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x1_z7"
+        "model": "crystalblocks:block/tintable_brick_small_column_x1_z7_t0"
       },
       "when": {
         "axis": "y",
@@ -1144,7 +1144,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x1_z8"
+        "model": "crystalblocks:block/tintable_brick_small_column_x1_z8_t0"
       },
       "when": {
         "axis": "y",
@@ -1154,7 +1154,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x2_z0"
+        "model": "crystalblocks:block/tintable_brick_small_column_x2_z0_t0"
       },
       "when": {
         "axis": "y",
@@ -1164,7 +1164,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x2_z1"
+        "model": "crystalblocks:block/tintable_brick_small_column_x2_z1_t0"
       },
       "when": {
         "axis": "y",
@@ -1174,7 +1174,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x2_z2"
+        "model": "crystalblocks:block/tintable_brick_small_column_x2_z2_t0"
       },
       "when": {
         "axis": "y",
@@ -1184,7 +1184,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x2_z3"
+        "model": "crystalblocks:block/tintable_brick_small_column_x2_z3_t0"
       },
       "when": {
         "axis": "y",
@@ -1194,7 +1194,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x2_z4"
+        "model": "crystalblocks:block/tintable_brick_small_column_x2_z4_t0"
       },
       "when": {
         "axis": "y",
@@ -1204,7 +1204,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x2_z5"
+        "model": "crystalblocks:block/tintable_brick_small_column_x2_z5_t0"
       },
       "when": {
         "axis": "y",
@@ -1214,7 +1214,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x2_z6"
+        "model": "crystalblocks:block/tintable_brick_small_column_x2_z6_t0"
       },
       "when": {
         "axis": "y",
@@ -1224,7 +1224,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x2_z7"
+        "model": "crystalblocks:block/tintable_brick_small_column_x2_z7_t0"
       },
       "when": {
         "axis": "y",
@@ -1234,7 +1234,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x2_z8"
+        "model": "crystalblocks:block/tintable_brick_small_column_x2_z8_t0"
       },
       "when": {
         "axis": "y",
@@ -1244,7 +1244,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x3_z0"
+        "model": "crystalblocks:block/tintable_brick_small_column_x3_z0_t0"
       },
       "when": {
         "axis": "y",
@@ -1254,7 +1254,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x3_z1"
+        "model": "crystalblocks:block/tintable_brick_small_column_x3_z1_t0"
       },
       "when": {
         "axis": "y",
@@ -1264,7 +1264,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x3_z2"
+        "model": "crystalblocks:block/tintable_brick_small_column_x3_z2_t0"
       },
       "when": {
         "axis": "y",
@@ -1274,7 +1274,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x3_z3"
+        "model": "crystalblocks:block/tintable_brick_small_column_x3_z3_t0"
       },
       "when": {
         "axis": "y",
@@ -1284,7 +1284,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x3_z4"
+        "model": "crystalblocks:block/tintable_brick_small_column_x3_z4_t0"
       },
       "when": {
         "axis": "y",
@@ -1294,7 +1294,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x3_z5"
+        "model": "crystalblocks:block/tintable_brick_small_column_x3_z5_t0"
       },
       "when": {
         "axis": "y",
@@ -1304,7 +1304,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x3_z6"
+        "model": "crystalblocks:block/tintable_brick_small_column_x3_z6_t0"
       },
       "when": {
         "axis": "y",
@@ -1314,7 +1314,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x3_z7"
+        "model": "crystalblocks:block/tintable_brick_small_column_x3_z7_t0"
       },
       "when": {
         "axis": "y",
@@ -1324,7 +1324,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x3_z8"
+        "model": "crystalblocks:block/tintable_brick_small_column_x3_z8_t0"
       },
       "when": {
         "axis": "y",
@@ -1334,7 +1334,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x4_z0"
+        "model": "crystalblocks:block/tintable_brick_small_column_x4_z0_t0"
       },
       "when": {
         "axis": "y",
@@ -1344,7 +1344,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x4_z1"
+        "model": "crystalblocks:block/tintable_brick_small_column_x4_z1_t0"
       },
       "when": {
         "axis": "y",
@@ -1354,7 +1354,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x4_z2"
+        "model": "crystalblocks:block/tintable_brick_small_column_x4_z2_t0"
       },
       "when": {
         "axis": "y",
@@ -1364,7 +1364,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x4_z3"
+        "model": "crystalblocks:block/tintable_brick_small_column_x4_z3_t0"
       },
       "when": {
         "axis": "y",
@@ -1374,7 +1374,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x4_z4"
+        "model": "crystalblocks:block/tintable_brick_small_column_x4_z4_t0"
       },
       "when": {
         "axis": "y",
@@ -1384,7 +1384,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x4_z5"
+        "model": "crystalblocks:block/tintable_brick_small_column_x4_z5_t0"
       },
       "when": {
         "axis": "y",
@@ -1394,7 +1394,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x4_z6"
+        "model": "crystalblocks:block/tintable_brick_small_column_x4_z6_t0"
       },
       "when": {
         "axis": "y",
@@ -1404,7 +1404,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x4_z7"
+        "model": "crystalblocks:block/tintable_brick_small_column_x4_z7_t0"
       },
       "when": {
         "axis": "y",
@@ -1414,7 +1414,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x4_z8"
+        "model": "crystalblocks:block/tintable_brick_small_column_x4_z8_t0"
       },
       "when": {
         "axis": "y",
@@ -1424,7 +1424,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x5_z0"
+        "model": "crystalblocks:block/tintable_brick_small_column_x5_z0_t0"
       },
       "when": {
         "axis": "y",
@@ -1434,7 +1434,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x5_z1"
+        "model": "crystalblocks:block/tintable_brick_small_column_x5_z1_t0"
       },
       "when": {
         "axis": "y",
@@ -1444,7 +1444,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x5_z2"
+        "model": "crystalblocks:block/tintable_brick_small_column_x5_z2_t0"
       },
       "when": {
         "axis": "y",
@@ -1454,7 +1454,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x5_z3"
+        "model": "crystalblocks:block/tintable_brick_small_column_x5_z3_t0"
       },
       "when": {
         "axis": "y",
@@ -1464,7 +1464,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x5_z4"
+        "model": "crystalblocks:block/tintable_brick_small_column_x5_z4_t0"
       },
       "when": {
         "axis": "y",
@@ -1474,7 +1474,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x5_z5"
+        "model": "crystalblocks:block/tintable_brick_small_column_x5_z5_t0"
       },
       "when": {
         "axis": "y",
@@ -1484,7 +1484,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x5_z6"
+        "model": "crystalblocks:block/tintable_brick_small_column_x5_z6_t0"
       },
       "when": {
         "axis": "y",
@@ -1494,7 +1494,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x5_z7"
+        "model": "crystalblocks:block/tintable_brick_small_column_x5_z7_t0"
       },
       "when": {
         "axis": "y",
@@ -1504,7 +1504,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x5_z8"
+        "model": "crystalblocks:block/tintable_brick_small_column_x5_z8_t0"
       },
       "when": {
         "axis": "y",
@@ -1514,7 +1514,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x6_z0"
+        "model": "crystalblocks:block/tintable_brick_small_column_x6_z0_t0"
       },
       "when": {
         "axis": "y",
@@ -1524,7 +1524,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x6_z1"
+        "model": "crystalblocks:block/tintable_brick_small_column_x6_z1_t0"
       },
       "when": {
         "axis": "y",
@@ -1534,7 +1534,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x6_z2"
+        "model": "crystalblocks:block/tintable_brick_small_column_x6_z2_t0"
       },
       "when": {
         "axis": "y",
@@ -1544,7 +1544,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x6_z3"
+        "model": "crystalblocks:block/tintable_brick_small_column_x6_z3_t0"
       },
       "when": {
         "axis": "y",
@@ -1554,7 +1554,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x6_z4"
+        "model": "crystalblocks:block/tintable_brick_small_column_x6_z4_t0"
       },
       "when": {
         "axis": "y",
@@ -1564,7 +1564,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x6_z5"
+        "model": "crystalblocks:block/tintable_brick_small_column_x6_z5_t0"
       },
       "when": {
         "axis": "y",
@@ -1574,7 +1574,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x6_z6"
+        "model": "crystalblocks:block/tintable_brick_small_column_x6_z6_t0"
       },
       "when": {
         "axis": "y",
@@ -1584,7 +1584,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x6_z7"
+        "model": "crystalblocks:block/tintable_brick_small_column_x6_z7_t0"
       },
       "when": {
         "axis": "y",
@@ -1594,7 +1594,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x6_z8"
+        "model": "crystalblocks:block/tintable_brick_small_column_x6_z8_t0"
       },
       "when": {
         "axis": "y",
@@ -1604,7 +1604,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x7_z0"
+        "model": "crystalblocks:block/tintable_brick_small_column_x7_z0_t0"
       },
       "when": {
         "axis": "y",
@@ -1614,7 +1614,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x7_z1"
+        "model": "crystalblocks:block/tintable_brick_small_column_x7_z1_t0"
       },
       "when": {
         "axis": "y",
@@ -1624,7 +1624,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x7_z2"
+        "model": "crystalblocks:block/tintable_brick_small_column_x7_z2_t0"
       },
       "when": {
         "axis": "y",
@@ -1634,7 +1634,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x7_z3"
+        "model": "crystalblocks:block/tintable_brick_small_column_x7_z3_t0"
       },
       "when": {
         "axis": "y",
@@ -1644,7 +1644,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x7_z4"
+        "model": "crystalblocks:block/tintable_brick_small_column_x7_z4_t0"
       },
       "when": {
         "axis": "y",
@@ -1654,7 +1654,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x7_z5"
+        "model": "crystalblocks:block/tintable_brick_small_column_x7_z5_t0"
       },
       "when": {
         "axis": "y",
@@ -1664,7 +1664,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x7_z6"
+        "model": "crystalblocks:block/tintable_brick_small_column_x7_z6_t0"
       },
       "when": {
         "axis": "y",
@@ -1674,7 +1674,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x7_z7"
+        "model": "crystalblocks:block/tintable_brick_small_column_x7_z7_t0"
       },
       "when": {
         "axis": "y",
@@ -1684,7 +1684,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x7_z8"
+        "model": "crystalblocks:block/tintable_brick_small_column_x7_z8_t0"
       },
       "when": {
         "axis": "y",
@@ -1694,7 +1694,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x8_z0"
+        "model": "crystalblocks:block/tintable_brick_small_column_x8_z0_t0"
       },
       "when": {
         "axis": "y",
@@ -1704,7 +1704,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x8_z1"
+        "model": "crystalblocks:block/tintable_brick_small_column_x8_z1_t0"
       },
       "when": {
         "axis": "y",
@@ -1714,7 +1714,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x8_z2"
+        "model": "crystalblocks:block/tintable_brick_small_column_x8_z2_t0"
       },
       "when": {
         "axis": "y",
@@ -1724,7 +1724,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x8_z3"
+        "model": "crystalblocks:block/tintable_brick_small_column_x8_z3_t0"
       },
       "when": {
         "axis": "y",
@@ -1734,7 +1734,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x8_z4"
+        "model": "crystalblocks:block/tintable_brick_small_column_x8_z4_t0"
       },
       "when": {
         "axis": "y",
@@ -1744,7 +1744,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x8_z5"
+        "model": "crystalblocks:block/tintable_brick_small_column_x8_z5_t0"
       },
       "when": {
         "axis": "y",
@@ -1754,7 +1754,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x8_z6"
+        "model": "crystalblocks:block/tintable_brick_small_column_x8_z6_t0"
       },
       "when": {
         "axis": "y",
@@ -1764,7 +1764,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x8_z7"
+        "model": "crystalblocks:block/tintable_brick_small_column_x8_z7_t0"
       },
       "when": {
         "axis": "y",
@@ -1774,7 +1774,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x8_z8"
+        "model": "crystalblocks:block/tintable_brick_small_column_x8_z8_t0"
       },
       "when": {
         "axis": "y",
@@ -1784,7 +1784,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x0_z0",
+        "model": "crystalblocks:block/tintable_brick_small_column_x0_z0_t0",
         "x": 90
       },
       "when": {
@@ -1795,7 +1795,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x0_z1",
+        "model": "crystalblocks:block/tintable_brick_small_column_x0_z1_t0",
         "x": 90
       },
       "when": {
@@ -1806,7 +1806,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x0_z2",
+        "model": "crystalblocks:block/tintable_brick_small_column_x0_z2_t0",
         "x": 90
       },
       "when": {
@@ -1817,7 +1817,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x0_z3",
+        "model": "crystalblocks:block/tintable_brick_small_column_x0_z3_t0",
         "x": 90
       },
       "when": {
@@ -1828,7 +1828,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x0_z4",
+        "model": "crystalblocks:block/tintable_brick_small_column_x0_z4_t0",
         "x": 90
       },
       "when": {
@@ -1839,7 +1839,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x0_z5",
+        "model": "crystalblocks:block/tintable_brick_small_column_x0_z5_t0",
         "x": 90
       },
       "when": {
@@ -1850,7 +1850,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x0_z6",
+        "model": "crystalblocks:block/tintable_brick_small_column_x0_z6_t0",
         "x": 90
       },
       "when": {
@@ -1861,7 +1861,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x0_z7",
+        "model": "crystalblocks:block/tintable_brick_small_column_x0_z7_t0",
         "x": 90
       },
       "when": {
@@ -1872,7 +1872,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x0_z8",
+        "model": "crystalblocks:block/tintable_brick_small_column_x0_z8_t0",
         "x": 90
       },
       "when": {
@@ -1883,7 +1883,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x1_z0",
+        "model": "crystalblocks:block/tintable_brick_small_column_x1_z0_t0",
         "x": 90
       },
       "when": {
@@ -1894,7 +1894,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x1_z1",
+        "model": "crystalblocks:block/tintable_brick_small_column_x1_z1_t0",
         "x": 90
       },
       "when": {
@@ -1905,7 +1905,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x1_z2",
+        "model": "crystalblocks:block/tintable_brick_small_column_x1_z2_t0",
         "x": 90
       },
       "when": {
@@ -1916,7 +1916,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x1_z3",
+        "model": "crystalblocks:block/tintable_brick_small_column_x1_z3_t0",
         "x": 90
       },
       "when": {
@@ -1927,7 +1927,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x1_z4",
+        "model": "crystalblocks:block/tintable_brick_small_column_x1_z4_t0",
         "x": 90
       },
       "when": {
@@ -1938,7 +1938,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x1_z5",
+        "model": "crystalblocks:block/tintable_brick_small_column_x1_z5_t0",
         "x": 90
       },
       "when": {
@@ -1949,7 +1949,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x1_z6",
+        "model": "crystalblocks:block/tintable_brick_small_column_x1_z6_t0",
         "x": 90
       },
       "when": {
@@ -1960,7 +1960,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x1_z7",
+        "model": "crystalblocks:block/tintable_brick_small_column_x1_z7_t0",
         "x": 90
       },
       "when": {
@@ -1971,7 +1971,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x1_z8",
+        "model": "crystalblocks:block/tintable_brick_small_column_x1_z8_t0",
         "x": 90
       },
       "when": {
@@ -1982,7 +1982,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x2_z0",
+        "model": "crystalblocks:block/tintable_brick_small_column_x2_z0_t0",
         "x": 90
       },
       "when": {
@@ -1993,7 +1993,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x2_z1",
+        "model": "crystalblocks:block/tintable_brick_small_column_x2_z1_t0",
         "x": 90
       },
       "when": {
@@ -2004,7 +2004,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x2_z2",
+        "model": "crystalblocks:block/tintable_brick_small_column_x2_z2_t0",
         "x": 90
       },
       "when": {
@@ -2015,7 +2015,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x2_z3",
+        "model": "crystalblocks:block/tintable_brick_small_column_x2_z3_t0",
         "x": 90
       },
       "when": {
@@ -2026,7 +2026,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x2_z4",
+        "model": "crystalblocks:block/tintable_brick_small_column_x2_z4_t0",
         "x": 90
       },
       "when": {
@@ -2037,7 +2037,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x2_z5",
+        "model": "crystalblocks:block/tintable_brick_small_column_x2_z5_t0",
         "x": 90
       },
       "when": {
@@ -2048,7 +2048,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x2_z6",
+        "model": "crystalblocks:block/tintable_brick_small_column_x2_z6_t0",
         "x": 90
       },
       "when": {
@@ -2059,7 +2059,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x2_z7",
+        "model": "crystalblocks:block/tintable_brick_small_column_x2_z7_t0",
         "x": 90
       },
       "when": {
@@ -2070,7 +2070,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x2_z8",
+        "model": "crystalblocks:block/tintable_brick_small_column_x2_z8_t0",
         "x": 90
       },
       "when": {
@@ -2081,7 +2081,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x3_z0",
+        "model": "crystalblocks:block/tintable_brick_small_column_x3_z0_t0",
         "x": 90
       },
       "when": {
@@ -2092,7 +2092,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x3_z1",
+        "model": "crystalblocks:block/tintable_brick_small_column_x3_z1_t0",
         "x": 90
       },
       "when": {
@@ -2103,7 +2103,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x3_z2",
+        "model": "crystalblocks:block/tintable_brick_small_column_x3_z2_t0",
         "x": 90
       },
       "when": {
@@ -2114,7 +2114,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x3_z3",
+        "model": "crystalblocks:block/tintable_brick_small_column_x3_z3_t0",
         "x": 90
       },
       "when": {
@@ -2125,7 +2125,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x3_z4",
+        "model": "crystalblocks:block/tintable_brick_small_column_x3_z4_t0",
         "x": 90
       },
       "when": {
@@ -2136,7 +2136,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x3_z5",
+        "model": "crystalblocks:block/tintable_brick_small_column_x3_z5_t0",
         "x": 90
       },
       "when": {
@@ -2147,7 +2147,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x3_z6",
+        "model": "crystalblocks:block/tintable_brick_small_column_x3_z6_t0",
         "x": 90
       },
       "when": {
@@ -2158,7 +2158,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x3_z7",
+        "model": "crystalblocks:block/tintable_brick_small_column_x3_z7_t0",
         "x": 90
       },
       "when": {
@@ -2169,7 +2169,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x3_z8",
+        "model": "crystalblocks:block/tintable_brick_small_column_x3_z8_t0",
         "x": 90
       },
       "when": {
@@ -2180,7 +2180,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x4_z0",
+        "model": "crystalblocks:block/tintable_brick_small_column_x4_z0_t0",
         "x": 90
       },
       "when": {
@@ -2191,7 +2191,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x4_z1",
+        "model": "crystalblocks:block/tintable_brick_small_column_x4_z1_t0",
         "x": 90
       },
       "when": {
@@ -2202,7 +2202,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x4_z2",
+        "model": "crystalblocks:block/tintable_brick_small_column_x4_z2_t0",
         "x": 90
       },
       "when": {
@@ -2213,7 +2213,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x4_z3",
+        "model": "crystalblocks:block/tintable_brick_small_column_x4_z3_t0",
         "x": 90
       },
       "when": {
@@ -2224,7 +2224,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x4_z4",
+        "model": "crystalblocks:block/tintable_brick_small_column_x4_z4_t0",
         "x": 90
       },
       "when": {
@@ -2235,7 +2235,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x4_z5",
+        "model": "crystalblocks:block/tintable_brick_small_column_x4_z5_t0",
         "x": 90
       },
       "when": {
@@ -2246,7 +2246,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x4_z6",
+        "model": "crystalblocks:block/tintable_brick_small_column_x4_z6_t0",
         "x": 90
       },
       "when": {
@@ -2257,7 +2257,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x4_z7",
+        "model": "crystalblocks:block/tintable_brick_small_column_x4_z7_t0",
         "x": 90
       },
       "when": {
@@ -2268,7 +2268,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x4_z8",
+        "model": "crystalblocks:block/tintable_brick_small_column_x4_z8_t0",
         "x": 90
       },
       "when": {
@@ -2279,7 +2279,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x5_z0",
+        "model": "crystalblocks:block/tintable_brick_small_column_x5_z0_t0",
         "x": 90
       },
       "when": {
@@ -2290,7 +2290,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x5_z1",
+        "model": "crystalblocks:block/tintable_brick_small_column_x5_z1_t0",
         "x": 90
       },
       "when": {
@@ -2301,7 +2301,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x5_z2",
+        "model": "crystalblocks:block/tintable_brick_small_column_x5_z2_t0",
         "x": 90
       },
       "when": {
@@ -2312,7 +2312,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x5_z3",
+        "model": "crystalblocks:block/tintable_brick_small_column_x5_z3_t0",
         "x": 90
       },
       "when": {
@@ -2323,7 +2323,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x5_z4",
+        "model": "crystalblocks:block/tintable_brick_small_column_x5_z4_t0",
         "x": 90
       },
       "when": {
@@ -2334,7 +2334,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x5_z5",
+        "model": "crystalblocks:block/tintable_brick_small_column_x5_z5_t0",
         "x": 90
       },
       "when": {
@@ -2345,7 +2345,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x5_z6",
+        "model": "crystalblocks:block/tintable_brick_small_column_x5_z6_t0",
         "x": 90
       },
       "when": {
@@ -2356,7 +2356,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x5_z7",
+        "model": "crystalblocks:block/tintable_brick_small_column_x5_z7_t0",
         "x": 90
       },
       "when": {
@@ -2367,7 +2367,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x5_z8",
+        "model": "crystalblocks:block/tintable_brick_small_column_x5_z8_t0",
         "x": 90
       },
       "when": {
@@ -2378,7 +2378,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x6_z0",
+        "model": "crystalblocks:block/tintable_brick_small_column_x6_z0_t0",
         "x": 90
       },
       "when": {
@@ -2389,7 +2389,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x6_z1",
+        "model": "crystalblocks:block/tintable_brick_small_column_x6_z1_t0",
         "x": 90
       },
       "when": {
@@ -2400,7 +2400,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x6_z2",
+        "model": "crystalblocks:block/tintable_brick_small_column_x6_z2_t0",
         "x": 90
       },
       "when": {
@@ -2411,7 +2411,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x6_z3",
+        "model": "crystalblocks:block/tintable_brick_small_column_x6_z3_t0",
         "x": 90
       },
       "when": {
@@ -2422,7 +2422,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x6_z4",
+        "model": "crystalblocks:block/tintable_brick_small_column_x6_z4_t0",
         "x": 90
       },
       "when": {
@@ -2433,7 +2433,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x6_z5",
+        "model": "crystalblocks:block/tintable_brick_small_column_x6_z5_t0",
         "x": 90
       },
       "when": {
@@ -2444,7 +2444,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x6_z6",
+        "model": "crystalblocks:block/tintable_brick_small_column_x6_z6_t0",
         "x": 90
       },
       "when": {
@@ -2455,7 +2455,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x6_z7",
+        "model": "crystalblocks:block/tintable_brick_small_column_x6_z7_t0",
         "x": 90
       },
       "when": {
@@ -2466,7 +2466,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x6_z8",
+        "model": "crystalblocks:block/tintable_brick_small_column_x6_z8_t0",
         "x": 90
       },
       "when": {
@@ -2477,7 +2477,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x7_z0",
+        "model": "crystalblocks:block/tintable_brick_small_column_x7_z0_t0",
         "x": 90
       },
       "when": {
@@ -2488,7 +2488,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x7_z1",
+        "model": "crystalblocks:block/tintable_brick_small_column_x7_z1_t0",
         "x": 90
       },
       "when": {
@@ -2499,7 +2499,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x7_z2",
+        "model": "crystalblocks:block/tintable_brick_small_column_x7_z2_t0",
         "x": 90
       },
       "when": {
@@ -2510,7 +2510,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x7_z3",
+        "model": "crystalblocks:block/tintable_brick_small_column_x7_z3_t0",
         "x": 90
       },
       "when": {
@@ -2521,7 +2521,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x7_z4",
+        "model": "crystalblocks:block/tintable_brick_small_column_x7_z4_t0",
         "x": 90
       },
       "when": {
@@ -2532,7 +2532,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x7_z5",
+        "model": "crystalblocks:block/tintable_brick_small_column_x7_z5_t0",
         "x": 90
       },
       "when": {
@@ -2543,7 +2543,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x7_z6",
+        "model": "crystalblocks:block/tintable_brick_small_column_x7_z6_t0",
         "x": 90
       },
       "when": {
@@ -2554,7 +2554,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x7_z7",
+        "model": "crystalblocks:block/tintable_brick_small_column_x7_z7_t0",
         "x": 90
       },
       "when": {
@@ -2565,7 +2565,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x7_z8",
+        "model": "crystalblocks:block/tintable_brick_small_column_x7_z8_t0",
         "x": 90
       },
       "when": {
@@ -2576,7 +2576,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x8_z0",
+        "model": "crystalblocks:block/tintable_brick_small_column_x8_z0_t0",
         "x": 90
       },
       "when": {
@@ -2587,7 +2587,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x8_z1",
+        "model": "crystalblocks:block/tintable_brick_small_column_x8_z1_t0",
         "x": 90
       },
       "when": {
@@ -2598,7 +2598,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x8_z2",
+        "model": "crystalblocks:block/tintable_brick_small_column_x8_z2_t0",
         "x": 90
       },
       "when": {
@@ -2609,7 +2609,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x8_z3",
+        "model": "crystalblocks:block/tintable_brick_small_column_x8_z3_t0",
         "x": 90
       },
       "when": {
@@ -2620,7 +2620,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x8_z4",
+        "model": "crystalblocks:block/tintable_brick_small_column_x8_z4_t0",
         "x": 90
       },
       "when": {
@@ -2631,7 +2631,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x8_z5",
+        "model": "crystalblocks:block/tintable_brick_small_column_x8_z5_t0",
         "x": 90
       },
       "when": {
@@ -2642,7 +2642,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x8_z6",
+        "model": "crystalblocks:block/tintable_brick_small_column_x8_z6_t0",
         "x": 90
       },
       "when": {
@@ -2653,7 +2653,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x8_z7",
+        "model": "crystalblocks:block/tintable_brick_small_column_x8_z7_t0",
         "x": 90
       },
       "when": {
@@ -2664,7 +2664,7 @@
     },
     {
       "apply": {
-        "model": "crystalblocks:block/tintable_brick_small_column_x8_z8",
+        "model": "crystalblocks:block/tintable_brick_small_column_x8_z8_t0",
         "x": 90
       },
       "when": {

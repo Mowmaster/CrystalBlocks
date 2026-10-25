@@ -17,7 +17,6 @@ public class CBTintableColumn extends CBBoltedBeamBlock
 
     @Override public Kind kind() { return Kind.SQUARE; }
     @Override public boolean isCap() { return false; }
-    @Override public boolean isTurnable() { return false; }
     @Override protected List<List<CBPixelBox>> regionBoxes() { return REGIONS; }
     @Override protected CBPixelBox footprint() { return CBBoltedSupportBeam.FOOTPRINT; }
     @Override public IntegerProperty offsetXProperty() { return CBBoltedSupportBeam.OFFSET_X; }

@@ -48,5 +48,8 @@ public class CBLanguageProvider extends LanguageProvider
         addItem(CBItemRegistry.CUSTOM_DYE, "Custom Dye");
         add("message.crystalblocks.color_picker.picked", "Picked color %s");
         add("message.crystalblocks.color_picker.none", "This block has no color to pick");
+        addBlock(CBBlockRegistry.CHAINED_SUPPORT_BEAM, "Chained Support Beam");
+        addBlock(CBBlockRegistry.CHAIN_BEAM, "Chain Beam");
+        addBlock(CBBlockRegistry.CHAIN_BEAM_CAP, "Chain Beam Cap");
     }
 }

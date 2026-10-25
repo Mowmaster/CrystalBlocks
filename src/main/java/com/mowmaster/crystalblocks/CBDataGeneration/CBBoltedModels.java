@@ -3,6 +3,8 @@ package com.mowmaster.crystalblocks.CBDataGeneration;
 import com.mowmaster.crystalblocks.Blocks.CBBlockRegistry;
 import com.mowmaster.crystalblocks.Blocks.Colorable.CBAccentedPillarCap;
 import com.mowmaster.crystalblocks.Blocks.Colorable.CBBoltedBeamBlock;
+import com.mowmaster.crystalblocks.Blocks.Colorable.CBBoltedSupportBeam;
+import com.mowmaster.crystalblocks.Blocks.Colorable.CBChainedSupportBeam;
 import com.mowmaster.crystalblocks.Blocks.Colorable.CBPixelBox;
 import com.mowmaster.crystalblocks.CBReferences;
 import net.minecraft.client.color.item.Dye;
@@ -20,25 +22,44 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.Vec3;
 import net.neoforged.neoforge.client.model.generators.template.ExtendedModelTemplateBuilder;
 import net.neoforged.neoforge.common.util.TransformationHelper;
-import com.mowmaster.crystalblocks.Blocks.Colorable.CBBoltedSupportBeam;
+import org.joml.Quaternionf;
 
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.function.Function;
 
-// Models and blockstates for the bolted supports (fixed metal + stone / metal + log textures)
+// Models and blockstates for the bolted supports and chains (fixed metal + stone / metal + log textures)
 public class CBBoltedModels
 {
+    // Which hand-made model a state uses, a name for its copies, and any extra quarter turns around the beam's
+    // length (e.g. half a turn to show a one-sided part on the other side)
+    public record ModelChoice(String name, Identifier parent, int extraTurns) {}
+
     public static void generate(BlockModelGenerators blockModels)
     {
         TextureMapping metalAndStone = textures("tintable_metal", "tintable_stone");
         TextureMapping metalAndLog = textures("tintable_metal", "tintable_log_one");
+        TextureMapping metalOnly = textures("tintable_metal", "tintable_metal");
 
         cornerSupportCap(blockModels, (CBAccentedPillarCap) CBBlockRegistry.BOLTED_CORNER_SUPPORT_CAP.get(), metalAndStone);
         beam(blockModels, (CBBoltedBeamBlock) CBBlockRegistry.BOLTED_I_BEAM.get(), model("bolted_i_beam"), metalAndStone);
         beam(blockModels, (CBBoltedBeamBlock) CBBlockRegistry.BOLTED_I_BEAM_CAP.get(), model("bolted_i_beam_cap"), metalAndStone);
         beam(blockModels, (CBBoltedBeamBlock) CBBlockRegistry.BOLTED_SUPPORT_BEAM.get(), model("bolted_support_beam"), metalAndLog);
         beam(blockModels, (CBBoltedBeamBlock) CBBlockRegistry.BOLTED_SUPPORT_BEAM_CAP.get(), model("bolted_support_beam_cap"), metalAndLog);
+        beam(blockModels, (CBBoltedBeamBlock) CBBlockRegistry.CHAIN_BEAM.get(), model("chain_beam"), metalOnly);
+        beam(blockModels, (CBBoltedBeamBlock) CBBlockRegistry.CHAIN_BEAM_CAP.get(), model("chain_beam_cap"), metalOnly);
+
+        // The chained support beam swaps models depending on which loops have a chain attached
+        beam(blockModels, (CBBoltedBeamBlock) CBBlockRegistry.CHAINED_SUPPORT_BEAM.get(), state -> {
+            boolean north = state.getValue(CBChainedSupportBeam.CHAIN_NORTH);
+            boolean south = state.getValue(CBChainedSupportBeam.CHAIN_SOUTH);
+            if (north && south) return new ModelChoice("_both", model("chained_support_beam_both"), 0);
+            if (south) return new ModelChoice("_one", model("chained_support_beam_top"), 0);
+            // The _top model's chain is on its south loop; half a turn moves it to the north loop
+            if (north) return new ModelChoice("_one", model("chained_support_beam_top"), 2);
+            return new ModelChoice("", model("chained_support_beam"), 0);
+        }, metalAndLog);
     }
 
     // Same blockstate as the accented cap, asking the block for its rotations (this one has an extra half turn)
@@ -58,36 +79,19 @@ public class CBBoltedModels
         tintedItem(blockModels, cap, model, cap.getTintRegionCount());
     }
 
-    // One copy of the hand-made model per position and turn, moved by a NeoForge root transform,
-    // then one multipart entry per block state that picks the copy and rotates it for the facing
+    // A beam that always uses the same hand-made model
     public static void beam(BlockModelGenerators blockModels, CBBoltedBeamBlock beam, Identifier parent, TextureMapping textures)
     {
-        Map<String, Identifier> models = new HashMap<>();
+        beam(blockModels, beam, state -> new ModelChoice("", parent, 0), textures);
+    }
 
-        for (boolean turned : beam.isTurnable() ? new boolean[] { false, true } : new boolean[] { false })
-        {
-            for (int x = 0; x <= beam.maxOffsetX(); x++)
-            {
-                for (int z = 0; z <= beam.maxOffsetZ(); z++)
-                {
-                    Vec3 translation = beam.modelTranslation(x, z, turned);
-                    ModelTemplate template = ExtendedModelTemplateBuilder.builder()
-                            .parent(parent)
-                            .requiredTextureSlot(TextureSlot.PARTICLE)
-                            .requiredTextureSlot(CBModelTemplates.TEXTURE_ONE)
-                            .requiredTextureSlot(CBModelTemplates.TEXTURE_TWO)
-                            .rootTransforms(transform -> transform
-                                    // Root transforms are in block units: 1 pixel = 1/16
-                                    .translation((float) translation.x / 16, 0, (float) translation.z / 16)
-                                    // -90 = clockwise seen from above, the same direction as CBPixelBox.rotateY(1)
-                                    .rotation(0, turned ? -90 : 0, 0, true)
-                                    .origin(TransformationHelper.TransformOrigin.CENTER))
-                            .build();
-                    String suffix = suffix(x, z, turned);
-                    models.put(suffix, template.create(ModelLocationUtils.getModelLocation(beam, suffix), textures, blockModels.modelOutput));
-                }
-            }
-        }
+    // One multipart entry per block state, each using a copy of its hand-made model moved and turned into place
+    // by a NeoForge root transform, then rotated for the facing by the blockstate.
+    public static void beam(BlockModelGenerators blockModels, CBBoltedBeamBlock beam, Function<BlockState, ModelChoice> modelFor,
+                            TextureMapping textures)
+    {
+        // Model copies, created the first time a state needs them so each file is only written once
+        Map<String, Identifier> copies = new HashMap<>();
 
         MultiPartGenerator blockState = MultiPartGenerator.multiPart(beam);
         for (BlockState state : beam.getStateDefinition().getPossibleStates())
@@ -97,22 +101,51 @@ public class CBBoltedModels
                     .term(beam.offsetZProperty(), beam.offsetZ(state));
             if (beam.isCap()) condition = condition.term(CBBoltedBeamBlock.FACING, beam.facing(state));
             else condition = condition.term(CBBoltedBeamBlock.AXIS, beam.facing(state).getAxis());
-            if (beam.isTurnable()) condition = condition.term(CBBoltedBeamBlock.TURNED, beam.isTurned(state));
+            if (beam.turnProperty() != null) condition = condition.term(beam.turnProperty(), beam.turn(state));
+            if (beam instanceof CBChainedSupportBeam)
+            {
+                condition = condition
+                        .term(CBChainedSupportBeam.CHAIN_NORTH, state.getValue(CBChainedSupportBeam.CHAIN_NORTH))
+                        .term(CBChainedSupportBeam.CHAIN_SOUTH, state.getValue(CBChainedSupportBeam.CHAIN_SOUTH));
+            }
 
-            Identifier model = models.get(suffix(beam.offsetX(state), beam.offsetZ(state), beam.isTurned(state)));
+            Identifier model = modelCopy(blockModels, beam, state, modelFor.apply(state), textures, copies);
             blockState.with(condition, rotated(model, beam.xQuarterTurns(state), beam.yQuarterTurns(state)));
         }
         blockModels.blockStateOutput.accept(blockState);
 
         // The item shows the beam in its default (centred, upright, unturned) state
         BlockState item = beam.defaultBlockState();
-        Identifier itemModel = models.get(suffix(beam.offsetX(item), beam.offsetZ(item), false));
+        Identifier itemModel = modelCopy(blockModels, beam, item, modelFor.apply(item), textures, copies);
         tintedItem(blockModels, beam, itemModel, beam.getTintRegionCount());
     }
 
-    private static String suffix(int x, int z, boolean turned)
+    // The copy of the chosen model for this state's position and turn (made if it doesn't exist yet)
+    private static Identifier modelCopy(BlockModelGenerators blockModels, CBBoltedBeamBlock beam, BlockState state,
+                                        ModelChoice choice, TextureMapping textures, Map<String, Identifier> copies)
     {
-        return "_x" + x + "_z" + z + (turned ? "_turned" : "");
+        int x = beam.offsetX(state);
+        int z = beam.offsetZ(state);
+        int turn = beam.turn(state);
+        String suffix = choice.name() + "_x" + x + "_z" + z + "_t" + turn + (choice.extraTurns() != 0 ? "_r" + choice.extraTurns() : "");
+
+        return copies.computeIfAbsent(suffix, key -> {
+            // The extra turns only spin the model; the position still follows the beam's own turn
+            Vec3 translation = beam.modelTranslation(x, z, turn);
+            Quaternionf rotation = beam.rootRotation(turn + choice.extraTurns());
+            ModelTemplate template = ExtendedModelTemplateBuilder.builder()
+                    .parent(choice.parent())
+                    .requiredTextureSlot(TextureSlot.PARTICLE)
+                    .requiredTextureSlot(CBModelTemplates.TEXTURE_ONE)
+                    .requiredTextureSlot(CBModelTemplates.TEXTURE_TWO)
+                    .rootTransforms(transform -> transform
+                            // Root transforms are in block units: 1 pixel = 1/16
+                            .translation((float) translation.x / 16, (float) translation.y / 16, (float) translation.z / 16)
+                            .rotation(rotation)
+                            .origin(TransformationHelper.TransformOrigin.CENTER))
+                    .build();
+            return template.create(ModelLocationUtils.getModelLocation(beam, key), textures, blockModels.modelOutput);
+        });
     }
 
     // Item with every tint index starting undyed

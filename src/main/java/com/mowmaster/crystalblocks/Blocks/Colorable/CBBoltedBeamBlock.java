@@ -17,7 +17,6 @@ import net.minecraft.world.level.block.Rotation;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
-import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.properties.EnumProperty;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.phys.BlockHitResult;
@@ -26,29 +25,31 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
+import org.joml.Quaternionf;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-// Base for beams built from a hand-made model that runs up the Y axis, as modelled.
-// - Position: offset_x / offset_z place the main body anywhere in the block, like the column
-// - Turn (non-square beams): a quarter turn around the beam's own length
-// - Caps: a 6-way facing; the model's top always points at the surface it was placed against
+// Base for beams built from a hand-made model.
+// - Model base rotation: models that aren't made running up Y (e.g. the chain) are turned onto Y first
+// - Position: offset_x / offset_z place the main body anywhere in the block, in whole-pixel steps
+// - Turn: quarter turns around the beam's own length (2 or 4 allowed, per block)
+// - Plain beams have an axis (placed out of the clicked face like logs); caps have a 6-way facing whose top
+//   always points at the surface they were placed against
 // Datagen makes one copy of the hand-made model per position and turn, moved with a NeoForge root transform,
 // and rotates it for the facing in the blockstate. Shapes, clicks and placement all use the same maths.
 public abstract class CBBoltedBeamBlock extends Block implements IColorableBlock
 {
-    // Which way the model's top points (caps only)
     public static final EnumProperty<Direction> FACING = BlockStateProperties.FACING;
-    // Turned a quarter around the beam's length (turnable beams only)
-    public static final BooleanProperty TURNED = BooleanProperty.create("turned");
-    // Which way a plain beam runs (beams look the same from both ends, so 3 values are enough)
     public static final EnumProperty<Direction.Axis> AXIS = BlockStateProperties.AXIS;
+    // Quarter turns around the beam's length, for blocks that allow 2 or 4 of them
+    public static final IntegerProperty TURN_2 = IntegerProperty.create("turn", 0, 1);
+    public static final IntegerProperty TURN_4 = IntegerProperty.create("turn", 0, 3);
 
-    // Beams and caps of the same kind (same cross-section size) line up with each other
-    public enum Kind { SQUARE, I_BEAM }
+    // Beams and caps of the same kind (same cross-section) line up with each other
+    public enum Kind { SQUARE, I_BEAM, CHAIN }
 
     private final Map<BlockState, VoxelShape> shapes = new HashMap<>();
 
@@ -56,11 +57,12 @@ public abstract class CBBoltedBeamBlock extends Block implements IColorableBlock
     {
         super(properties);
 
+        CBPixelBox body = standardFootprint();
         BlockState defaults = stateDefinition.any()
-                .setValue(offsetXProperty(), (int) footprint().minX())
-                .setValue(offsetZProperty(), (int) footprint().minZ());
+                .setValue(offsetXProperty(), (int) Math.floor(body.minX()))
+                .setValue(offsetZProperty(), (int) Math.floor(body.minZ()));
         defaults = isCap() ? defaults.setValue(FACING, Direction.UP) : defaults.setValue(AXIS, Direction.Axis.Y);
-        if (isTurnable()) defaults = defaults.setValue(TURNED, false);
+        if (turnProperty() != null) defaults = defaults.setValue(turnProperty(), 0);
         registerDefaultState(defaults);
 
         List<CBPixelBox> allBoxes = regionBoxes().stream().flatMap(List::stream).toList();
@@ -76,17 +78,28 @@ public abstract class CBBoltedBeamBlock extends Block implements IColorableBlock
 
     public abstract boolean isCap();
 
-    public abstract boolean isTurnable();
-
     // The model's element boxes per tint region, as modelled
     protected abstract List<List<CBPixelBox>> regionBoxes();
 
-    // The main body's cross-section as modelled; it decides how far the beam can move
+    // The main body's cross-section as modelled; it decides where the beam can sit
     protected abstract CBPixelBox footprint();
 
     public abstract IntegerProperty offsetXProperty();
 
     public abstract IntegerProperty offsetZProperty();
+
+    // How many quarter turns around its length the beam allows: 1 (none), 2 or 4
+    public int turnCount()
+    {
+        return 1;
+    }
+
+    // Quarter turns around X that bring the model onto the Y axis with its top up (CBPixelBox.rotateX direction).
+    // 0 for models made running up Y; 3 for a model made running north-south with its top at the north end.
+    public int modelXTurns()
+    {
+        return 0;
+    }
 
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder)
@@ -94,7 +107,7 @@ public abstract class CBBoltedBeamBlock extends Block implements IColorableBlock
         builder.add(offsetXProperty(), offsetZProperty());
         if (isCap()) builder.add(FACING);
         else builder.add(AXIS);
-        if (isTurnable()) builder.add(TURNED);
+        if (turnProperty() != null) builder.add(turnProperty());
     }
 
     // ---- Reading a state ----
@@ -112,14 +125,26 @@ public abstract class CBBoltedBeamBlock extends Block implements IColorableBlock
     }
 
     // Points the beam: caps keep the exact direction, plain beams only keep its axis
-    private BlockState withFacing(BlockState state, Direction facing)
+    protected BlockState withFacing(BlockState state, Direction facing)
     {
         return isCap() ? state.setValue(FACING, facing) : state.setValue(AXIS, facing.getAxis());
     }
 
-    public boolean isTurned(BlockState state)
+    @Nullable
+    public IntegerProperty turnProperty()
     {
-        return isTurnable() && state.getValue(TURNED);
+        return switch (turnCount())
+        {
+            case 2 -> TURN_2;
+            case 4 -> TURN_4;
+            default -> null;
+        };
+    }
+
+    public int turn(BlockState state)
+    {
+        IntegerProperty property = turnProperty();
+        return property == null ? 0 : state.getValue(property);
     }
 
     public int offsetX(BlockState state)
@@ -132,25 +157,53 @@ public abstract class CBBoltedBeamBlock extends Block implements IColorableBlock
         return state.getValue(offsetZProperty());
     }
 
+    // ---- Positions ----
+
+    // The footprint once the model's base rotation has put it upright
+    public CBPixelBox standardFootprint()
+    {
+        return footprint().rotateX(modelXTurns());
+    }
+
+    // Offsets move the body in whole pixels from where it was modelled, so a body whose edge sits on a fraction
+    // of a pixel (like the chain at 6.75) keeps that fraction at every position
     public int maxOffsetX()
     {
-        return 16 - (int) (footprint().maxX() - footprint().minX());
+        CBPixelBox body = standardFootprint();
+        return (int) Math.floor(16 - (body.maxX() - body.minX()) - (body.minX() - Math.floor(body.minX())));
     }
 
     public int maxOffsetZ()
     {
-        return 16 - (int) (footprint().maxZ() - footprint().minZ());
+        CBPixelBox body = standardFootprint();
+        return (int) Math.floor(16 - (body.maxZ() - body.minZ()) - (body.minZ() - Math.floor(body.minZ())));
     }
 
     // ---- Transforms, shared with datagen ----
 
-    // How far the model moves from where it was modelled, in pixels, turned along with it if the beam is turned.
+    // How far the model moves from where it was modelled, in pixels, turned along with it.
     // Datagen writes this into each model copy's root transform.
-    public Vec3 modelTranslation(int offsetX, int offsetZ, boolean turned)
+    public Vec3 modelTranslation(int offsetX, int offsetZ, int turn)
     {
-        double dx = offsetX - footprint().minX();
-        double dz = offsetZ - footprint().minZ();
-        return turned ? new Vec3(-dz, 0, dx) : new Vec3(dx, 0, dz);
+        CBPixelBox body = standardFootprint();
+        double dx = offsetX - Math.floor(body.minX());
+        double dz = offsetZ - Math.floor(body.minZ());
+        for (int i = 0; i < Math.floorMod(turn, 4); i++)
+        {
+            double oldX = dx;
+            dx = -dz;
+            dz = oldX;
+        }
+        return new Vec3(dx, 0, dz);
+    }
+
+    // The root transform rotation for a model copy: the base rotation first, then the turns around Y.
+    // JOML's -90 degrees matches one CBPixelBox.rotateX / rotateY quarter turn.
+    public Quaternionf rootRotation(int turns)
+    {
+        return new Quaternionf()
+                .rotateY((float) Math.toRadians(-90.0 * turns))
+                .rotateX((float) Math.toRadians(-90.0 * modelXTurns()));
     }
 
     // Blockstate rotations that point the model's top at the facing: up as modelled, down = x 180,
@@ -171,12 +224,13 @@ public abstract class CBBoltedBeamBlock extends Block implements IColorableBlock
         return facing.getAxis().isVertical() ? 0 : CBPixelBox.quarterTurns(facing);
     }
 
-    // A model box moved to where it really is in this state: turn, then move, then the blockstate rotations
-    private CBPixelBox place(CBPixelBox box, BlockState state)
+    // A model box moved to where it really is in this state: base rotation, turn, move, then the blockstate rotations
+    protected CBPixelBox place(CBPixelBox box, BlockState state)
     {
-        boolean turned = isTurned(state);
-        Vec3 translation = modelTranslation(offsetX(state), offsetZ(state), turned);
-        return (turned ? box.rotateY(1) : box)
+        int turn = turn(state);
+        Vec3 translation = modelTranslation(offsetX(state), offsetZ(state), turn);
+        return box.rotateX(modelXTurns())
+                .rotateY(turn)
                 .offset(translation.x, translation.y, translation.z)
                 .rotateX(xQuarterTurns(state))
                 .rotateY(yQuarterTurns(state));
@@ -186,6 +240,44 @@ public abstract class CBBoltedBeamBlock extends Block implements IColorableBlock
     public CBPixelBox worldFootprint(BlockState state)
     {
         return place(footprint(), state);
+    }
+
+    // Which world direction a side of the model (as modelled) faces in this state
+    public Direction worldDirection(Direction modelSide, BlockState state)
+    {
+        Direction direction = modelSide;
+        for (int i = 0; i < modelXTurns(); i++) direction = turnX(direction);
+        for (int i = 0; i < turn(state); i++) direction = turnY(direction);
+        for (int i = 0; i < xQuarterTurns(state); i++) direction = turnX(direction);
+        for (int i = 0; i < yQuarterTurns(state); i++) direction = turnY(direction);
+        return direction;
+    }
+
+    // A spot on this beam that another kind of beam can attach to on the given world side (e.g. a chained
+    // support beam's loop, for chains). Returns that spot's box in this block's pixels, or null if there isn't one.
+    @Nullable
+    public CBPixelBox connectionPoint(BlockState state, Direction side, CBBoltedBeamBlock connecting)
+    {
+        return null;
+    }
+
+    // One CBPixelBox.rotateX quarter turn: north -> down -> south -> up -> north
+    private static Direction turnX(Direction direction)
+    {
+        return switch (direction)
+        {
+            case NORTH -> Direction.DOWN;
+            case DOWN -> Direction.SOUTH;
+            case SOUTH -> Direction.UP;
+            case UP -> Direction.NORTH;
+            default -> direction;
+        };
+    }
+
+    // One CBPixelBox.rotateY quarter turn: north -> east -> south -> west
+    private static Direction turnY(Direction direction)
+    {
+        return direction.getAxis().isVertical() ? direction : direction.getClockWise();
     }
 
     // ---- Shape ----
@@ -238,30 +330,41 @@ public abstract class CBBoltedBeamBlock extends Block implements IColorableBlock
         Direction clickedFace = context.getClickedFace();
         Direction facing = isCap() ? clickedFace.getOpposite() : clickedFace;
         BlockState state = withFacing(defaultBlockState(), facing);
-        // Next to a beam of the same kind along this one's length: line up with it exactly
+        // Placed against another beam's connection point (e.g. a chain against a chained support's loop):
+        // line up with that point
+        if (!context.replacingClickedOnBlock() && facing.getAxis() == clickedFace.getAxis())
+        {
+            BlockState clicked = level.getBlockState(pos.relative(clickedFace.getOpposite()));
+            if (clicked.getBlock() instanceof CBBoltedBeamBlock other)
+            {
+                CBPixelBox point = other.connectionPoint(clicked, clickedFace, this);
+                if (point != null) return bestFit(state, point, true, turn(state));
+            }
+        }
+
+        // Next to a beam of the same kind along this one's length: line up with it exactly, keeping its turn
         BlockPos neighborPos = alignedNeighbor(level, pos, state, clickedFace.getOpposite());
         if (neighborPos != null)
         {
             BlockState neighbor = level.getBlockState(neighborPos);
             CBBoltedBeamBlock other = (CBBoltedBeamBlock) neighbor.getBlock();
-            return bestFit(state, other.worldFootprint(neighbor), true);
+            return bestFit(state, other.worldFootprint(neighbor), true, other.turn(neighbor));
         }
 
         // Otherwise: upright beams turn to match the way the player is looking...
-        if (isTurnable())
+        if (turnProperty() != null && facing.getAxis().isVertical())
         {
-            boolean lookingEastWest = context.getHorizontalDirection().getAxis() == Direction.Axis.X;
-            state = state.setValue(TURNED, facing.getAxis().isVertical() && lookingEastWest);
+            state = state.setValue(turnProperty(), CBPixelBox.quarterTurns(context.getHorizontalDirection()) % turnCount());
         }
         // ...and centre on the clicked pixel (as close as the block allows)
         Vec3 click = context.getClickLocation().subtract(Vec3.atLowerCornerOf(pos)).scale(16);
-        return bestFit(state, new CBPixelBox(click.x, click.y, click.z, click.x, click.y, click.z), false);
+        return bestFit(state, new CBPixelBox(click.x, click.y, click.z, click.x, click.y, click.z), false, turn(state));
     }
 
     // A beam or cap of the same kind directly before or after this one along its length, or null.
     // preferredSide (if given and lined up) is checked first, so the block that was clicked wins.
     @Nullable
-    private BlockPos alignedNeighbor(LevelReader level, BlockPos pos, BlockState state, @Nullable Direction preferredSide)
+    protected BlockPos alignedNeighbor(LevelReader level, BlockPos pos, BlockState state, @Nullable Direction preferredSide)
     {
         Direction.Axis axis = facing(state).getAxis();
         List<Direction> sides = new ArrayList<>();
@@ -282,25 +385,29 @@ public abstract class CBBoltedBeamBlock extends Block implements IColorableBlock
         return null;
     }
 
-    // Tries every position (and turn, if allowed) and keeps the one whose body best matches the target
-    // across the beam's length. Used for clicks, stacking, rotating and mirroring.
-    private BlockState bestFit(BlockState state, CBPixelBox target, boolean tryBothTurns)
+    // Tries every position (and every turn, if allowed) and keeps the one whose body best matches the target
+    // across the beam's length. Ties go to preferredTurn, so square beams keep the turn they should have.
+    // Used for clicks, stacking, rotating and mirroring.
+    private BlockState bestFit(BlockState state, CBPixelBox target, boolean tryAllTurns, int preferredTurn)
     {
         Direction.Axis lengthAxis = facing(state).getAxis();
-        boolean[] turns = tryBothTurns && isTurnable() ? new boolean[] { false, true } : new boolean[] { isTurned(state) };
+        int preferred = Math.floorMod(preferredTurn, turnCount());
+        int firstTurn = tryAllTurns ? 0 : turn(state);
+        int lastTurn = tryAllTurns ? turnCount() - 1 : turn(state);
 
         BlockState best = state;
         double bestDifference = Double.MAX_VALUE;
-        for (boolean turned : turns)
+        for (int turn = firstTurn; turn <= lastTurn; turn++)
         {
             for (int x = 0; x <= maxOffsetX(); x++)
             {
                 for (int z = 0; z <= maxOffsetZ(); z++)
                 {
                     BlockState candidate = state.setValue(offsetXProperty(), x).setValue(offsetZProperty(), z);
-                    if (isTurnable()) candidate = candidate.setValue(TURNED, turned);
+                    if (turnProperty() != null) candidate = candidate.setValue(turnProperty(), turn);
 
-                    double difference = crossSectionDifference(worldFootprint(candidate), target, lengthAxis);
+                    double difference = crossSectionDifference(worldFootprint(candidate), target, lengthAxis)
+                            + (turn == preferred ? 0 : 0.001);
                     if (difference < bestDifference)
                     {
                         bestDifference = difference;
@@ -313,7 +420,7 @@ public abstract class CBBoltedBeamBlock extends Block implements IColorableBlock
     }
 
     // How different two boxes are across the beam: centre distance plus size difference, ignoring the length axis
-    private static double crossSectionDifference(CBPixelBox a, CBPixelBox b, Direction.Axis lengthAxis)
+    protected static double crossSectionDifference(CBPixelBox a, CBPixelBox b, Direction.Axis lengthAxis)
     {
         double difference = 0;
         for (Direction.Axis axis : Direction.Axis.values())
@@ -365,7 +472,8 @@ public abstract class CBBoltedBeamBlock extends Block implements IColorableBlock
 
     // ---- Rotation (structures, other mods' rotation tools) ----
 
-    // Turn the facing, then find the position whose body sits where the old body ends up after turning
+    // Turn the facing, then find the position whose body sits where the old body ends up after turning.
+    // An upright beam also turns around its own length by the same amount.
     @Override
     protected @NotNull BlockState rotate(BlockState state, Rotation rotation)
     {
@@ -378,7 +486,8 @@ public abstract class CBBoltedBeamBlock extends Block implements IColorableBlock
             default -> 0;
         };
         BlockState rotated = withFacing(state, rotation.rotate(facing(state)));
-        return bestFit(rotated, worldFootprint(state).rotateY(quarterTurns), true);
+        int preferredTurn = facing(state).getAxis().isVertical() ? turn(state) + quarterTurns : turn(state);
+        return bestFit(rotated, worldFootprint(state).rotateY(quarterTurns), true, preferredTurn);
     }
 
     @Override
@@ -392,7 +501,7 @@ public abstract class CBBoltedBeamBlock extends Block implements IColorableBlock
                 // flips east/west
                 : new CBPixelBox(16 - body.maxX(), body.minY(), body.minZ(), 16 - body.minX(), body.maxY(), body.maxZ());
         BlockState flipped = withFacing(state, mirror.mirror(facing(state)));
-        return bestFit(flipped, mirrored, true);
+        return bestFit(flipped, mirrored, true, turn(state));
     }
 
     // ---- Dyeing ----

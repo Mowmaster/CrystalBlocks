@@ -25,7 +25,7 @@ public class CBBoltedIBeam extends CBBoltedBeamBlock
 
     @Override public Kind kind() { return Kind.I_BEAM; }
     @Override public boolean isCap() { return false; }
-    @Override public boolean isTurnable() { return true; }
+    @Override public int turnCount() { return 2; }
     @Override protected List<List<CBPixelBox>> regionBoxes() { return REGIONS; }
     @Override protected CBPixelBox footprint() { return FOOTPRINT; }
     @Override public IntegerProperty offsetXProperty() { return OFFSET_X; }

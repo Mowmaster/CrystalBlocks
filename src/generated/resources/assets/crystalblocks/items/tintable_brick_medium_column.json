@@ -1,7 +1,7 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "crystalblocks:block/tintable_brick_medium_column_x4_z4",
+    "model": "crystalblocks:block/tintable_brick_medium_column_x4_z4_t0",
     "tints": [
       {
         "type": "minecraft:dye",

@@ -39,9 +39,16 @@ public class CBBlockRegistry
             properties -> new CBBoltedSupportBeam(CBMaterial.METAL.apply(properties)));
     public static final DeferredBlock<Block> BOLTED_SUPPORT_BEAM_CAP = registerBlock("bolted_support_beam_cap",
             properties -> new CBBoltedSupportBeamCap(CBMaterial.METAL.apply(properties)));
+    public static final DeferredBlock<Block> CHAINED_SUPPORT_BEAM = registerBlock("chained_support_beam",
+            properties -> new CBChainedSupportBeam(CBMaterial.METAL.apply(properties)));
+    public static final DeferredBlock<Block> CHAIN_BEAM = registerBlock("chain_beam",
+            properties -> new CBChainBeam(CBMaterial.METAL.apply(properties)));
+    public static final DeferredBlock<Block> CHAIN_BEAM_CAP = registerBlock("chain_beam_cap",
+            properties -> new CBChainBeamCap(CBMaterial.METAL.apply(properties)));
 
     public static final List<DeferredBlock<Block>> BOLTED = List.of(BOLTED_CORNER_SUPPORT_CAP,
-            BOLTED_I_BEAM, BOLTED_I_BEAM_CAP, BOLTED_SUPPORT_BEAM, BOLTED_SUPPORT_BEAM_CAP);
+            BOLTED_I_BEAM, BOLTED_I_BEAM_CAP, BOLTED_SUPPORT_BEAM, BOLTED_SUPPORT_BEAM_CAP,
+            CHAINED_SUPPORT_BEAM, CHAIN_BEAM, CHAIN_BEAM_CAP);
 
     // Registers every shape for one texture
     private static CBBlockSet registerSet(String name, String displayName, CBMaterial material)

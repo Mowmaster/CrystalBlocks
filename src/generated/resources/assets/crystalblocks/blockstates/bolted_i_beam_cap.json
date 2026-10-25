@@ -2,1100 +2,1087 @@
   "multipart": [
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z0_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z0_t0",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "0",
         "offset_z": "0",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z0",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z0_t1",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "0",
         "offset_z": "0",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z1_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z1_t0",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "0",
         "offset_z": "1",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z1",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z1_t1",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "0",
         "offset_z": "1",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z2_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z2_t0",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "0",
         "offset_z": "2",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z2",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z2_t1",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "0",
         "offset_z": "2",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z3_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z3_t0",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "0",
         "offset_z": "3",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z3",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z3_t1",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "0",
         "offset_z": "3",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z4_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z4_t0",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "0",
         "offset_z": "4",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z4",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z4_t1",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "0",
         "offset_z": "4",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z0_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z0_t0",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "1",
         "offset_z": "0",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z0",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z0_t1",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "1",
         "offset_z": "0",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z1_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z1_t0",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "1",
         "offset_z": "1",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z1",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z1_t1",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "1",
         "offset_z": "1",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z2_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z2_t0",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "1",
         "offset_z": "2",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z2",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z2_t1",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "1",
         "offset_z": "2",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z3_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z3_t0",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "1",
         "offset_z": "3",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z3",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z3_t1",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "1",
         "offset_z": "3",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z4_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z4_t0",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "1",
         "offset_z": "4",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z4",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z4_t1",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "1",
         "offset_z": "4",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z0_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z0_t0",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "2",
         "offset_z": "0",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z0",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z0_t1",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "2",
         "offset_z": "0",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z1_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z1_t0",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "2",
         "offset_z": "1",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z1",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z1_t1",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "2",
         "offset_z": "1",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z2_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z2_t0",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "2",
         "offset_z": "2",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z2",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z2_t1",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "2",
         "offset_z": "2",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z3_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z3_t0",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "2",
         "offset_z": "3",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z3",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z3_t1",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "2",
         "offset_z": "3",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z4_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z4_t0",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "2",
         "offset_z": "4",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z4",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z4_t1",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "2",
         "offset_z": "4",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z0_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z0_t0",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "3",
         "offset_z": "0",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z0",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z0_t1",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "3",
         "offset_z": "0",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z1_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z1_t0",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "3",
         "offset_z": "1",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z1",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z1_t1",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "3",
         "offset_z": "1",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z2_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z2_t0",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "3",
         "offset_z": "2",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z2",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z2_t1",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "3",
         "offset_z": "2",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z3_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z3_t0",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "3",
         "offset_z": "3",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z3",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z3_t1",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "3",
         "offset_z": "3",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z4_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z4_t0",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "3",
         "offset_z": "4",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z4",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z4_t1",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "3",
         "offset_z": "4",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z0_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z0_t0",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "4",
         "offset_z": "0",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z0",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z0_t1",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "4",
         "offset_z": "0",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z1_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z1_t0",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "4",
         "offset_z": "1",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z1",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z1_t1",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "4",
         "offset_z": "1",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z2_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z2_t0",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "4",
         "offset_z": "2",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z2",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z2_t1",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "4",
         "offset_z": "2",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z3_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z3_t0",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "4",
         "offset_z": "3",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z3",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z3_t1",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "4",
         "offset_z": "3",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z4_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z4_t0",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "4",
         "offset_z": "4",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z4",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z4_t1",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "4",
         "offset_z": "4",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z0_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z0_t0",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "5",
         "offset_z": "0",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z0",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z0_t1",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "5",
         "offset_z": "0",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z1_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z1_t0",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "5",
         "offset_z": "1",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z1",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z1_t1",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "5",
         "offset_z": "1",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z2_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z2_t0",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "5",
         "offset_z": "2",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z2",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z2_t1",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "5",
         "offset_z": "2",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z3_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z3_t0",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "5",
         "offset_z": "3",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z3",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z3_t1",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "5",
         "offset_z": "3",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z4_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z4_t0",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "5",
         "offset_z": "4",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z4",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z4_t1",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "5",
         "offset_z": "4",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z0_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z0_t0",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "6",
         "offset_z": "0",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z0",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z0_t1",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "6",
         "offset_z": "0",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z1_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z1_t0",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "6",
         "offset_z": "1",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z1",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z1_t1",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "6",
         "offset_z": "1",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z2_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z2_t0",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "6",
         "offset_z": "2",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z2",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z2_t1",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "6",
         "offset_z": "2",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z3_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z3_t0",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "6",
         "offset_z": "3",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z3",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z3_t1",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "6",
         "offset_z": "3",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z4_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z4_t0",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "6",
         "offset_z": "4",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z4",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z4_t1",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "6",
         "offset_z": "4",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z0_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z0_t0",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "7",
         "offset_z": "0",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z0",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z0_t1",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "7",
         "offset_z": "0",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z1_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z1_t0",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "7",
         "offset_z": "1",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z1",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z1_t1",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "7",
         "offset_z": "1",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z2_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z2_t0",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "7",
         "offset_z": "2",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z2",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z2_t1",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "7",
         "offset_z": "2",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z3_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z3_t0",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "7",
         "offset_z": "3",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z3",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z3_t1",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "7",
         "offset_z": "3",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z4_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z4_t0",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "7",
         "offset_z": "4",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z4",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z4_t1",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "7",
         "offset_z": "4",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z0_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z0_t0",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "8",
         "offset_z": "0",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z0",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z0_t1",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "8",
         "offset_z": "0",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z1_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z1_t0",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "8",
         "offset_z": "1",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z1",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z1_t1",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "8",
         "offset_z": "1",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z2_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z2_t0",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "8",
         "offset_z": "2",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z2",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z2_t1",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "8",
         "offset_z": "2",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z3_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z3_t0",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "8",
         "offset_z": "3",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z3",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z3_t1",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "8",
         "offset_z": "3",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z4_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z4_t0",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "8",
         "offset_z": "4",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z4",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z4_t1",
         "x": 90
       },
       "when": {
         "facing": "north",
         "offset_x": "8",
         "offset_z": "4",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z0_turned",
-        "x": 90,
-        "y": 90
-      },
-      "when": {
-        "facing": "east",
-        "offset_x": "0",
-        "offset_z": "0",
-        "turned": "true"
-      }
-    },
-    {
-      "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z0",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z0_t0",
         "x": 90,
         "y": 90
       },
@@ -1103,12 +1090,25 @@
         "facing": "east",
         "offset_x": "0",
         "offset_z": "0",
-        "turned": "false"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z1_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z0_t1",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "facing": "east",
+        "offset_x": "0",
+        "offset_z": "0",
+        "turn": "1"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z1_t0",
         "x": 90,
         "y": 90
       },
@@ -1116,12 +1116,12 @@
         "facing": "east",
         "offset_x": "0",
         "offset_z": "1",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z1",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z1_t1",
         "x": 90,
         "y": 90
       },
@@ -1129,12 +1129,12 @@
         "facing": "east",
         "offset_x": "0",
         "offset_z": "1",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z2_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z2_t0",
         "x": 90,
         "y": 90
       },
@@ -1142,12 +1142,12 @@
         "facing": "east",
         "offset_x": "0",
         "offset_z": "2",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z2",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z2_t1",
         "x": 90,
         "y": 90
       },
@@ -1155,12 +1155,12 @@
         "facing": "east",
         "offset_x": "0",
         "offset_z": "2",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z3_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z3_t0",
         "x": 90,
         "y": 90
       },
@@ -1168,12 +1168,12 @@
         "facing": "east",
         "offset_x": "0",
         "offset_z": "3",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z3",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z3_t1",
         "x": 90,
         "y": 90
       },
@@ -1181,12 +1181,12 @@
         "facing": "east",
         "offset_x": "0",
         "offset_z": "3",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z4_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z4_t0",
         "x": 90,
         "y": 90
       },
@@ -1194,12 +1194,12 @@
         "facing": "east",
         "offset_x": "0",
         "offset_z": "4",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z4",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z4_t1",
         "x": 90,
         "y": 90
       },
@@ -1207,12 +1207,12 @@
         "facing": "east",
         "offset_x": "0",
         "offset_z": "4",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z0_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z0_t0",
         "x": 90,
         "y": 90
       },
@@ -1220,12 +1220,12 @@
         "facing": "east",
         "offset_x": "1",
         "offset_z": "0",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z0",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z0_t1",
         "x": 90,
         "y": 90
       },
@@ -1233,12 +1233,12 @@
         "facing": "east",
         "offset_x": "1",
         "offset_z": "0",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z1_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z1_t0",
         "x": 90,
         "y": 90
       },
@@ -1246,12 +1246,12 @@
         "facing": "east",
         "offset_x": "1",
         "offset_z": "1",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z1",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z1_t1",
         "x": 90,
         "y": 90
       },
@@ -1259,12 +1259,12 @@
         "facing": "east",
         "offset_x": "1",
         "offset_z": "1",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z2_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z2_t0",
         "x": 90,
         "y": 90
       },
@@ -1272,12 +1272,12 @@
         "facing": "east",
         "offset_x": "1",
         "offset_z": "2",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z2",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z2_t1",
         "x": 90,
         "y": 90
       },
@@ -1285,12 +1285,12 @@
         "facing": "east",
         "offset_x": "1",
         "offset_z": "2",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z3_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z3_t0",
         "x": 90,
         "y": 90
       },
@@ -1298,12 +1298,12 @@
         "facing": "east",
         "offset_x": "1",
         "offset_z": "3",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z3",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z3_t1",
         "x": 90,
         "y": 90
       },
@@ -1311,12 +1311,12 @@
         "facing": "east",
         "offset_x": "1",
         "offset_z": "3",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z4_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z4_t0",
         "x": 90,
         "y": 90
       },
@@ -1324,12 +1324,12 @@
         "facing": "east",
         "offset_x": "1",
         "offset_z": "4",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z4",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z4_t1",
         "x": 90,
         "y": 90
       },
@@ -1337,12 +1337,12 @@
         "facing": "east",
         "offset_x": "1",
         "offset_z": "4",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z0_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z0_t0",
         "x": 90,
         "y": 90
       },
@@ -1350,12 +1350,12 @@
         "facing": "east",
         "offset_x": "2",
         "offset_z": "0",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z0",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z0_t1",
         "x": 90,
         "y": 90
       },
@@ -1363,12 +1363,12 @@
         "facing": "east",
         "offset_x": "2",
         "offset_z": "0",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z1_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z1_t0",
         "x": 90,
         "y": 90
       },
@@ -1376,12 +1376,12 @@
         "facing": "east",
         "offset_x": "2",
         "offset_z": "1",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z1",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z1_t1",
         "x": 90,
         "y": 90
       },
@@ -1389,12 +1389,12 @@
         "facing": "east",
         "offset_x": "2",
         "offset_z": "1",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z2_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z2_t0",
         "x": 90,
         "y": 90
       },
@@ -1402,12 +1402,12 @@
         "facing": "east",
         "offset_x": "2",
         "offset_z": "2",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z2",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z2_t1",
         "x": 90,
         "y": 90
       },
@@ -1415,12 +1415,12 @@
         "facing": "east",
         "offset_x": "2",
         "offset_z": "2",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z3_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z3_t0",
         "x": 90,
         "y": 90
       },
@@ -1428,12 +1428,12 @@
         "facing": "east",
         "offset_x": "2",
         "offset_z": "3",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z3",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z3_t1",
         "x": 90,
         "y": 90
       },
@@ -1441,12 +1441,12 @@
         "facing": "east",
         "offset_x": "2",
         "offset_z": "3",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z4_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z4_t0",
         "x": 90,
         "y": 90
       },
@@ -1454,12 +1454,12 @@
         "facing": "east",
         "offset_x": "2",
         "offset_z": "4",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z4",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z4_t1",
         "x": 90,
         "y": 90
       },
@@ -1467,12 +1467,12 @@
         "facing": "east",
         "offset_x": "2",
         "offset_z": "4",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z0_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z0_t0",
         "x": 90,
         "y": 90
       },
@@ -1480,12 +1480,12 @@
         "facing": "east",
         "offset_x": "3",
         "offset_z": "0",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z0",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z0_t1",
         "x": 90,
         "y": 90
       },
@@ -1493,12 +1493,12 @@
         "facing": "east",
         "offset_x": "3",
         "offset_z": "0",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z1_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z1_t0",
         "x": 90,
         "y": 90
       },
@@ -1506,12 +1506,12 @@
         "facing": "east",
         "offset_x": "3",
         "offset_z": "1",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z1",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z1_t1",
         "x": 90,
         "y": 90
       },
@@ -1519,12 +1519,12 @@
         "facing": "east",
         "offset_x": "3",
         "offset_z": "1",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z2_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z2_t0",
         "x": 90,
         "y": 90
       },
@@ -1532,12 +1532,12 @@
         "facing": "east",
         "offset_x": "3",
         "offset_z": "2",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z2",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z2_t1",
         "x": 90,
         "y": 90
       },
@@ -1545,12 +1545,12 @@
         "facing": "east",
         "offset_x": "3",
         "offset_z": "2",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z3_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z3_t0",
         "x": 90,
         "y": 90
       },
@@ -1558,12 +1558,12 @@
         "facing": "east",
         "offset_x": "3",
         "offset_z": "3",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z3",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z3_t1",
         "x": 90,
         "y": 90
       },
@@ -1571,12 +1571,12 @@
         "facing": "east",
         "offset_x": "3",
         "offset_z": "3",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z4_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z4_t0",
         "x": 90,
         "y": 90
       },
@@ -1584,12 +1584,12 @@
         "facing": "east",
         "offset_x": "3",
         "offset_z": "4",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z4",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z4_t1",
         "x": 90,
         "y": 90
       },
@@ -1597,12 +1597,12 @@
         "facing": "east",
         "offset_x": "3",
         "offset_z": "4",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z0_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z0_t0",
         "x": 90,
         "y": 90
       },
@@ -1610,12 +1610,12 @@
         "facing": "east",
         "offset_x": "4",
         "offset_z": "0",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z0",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z0_t1",
         "x": 90,
         "y": 90
       },
@@ -1623,12 +1623,12 @@
         "facing": "east",
         "offset_x": "4",
         "offset_z": "0",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z1_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z1_t0",
         "x": 90,
         "y": 90
       },
@@ -1636,12 +1636,12 @@
         "facing": "east",
         "offset_x": "4",
         "offset_z": "1",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z1",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z1_t1",
         "x": 90,
         "y": 90
       },
@@ -1649,12 +1649,12 @@
         "facing": "east",
         "offset_x": "4",
         "offset_z": "1",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z2_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z2_t0",
         "x": 90,
         "y": 90
       },
@@ -1662,12 +1662,12 @@
         "facing": "east",
         "offset_x": "4",
         "offset_z": "2",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z2",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z2_t1",
         "x": 90,
         "y": 90
       },
@@ -1675,12 +1675,12 @@
         "facing": "east",
         "offset_x": "4",
         "offset_z": "2",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z3_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z3_t0",
         "x": 90,
         "y": 90
       },
@@ -1688,12 +1688,12 @@
         "facing": "east",
         "offset_x": "4",
         "offset_z": "3",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z3",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z3_t1",
         "x": 90,
         "y": 90
       },
@@ -1701,12 +1701,12 @@
         "facing": "east",
         "offset_x": "4",
         "offset_z": "3",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z4_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z4_t0",
         "x": 90,
         "y": 90
       },
@@ -1714,12 +1714,12 @@
         "facing": "east",
         "offset_x": "4",
         "offset_z": "4",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z4",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z4_t1",
         "x": 90,
         "y": 90
       },
@@ -1727,12 +1727,12 @@
         "facing": "east",
         "offset_x": "4",
         "offset_z": "4",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z0_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z0_t0",
         "x": 90,
         "y": 90
       },
@@ -1740,12 +1740,12 @@
         "facing": "east",
         "offset_x": "5",
         "offset_z": "0",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z0",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z0_t1",
         "x": 90,
         "y": 90
       },
@@ -1753,12 +1753,12 @@
         "facing": "east",
         "offset_x": "5",
         "offset_z": "0",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z1_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z1_t0",
         "x": 90,
         "y": 90
       },
@@ -1766,12 +1766,12 @@
         "facing": "east",
         "offset_x": "5",
         "offset_z": "1",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z1",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z1_t1",
         "x": 90,
         "y": 90
       },
@@ -1779,12 +1779,12 @@
         "facing": "east",
         "offset_x": "5",
         "offset_z": "1",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z2_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z2_t0",
         "x": 90,
         "y": 90
       },
@@ -1792,12 +1792,12 @@
         "facing": "east",
         "offset_x": "5",
         "offset_z": "2",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z2",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z2_t1",
         "x": 90,
         "y": 90
       },
@@ -1805,12 +1805,12 @@
         "facing": "east",
         "offset_x": "5",
         "offset_z": "2",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z3_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z3_t0",
         "x": 90,
         "y": 90
       },
@@ -1818,12 +1818,12 @@
         "facing": "east",
         "offset_x": "5",
         "offset_z": "3",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z3",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z3_t1",
         "x": 90,
         "y": 90
       },
@@ -1831,12 +1831,12 @@
         "facing": "east",
         "offset_x": "5",
         "offset_z": "3",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z4_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z4_t0",
         "x": 90,
         "y": 90
       },
@@ -1844,12 +1844,12 @@
         "facing": "east",
         "offset_x": "5",
         "offset_z": "4",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z4",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z4_t1",
         "x": 90,
         "y": 90
       },
@@ -1857,12 +1857,12 @@
         "facing": "east",
         "offset_x": "5",
         "offset_z": "4",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z0_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z0_t0",
         "x": 90,
         "y": 90
       },
@@ -1870,12 +1870,12 @@
         "facing": "east",
         "offset_x": "6",
         "offset_z": "0",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z0",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z0_t1",
         "x": 90,
         "y": 90
       },
@@ -1883,12 +1883,12 @@
         "facing": "east",
         "offset_x": "6",
         "offset_z": "0",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z1_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z1_t0",
         "x": 90,
         "y": 90
       },
@@ -1896,12 +1896,12 @@
         "facing": "east",
         "offset_x": "6",
         "offset_z": "1",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z1",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z1_t1",
         "x": 90,
         "y": 90
       },
@@ -1909,12 +1909,12 @@
         "facing": "east",
         "offset_x": "6",
         "offset_z": "1",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z2_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z2_t0",
         "x": 90,
         "y": 90
       },
@@ -1922,12 +1922,12 @@
         "facing": "east",
         "offset_x": "6",
         "offset_z": "2",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z2",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z2_t1",
         "x": 90,
         "y": 90
       },
@@ -1935,12 +1935,12 @@
         "facing": "east",
         "offset_x": "6",
         "offset_z": "2",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z3_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z3_t0",
         "x": 90,
         "y": 90
       },
@@ -1948,12 +1948,12 @@
         "facing": "east",
         "offset_x": "6",
         "offset_z": "3",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z3",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z3_t1",
         "x": 90,
         "y": 90
       },
@@ -1961,12 +1961,12 @@
         "facing": "east",
         "offset_x": "6",
         "offset_z": "3",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z4_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z4_t0",
         "x": 90,
         "y": 90
       },
@@ -1974,12 +1974,12 @@
         "facing": "east",
         "offset_x": "6",
         "offset_z": "4",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z4",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z4_t1",
         "x": 90,
         "y": 90
       },
@@ -1987,12 +1987,12 @@
         "facing": "east",
         "offset_x": "6",
         "offset_z": "4",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z0_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z0_t0",
         "x": 90,
         "y": 90
       },
@@ -2000,12 +2000,12 @@
         "facing": "east",
         "offset_x": "7",
         "offset_z": "0",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z0",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z0_t1",
         "x": 90,
         "y": 90
       },
@@ -2013,12 +2013,12 @@
         "facing": "east",
         "offset_x": "7",
         "offset_z": "0",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z1_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z1_t0",
         "x": 90,
         "y": 90
       },
@@ -2026,12 +2026,12 @@
         "facing": "east",
         "offset_x": "7",
         "offset_z": "1",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z1",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z1_t1",
         "x": 90,
         "y": 90
       },
@@ -2039,12 +2039,12 @@
         "facing": "east",
         "offset_x": "7",
         "offset_z": "1",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z2_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z2_t0",
         "x": 90,
         "y": 90
       },
@@ -2052,12 +2052,12 @@
         "facing": "east",
         "offset_x": "7",
         "offset_z": "2",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z2",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z2_t1",
         "x": 90,
         "y": 90
       },
@@ -2065,12 +2065,12 @@
         "facing": "east",
         "offset_x": "7",
         "offset_z": "2",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z3_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z3_t0",
         "x": 90,
         "y": 90
       },
@@ -2078,12 +2078,12 @@
         "facing": "east",
         "offset_x": "7",
         "offset_z": "3",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z3",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z3_t1",
         "x": 90,
         "y": 90
       },
@@ -2091,12 +2091,12 @@
         "facing": "east",
         "offset_x": "7",
         "offset_z": "3",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z4_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z4_t0",
         "x": 90,
         "y": 90
       },
@@ -2104,12 +2104,12 @@
         "facing": "east",
         "offset_x": "7",
         "offset_z": "4",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z4",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z4_t1",
         "x": 90,
         "y": 90
       },
@@ -2117,12 +2117,12 @@
         "facing": "east",
         "offset_x": "7",
         "offset_z": "4",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z0_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z0_t0",
         "x": 90,
         "y": 90
       },
@@ -2130,12 +2130,12 @@
         "facing": "east",
         "offset_x": "8",
         "offset_z": "0",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z0",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z0_t1",
         "x": 90,
         "y": 90
       },
@@ -2143,12 +2143,12 @@
         "facing": "east",
         "offset_x": "8",
         "offset_z": "0",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z1_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z1_t0",
         "x": 90,
         "y": 90
       },
@@ -2156,12 +2156,12 @@
         "facing": "east",
         "offset_x": "8",
         "offset_z": "1",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z1",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z1_t1",
         "x": 90,
         "y": 90
       },
@@ -2169,12 +2169,12 @@
         "facing": "east",
         "offset_x": "8",
         "offset_z": "1",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z2_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z2_t0",
         "x": 90,
         "y": 90
       },
@@ -2182,12 +2182,12 @@
         "facing": "east",
         "offset_x": "8",
         "offset_z": "2",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z2",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z2_t1",
         "x": 90,
         "y": 90
       },
@@ -2195,12 +2195,12 @@
         "facing": "east",
         "offset_x": "8",
         "offset_z": "2",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z3_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z3_t0",
         "x": 90,
         "y": 90
       },
@@ -2208,12 +2208,12 @@
         "facing": "east",
         "offset_x": "8",
         "offset_z": "3",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z3",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z3_t1",
         "x": 90,
         "y": 90
       },
@@ -2221,12 +2221,12 @@
         "facing": "east",
         "offset_x": "8",
         "offset_z": "3",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z4_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z4_t0",
         "x": 90,
         "y": 90
       },
@@ -2234,12 +2234,12 @@
         "facing": "east",
         "offset_x": "8",
         "offset_z": "4",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z4",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z4_t1",
         "x": 90,
         "y": 90
       },
@@ -2247,12 +2247,12 @@
         "facing": "east",
         "offset_x": "8",
         "offset_z": "4",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z0_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z0_t0",
         "x": 90,
         "y": 180
       },
@@ -2260,12 +2260,12 @@
         "facing": "south",
         "offset_x": "0",
         "offset_z": "0",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z0",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z0_t1",
         "x": 90,
         "y": 180
       },
@@ -2273,12 +2273,12 @@
         "facing": "south",
         "offset_x": "0",
         "offset_z": "0",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z1_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z1_t0",
         "x": 90,
         "y": 180
       },
@@ -2286,12 +2286,12 @@
         "facing": "south",
         "offset_x": "0",
         "offset_z": "1",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z1",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z1_t1",
         "x": 90,
         "y": 180
       },
@@ -2299,12 +2299,12 @@
         "facing": "south",
         "offset_x": "0",
         "offset_z": "1",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z2_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z2_t0",
         "x": 90,
         "y": 180
       },
@@ -2312,12 +2312,12 @@
         "facing": "south",
         "offset_x": "0",
         "offset_z": "2",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z2",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z2_t1",
         "x": 90,
         "y": 180
       },
@@ -2325,12 +2325,12 @@
         "facing": "south",
         "offset_x": "0",
         "offset_z": "2",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z3_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z3_t0",
         "x": 90,
         "y": 180
       },
@@ -2338,12 +2338,12 @@
         "facing": "south",
         "offset_x": "0",
         "offset_z": "3",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z3",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z3_t1",
         "x": 90,
         "y": 180
       },
@@ -2351,12 +2351,12 @@
         "facing": "south",
         "offset_x": "0",
         "offset_z": "3",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z4_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z4_t0",
         "x": 90,
         "y": 180
       },
@@ -2364,12 +2364,12 @@
         "facing": "south",
         "offset_x": "0",
         "offset_z": "4",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z4",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z4_t1",
         "x": 90,
         "y": 180
       },
@@ -2377,12 +2377,12 @@
         "facing": "south",
         "offset_x": "0",
         "offset_z": "4",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z0_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z0_t0",
         "x": 90,
         "y": 180
       },
@@ -2390,12 +2390,12 @@
         "facing": "south",
         "offset_x": "1",
         "offset_z": "0",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z0",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z0_t1",
         "x": 90,
         "y": 180
       },
@@ -2403,12 +2403,12 @@
         "facing": "south",
         "offset_x": "1",
         "offset_z": "0",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z1_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z1_t0",
         "x": 90,
         "y": 180
       },
@@ -2416,12 +2416,12 @@
         "facing": "south",
         "offset_x": "1",
         "offset_z": "1",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z1",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z1_t1",
         "x": 90,
         "y": 180
       },
@@ -2429,12 +2429,12 @@
         "facing": "south",
         "offset_x": "1",
         "offset_z": "1",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z2_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z2_t0",
         "x": 90,
         "y": 180
       },
@@ -2442,12 +2442,12 @@
         "facing": "south",
         "offset_x": "1",
         "offset_z": "2",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z2",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z2_t1",
         "x": 90,
         "y": 180
       },
@@ -2455,12 +2455,12 @@
         "facing": "south",
         "offset_x": "1",
         "offset_z": "2",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z3_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z3_t0",
         "x": 90,
         "y": 180
       },
@@ -2468,12 +2468,12 @@
         "facing": "south",
         "offset_x": "1",
         "offset_z": "3",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z3",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z3_t1",
         "x": 90,
         "y": 180
       },
@@ -2481,12 +2481,12 @@
         "facing": "south",
         "offset_x": "1",
         "offset_z": "3",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z4_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z4_t0",
         "x": 90,
         "y": 180
       },
@@ -2494,12 +2494,12 @@
         "facing": "south",
         "offset_x": "1",
         "offset_z": "4",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z4",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z4_t1",
         "x": 90,
         "y": 180
       },
@@ -2507,12 +2507,12 @@
         "facing": "south",
         "offset_x": "1",
         "offset_z": "4",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z0_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z0_t0",
         "x": 90,
         "y": 180
       },
@@ -2520,12 +2520,12 @@
         "facing": "south",
         "offset_x": "2",
         "offset_z": "0",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z0",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z0_t1",
         "x": 90,
         "y": 180
       },
@@ -2533,12 +2533,12 @@
         "facing": "south",
         "offset_x": "2",
         "offset_z": "0",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z1_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z1_t0",
         "x": 90,
         "y": 180
       },
@@ -2546,12 +2546,12 @@
         "facing": "south",
         "offset_x": "2",
         "offset_z": "1",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z1",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z1_t1",
         "x": 90,
         "y": 180
       },
@@ -2559,12 +2559,12 @@
         "facing": "south",
         "offset_x": "2",
         "offset_z": "1",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z2_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z2_t0",
         "x": 90,
         "y": 180
       },
@@ -2572,12 +2572,12 @@
         "facing": "south",
         "offset_x": "2",
         "offset_z": "2",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z2",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z2_t1",
         "x": 90,
         "y": 180
       },
@@ -2585,12 +2585,12 @@
         "facing": "south",
         "offset_x": "2",
         "offset_z": "2",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z3_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z3_t0",
         "x": 90,
         "y": 180
       },
@@ -2598,12 +2598,12 @@
         "facing": "south",
         "offset_x": "2",
         "offset_z": "3",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z3",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z3_t1",
         "x": 90,
         "y": 180
       },
@@ -2611,12 +2611,12 @@
         "facing": "south",
         "offset_x": "2",
         "offset_z": "3",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z4_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z4_t0",
         "x": 90,
         "y": 180
       },
@@ -2624,12 +2624,12 @@
         "facing": "south",
         "offset_x": "2",
         "offset_z": "4",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z4",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z4_t1",
         "x": 90,
         "y": 180
       },
@@ -2637,12 +2637,12 @@
         "facing": "south",
         "offset_x": "2",
         "offset_z": "4",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z0_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z0_t0",
         "x": 90,
         "y": 180
       },
@@ -2650,12 +2650,12 @@
         "facing": "south",
         "offset_x": "3",
         "offset_z": "0",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z0",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z0_t1",
         "x": 90,
         "y": 180
       },
@@ -2663,12 +2663,12 @@
         "facing": "south",
         "offset_x": "3",
         "offset_z": "0",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z1_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z1_t0",
         "x": 90,
         "y": 180
       },
@@ -2676,12 +2676,12 @@
         "facing": "south",
         "offset_x": "3",
         "offset_z": "1",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z1",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z1_t1",
         "x": 90,
         "y": 180
       },
@@ -2689,12 +2689,12 @@
         "facing": "south",
         "offset_x": "3",
         "offset_z": "1",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z2_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z2_t0",
         "x": 90,
         "y": 180
       },
@@ -2702,12 +2702,12 @@
         "facing": "south",
         "offset_x": "3",
         "offset_z": "2",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z2",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z2_t1",
         "x": 90,
         "y": 180
       },
@@ -2715,12 +2715,12 @@
         "facing": "south",
         "offset_x": "3",
         "offset_z": "2",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z3_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z3_t0",
         "x": 90,
         "y": 180
       },
@@ -2728,12 +2728,12 @@
         "facing": "south",
         "offset_x": "3",
         "offset_z": "3",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z3",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z3_t1",
         "x": 90,
         "y": 180
       },
@@ -2741,12 +2741,12 @@
         "facing": "south",
         "offset_x": "3",
         "offset_z": "3",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z4_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z4_t0",
         "x": 90,
         "y": 180
       },
@@ -2754,12 +2754,12 @@
         "facing": "south",
         "offset_x": "3",
         "offset_z": "4",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z4",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z4_t1",
         "x": 90,
         "y": 180
       },
@@ -2767,12 +2767,12 @@
         "facing": "south",
         "offset_x": "3",
         "offset_z": "4",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z0_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z0_t0",
         "x": 90,
         "y": 180
       },
@@ -2780,12 +2780,12 @@
         "facing": "south",
         "offset_x": "4",
         "offset_z": "0",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z0",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z0_t1",
         "x": 90,
         "y": 180
       },
@@ -2793,12 +2793,12 @@
         "facing": "south",
         "offset_x": "4",
         "offset_z": "0",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z1_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z1_t0",
         "x": 90,
         "y": 180
       },
@@ -2806,12 +2806,12 @@
         "facing": "south",
         "offset_x": "4",
         "offset_z": "1",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z1",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z1_t1",
         "x": 90,
         "y": 180
       },
@@ -2819,12 +2819,12 @@
         "facing": "south",
         "offset_x": "4",
         "offset_z": "1",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z2_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z2_t0",
         "x": 90,
         "y": 180
       },
@@ -2832,12 +2832,12 @@
         "facing": "south",
         "offset_x": "4",
         "offset_z": "2",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z2",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z2_t1",
         "x": 90,
         "y": 180
       },
@@ -2845,12 +2845,12 @@
         "facing": "south",
         "offset_x": "4",
         "offset_z": "2",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z3_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z3_t0",
         "x": 90,
         "y": 180
       },
@@ -2858,12 +2858,12 @@
         "facing": "south",
         "offset_x": "4",
         "offset_z": "3",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z3",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z3_t1",
         "x": 90,
         "y": 180
       },
@@ -2871,12 +2871,12 @@
         "facing": "south",
         "offset_x": "4",
         "offset_z": "3",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z4_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z4_t0",
         "x": 90,
         "y": 180
       },
@@ -2884,12 +2884,12 @@
         "facing": "south",
         "offset_x": "4",
         "offset_z": "4",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z4",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z4_t1",
         "x": 90,
         "y": 180
       },
@@ -2897,12 +2897,12 @@
         "facing": "south",
         "offset_x": "4",
         "offset_z": "4",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z0_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z0_t0",
         "x": 90,
         "y": 180
       },
@@ -2910,12 +2910,12 @@
         "facing": "south",
         "offset_x": "5",
         "offset_z": "0",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z0",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z0_t1",
         "x": 90,
         "y": 180
       },
@@ -2923,12 +2923,12 @@
         "facing": "south",
         "offset_x": "5",
         "offset_z": "0",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z1_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z1_t0",
         "x": 90,
         "y": 180
       },
@@ -2936,12 +2936,12 @@
         "facing": "south",
         "offset_x": "5",
         "offset_z": "1",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z1",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z1_t1",
         "x": 90,
         "y": 180
       },
@@ -2949,12 +2949,12 @@
         "facing": "south",
         "offset_x": "5",
         "offset_z": "1",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z2_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z2_t0",
         "x": 90,
         "y": 180
       },
@@ -2962,12 +2962,12 @@
         "facing": "south",
         "offset_x": "5",
         "offset_z": "2",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z2",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z2_t1",
         "x": 90,
         "y": 180
       },
@@ -2975,12 +2975,12 @@
         "facing": "south",
         "offset_x": "5",
         "offset_z": "2",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z3_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z3_t0",
         "x": 90,
         "y": 180
       },
@@ -2988,12 +2988,12 @@
         "facing": "south",
         "offset_x": "5",
         "offset_z": "3",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z3",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z3_t1",
         "x": 90,
         "y": 180
       },
@@ -3001,12 +3001,12 @@
         "facing": "south",
         "offset_x": "5",
         "offset_z": "3",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z4_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z4_t0",
         "x": 90,
         "y": 180
       },
@@ -3014,12 +3014,12 @@
         "facing": "south",
         "offset_x": "5",
         "offset_z": "4",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z4",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z4_t1",
         "x": 90,
         "y": 180
       },
@@ -3027,12 +3027,12 @@
         "facing": "south",
         "offset_x": "5",
         "offset_z": "4",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z0_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z0_t0",
         "x": 90,
         "y": 180
       },
@@ -3040,12 +3040,12 @@
         "facing": "south",
         "offset_x": "6",
         "offset_z": "0",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z0",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z0_t1",
         "x": 90,
         "y": 180
       },
@@ -3053,12 +3053,12 @@
         "facing": "south",
         "offset_x": "6",
         "offset_z": "0",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z1_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z1_t0",
         "x": 90,
         "y": 180
       },
@@ -3066,12 +3066,12 @@
         "facing": "south",
         "offset_x": "6",
         "offset_z": "1",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z1",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z1_t1",
         "x": 90,
         "y": 180
       },
@@ -3079,12 +3079,12 @@
         "facing": "south",
         "offset_x": "6",
         "offset_z": "1",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z2_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z2_t0",
         "x": 90,
         "y": 180
       },
@@ -3092,12 +3092,12 @@
         "facing": "south",
         "offset_x": "6",
         "offset_z": "2",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z2",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z2_t1",
         "x": 90,
         "y": 180
       },
@@ -3105,12 +3105,12 @@
         "facing": "south",
         "offset_x": "6",
         "offset_z": "2",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z3_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z3_t0",
         "x": 90,
         "y": 180
       },
@@ -3118,12 +3118,12 @@
         "facing": "south",
         "offset_x": "6",
         "offset_z": "3",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z3",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z3_t1",
         "x": 90,
         "y": 180
       },
@@ -3131,12 +3131,12 @@
         "facing": "south",
         "offset_x": "6",
         "offset_z": "3",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z4_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z4_t0",
         "x": 90,
         "y": 180
       },
@@ -3144,12 +3144,12 @@
         "facing": "south",
         "offset_x": "6",
         "offset_z": "4",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z4",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z4_t1",
         "x": 90,
         "y": 180
       },
@@ -3157,12 +3157,12 @@
         "facing": "south",
         "offset_x": "6",
         "offset_z": "4",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z0_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z0_t0",
         "x": 90,
         "y": 180
       },
@@ -3170,12 +3170,12 @@
         "facing": "south",
         "offset_x": "7",
         "offset_z": "0",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z0",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z0_t1",
         "x": 90,
         "y": 180
       },
@@ -3183,12 +3183,12 @@
         "facing": "south",
         "offset_x": "7",
         "offset_z": "0",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z1_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z1_t0",
         "x": 90,
         "y": 180
       },
@@ -3196,12 +3196,12 @@
         "facing": "south",
         "offset_x": "7",
         "offset_z": "1",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z1",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z1_t1",
         "x": 90,
         "y": 180
       },
@@ -3209,12 +3209,12 @@
         "facing": "south",
         "offset_x": "7",
         "offset_z": "1",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z2_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z2_t0",
         "x": 90,
         "y": 180
       },
@@ -3222,12 +3222,12 @@
         "facing": "south",
         "offset_x": "7",
         "offset_z": "2",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z2",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z2_t1",
         "x": 90,
         "y": 180
       },
@@ -3235,12 +3235,12 @@
         "facing": "south",
         "offset_x": "7",
         "offset_z": "2",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z3_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z3_t0",
         "x": 90,
         "y": 180
       },
@@ -3248,12 +3248,12 @@
         "facing": "south",
         "offset_x": "7",
         "offset_z": "3",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z3",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z3_t1",
         "x": 90,
         "y": 180
       },
@@ -3261,12 +3261,12 @@
         "facing": "south",
         "offset_x": "7",
         "offset_z": "3",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z4_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z4_t0",
         "x": 90,
         "y": 180
       },
@@ -3274,12 +3274,12 @@
         "facing": "south",
         "offset_x": "7",
         "offset_z": "4",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z4",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z4_t1",
         "x": 90,
         "y": 180
       },
@@ -3287,12 +3287,12 @@
         "facing": "south",
         "offset_x": "7",
         "offset_z": "4",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z0_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z0_t0",
         "x": 90,
         "y": 180
       },
@@ -3300,12 +3300,12 @@
         "facing": "south",
         "offset_x": "8",
         "offset_z": "0",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z0",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z0_t1",
         "x": 90,
         "y": 180
       },
@@ -3313,12 +3313,12 @@
         "facing": "south",
         "offset_x": "8",
         "offset_z": "0",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z1_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z1_t0",
         "x": 90,
         "y": 180
       },
@@ -3326,12 +3326,12 @@
         "facing": "south",
         "offset_x": "8",
         "offset_z": "1",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z1",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z1_t1",
         "x": 90,
         "y": 180
       },
@@ -3339,12 +3339,12 @@
         "facing": "south",
         "offset_x": "8",
         "offset_z": "1",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z2_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z2_t0",
         "x": 90,
         "y": 180
       },
@@ -3352,12 +3352,12 @@
         "facing": "south",
         "offset_x": "8",
         "offset_z": "2",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z2",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z2_t1",
         "x": 90,
         "y": 180
       },
@@ -3365,12 +3365,12 @@
         "facing": "south",
         "offset_x": "8",
         "offset_z": "2",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z3_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z3_t0",
         "x": 90,
         "y": 180
       },
@@ -3378,12 +3378,12 @@
         "facing": "south",
         "offset_x": "8",
         "offset_z": "3",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z3",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z3_t1",
         "x": 90,
         "y": 180
       },
@@ -3391,12 +3391,12 @@
         "facing": "south",
         "offset_x": "8",
         "offset_z": "3",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z4_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z4_t0",
         "x": 90,
         "y": 180
       },
@@ -3404,12 +3404,12 @@
         "facing": "south",
         "offset_x": "8",
         "offset_z": "4",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z4",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z4_t1",
         "x": 90,
         "y": 180
       },
@@ -3417,12 +3417,12 @@
         "facing": "south",
         "offset_x": "8",
         "offset_z": "4",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z0_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z0_t0",
         "x": 90,
         "y": 270
       },
@@ -3430,12 +3430,12 @@
         "facing": "west",
         "offset_x": "0",
         "offset_z": "0",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z0",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z0_t1",
         "x": 90,
         "y": 270
       },
@@ -3443,12 +3443,12 @@
         "facing": "west",
         "offset_x": "0",
         "offset_z": "0",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z1_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z1_t0",
         "x": 90,
         "y": 270
       },
@@ -3456,12 +3456,12 @@
         "facing": "west",
         "offset_x": "0",
         "offset_z": "1",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z1",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z1_t1",
         "x": 90,
         "y": 270
       },
@@ -3469,12 +3469,12 @@
         "facing": "west",
         "offset_x": "0",
         "offset_z": "1",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z2_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z2_t0",
         "x": 90,
         "y": 270
       },
@@ -3482,12 +3482,12 @@
         "facing": "west",
         "offset_x": "0",
         "offset_z": "2",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z2",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z2_t1",
         "x": 90,
         "y": 270
       },
@@ -3495,12 +3495,12 @@
         "facing": "west",
         "offset_x": "0",
         "offset_z": "2",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z3_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z3_t0",
         "x": 90,
         "y": 270
       },
@@ -3508,12 +3508,12 @@
         "facing": "west",
         "offset_x": "0",
         "offset_z": "3",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z3",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z3_t1",
         "x": 90,
         "y": 270
       },
@@ -3521,12 +3521,12 @@
         "facing": "west",
         "offset_x": "0",
         "offset_z": "3",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z4_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z4_t0",
         "x": 90,
         "y": 270
       },
@@ -3534,12 +3534,12 @@
         "facing": "west",
         "offset_x": "0",
         "offset_z": "4",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z4",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z4_t1",
         "x": 90,
         "y": 270
       },
@@ -3547,12 +3547,12 @@
         "facing": "west",
         "offset_x": "0",
         "offset_z": "4",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z0_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z0_t0",
         "x": 90,
         "y": 270
       },
@@ -3560,12 +3560,12 @@
         "facing": "west",
         "offset_x": "1",
         "offset_z": "0",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z0",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z0_t1",
         "x": 90,
         "y": 270
       },
@@ -3573,12 +3573,12 @@
         "facing": "west",
         "offset_x": "1",
         "offset_z": "0",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z1_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z1_t0",
         "x": 90,
         "y": 270
       },
@@ -3586,12 +3586,12 @@
         "facing": "west",
         "offset_x": "1",
         "offset_z": "1",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z1",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z1_t1",
         "x": 90,
         "y": 270
       },
@@ -3599,12 +3599,12 @@
         "facing": "west",
         "offset_x": "1",
         "offset_z": "1",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z2_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z2_t0",
         "x": 90,
         "y": 270
       },
@@ -3612,12 +3612,12 @@
         "facing": "west",
         "offset_x": "1",
         "offset_z": "2",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z2",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z2_t1",
         "x": 90,
         "y": 270
       },
@@ -3625,12 +3625,12 @@
         "facing": "west",
         "offset_x": "1",
         "offset_z": "2",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z3_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z3_t0",
         "x": 90,
         "y": 270
       },
@@ -3638,12 +3638,12 @@
         "facing": "west",
         "offset_x": "1",
         "offset_z": "3",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z3",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z3_t1",
         "x": 90,
         "y": 270
       },
@@ -3651,12 +3651,12 @@
         "facing": "west",
         "offset_x": "1",
         "offset_z": "3",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z4_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z4_t0",
         "x": 90,
         "y": 270
       },
@@ -3664,12 +3664,12 @@
         "facing": "west",
         "offset_x": "1",
         "offset_z": "4",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z4",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z4_t1",
         "x": 90,
         "y": 270
       },
@@ -3677,12 +3677,12 @@
         "facing": "west",
         "offset_x": "1",
         "offset_z": "4",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z0_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z0_t0",
         "x": 90,
         "y": 270
       },
@@ -3690,12 +3690,12 @@
         "facing": "west",
         "offset_x": "2",
         "offset_z": "0",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z0",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z0_t1",
         "x": 90,
         "y": 270
       },
@@ -3703,12 +3703,12 @@
         "facing": "west",
         "offset_x": "2",
         "offset_z": "0",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z1_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z1_t0",
         "x": 90,
         "y": 270
       },
@@ -3716,12 +3716,12 @@
         "facing": "west",
         "offset_x": "2",
         "offset_z": "1",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z1",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z1_t1",
         "x": 90,
         "y": 270
       },
@@ -3729,12 +3729,12 @@
         "facing": "west",
         "offset_x": "2",
         "offset_z": "1",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z2_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z2_t0",
         "x": 90,
         "y": 270
       },
@@ -3742,12 +3742,12 @@
         "facing": "west",
         "offset_x": "2",
         "offset_z": "2",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z2",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z2_t1",
         "x": 90,
         "y": 270
       },
@@ -3755,12 +3755,12 @@
         "facing": "west",
         "offset_x": "2",
         "offset_z": "2",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z3_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z3_t0",
         "x": 90,
         "y": 270
       },
@@ -3768,12 +3768,12 @@
         "facing": "west",
         "offset_x": "2",
         "offset_z": "3",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z3",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z3_t1",
         "x": 90,
         "y": 270
       },
@@ -3781,12 +3781,12 @@
         "facing": "west",
         "offset_x": "2",
         "offset_z": "3",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z4_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z4_t0",
         "x": 90,
         "y": 270
       },
@@ -3794,12 +3794,12 @@
         "facing": "west",
         "offset_x": "2",
         "offset_z": "4",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z4",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z4_t1",
         "x": 90,
         "y": 270
       },
@@ -3807,12 +3807,12 @@
         "facing": "west",
         "offset_x": "2",
         "offset_z": "4",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z0_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z0_t0",
         "x": 90,
         "y": 270
       },
@@ -3820,12 +3820,12 @@
         "facing": "west",
         "offset_x": "3",
         "offset_z": "0",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z0",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z0_t1",
         "x": 90,
         "y": 270
       },
@@ -3833,12 +3833,12 @@
         "facing": "west",
         "offset_x": "3",
         "offset_z": "0",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z1_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z1_t0",
         "x": 90,
         "y": 270
       },
@@ -3846,12 +3846,12 @@
         "facing": "west",
         "offset_x": "3",
         "offset_z": "1",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z1",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z1_t1",
         "x": 90,
         "y": 270
       },
@@ -3859,12 +3859,12 @@
         "facing": "west",
         "offset_x": "3",
         "offset_z": "1",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z2_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z2_t0",
         "x": 90,
         "y": 270
       },
@@ -3872,12 +3872,12 @@
         "facing": "west",
         "offset_x": "3",
         "offset_z": "2",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z2",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z2_t1",
         "x": 90,
         "y": 270
       },
@@ -3885,12 +3885,12 @@
         "facing": "west",
         "offset_x": "3",
         "offset_z": "2",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z3_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z3_t0",
         "x": 90,
         "y": 270
       },
@@ -3898,12 +3898,12 @@
         "facing": "west",
         "offset_x": "3",
         "offset_z": "3",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z3",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z3_t1",
         "x": 90,
         "y": 270
       },
@@ -3911,12 +3911,12 @@
         "facing": "west",
         "offset_x": "3",
         "offset_z": "3",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z4_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z4_t0",
         "x": 90,
         "y": 270
       },
@@ -3924,12 +3924,12 @@
         "facing": "west",
         "offset_x": "3",
         "offset_z": "4",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z4",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z4_t1",
         "x": 90,
         "y": 270
       },
@@ -3937,12 +3937,12 @@
         "facing": "west",
         "offset_x": "3",
         "offset_z": "4",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z0_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z0_t0",
         "x": 90,
         "y": 270
       },
@@ -3950,12 +3950,12 @@
         "facing": "west",
         "offset_x": "4",
         "offset_z": "0",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z0",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z0_t1",
         "x": 90,
         "y": 270
       },
@@ -3963,12 +3963,12 @@
         "facing": "west",
         "offset_x": "4",
         "offset_z": "0",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z1_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z1_t0",
         "x": 90,
         "y": 270
       },
@@ -3976,12 +3976,12 @@
         "facing": "west",
         "offset_x": "4",
         "offset_z": "1",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z1",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z1_t1",
         "x": 90,
         "y": 270
       },
@@ -3989,12 +3989,12 @@
         "facing": "west",
         "offset_x": "4",
         "offset_z": "1",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z2_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z2_t0",
         "x": 90,
         "y": 270
       },
@@ -4002,12 +4002,12 @@
         "facing": "west",
         "offset_x": "4",
         "offset_z": "2",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z2",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z2_t1",
         "x": 90,
         "y": 270
       },
@@ -4015,12 +4015,12 @@
         "facing": "west",
         "offset_x": "4",
         "offset_z": "2",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z3_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z3_t0",
         "x": 90,
         "y": 270
       },
@@ -4028,12 +4028,12 @@
         "facing": "west",
         "offset_x": "4",
         "offset_z": "3",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z3",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z3_t1",
         "x": 90,
         "y": 270
       },
@@ -4041,12 +4041,12 @@
         "facing": "west",
         "offset_x": "4",
         "offset_z": "3",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z4_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z4_t0",
         "x": 90,
         "y": 270
       },
@@ -4054,12 +4054,12 @@
         "facing": "west",
         "offset_x": "4",
         "offset_z": "4",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z4",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z4_t1",
         "x": 90,
         "y": 270
       },
@@ -4067,12 +4067,12 @@
         "facing": "west",
         "offset_x": "4",
         "offset_z": "4",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z0_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z0_t0",
         "x": 90,
         "y": 270
       },
@@ -4080,12 +4080,12 @@
         "facing": "west",
         "offset_x": "5",
         "offset_z": "0",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z0",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z0_t1",
         "x": 90,
         "y": 270
       },
@@ -4093,12 +4093,12 @@
         "facing": "west",
         "offset_x": "5",
         "offset_z": "0",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z1_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z1_t0",
         "x": 90,
         "y": 270
       },
@@ -4106,12 +4106,12 @@
         "facing": "west",
         "offset_x": "5",
         "offset_z": "1",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z1",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z1_t1",
         "x": 90,
         "y": 270
       },
@@ -4119,12 +4119,12 @@
         "facing": "west",
         "offset_x": "5",
         "offset_z": "1",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z2_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z2_t0",
         "x": 90,
         "y": 270
       },
@@ -4132,12 +4132,12 @@
         "facing": "west",
         "offset_x": "5",
         "offset_z": "2",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z2",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z2_t1",
         "x": 90,
         "y": 270
       },
@@ -4145,12 +4145,12 @@
         "facing": "west",
         "offset_x": "5",
         "offset_z": "2",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z3_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z3_t0",
         "x": 90,
         "y": 270
       },
@@ -4158,12 +4158,12 @@
         "facing": "west",
         "offset_x": "5",
         "offset_z": "3",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z3",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z3_t1",
         "x": 90,
         "y": 270
       },
@@ -4171,12 +4171,12 @@
         "facing": "west",
         "offset_x": "5",
         "offset_z": "3",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z4_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z4_t0",
         "x": 90,
         "y": 270
       },
@@ -4184,12 +4184,12 @@
         "facing": "west",
         "offset_x": "5",
         "offset_z": "4",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z4",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z4_t1",
         "x": 90,
         "y": 270
       },
@@ -4197,12 +4197,12 @@
         "facing": "west",
         "offset_x": "5",
         "offset_z": "4",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z0_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z0_t0",
         "x": 90,
         "y": 270
       },
@@ -4210,12 +4210,12 @@
         "facing": "west",
         "offset_x": "6",
         "offset_z": "0",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z0",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z0_t1",
         "x": 90,
         "y": 270
       },
@@ -4223,12 +4223,12 @@
         "facing": "west",
         "offset_x": "6",
         "offset_z": "0",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z1_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z1_t0",
         "x": 90,
         "y": 270
       },
@@ -4236,12 +4236,12 @@
         "facing": "west",
         "offset_x": "6",
         "offset_z": "1",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z1",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z1_t1",
         "x": 90,
         "y": 270
       },
@@ -4249,12 +4249,12 @@
         "facing": "west",
         "offset_x": "6",
         "offset_z": "1",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z2_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z2_t0",
         "x": 90,
         "y": 270
       },
@@ -4262,12 +4262,12 @@
         "facing": "west",
         "offset_x": "6",
         "offset_z": "2",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z2",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z2_t1",
         "x": 90,
         "y": 270
       },
@@ -4275,12 +4275,12 @@
         "facing": "west",
         "offset_x": "6",
         "offset_z": "2",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z3_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z3_t0",
         "x": 90,
         "y": 270
       },
@@ -4288,12 +4288,12 @@
         "facing": "west",
         "offset_x": "6",
         "offset_z": "3",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z3",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z3_t1",
         "x": 90,
         "y": 270
       },
@@ -4301,12 +4301,12 @@
         "facing": "west",
         "offset_x": "6",
         "offset_z": "3",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z4_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z4_t0",
         "x": 90,
         "y": 270
       },
@@ -4314,12 +4314,12 @@
         "facing": "west",
         "offset_x": "6",
         "offset_z": "4",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z4",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z4_t1",
         "x": 90,
         "y": 270
       },
@@ -4327,12 +4327,12 @@
         "facing": "west",
         "offset_x": "6",
         "offset_z": "4",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z0_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z0_t0",
         "x": 90,
         "y": 270
       },
@@ -4340,12 +4340,12 @@
         "facing": "west",
         "offset_x": "7",
         "offset_z": "0",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z0",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z0_t1",
         "x": 90,
         "y": 270
       },
@@ -4353,12 +4353,12 @@
         "facing": "west",
         "offset_x": "7",
         "offset_z": "0",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z1_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z1_t0",
         "x": 90,
         "y": 270
       },
@@ -4366,12 +4366,12 @@
         "facing": "west",
         "offset_x": "7",
         "offset_z": "1",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z1",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z1_t1",
         "x": 90,
         "y": 270
       },
@@ -4379,12 +4379,12 @@
         "facing": "west",
         "offset_x": "7",
         "offset_z": "1",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z2_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z2_t0",
         "x": 90,
         "y": 270
       },
@@ -4392,12 +4392,12 @@
         "facing": "west",
         "offset_x": "7",
         "offset_z": "2",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z2",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z2_t1",
         "x": 90,
         "y": 270
       },
@@ -4405,12 +4405,12 @@
         "facing": "west",
         "offset_x": "7",
         "offset_z": "2",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z3_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z3_t0",
         "x": 90,
         "y": 270
       },
@@ -4418,12 +4418,12 @@
         "facing": "west",
         "offset_x": "7",
         "offset_z": "3",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z3",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z3_t1",
         "x": 90,
         "y": 270
       },
@@ -4431,12 +4431,12 @@
         "facing": "west",
         "offset_x": "7",
         "offset_z": "3",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z4_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z4_t0",
         "x": 90,
         "y": 270
       },
@@ -4444,12 +4444,12 @@
         "facing": "west",
         "offset_x": "7",
         "offset_z": "4",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z4",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z4_t1",
         "x": 90,
         "y": 270
       },
@@ -4457,12 +4457,12 @@
         "facing": "west",
         "offset_x": "7",
         "offset_z": "4",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z0_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z0_t0",
         "x": 90,
         "y": 270
       },
@@ -4470,12 +4470,12 @@
         "facing": "west",
         "offset_x": "8",
         "offset_z": "0",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z0",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z0_t1",
         "x": 90,
         "y": 270
       },
@@ -4483,12 +4483,12 @@
         "facing": "west",
         "offset_x": "8",
         "offset_z": "0",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z1_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z1_t0",
         "x": 90,
         "y": 270
       },
@@ -4496,12 +4496,12 @@
         "facing": "west",
         "offset_x": "8",
         "offset_z": "1",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z1",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z1_t1",
         "x": 90,
         "y": 270
       },
@@ -4509,12 +4509,12 @@
         "facing": "west",
         "offset_x": "8",
         "offset_z": "1",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z2_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z2_t0",
         "x": 90,
         "y": 270
       },
@@ -4522,12 +4522,12 @@
         "facing": "west",
         "offset_x": "8",
         "offset_z": "2",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z2",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z2_t1",
         "x": 90,
         "y": 270
       },
@@ -4535,12 +4535,12 @@
         "facing": "west",
         "offset_x": "8",
         "offset_z": "2",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z3_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z3_t0",
         "x": 90,
         "y": 270
       },
@@ -4548,12 +4548,12 @@
         "facing": "west",
         "offset_x": "8",
         "offset_z": "3",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z3",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z3_t1",
         "x": 90,
         "y": 270
       },
@@ -4561,12 +4561,12 @@
         "facing": "west",
         "offset_x": "8",
         "offset_z": "3",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z4_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z4_t0",
         "x": 90,
         "y": 270
       },
@@ -4574,12 +4574,12 @@
         "facing": "west",
         "offset_x": "8",
         "offset_z": "4",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z4",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z4_t1",
         "x": 90,
         "y": 270
       },
@@ -4587,2077 +4587,2077 @@
         "facing": "west",
         "offset_x": "8",
         "offset_z": "4",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z0_turned"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z0_t0"
       },
       "when": {
         "facing": "up",
         "offset_x": "0",
         "offset_z": "0",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z0"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z0_t1"
       },
       "when": {
         "facing": "up",
         "offset_x": "0",
         "offset_z": "0",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z1_turned"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z1_t0"
       },
       "when": {
         "facing": "up",
         "offset_x": "0",
         "offset_z": "1",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z1"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z1_t1"
       },
       "when": {
         "facing": "up",
         "offset_x": "0",
         "offset_z": "1",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z2_turned"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z2_t0"
       },
       "when": {
         "facing": "up",
         "offset_x": "0",
         "offset_z": "2",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z2"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z2_t1"
       },
       "when": {
         "facing": "up",
         "offset_x": "0",
         "offset_z": "2",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z3_turned"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z3_t0"
       },
       "when": {
         "facing": "up",
         "offset_x": "0",
         "offset_z": "3",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z3"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z3_t1"
       },
       "when": {
         "facing": "up",
         "offset_x": "0",
         "offset_z": "3",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z4_turned"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z4_t0"
       },
       "when": {
         "facing": "up",
         "offset_x": "0",
         "offset_z": "4",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z4"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z4_t1"
       },
       "when": {
         "facing": "up",
         "offset_x": "0",
         "offset_z": "4",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z0_turned"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z0_t0"
       },
       "when": {
         "facing": "up",
         "offset_x": "1",
         "offset_z": "0",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z0"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z0_t1"
       },
       "when": {
         "facing": "up",
         "offset_x": "1",
         "offset_z": "0",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z1_turned"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z1_t0"
       },
       "when": {
         "facing": "up",
         "offset_x": "1",
         "offset_z": "1",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z1"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z1_t1"
       },
       "when": {
         "facing": "up",
         "offset_x": "1",
         "offset_z": "1",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z2_turned"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z2_t0"
       },
       "when": {
         "facing": "up",
         "offset_x": "1",
         "offset_z": "2",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z2"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z2_t1"
       },
       "when": {
         "facing": "up",
         "offset_x": "1",
         "offset_z": "2",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z3_turned"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z3_t0"
       },
       "when": {
         "facing": "up",
         "offset_x": "1",
         "offset_z": "3",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z3"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z3_t1"
       },
       "when": {
         "facing": "up",
         "offset_x": "1",
         "offset_z": "3",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z4_turned"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z4_t0"
       },
       "when": {
         "facing": "up",
         "offset_x": "1",
         "offset_z": "4",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z4"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z4_t1"
       },
       "when": {
         "facing": "up",
         "offset_x": "1",
         "offset_z": "4",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z0_turned"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z0_t0"
       },
       "when": {
         "facing": "up",
         "offset_x": "2",
         "offset_z": "0",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z0"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z0_t1"
       },
       "when": {
         "facing": "up",
         "offset_x": "2",
         "offset_z": "0",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z1_turned"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z1_t0"
       },
       "when": {
         "facing": "up",
         "offset_x": "2",
         "offset_z": "1",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z1"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z1_t1"
       },
       "when": {
         "facing": "up",
         "offset_x": "2",
         "offset_z": "1",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z2_turned"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z2_t0"
       },
       "when": {
         "facing": "up",
         "offset_x": "2",
         "offset_z": "2",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z2"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z2_t1"
       },
       "when": {
         "facing": "up",
         "offset_x": "2",
         "offset_z": "2",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z3_turned"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z3_t0"
       },
       "when": {
         "facing": "up",
         "offset_x": "2",
         "offset_z": "3",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z3"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z3_t1"
       },
       "when": {
         "facing": "up",
         "offset_x": "2",
         "offset_z": "3",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z4_turned"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z4_t0"
       },
       "when": {
         "facing": "up",
         "offset_x": "2",
         "offset_z": "4",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z4"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z4_t1"
       },
       "when": {
         "facing": "up",
         "offset_x": "2",
         "offset_z": "4",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z0_turned"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z0_t0"
       },
       "when": {
         "facing": "up",
         "offset_x": "3",
         "offset_z": "0",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z0"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z0_t1"
       },
       "when": {
         "facing": "up",
         "offset_x": "3",
         "offset_z": "0",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z1_turned"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z1_t0"
       },
       "when": {
         "facing": "up",
         "offset_x": "3",
         "offset_z": "1",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z1"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z1_t1"
       },
       "when": {
         "facing": "up",
         "offset_x": "3",
         "offset_z": "1",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z2_turned"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z2_t0"
       },
       "when": {
         "facing": "up",
         "offset_x": "3",
         "offset_z": "2",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z2"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z2_t1"
       },
       "when": {
         "facing": "up",
         "offset_x": "3",
         "offset_z": "2",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z3_turned"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z3_t0"
       },
       "when": {
         "facing": "up",
         "offset_x": "3",
         "offset_z": "3",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z3"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z3_t1"
       },
       "when": {
         "facing": "up",
         "offset_x": "3",
         "offset_z": "3",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z4_turned"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z4_t0"
       },
       "when": {
         "facing": "up",
         "offset_x": "3",
         "offset_z": "4",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z4"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z4_t1"
       },
       "when": {
         "facing": "up",
         "offset_x": "3",
         "offset_z": "4",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z0_turned"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z0_t0"
       },
       "when": {
         "facing": "up",
         "offset_x": "4",
         "offset_z": "0",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z0"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z0_t1"
       },
       "when": {
         "facing": "up",
         "offset_x": "4",
         "offset_z": "0",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z1_turned"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z1_t0"
       },
       "when": {
         "facing": "up",
         "offset_x": "4",
         "offset_z": "1",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z1"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z1_t1"
       },
       "when": {
         "facing": "up",
         "offset_x": "4",
         "offset_z": "1",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z2_turned"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z2_t0"
       },
       "when": {
         "facing": "up",
         "offset_x": "4",
         "offset_z": "2",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z2"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z2_t1"
       },
       "when": {
         "facing": "up",
         "offset_x": "4",
         "offset_z": "2",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z3_turned"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z3_t0"
       },
       "when": {
         "facing": "up",
         "offset_x": "4",
         "offset_z": "3",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z3"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z3_t1"
       },
       "when": {
         "facing": "up",
         "offset_x": "4",
         "offset_z": "3",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z4_turned"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z4_t0"
       },
       "when": {
         "facing": "up",
         "offset_x": "4",
         "offset_z": "4",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z4"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z4_t1"
       },
       "when": {
         "facing": "up",
         "offset_x": "4",
         "offset_z": "4",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z0_turned"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z0_t0"
       },
       "when": {
         "facing": "up",
         "offset_x": "5",
         "offset_z": "0",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z0"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z0_t1"
       },
       "when": {
         "facing": "up",
         "offset_x": "5",
         "offset_z": "0",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z1_turned"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z1_t0"
       },
       "when": {
         "facing": "up",
         "offset_x": "5",
         "offset_z": "1",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z1"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z1_t1"
       },
       "when": {
         "facing": "up",
         "offset_x": "5",
         "offset_z": "1",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z2_turned"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z2_t0"
       },
       "when": {
         "facing": "up",
         "offset_x": "5",
         "offset_z": "2",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z2"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z2_t1"
       },
       "when": {
         "facing": "up",
         "offset_x": "5",
         "offset_z": "2",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z3_turned"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z3_t0"
       },
       "when": {
         "facing": "up",
         "offset_x": "5",
         "offset_z": "3",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z3"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z3_t1"
       },
       "when": {
         "facing": "up",
         "offset_x": "5",
         "offset_z": "3",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z4_turned"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z4_t0"
       },
       "when": {
         "facing": "up",
         "offset_x": "5",
         "offset_z": "4",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z4"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z4_t1"
       },
       "when": {
         "facing": "up",
         "offset_x": "5",
         "offset_z": "4",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z0_turned"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z0_t0"
       },
       "when": {
         "facing": "up",
         "offset_x": "6",
         "offset_z": "0",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z0"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z0_t1"
       },
       "when": {
         "facing": "up",
         "offset_x": "6",
         "offset_z": "0",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z1_turned"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z1_t0"
       },
       "when": {
         "facing": "up",
         "offset_x": "6",
         "offset_z": "1",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z1"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z1_t1"
       },
       "when": {
         "facing": "up",
         "offset_x": "6",
         "offset_z": "1",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z2_turned"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z2_t0"
       },
       "when": {
         "facing": "up",
         "offset_x": "6",
         "offset_z": "2",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z2"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z2_t1"
       },
       "when": {
         "facing": "up",
         "offset_x": "6",
         "offset_z": "2",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z3_turned"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z3_t0"
       },
       "when": {
         "facing": "up",
         "offset_x": "6",
         "offset_z": "3",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z3"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z3_t1"
       },
       "when": {
         "facing": "up",
         "offset_x": "6",
         "offset_z": "3",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z4_turned"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z4_t0"
       },
       "when": {
         "facing": "up",
         "offset_x": "6",
         "offset_z": "4",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z4"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z4_t1"
       },
       "when": {
         "facing": "up",
         "offset_x": "6",
         "offset_z": "4",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z0_turned"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z0_t0"
       },
       "when": {
         "facing": "up",
         "offset_x": "7",
         "offset_z": "0",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z0"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z0_t1"
       },
       "when": {
         "facing": "up",
         "offset_x": "7",
         "offset_z": "0",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z1_turned"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z1_t0"
       },
       "when": {
         "facing": "up",
         "offset_x": "7",
         "offset_z": "1",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z1"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z1_t1"
       },
       "when": {
         "facing": "up",
         "offset_x": "7",
         "offset_z": "1",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z2_turned"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z2_t0"
       },
       "when": {
         "facing": "up",
         "offset_x": "7",
         "offset_z": "2",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z2"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z2_t1"
       },
       "when": {
         "facing": "up",
         "offset_x": "7",
         "offset_z": "2",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z3_turned"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z3_t0"
       },
       "when": {
         "facing": "up",
         "offset_x": "7",
         "offset_z": "3",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z3"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z3_t1"
       },
       "when": {
         "facing": "up",
         "offset_x": "7",
         "offset_z": "3",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z4_turned"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z4_t0"
       },
       "when": {
         "facing": "up",
         "offset_x": "7",
         "offset_z": "4",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z4"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z4_t1"
       },
       "when": {
         "facing": "up",
         "offset_x": "7",
         "offset_z": "4",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z0_turned"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z0_t0"
       },
       "when": {
         "facing": "up",
         "offset_x": "8",
         "offset_z": "0",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z0"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z0_t1"
       },
       "when": {
         "facing": "up",
         "offset_x": "8",
         "offset_z": "0",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z1_turned"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z1_t0"
       },
       "when": {
         "facing": "up",
         "offset_x": "8",
         "offset_z": "1",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z1"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z1_t1"
       },
       "when": {
         "facing": "up",
         "offset_x": "8",
         "offset_z": "1",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z2_turned"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z2_t0"
       },
       "when": {
         "facing": "up",
         "offset_x": "8",
         "offset_z": "2",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z2"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z2_t1"
       },
       "when": {
         "facing": "up",
         "offset_x": "8",
         "offset_z": "2",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z3_turned"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z3_t0"
       },
       "when": {
         "facing": "up",
         "offset_x": "8",
         "offset_z": "3",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z3"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z3_t1"
       },
       "when": {
         "facing": "up",
         "offset_x": "8",
         "offset_z": "3",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z4_turned"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z4_t0"
       },
       "when": {
         "facing": "up",
         "offset_x": "8",
         "offset_z": "4",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z4"
+        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z4_t1"
       },
       "when": {
         "facing": "up",
         "offset_x": "8",
         "offset_z": "4",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z0_turned",
-        "x": 180
-      },
-      "when": {
-        "facing": "down",
-        "offset_x": "0",
-        "offset_z": "0",
-        "turned": "true"
-      }
-    },
-    {
-      "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z0",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z0_t0",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "0",
         "offset_z": "0",
-        "turned": "false"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z1_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z0_t1",
+        "x": 180
+      },
+      "when": {
+        "facing": "down",
+        "offset_x": "0",
+        "offset_z": "0",
+        "turn": "1"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z1_t0",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "0",
         "offset_z": "1",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z1",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z1_t1",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "0",
         "offset_z": "1",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z2_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z2_t0",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "0",
         "offset_z": "2",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z2",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z2_t1",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "0",
         "offset_z": "2",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z3_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z3_t0",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "0",
         "offset_z": "3",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z3",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z3_t1",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "0",
         "offset_z": "3",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z4_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z4_t0",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "0",
         "offset_z": "4",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z4",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x0_z4_t1",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "0",
         "offset_z": "4",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z0_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z0_t0",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "1",
         "offset_z": "0",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z0",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z0_t1",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "1",
         "offset_z": "0",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z1_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z1_t0",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "1",
         "offset_z": "1",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z1",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z1_t1",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "1",
         "offset_z": "1",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z2_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z2_t0",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "1",
         "offset_z": "2",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z2",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z2_t1",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "1",
         "offset_z": "2",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z3_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z3_t0",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "1",
         "offset_z": "3",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z3",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z3_t1",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "1",
         "offset_z": "3",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z4_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z4_t0",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "1",
         "offset_z": "4",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z4",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x1_z4_t1",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "1",
         "offset_z": "4",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z0_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z0_t0",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "2",
         "offset_z": "0",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z0",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z0_t1",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "2",
         "offset_z": "0",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z1_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z1_t0",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "2",
         "offset_z": "1",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z1",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z1_t1",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "2",
         "offset_z": "1",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z2_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z2_t0",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "2",
         "offset_z": "2",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z2",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z2_t1",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "2",
         "offset_z": "2",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z3_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z3_t0",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "2",
         "offset_z": "3",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z3",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z3_t1",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "2",
         "offset_z": "3",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z4_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z4_t0",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "2",
         "offset_z": "4",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z4",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x2_z4_t1",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "2",
         "offset_z": "4",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z0_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z0_t0",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "3",
         "offset_z": "0",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z0",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z0_t1",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "3",
         "offset_z": "0",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z1_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z1_t0",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "3",
         "offset_z": "1",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z1",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z1_t1",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "3",
         "offset_z": "1",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z2_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z2_t0",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "3",
         "offset_z": "2",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z2",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z2_t1",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "3",
         "offset_z": "2",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z3_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z3_t0",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "3",
         "offset_z": "3",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z3",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z3_t1",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "3",
         "offset_z": "3",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z4_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z4_t0",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "3",
         "offset_z": "4",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z4",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x3_z4_t1",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "3",
         "offset_z": "4",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z0_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z0_t0",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "4",
         "offset_z": "0",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z0",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z0_t1",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "4",
         "offset_z": "0",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z1_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z1_t0",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "4",
         "offset_z": "1",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z1",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z1_t1",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "4",
         "offset_z": "1",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z2_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z2_t0",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "4",
         "offset_z": "2",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z2",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z2_t1",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "4",
         "offset_z": "2",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z3_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z3_t0",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "4",
         "offset_z": "3",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z3",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z3_t1",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "4",
         "offset_z": "3",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z4_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z4_t0",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "4",
         "offset_z": "4",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z4",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x4_z4_t1",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "4",
         "offset_z": "4",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z0_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z0_t0",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "5",
         "offset_z": "0",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z0",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z0_t1",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "5",
         "offset_z": "0",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z1_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z1_t0",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "5",
         "offset_z": "1",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z1",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z1_t1",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "5",
         "offset_z": "1",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z2_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z2_t0",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "5",
         "offset_z": "2",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z2",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z2_t1",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "5",
         "offset_z": "2",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z3_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z3_t0",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "5",
         "offset_z": "3",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z3",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z3_t1",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "5",
         "offset_z": "3",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z4_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z4_t0",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "5",
         "offset_z": "4",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z4",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x5_z4_t1",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "5",
         "offset_z": "4",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z0_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z0_t0",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "6",
         "offset_z": "0",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z0",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z0_t1",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "6",
         "offset_z": "0",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z1_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z1_t0",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "6",
         "offset_z": "1",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z1",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z1_t1",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "6",
         "offset_z": "1",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z2_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z2_t0",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "6",
         "offset_z": "2",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z2",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z2_t1",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "6",
         "offset_z": "2",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z3_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z3_t0",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "6",
         "offset_z": "3",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z3",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z3_t1",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "6",
         "offset_z": "3",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z4_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z4_t0",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "6",
         "offset_z": "4",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z4",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x6_z4_t1",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "6",
         "offset_z": "4",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z0_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z0_t0",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "7",
         "offset_z": "0",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z0",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z0_t1",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "7",
         "offset_z": "0",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z1_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z1_t0",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "7",
         "offset_z": "1",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z1",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z1_t1",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "7",
         "offset_z": "1",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z2_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z2_t0",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "7",
         "offset_z": "2",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z2",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z2_t1",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "7",
         "offset_z": "2",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z3_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z3_t0",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "7",
         "offset_z": "3",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z3",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z3_t1",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "7",
         "offset_z": "3",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z4_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z4_t0",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "7",
         "offset_z": "4",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z4",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x7_z4_t1",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "7",
         "offset_z": "4",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z0_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z0_t0",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "8",
         "offset_z": "0",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z0",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z0_t1",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "8",
         "offset_z": "0",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z1_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z1_t0",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "8",
         "offset_z": "1",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z1",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z1_t1",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "8",
         "offset_z": "1",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z2_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z2_t0",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "8",
         "offset_z": "2",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z2",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z2_t1",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "8",
         "offset_z": "2",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z3_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z3_t0",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "8",
         "offset_z": "3",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z3",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z3_t1",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "8",
         "offset_z": "3",
-        "turned": "false"
+        "turn": "1"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z4_turned",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z4_t0",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "8",
         "offset_z": "4",
-        "turned": "true"
+        "turn": "0"
       }
     },
     {
       "apply": {
-        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z4",
+        "model": "crystalblocks:block/bolted_i_beam_cap_x8_z4_t1",
         "x": 180
       },
       "when": {
         "facing": "down",
         "offset_x": "8",
         "offset_z": "4",
-        "turned": "false"
+        "turn": "1"
       }
     }
   ]
