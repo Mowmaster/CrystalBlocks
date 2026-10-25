@@ -58,5 +58,9 @@ public class CBLanguageProvider extends LanguageProvider
         addBlock(CBBlockRegistry.CHAINED_SUPPORT_BEAM_MEDIUM, "Medium Chained Support Beam");
 
         addBlock(CBBlockRegistry.SCONCE_TORCH, "Torch Sconce");
+        addBlock(CBBlockRegistry.CHAIN_LANTERN, "Chain Lantern");
+        addBlock(CBBlockRegistry.CHAIN_LANTERN_CAP, "Chain Lantern Cap");
+        addBlock(CBBlockRegistry.CHAIN_LANTERN_MEDIUM, "Medium Chain Lantern");
+        addBlock(CBBlockRegistry.CHAIN_LANTERN_MEDIUM_CAP, "Medium Chain Lantern Cap");
     }
 }

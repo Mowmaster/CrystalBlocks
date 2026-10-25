@@ -61,7 +61,7 @@ public abstract class CBBoltedBeamBlock extends Block implements IColorableBlock
         BlockState defaults = stateDefinition.any()
                 .setValue(offsetXProperty(), (int) Math.floor(body.minX()))
                 .setValue(offsetZProperty(), (int) Math.floor(body.minZ()));
-        defaults = isCap() ? defaults.setValue(FACING, Direction.UP) : defaults.setValue(AXIS, Direction.Axis.Y);
+        if (!alwaysUpright()) defaults = isCap() ? defaults.setValue(FACING, Direction.UP) : defaults.setValue(AXIS, Direction.Axis.Y);
         if (turnProperty() != null) defaults = defaults.setValue(turnProperty(), 0);
         registerDefaultState(defaults);
 
@@ -101,12 +101,22 @@ public abstract class CBBoltedBeamBlock extends Block implements IColorableBlock
         return 0;
     }
 
+    // Blocks that only ever stand upright (e.g. lanterns) have no facing or axis property at all.
+    // facing() then always reports UP.
+    public boolean alwaysUpright()
+    {
+        return false;
+    }
+
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder)
     {
         builder.add(offsetXProperty(), offsetZProperty());
-        if (isCap()) builder.add(FACING);
-        else builder.add(AXIS);
+        if (!alwaysUpright())
+        {
+            if (isCap()) builder.add(FACING);
+            else builder.add(AXIS);
+        }
         if (turnProperty() != null) builder.add(turnProperty());
     }
 
@@ -115,6 +125,7 @@ public abstract class CBBoltedBeamBlock extends Block implements IColorableBlock
     // Which way the model's top points. Plain beams have an axis instead: up, north or east stand in for it.
     public Direction facing(BlockState state)
     {
+        if (alwaysUpright()) return Direction.UP;
         if (isCap()) return state.getValue(FACING);
         return switch (state.getValue(AXIS))
         {
@@ -127,6 +138,7 @@ public abstract class CBBoltedBeamBlock extends Block implements IColorableBlock
     // Points the beam: caps keep the exact direction, plain beams only keep its axis
     protected BlockState withFacing(BlockState state, Direction facing)
     {
+        if (alwaysUpright()) return state;
         return isCap() ? state.setValue(FACING, facing) : state.setValue(AXIS, facing.getAxis());
     }
 
@@ -409,7 +421,7 @@ public abstract class CBBoltedBeamBlock extends Block implements IColorableBlock
     // Tries every position (and every turn, if allowed) and keeps the one whose body best matches the target
     // across the beam's length. Ties go to preferredTurn, so square beams keep the turn they should have.
     // Used for clicks, stacking, rotating and mirroring.
-    private BlockState bestFit(BlockState state, CBPixelBox target, boolean tryAllTurns, int preferredTurn)
+    BlockState bestFit(BlockState state, CBPixelBox target, boolean tryAllTurns, int preferredTurn)
     {
         Direction.Axis lengthAxis = facing(state).getAxis();
         int preferred = Math.floorMod(preferredTurn, turnCount());

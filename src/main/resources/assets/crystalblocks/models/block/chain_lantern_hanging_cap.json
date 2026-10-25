@@ -4,6 +4,7 @@
 	"parent": "minecraft:block/block",
 	"textures": {
 		"0": "#texture_one",
+		"1": "#texture_two",
 		"2": "#texture_three",
 		"particle": "#texture_one"
 	},

@@ -75,13 +75,28 @@ public class CBBlockRegistry
                     .noOcclusion()
                     .lightLevel(state -> state.getValue(CBSconce.LIT) ? 15 : 0)));
 
+    public static final DeferredBlock<Block> CHAIN_LANTERN = registerBlock("chain_lantern",
+            properties -> new CBChainLantern(lanternProperties(properties)));
+    public static final DeferredBlock<Block> CHAIN_LANTERN_CAP = registerBlock("chain_lantern_cap",
+            properties -> new CBChainLantern(lanternProperties(properties)) {
+                @Override public boolean hasPlate() { return true; }
+            });
+    public static final DeferredBlock<Block> CHAIN_LANTERN_MEDIUM = registerBlock("chain_lantern_medium",
+            properties -> new CBChainLantern(lanternProperties(properties)) {
+                @Override public CBChainSize size() { return CBChainSize.MEDIUM; }
+            });
+    public static final DeferredBlock<Block> CHAIN_LANTERN_MEDIUM_CAP = registerBlock("chain_lantern_medium_cap",
+            properties -> new CBChainLantern(lanternProperties(properties)) {
+                @Override public CBChainSize size() { return CBChainSize.MEDIUM; }
+                @Override public boolean hasPlate() { return true; }
+            });
 
 
     public static final List<DeferredBlock<Block>> BOLTED = List.of(BOLTED_CORNER_SUPPORT_CAP,
             BOLTED_I_BEAM, BOLTED_I_BEAM_CAP, BOLTED_SUPPORT_BEAM, BOLTED_SUPPORT_BEAM_CAP,
             CHAINED_SUPPORT_BEAM, CHAIN_BEAM, CHAIN_BEAM_CAP,
             CHAIN_BEAM_MEDIUM, CHAIN_BEAM_MEDIUM_CAP, CHAIN_BEAM_LARGE, CHAIN_BEAM_LARGE_CAP, CHAINED_SUPPORT_BEAM_MEDIUM,
-            SCONCE_TORCH);
+            SCONCE_TORCH, CHAIN_LANTERN, CHAIN_LANTERN_CAP, CHAIN_LANTERN_MEDIUM, CHAIN_LANTERN_MEDIUM_CAP);
 
     // Registers every shape for one texture
     private static CBBlockSet registerSet(String name, String displayName, CBMaterial material)
@@ -124,6 +139,17 @@ public class CBBlockRegistry
         DeferredBlock<T> toReturn = BCBLOCKS.registerBlock(name, function);
         registerBlockItem(name, toReturn);
         return toReturn;
+    }
+
+    // Vanilla lantern feel: lantern sounds and hardness, broken (not pushed) by pistons, light 15 while lit
+    private static BlockBehaviour.Properties lanternProperties(BlockBehaviour.Properties properties)
+    {
+        return CBMaterial.METAL.apply(properties)
+                .sound(SoundType.LANTERN)
+                .strength(3.5f)
+                .noOcclusion()
+                .pushReaction(PushReaction.POPPED)
+                .lightLevel(state -> state.getValue(CBChainLantern.LIT) ? 15 : 0);
     }
 
     private static <T extends Block> void registerBlockItem(String name, DeferredBlock<T> block)
