@@ -202,6 +202,12 @@ public class CBChainedSupportBeam extends CBBoltedBeamBlock
                     && neighbor.getValue(ChainBlock.AXIS) == worldSide.getAxis()
                     && centresMeet(chain, new CBPixelBox(8, 8, 8, 8, 8, 8), worldSide.getAxis());
         }
+        // Lanterns only join from below, and only while hanging (a standing lantern on top has no chain to meet)
+        if (neighbor.getBlock() instanceof CBChainLantern
+                && (worldSide != Direction.DOWN || !neighbor.getValue(CBChainLantern.HANGING)))
+        {
+            return false;
+        }
         if (neighbor.getBlock() instanceof CBBoltedBeamBlock beam && beam.kind() == chainSize().kind())
         {
             return beam.facing(neighbor).getAxis() == worldSide.getAxis()

@@ -5,6 +5,7 @@
         "model": "crystalblocks:block/chain_lantern_x0_z0"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "0",
         "offset_z": "0",
         "tinted_glass": "false"
@@ -15,6 +16,29 @@
         "model": "crystalblocks:block/chain_lantern_x0_z0_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "0",
+        "offset_z": "0",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x0_z0"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "0",
+        "offset_z": "0",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x0_z0_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "0",
         "offset_z": "0",
         "tinted_glass": "true"
@@ -25,6 +49,7 @@
         "model": "crystalblocks:block/chain_lantern_x0_z1"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "0",
         "offset_z": "1",
         "tinted_glass": "false"
@@ -35,6 +60,29 @@
         "model": "crystalblocks:block/chain_lantern_x0_z1_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "0",
+        "offset_z": "1",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x0_z1"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "0",
+        "offset_z": "1",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x0_z1_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "0",
         "offset_z": "1",
         "tinted_glass": "true"
@@ -45,6 +93,7 @@
         "model": "crystalblocks:block/chain_lantern_x0_z2"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "0",
         "offset_z": "2",
         "tinted_glass": "false"
@@ -55,6 +104,29 @@
         "model": "crystalblocks:block/chain_lantern_x0_z2_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "0",
+        "offset_z": "2",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x0_z2"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "0",
+        "offset_z": "2",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x0_z2_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "0",
         "offset_z": "2",
         "tinted_glass": "true"
@@ -65,6 +137,7 @@
         "model": "crystalblocks:block/chain_lantern_x0_z3"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "0",
         "offset_z": "3",
         "tinted_glass": "false"
@@ -75,6 +148,29 @@
         "model": "crystalblocks:block/chain_lantern_x0_z3_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "0",
+        "offset_z": "3",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x0_z3"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "0",
+        "offset_z": "3",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x0_z3_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "0",
         "offset_z": "3",
         "tinted_glass": "true"
@@ -85,6 +181,7 @@
         "model": "crystalblocks:block/chain_lantern_x0_z4"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "0",
         "offset_z": "4",
         "tinted_glass": "false"
@@ -95,6 +192,29 @@
         "model": "crystalblocks:block/chain_lantern_x0_z4_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "0",
+        "offset_z": "4",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x0_z4"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "0",
+        "offset_z": "4",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x0_z4_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "0",
         "offset_z": "4",
         "tinted_glass": "true"
@@ -105,6 +225,7 @@
         "model": "crystalblocks:block/chain_lantern_x0_z5"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "0",
         "offset_z": "5",
         "tinted_glass": "false"
@@ -115,6 +236,29 @@
         "model": "crystalblocks:block/chain_lantern_x0_z5_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "0",
+        "offset_z": "5",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x0_z5"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "0",
+        "offset_z": "5",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x0_z5_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "0",
         "offset_z": "5",
         "tinted_glass": "true"
@@ -125,6 +269,7 @@
         "model": "crystalblocks:block/chain_lantern_x0_z6"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "0",
         "offset_z": "6",
         "tinted_glass": "false"
@@ -135,6 +280,29 @@
         "model": "crystalblocks:block/chain_lantern_x0_z6_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "0",
+        "offset_z": "6",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x0_z6"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "0",
+        "offset_z": "6",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x0_z6_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "0",
         "offset_z": "6",
         "tinted_glass": "true"
@@ -145,6 +313,7 @@
         "model": "crystalblocks:block/chain_lantern_x0_z7"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "0",
         "offset_z": "7",
         "tinted_glass": "false"
@@ -155,6 +324,29 @@
         "model": "crystalblocks:block/chain_lantern_x0_z7_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "0",
+        "offset_z": "7",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x0_z7"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "0",
+        "offset_z": "7",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x0_z7_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "0",
         "offset_z": "7",
         "tinted_glass": "true"
@@ -165,6 +357,7 @@
         "model": "crystalblocks:block/chain_lantern_x0_z8"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "0",
         "offset_z": "8",
         "tinted_glass": "false"
@@ -175,6 +368,29 @@
         "model": "crystalblocks:block/chain_lantern_x0_z8_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "0",
+        "offset_z": "8",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x0_z8"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "0",
+        "offset_z": "8",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x0_z8_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "0",
         "offset_z": "8",
         "tinted_glass": "true"
@@ -185,6 +401,7 @@
         "model": "crystalblocks:block/chain_lantern_x0_z9"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "0",
         "offset_z": "9",
         "tinted_glass": "false"
@@ -195,6 +412,29 @@
         "model": "crystalblocks:block/chain_lantern_x0_z9_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "0",
+        "offset_z": "9",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x0_z9"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "0",
+        "offset_z": "9",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x0_z9_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "0",
         "offset_z": "9",
         "tinted_glass": "true"
@@ -205,6 +445,7 @@
         "model": "crystalblocks:block/chain_lantern_x0_z10"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "0",
         "offset_z": "10",
         "tinted_glass": "false"
@@ -215,6 +456,29 @@
         "model": "crystalblocks:block/chain_lantern_x0_z10_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "0",
+        "offset_z": "10",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x0_z10"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "0",
+        "offset_z": "10",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x0_z10_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "0",
         "offset_z": "10",
         "tinted_glass": "true"
@@ -225,6 +489,7 @@
         "model": "crystalblocks:block/chain_lantern_x0_z11"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "0",
         "offset_z": "11",
         "tinted_glass": "false"
@@ -235,6 +500,29 @@
         "model": "crystalblocks:block/chain_lantern_x0_z11_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "0",
+        "offset_z": "11",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x0_z11"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "0",
+        "offset_z": "11",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x0_z11_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "0",
         "offset_z": "11",
         "tinted_glass": "true"
@@ -245,6 +533,7 @@
         "model": "crystalblocks:block/chain_lantern_x0_z12"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "0",
         "offset_z": "12",
         "tinted_glass": "false"
@@ -255,6 +544,29 @@
         "model": "crystalblocks:block/chain_lantern_x0_z12_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "0",
+        "offset_z": "12",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x0_z12"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "0",
+        "offset_z": "12",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x0_z12_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "0",
         "offset_z": "12",
         "tinted_glass": "true"
@@ -265,6 +577,7 @@
         "model": "crystalblocks:block/chain_lantern_x1_z0"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "1",
         "offset_z": "0",
         "tinted_glass": "false"
@@ -275,6 +588,29 @@
         "model": "crystalblocks:block/chain_lantern_x1_z0_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "1",
+        "offset_z": "0",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x1_z0"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "1",
+        "offset_z": "0",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x1_z0_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "1",
         "offset_z": "0",
         "tinted_glass": "true"
@@ -285,6 +621,7 @@
         "model": "crystalblocks:block/chain_lantern_x1_z1"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "1",
         "offset_z": "1",
         "tinted_glass": "false"
@@ -295,6 +632,29 @@
         "model": "crystalblocks:block/chain_lantern_x1_z1_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "1",
+        "offset_z": "1",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x1_z1"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "1",
+        "offset_z": "1",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x1_z1_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "1",
         "offset_z": "1",
         "tinted_glass": "true"
@@ -305,6 +665,7 @@
         "model": "crystalblocks:block/chain_lantern_x1_z2"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "1",
         "offset_z": "2",
         "tinted_glass": "false"
@@ -315,6 +676,29 @@
         "model": "crystalblocks:block/chain_lantern_x1_z2_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "1",
+        "offset_z": "2",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x1_z2"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "1",
+        "offset_z": "2",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x1_z2_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "1",
         "offset_z": "2",
         "tinted_glass": "true"
@@ -325,6 +709,7 @@
         "model": "crystalblocks:block/chain_lantern_x1_z3"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "1",
         "offset_z": "3",
         "tinted_glass": "false"
@@ -335,6 +720,29 @@
         "model": "crystalblocks:block/chain_lantern_x1_z3_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "1",
+        "offset_z": "3",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x1_z3"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "1",
+        "offset_z": "3",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x1_z3_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "1",
         "offset_z": "3",
         "tinted_glass": "true"
@@ -345,6 +753,7 @@
         "model": "crystalblocks:block/chain_lantern_x1_z4"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "1",
         "offset_z": "4",
         "tinted_glass": "false"
@@ -355,6 +764,29 @@
         "model": "crystalblocks:block/chain_lantern_x1_z4_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "1",
+        "offset_z": "4",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x1_z4"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "1",
+        "offset_z": "4",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x1_z4_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "1",
         "offset_z": "4",
         "tinted_glass": "true"
@@ -365,6 +797,7 @@
         "model": "crystalblocks:block/chain_lantern_x1_z5"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "1",
         "offset_z": "5",
         "tinted_glass": "false"
@@ -375,6 +808,29 @@
         "model": "crystalblocks:block/chain_lantern_x1_z5_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "1",
+        "offset_z": "5",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x1_z5"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "1",
+        "offset_z": "5",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x1_z5_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "1",
         "offset_z": "5",
         "tinted_glass": "true"
@@ -385,6 +841,7 @@
         "model": "crystalblocks:block/chain_lantern_x1_z6"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "1",
         "offset_z": "6",
         "tinted_glass": "false"
@@ -395,6 +852,29 @@
         "model": "crystalblocks:block/chain_lantern_x1_z6_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "1",
+        "offset_z": "6",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x1_z6"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "1",
+        "offset_z": "6",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x1_z6_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "1",
         "offset_z": "6",
         "tinted_glass": "true"
@@ -405,6 +885,7 @@
         "model": "crystalblocks:block/chain_lantern_x1_z7"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "1",
         "offset_z": "7",
         "tinted_glass": "false"
@@ -415,6 +896,29 @@
         "model": "crystalblocks:block/chain_lantern_x1_z7_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "1",
+        "offset_z": "7",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x1_z7"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "1",
+        "offset_z": "7",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x1_z7_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "1",
         "offset_z": "7",
         "tinted_glass": "true"
@@ -425,6 +929,7 @@
         "model": "crystalblocks:block/chain_lantern_x1_z8"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "1",
         "offset_z": "8",
         "tinted_glass": "false"
@@ -435,6 +940,29 @@
         "model": "crystalblocks:block/chain_lantern_x1_z8_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "1",
+        "offset_z": "8",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x1_z8"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "1",
+        "offset_z": "8",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x1_z8_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "1",
         "offset_z": "8",
         "tinted_glass": "true"
@@ -445,6 +973,7 @@
         "model": "crystalblocks:block/chain_lantern_x1_z9"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "1",
         "offset_z": "9",
         "tinted_glass": "false"
@@ -455,6 +984,29 @@
         "model": "crystalblocks:block/chain_lantern_x1_z9_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "1",
+        "offset_z": "9",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x1_z9"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "1",
+        "offset_z": "9",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x1_z9_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "1",
         "offset_z": "9",
         "tinted_glass": "true"
@@ -465,6 +1017,7 @@
         "model": "crystalblocks:block/chain_lantern_x1_z10"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "1",
         "offset_z": "10",
         "tinted_glass": "false"
@@ -475,6 +1028,29 @@
         "model": "crystalblocks:block/chain_lantern_x1_z10_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "1",
+        "offset_z": "10",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x1_z10"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "1",
+        "offset_z": "10",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x1_z10_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "1",
         "offset_z": "10",
         "tinted_glass": "true"
@@ -485,6 +1061,7 @@
         "model": "crystalblocks:block/chain_lantern_x1_z11"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "1",
         "offset_z": "11",
         "tinted_glass": "false"
@@ -495,6 +1072,29 @@
         "model": "crystalblocks:block/chain_lantern_x1_z11_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "1",
+        "offset_z": "11",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x1_z11"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "1",
+        "offset_z": "11",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x1_z11_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "1",
         "offset_z": "11",
         "tinted_glass": "true"
@@ -505,6 +1105,7 @@
         "model": "crystalblocks:block/chain_lantern_x1_z12"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "1",
         "offset_z": "12",
         "tinted_glass": "false"
@@ -515,6 +1116,29 @@
         "model": "crystalblocks:block/chain_lantern_x1_z12_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "1",
+        "offset_z": "12",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x1_z12"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "1",
+        "offset_z": "12",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x1_z12_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "1",
         "offset_z": "12",
         "tinted_glass": "true"
@@ -525,6 +1149,7 @@
         "model": "crystalblocks:block/chain_lantern_x2_z0"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "2",
         "offset_z": "0",
         "tinted_glass": "false"
@@ -535,6 +1160,29 @@
         "model": "crystalblocks:block/chain_lantern_x2_z0_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "2",
+        "offset_z": "0",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x2_z0"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "2",
+        "offset_z": "0",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x2_z0_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "2",
         "offset_z": "0",
         "tinted_glass": "true"
@@ -545,6 +1193,7 @@
         "model": "crystalblocks:block/chain_lantern_x2_z1"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "2",
         "offset_z": "1",
         "tinted_glass": "false"
@@ -555,6 +1204,29 @@
         "model": "crystalblocks:block/chain_lantern_x2_z1_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "2",
+        "offset_z": "1",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x2_z1"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "2",
+        "offset_z": "1",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x2_z1_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "2",
         "offset_z": "1",
         "tinted_glass": "true"
@@ -565,6 +1237,7 @@
         "model": "crystalblocks:block/chain_lantern_x2_z2"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "2",
         "offset_z": "2",
         "tinted_glass": "false"
@@ -575,6 +1248,29 @@
         "model": "crystalblocks:block/chain_lantern_x2_z2_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "2",
+        "offset_z": "2",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x2_z2"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "2",
+        "offset_z": "2",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x2_z2_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "2",
         "offset_z": "2",
         "tinted_glass": "true"
@@ -585,6 +1281,7 @@
         "model": "crystalblocks:block/chain_lantern_x2_z3"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "2",
         "offset_z": "3",
         "tinted_glass": "false"
@@ -595,6 +1292,29 @@
         "model": "crystalblocks:block/chain_lantern_x2_z3_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "2",
+        "offset_z": "3",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x2_z3"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "2",
+        "offset_z": "3",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x2_z3_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "2",
         "offset_z": "3",
         "tinted_glass": "true"
@@ -605,6 +1325,7 @@
         "model": "crystalblocks:block/chain_lantern_x2_z4"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "2",
         "offset_z": "4",
         "tinted_glass": "false"
@@ -615,6 +1336,29 @@
         "model": "crystalblocks:block/chain_lantern_x2_z4_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "2",
+        "offset_z": "4",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x2_z4"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "2",
+        "offset_z": "4",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x2_z4_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "2",
         "offset_z": "4",
         "tinted_glass": "true"
@@ -625,6 +1369,7 @@
         "model": "crystalblocks:block/chain_lantern_x2_z5"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "2",
         "offset_z": "5",
         "tinted_glass": "false"
@@ -635,6 +1380,29 @@
         "model": "crystalblocks:block/chain_lantern_x2_z5_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "2",
+        "offset_z": "5",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x2_z5"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "2",
+        "offset_z": "5",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x2_z5_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "2",
         "offset_z": "5",
         "tinted_glass": "true"
@@ -645,6 +1413,7 @@
         "model": "crystalblocks:block/chain_lantern_x2_z6"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "2",
         "offset_z": "6",
         "tinted_glass": "false"
@@ -655,6 +1424,29 @@
         "model": "crystalblocks:block/chain_lantern_x2_z6_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "2",
+        "offset_z": "6",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x2_z6"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "2",
+        "offset_z": "6",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x2_z6_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "2",
         "offset_z": "6",
         "tinted_glass": "true"
@@ -665,6 +1457,7 @@
         "model": "crystalblocks:block/chain_lantern_x2_z7"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "2",
         "offset_z": "7",
         "tinted_glass": "false"
@@ -675,6 +1468,29 @@
         "model": "crystalblocks:block/chain_lantern_x2_z7_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "2",
+        "offset_z": "7",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x2_z7"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "2",
+        "offset_z": "7",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x2_z7_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "2",
         "offset_z": "7",
         "tinted_glass": "true"
@@ -685,6 +1501,7 @@
         "model": "crystalblocks:block/chain_lantern_x2_z8"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "2",
         "offset_z": "8",
         "tinted_glass": "false"
@@ -695,6 +1512,29 @@
         "model": "crystalblocks:block/chain_lantern_x2_z8_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "2",
+        "offset_z": "8",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x2_z8"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "2",
+        "offset_z": "8",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x2_z8_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "2",
         "offset_z": "8",
         "tinted_glass": "true"
@@ -705,6 +1545,7 @@
         "model": "crystalblocks:block/chain_lantern_x2_z9"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "2",
         "offset_z": "9",
         "tinted_glass": "false"
@@ -715,6 +1556,29 @@
         "model": "crystalblocks:block/chain_lantern_x2_z9_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "2",
+        "offset_z": "9",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x2_z9"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "2",
+        "offset_z": "9",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x2_z9_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "2",
         "offset_z": "9",
         "tinted_glass": "true"
@@ -725,6 +1589,7 @@
         "model": "crystalblocks:block/chain_lantern_x2_z10"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "2",
         "offset_z": "10",
         "tinted_glass": "false"
@@ -735,6 +1600,29 @@
         "model": "crystalblocks:block/chain_lantern_x2_z10_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "2",
+        "offset_z": "10",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x2_z10"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "2",
+        "offset_z": "10",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x2_z10_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "2",
         "offset_z": "10",
         "tinted_glass": "true"
@@ -745,6 +1633,7 @@
         "model": "crystalblocks:block/chain_lantern_x2_z11"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "2",
         "offset_z": "11",
         "tinted_glass": "false"
@@ -755,6 +1644,29 @@
         "model": "crystalblocks:block/chain_lantern_x2_z11_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "2",
+        "offset_z": "11",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x2_z11"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "2",
+        "offset_z": "11",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x2_z11_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "2",
         "offset_z": "11",
         "tinted_glass": "true"
@@ -765,6 +1677,7 @@
         "model": "crystalblocks:block/chain_lantern_x2_z12"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "2",
         "offset_z": "12",
         "tinted_glass": "false"
@@ -775,6 +1688,29 @@
         "model": "crystalblocks:block/chain_lantern_x2_z12_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "2",
+        "offset_z": "12",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x2_z12"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "2",
+        "offset_z": "12",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x2_z12_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "2",
         "offset_z": "12",
         "tinted_glass": "true"
@@ -785,6 +1721,7 @@
         "model": "crystalblocks:block/chain_lantern_x3_z0"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "3",
         "offset_z": "0",
         "tinted_glass": "false"
@@ -795,6 +1732,29 @@
         "model": "crystalblocks:block/chain_lantern_x3_z0_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "3",
+        "offset_z": "0",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x3_z0"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "3",
+        "offset_z": "0",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x3_z0_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "3",
         "offset_z": "0",
         "tinted_glass": "true"
@@ -805,6 +1765,7 @@
         "model": "crystalblocks:block/chain_lantern_x3_z1"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "3",
         "offset_z": "1",
         "tinted_glass": "false"
@@ -815,6 +1776,29 @@
         "model": "crystalblocks:block/chain_lantern_x3_z1_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "3",
+        "offset_z": "1",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x3_z1"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "3",
+        "offset_z": "1",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x3_z1_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "3",
         "offset_z": "1",
         "tinted_glass": "true"
@@ -825,6 +1809,7 @@
         "model": "crystalblocks:block/chain_lantern_x3_z2"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "3",
         "offset_z": "2",
         "tinted_glass": "false"
@@ -835,6 +1820,29 @@
         "model": "crystalblocks:block/chain_lantern_x3_z2_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "3",
+        "offset_z": "2",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x3_z2"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "3",
+        "offset_z": "2",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x3_z2_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "3",
         "offset_z": "2",
         "tinted_glass": "true"
@@ -845,6 +1853,7 @@
         "model": "crystalblocks:block/chain_lantern_x3_z3"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "3",
         "offset_z": "3",
         "tinted_glass": "false"
@@ -855,6 +1864,29 @@
         "model": "crystalblocks:block/chain_lantern_x3_z3_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "3",
+        "offset_z": "3",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x3_z3"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "3",
+        "offset_z": "3",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x3_z3_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "3",
         "offset_z": "3",
         "tinted_glass": "true"
@@ -865,6 +1897,7 @@
         "model": "crystalblocks:block/chain_lantern_x3_z4"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "3",
         "offset_z": "4",
         "tinted_glass": "false"
@@ -875,6 +1908,29 @@
         "model": "crystalblocks:block/chain_lantern_x3_z4_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "3",
+        "offset_z": "4",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x3_z4"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "3",
+        "offset_z": "4",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x3_z4_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "3",
         "offset_z": "4",
         "tinted_glass": "true"
@@ -885,6 +1941,7 @@
         "model": "crystalblocks:block/chain_lantern_x3_z5"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "3",
         "offset_z": "5",
         "tinted_glass": "false"
@@ -895,6 +1952,29 @@
         "model": "crystalblocks:block/chain_lantern_x3_z5_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "3",
+        "offset_z": "5",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x3_z5"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "3",
+        "offset_z": "5",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x3_z5_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "3",
         "offset_z": "5",
         "tinted_glass": "true"
@@ -905,6 +1985,7 @@
         "model": "crystalblocks:block/chain_lantern_x3_z6"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "3",
         "offset_z": "6",
         "tinted_glass": "false"
@@ -915,6 +1996,29 @@
         "model": "crystalblocks:block/chain_lantern_x3_z6_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "3",
+        "offset_z": "6",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x3_z6"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "3",
+        "offset_z": "6",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x3_z6_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "3",
         "offset_z": "6",
         "tinted_glass": "true"
@@ -925,6 +2029,7 @@
         "model": "crystalblocks:block/chain_lantern_x3_z7"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "3",
         "offset_z": "7",
         "tinted_glass": "false"
@@ -935,6 +2040,29 @@
         "model": "crystalblocks:block/chain_lantern_x3_z7_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "3",
+        "offset_z": "7",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x3_z7"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "3",
+        "offset_z": "7",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x3_z7_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "3",
         "offset_z": "7",
         "tinted_glass": "true"
@@ -945,6 +2073,7 @@
         "model": "crystalblocks:block/chain_lantern_x3_z8"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "3",
         "offset_z": "8",
         "tinted_glass": "false"
@@ -955,6 +2084,29 @@
         "model": "crystalblocks:block/chain_lantern_x3_z8_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "3",
+        "offset_z": "8",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x3_z8"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "3",
+        "offset_z": "8",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x3_z8_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "3",
         "offset_z": "8",
         "tinted_glass": "true"
@@ -965,6 +2117,7 @@
         "model": "crystalblocks:block/chain_lantern_x3_z9"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "3",
         "offset_z": "9",
         "tinted_glass": "false"
@@ -975,6 +2128,29 @@
         "model": "crystalblocks:block/chain_lantern_x3_z9_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "3",
+        "offset_z": "9",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x3_z9"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "3",
+        "offset_z": "9",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x3_z9_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "3",
         "offset_z": "9",
         "tinted_glass": "true"
@@ -985,6 +2161,7 @@
         "model": "crystalblocks:block/chain_lantern_x3_z10"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "3",
         "offset_z": "10",
         "tinted_glass": "false"
@@ -995,6 +2172,29 @@
         "model": "crystalblocks:block/chain_lantern_x3_z10_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "3",
+        "offset_z": "10",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x3_z10"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "3",
+        "offset_z": "10",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x3_z10_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "3",
         "offset_z": "10",
         "tinted_glass": "true"
@@ -1005,6 +2205,7 @@
         "model": "crystalblocks:block/chain_lantern_x3_z11"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "3",
         "offset_z": "11",
         "tinted_glass": "false"
@@ -1015,6 +2216,29 @@
         "model": "crystalblocks:block/chain_lantern_x3_z11_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "3",
+        "offset_z": "11",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x3_z11"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "3",
+        "offset_z": "11",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x3_z11_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "3",
         "offset_z": "11",
         "tinted_glass": "true"
@@ -1025,6 +2249,7 @@
         "model": "crystalblocks:block/chain_lantern_x3_z12"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "3",
         "offset_z": "12",
         "tinted_glass": "false"
@@ -1035,6 +2260,29 @@
         "model": "crystalblocks:block/chain_lantern_x3_z12_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "3",
+        "offset_z": "12",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x3_z12"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "3",
+        "offset_z": "12",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x3_z12_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "3",
         "offset_z": "12",
         "tinted_glass": "true"
@@ -1045,6 +2293,7 @@
         "model": "crystalblocks:block/chain_lantern_x4_z0"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "4",
         "offset_z": "0",
         "tinted_glass": "false"
@@ -1055,6 +2304,29 @@
         "model": "crystalblocks:block/chain_lantern_x4_z0_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "4",
+        "offset_z": "0",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x4_z0"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "4",
+        "offset_z": "0",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x4_z0_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "4",
         "offset_z": "0",
         "tinted_glass": "true"
@@ -1065,6 +2337,7 @@
         "model": "crystalblocks:block/chain_lantern_x4_z1"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "4",
         "offset_z": "1",
         "tinted_glass": "false"
@@ -1075,6 +2348,29 @@
         "model": "crystalblocks:block/chain_lantern_x4_z1_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "4",
+        "offset_z": "1",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x4_z1"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "4",
+        "offset_z": "1",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x4_z1_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "4",
         "offset_z": "1",
         "tinted_glass": "true"
@@ -1085,6 +2381,7 @@
         "model": "crystalblocks:block/chain_lantern_x4_z2"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "4",
         "offset_z": "2",
         "tinted_glass": "false"
@@ -1095,6 +2392,29 @@
         "model": "crystalblocks:block/chain_lantern_x4_z2_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "4",
+        "offset_z": "2",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x4_z2"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "4",
+        "offset_z": "2",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x4_z2_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "4",
         "offset_z": "2",
         "tinted_glass": "true"
@@ -1105,6 +2425,7 @@
         "model": "crystalblocks:block/chain_lantern_x4_z3"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "4",
         "offset_z": "3",
         "tinted_glass": "false"
@@ -1115,6 +2436,29 @@
         "model": "crystalblocks:block/chain_lantern_x4_z3_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "4",
+        "offset_z": "3",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x4_z3"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "4",
+        "offset_z": "3",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x4_z3_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "4",
         "offset_z": "3",
         "tinted_glass": "true"
@@ -1125,6 +2469,7 @@
         "model": "crystalblocks:block/chain_lantern_x4_z4"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "4",
         "offset_z": "4",
         "tinted_glass": "false"
@@ -1135,6 +2480,29 @@
         "model": "crystalblocks:block/chain_lantern_x4_z4_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "4",
+        "offset_z": "4",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x4_z4"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "4",
+        "offset_z": "4",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x4_z4_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "4",
         "offset_z": "4",
         "tinted_glass": "true"
@@ -1145,6 +2513,7 @@
         "model": "crystalblocks:block/chain_lantern_x4_z5"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "4",
         "offset_z": "5",
         "tinted_glass": "false"
@@ -1155,6 +2524,29 @@
         "model": "crystalblocks:block/chain_lantern_x4_z5_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "4",
+        "offset_z": "5",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x4_z5"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "4",
+        "offset_z": "5",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x4_z5_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "4",
         "offset_z": "5",
         "tinted_glass": "true"
@@ -1165,6 +2557,7 @@
         "model": "crystalblocks:block/chain_lantern_x4_z6"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "4",
         "offset_z": "6",
         "tinted_glass": "false"
@@ -1175,6 +2568,29 @@
         "model": "crystalblocks:block/chain_lantern_x4_z6_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "4",
+        "offset_z": "6",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x4_z6"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "4",
+        "offset_z": "6",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x4_z6_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "4",
         "offset_z": "6",
         "tinted_glass": "true"
@@ -1185,6 +2601,7 @@
         "model": "crystalblocks:block/chain_lantern_x4_z7"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "4",
         "offset_z": "7",
         "tinted_glass": "false"
@@ -1195,6 +2612,29 @@
         "model": "crystalblocks:block/chain_lantern_x4_z7_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "4",
+        "offset_z": "7",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x4_z7"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "4",
+        "offset_z": "7",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x4_z7_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "4",
         "offset_z": "7",
         "tinted_glass": "true"
@@ -1205,6 +2645,7 @@
         "model": "crystalblocks:block/chain_lantern_x4_z8"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "4",
         "offset_z": "8",
         "tinted_glass": "false"
@@ -1215,6 +2656,29 @@
         "model": "crystalblocks:block/chain_lantern_x4_z8_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "4",
+        "offset_z": "8",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x4_z8"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "4",
+        "offset_z": "8",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x4_z8_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "4",
         "offset_z": "8",
         "tinted_glass": "true"
@@ -1225,6 +2689,7 @@
         "model": "crystalblocks:block/chain_lantern_x4_z9"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "4",
         "offset_z": "9",
         "tinted_glass": "false"
@@ -1235,6 +2700,29 @@
         "model": "crystalblocks:block/chain_lantern_x4_z9_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "4",
+        "offset_z": "9",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x4_z9"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "4",
+        "offset_z": "9",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x4_z9_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "4",
         "offset_z": "9",
         "tinted_glass": "true"
@@ -1245,6 +2733,7 @@
         "model": "crystalblocks:block/chain_lantern_x4_z10"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "4",
         "offset_z": "10",
         "tinted_glass": "false"
@@ -1255,6 +2744,29 @@
         "model": "crystalblocks:block/chain_lantern_x4_z10_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "4",
+        "offset_z": "10",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x4_z10"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "4",
+        "offset_z": "10",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x4_z10_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "4",
         "offset_z": "10",
         "tinted_glass": "true"
@@ -1265,6 +2777,7 @@
         "model": "crystalblocks:block/chain_lantern_x4_z11"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "4",
         "offset_z": "11",
         "tinted_glass": "false"
@@ -1275,6 +2788,29 @@
         "model": "crystalblocks:block/chain_lantern_x4_z11_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "4",
+        "offset_z": "11",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x4_z11"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "4",
+        "offset_z": "11",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x4_z11_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "4",
         "offset_z": "11",
         "tinted_glass": "true"
@@ -1285,6 +2821,7 @@
         "model": "crystalblocks:block/chain_lantern_x4_z12"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "4",
         "offset_z": "12",
         "tinted_glass": "false"
@@ -1295,6 +2832,29 @@
         "model": "crystalblocks:block/chain_lantern_x4_z12_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "4",
+        "offset_z": "12",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x4_z12"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "4",
+        "offset_z": "12",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x4_z12_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "4",
         "offset_z": "12",
         "tinted_glass": "true"
@@ -1305,6 +2865,7 @@
         "model": "crystalblocks:block/chain_lantern_x5_z0"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "5",
         "offset_z": "0",
         "tinted_glass": "false"
@@ -1315,6 +2876,29 @@
         "model": "crystalblocks:block/chain_lantern_x5_z0_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "5",
+        "offset_z": "0",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x5_z0"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "5",
+        "offset_z": "0",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x5_z0_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "5",
         "offset_z": "0",
         "tinted_glass": "true"
@@ -1325,6 +2909,7 @@
         "model": "crystalblocks:block/chain_lantern_x5_z1"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "5",
         "offset_z": "1",
         "tinted_glass": "false"
@@ -1335,6 +2920,29 @@
         "model": "crystalblocks:block/chain_lantern_x5_z1_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "5",
+        "offset_z": "1",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x5_z1"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "5",
+        "offset_z": "1",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x5_z1_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "5",
         "offset_z": "1",
         "tinted_glass": "true"
@@ -1345,6 +2953,7 @@
         "model": "crystalblocks:block/chain_lantern_x5_z2"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "5",
         "offset_z": "2",
         "tinted_glass": "false"
@@ -1355,6 +2964,29 @@
         "model": "crystalblocks:block/chain_lantern_x5_z2_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "5",
+        "offset_z": "2",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x5_z2"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "5",
+        "offset_z": "2",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x5_z2_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "5",
         "offset_z": "2",
         "tinted_glass": "true"
@@ -1365,6 +2997,7 @@
         "model": "crystalblocks:block/chain_lantern_x5_z3"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "5",
         "offset_z": "3",
         "tinted_glass": "false"
@@ -1375,6 +3008,29 @@
         "model": "crystalblocks:block/chain_lantern_x5_z3_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "5",
+        "offset_z": "3",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x5_z3"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "5",
+        "offset_z": "3",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x5_z3_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "5",
         "offset_z": "3",
         "tinted_glass": "true"
@@ -1385,6 +3041,7 @@
         "model": "crystalblocks:block/chain_lantern_x5_z4"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "5",
         "offset_z": "4",
         "tinted_glass": "false"
@@ -1395,6 +3052,29 @@
         "model": "crystalblocks:block/chain_lantern_x5_z4_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "5",
+        "offset_z": "4",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x5_z4"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "5",
+        "offset_z": "4",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x5_z4_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "5",
         "offset_z": "4",
         "tinted_glass": "true"
@@ -1405,6 +3085,7 @@
         "model": "crystalblocks:block/chain_lantern_x5_z5"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "5",
         "offset_z": "5",
         "tinted_glass": "false"
@@ -1415,6 +3096,29 @@
         "model": "crystalblocks:block/chain_lantern_x5_z5_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "5",
+        "offset_z": "5",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x5_z5"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "5",
+        "offset_z": "5",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x5_z5_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "5",
         "offset_z": "5",
         "tinted_glass": "true"
@@ -1425,6 +3129,7 @@
         "model": "crystalblocks:block/chain_lantern_x5_z6"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "5",
         "offset_z": "6",
         "tinted_glass": "false"
@@ -1435,6 +3140,29 @@
         "model": "crystalblocks:block/chain_lantern_x5_z6_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "5",
+        "offset_z": "6",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x5_z6"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "5",
+        "offset_z": "6",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x5_z6_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "5",
         "offset_z": "6",
         "tinted_glass": "true"
@@ -1445,6 +3173,7 @@
         "model": "crystalblocks:block/chain_lantern_x5_z7"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "5",
         "offset_z": "7",
         "tinted_glass": "false"
@@ -1455,6 +3184,29 @@
         "model": "crystalblocks:block/chain_lantern_x5_z7_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "5",
+        "offset_z": "7",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x5_z7"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "5",
+        "offset_z": "7",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x5_z7_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "5",
         "offset_z": "7",
         "tinted_glass": "true"
@@ -1465,6 +3217,7 @@
         "model": "crystalblocks:block/chain_lantern_x5_z8"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "5",
         "offset_z": "8",
         "tinted_glass": "false"
@@ -1475,6 +3228,29 @@
         "model": "crystalblocks:block/chain_lantern_x5_z8_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "5",
+        "offset_z": "8",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x5_z8"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "5",
+        "offset_z": "8",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x5_z8_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "5",
         "offset_z": "8",
         "tinted_glass": "true"
@@ -1485,6 +3261,7 @@
         "model": "crystalblocks:block/chain_lantern_x5_z9"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "5",
         "offset_z": "9",
         "tinted_glass": "false"
@@ -1495,6 +3272,29 @@
         "model": "crystalblocks:block/chain_lantern_x5_z9_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "5",
+        "offset_z": "9",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x5_z9"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "5",
+        "offset_z": "9",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x5_z9_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "5",
         "offset_z": "9",
         "tinted_glass": "true"
@@ -1505,6 +3305,7 @@
         "model": "crystalblocks:block/chain_lantern_x5_z10"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "5",
         "offset_z": "10",
         "tinted_glass": "false"
@@ -1515,6 +3316,29 @@
         "model": "crystalblocks:block/chain_lantern_x5_z10_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "5",
+        "offset_z": "10",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x5_z10"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "5",
+        "offset_z": "10",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x5_z10_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "5",
         "offset_z": "10",
         "tinted_glass": "true"
@@ -1525,6 +3349,7 @@
         "model": "crystalblocks:block/chain_lantern_x5_z11"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "5",
         "offset_z": "11",
         "tinted_glass": "false"
@@ -1535,6 +3360,29 @@
         "model": "crystalblocks:block/chain_lantern_x5_z11_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "5",
+        "offset_z": "11",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x5_z11"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "5",
+        "offset_z": "11",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x5_z11_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "5",
         "offset_z": "11",
         "tinted_glass": "true"
@@ -1545,6 +3393,7 @@
         "model": "crystalblocks:block/chain_lantern_x5_z12"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "5",
         "offset_z": "12",
         "tinted_glass": "false"
@@ -1555,6 +3404,29 @@
         "model": "crystalblocks:block/chain_lantern_x5_z12_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "5",
+        "offset_z": "12",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x5_z12"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "5",
+        "offset_z": "12",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x5_z12_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "5",
         "offset_z": "12",
         "tinted_glass": "true"
@@ -1565,6 +3437,7 @@
         "model": "crystalblocks:block/chain_lantern_x6_z0"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "6",
         "offset_z": "0",
         "tinted_glass": "false"
@@ -1575,6 +3448,29 @@
         "model": "crystalblocks:block/chain_lantern_x6_z0_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "6",
+        "offset_z": "0",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x6_z0"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "6",
+        "offset_z": "0",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x6_z0_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "6",
         "offset_z": "0",
         "tinted_glass": "true"
@@ -1585,6 +3481,7 @@
         "model": "crystalblocks:block/chain_lantern_x6_z1"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "6",
         "offset_z": "1",
         "tinted_glass": "false"
@@ -1595,6 +3492,29 @@
         "model": "crystalblocks:block/chain_lantern_x6_z1_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "6",
+        "offset_z": "1",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x6_z1"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "6",
+        "offset_z": "1",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x6_z1_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "6",
         "offset_z": "1",
         "tinted_glass": "true"
@@ -1605,6 +3525,7 @@
         "model": "crystalblocks:block/chain_lantern_x6_z2"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "6",
         "offset_z": "2",
         "tinted_glass": "false"
@@ -1615,6 +3536,29 @@
         "model": "crystalblocks:block/chain_lantern_x6_z2_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "6",
+        "offset_z": "2",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x6_z2"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "6",
+        "offset_z": "2",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x6_z2_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "6",
         "offset_z": "2",
         "tinted_glass": "true"
@@ -1625,6 +3569,7 @@
         "model": "crystalblocks:block/chain_lantern_x6_z3"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "6",
         "offset_z": "3",
         "tinted_glass": "false"
@@ -1635,6 +3580,29 @@
         "model": "crystalblocks:block/chain_lantern_x6_z3_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "6",
+        "offset_z": "3",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x6_z3"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "6",
+        "offset_z": "3",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x6_z3_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "6",
         "offset_z": "3",
         "tinted_glass": "true"
@@ -1645,6 +3613,7 @@
         "model": "crystalblocks:block/chain_lantern_x6_z4"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "6",
         "offset_z": "4",
         "tinted_glass": "false"
@@ -1655,6 +3624,29 @@
         "model": "crystalblocks:block/chain_lantern_x6_z4_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "6",
+        "offset_z": "4",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x6_z4"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "6",
+        "offset_z": "4",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x6_z4_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "6",
         "offset_z": "4",
         "tinted_glass": "true"
@@ -1665,6 +3657,7 @@
         "model": "crystalblocks:block/chain_lantern_x6_z5"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "6",
         "offset_z": "5",
         "tinted_glass": "false"
@@ -1675,6 +3668,29 @@
         "model": "crystalblocks:block/chain_lantern_x6_z5_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "6",
+        "offset_z": "5",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x6_z5"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "6",
+        "offset_z": "5",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x6_z5_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "6",
         "offset_z": "5",
         "tinted_glass": "true"
@@ -1685,6 +3701,7 @@
         "model": "crystalblocks:block/chain_lantern_x6_z6"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "6",
         "offset_z": "6",
         "tinted_glass": "false"
@@ -1695,6 +3712,29 @@
         "model": "crystalblocks:block/chain_lantern_x6_z6_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "6",
+        "offset_z": "6",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x6_z6"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "6",
+        "offset_z": "6",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x6_z6_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "6",
         "offset_z": "6",
         "tinted_glass": "true"
@@ -1705,6 +3745,7 @@
         "model": "crystalblocks:block/chain_lantern_x6_z7"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "6",
         "offset_z": "7",
         "tinted_glass": "false"
@@ -1715,6 +3756,29 @@
         "model": "crystalblocks:block/chain_lantern_x6_z7_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "6",
+        "offset_z": "7",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x6_z7"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "6",
+        "offset_z": "7",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x6_z7_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "6",
         "offset_z": "7",
         "tinted_glass": "true"
@@ -1725,6 +3789,7 @@
         "model": "crystalblocks:block/chain_lantern_x6_z8"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "6",
         "offset_z": "8",
         "tinted_glass": "false"
@@ -1735,6 +3800,29 @@
         "model": "crystalblocks:block/chain_lantern_x6_z8_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "6",
+        "offset_z": "8",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x6_z8"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "6",
+        "offset_z": "8",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x6_z8_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "6",
         "offset_z": "8",
         "tinted_glass": "true"
@@ -1745,6 +3833,7 @@
         "model": "crystalblocks:block/chain_lantern_x6_z9"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "6",
         "offset_z": "9",
         "tinted_glass": "false"
@@ -1755,6 +3844,29 @@
         "model": "crystalblocks:block/chain_lantern_x6_z9_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "6",
+        "offset_z": "9",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x6_z9"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "6",
+        "offset_z": "9",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x6_z9_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "6",
         "offset_z": "9",
         "tinted_glass": "true"
@@ -1765,6 +3877,7 @@
         "model": "crystalblocks:block/chain_lantern_x6_z10"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "6",
         "offset_z": "10",
         "tinted_glass": "false"
@@ -1775,6 +3888,29 @@
         "model": "crystalblocks:block/chain_lantern_x6_z10_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "6",
+        "offset_z": "10",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x6_z10"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "6",
+        "offset_z": "10",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x6_z10_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "6",
         "offset_z": "10",
         "tinted_glass": "true"
@@ -1785,6 +3921,7 @@
         "model": "crystalblocks:block/chain_lantern_x6_z11"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "6",
         "offset_z": "11",
         "tinted_glass": "false"
@@ -1795,6 +3932,29 @@
         "model": "crystalblocks:block/chain_lantern_x6_z11_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "6",
+        "offset_z": "11",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x6_z11"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "6",
+        "offset_z": "11",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x6_z11_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "6",
         "offset_z": "11",
         "tinted_glass": "true"
@@ -1805,6 +3965,7 @@
         "model": "crystalblocks:block/chain_lantern_x6_z12"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "6",
         "offset_z": "12",
         "tinted_glass": "false"
@@ -1815,6 +3976,29 @@
         "model": "crystalblocks:block/chain_lantern_x6_z12_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "6",
+        "offset_z": "12",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x6_z12"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "6",
+        "offset_z": "12",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x6_z12_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "6",
         "offset_z": "12",
         "tinted_glass": "true"
@@ -1825,6 +4009,7 @@
         "model": "crystalblocks:block/chain_lantern_x7_z0"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "7",
         "offset_z": "0",
         "tinted_glass": "false"
@@ -1835,6 +4020,29 @@
         "model": "crystalblocks:block/chain_lantern_x7_z0_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "7",
+        "offset_z": "0",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x7_z0"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "7",
+        "offset_z": "0",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x7_z0_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "7",
         "offset_z": "0",
         "tinted_glass": "true"
@@ -1845,6 +4053,7 @@
         "model": "crystalblocks:block/chain_lantern_x7_z1"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "7",
         "offset_z": "1",
         "tinted_glass": "false"
@@ -1855,6 +4064,29 @@
         "model": "crystalblocks:block/chain_lantern_x7_z1_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "7",
+        "offset_z": "1",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x7_z1"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "7",
+        "offset_z": "1",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x7_z1_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "7",
         "offset_z": "1",
         "tinted_glass": "true"
@@ -1865,6 +4097,7 @@
         "model": "crystalblocks:block/chain_lantern_x7_z2"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "7",
         "offset_z": "2",
         "tinted_glass": "false"
@@ -1875,6 +4108,29 @@
         "model": "crystalblocks:block/chain_lantern_x7_z2_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "7",
+        "offset_z": "2",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x7_z2"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "7",
+        "offset_z": "2",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x7_z2_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "7",
         "offset_z": "2",
         "tinted_glass": "true"
@@ -1885,6 +4141,7 @@
         "model": "crystalblocks:block/chain_lantern_x7_z3"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "7",
         "offset_z": "3",
         "tinted_glass": "false"
@@ -1895,6 +4152,29 @@
         "model": "crystalblocks:block/chain_lantern_x7_z3_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "7",
+        "offset_z": "3",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x7_z3"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "7",
+        "offset_z": "3",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x7_z3_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "7",
         "offset_z": "3",
         "tinted_glass": "true"
@@ -1905,6 +4185,7 @@
         "model": "crystalblocks:block/chain_lantern_x7_z4"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "7",
         "offset_z": "4",
         "tinted_glass": "false"
@@ -1915,6 +4196,29 @@
         "model": "crystalblocks:block/chain_lantern_x7_z4_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "7",
+        "offset_z": "4",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x7_z4"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "7",
+        "offset_z": "4",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x7_z4_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "7",
         "offset_z": "4",
         "tinted_glass": "true"
@@ -1925,6 +4229,7 @@
         "model": "crystalblocks:block/chain_lantern_x7_z5"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "7",
         "offset_z": "5",
         "tinted_glass": "false"
@@ -1935,6 +4240,29 @@
         "model": "crystalblocks:block/chain_lantern_x7_z5_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "7",
+        "offset_z": "5",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x7_z5"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "7",
+        "offset_z": "5",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x7_z5_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "7",
         "offset_z": "5",
         "tinted_glass": "true"
@@ -1945,6 +4273,7 @@
         "model": "crystalblocks:block/chain_lantern_x7_z6"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "7",
         "offset_z": "6",
         "tinted_glass": "false"
@@ -1955,6 +4284,29 @@
         "model": "crystalblocks:block/chain_lantern_x7_z6_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "7",
+        "offset_z": "6",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x7_z6"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "7",
+        "offset_z": "6",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x7_z6_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "7",
         "offset_z": "6",
         "tinted_glass": "true"
@@ -1965,6 +4317,7 @@
         "model": "crystalblocks:block/chain_lantern_x7_z7"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "7",
         "offset_z": "7",
         "tinted_glass": "false"
@@ -1975,6 +4328,29 @@
         "model": "crystalblocks:block/chain_lantern_x7_z7_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "7",
+        "offset_z": "7",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x7_z7"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "7",
+        "offset_z": "7",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x7_z7_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "7",
         "offset_z": "7",
         "tinted_glass": "true"
@@ -1985,6 +4361,7 @@
         "model": "crystalblocks:block/chain_lantern_x7_z8"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "7",
         "offset_z": "8",
         "tinted_glass": "false"
@@ -1995,6 +4372,29 @@
         "model": "crystalblocks:block/chain_lantern_x7_z8_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "7",
+        "offset_z": "8",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x7_z8"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "7",
+        "offset_z": "8",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x7_z8_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "7",
         "offset_z": "8",
         "tinted_glass": "true"
@@ -2005,6 +4405,7 @@
         "model": "crystalblocks:block/chain_lantern_x7_z9"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "7",
         "offset_z": "9",
         "tinted_glass": "false"
@@ -2015,6 +4416,29 @@
         "model": "crystalblocks:block/chain_lantern_x7_z9_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "7",
+        "offset_z": "9",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x7_z9"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "7",
+        "offset_z": "9",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x7_z9_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "7",
         "offset_z": "9",
         "tinted_glass": "true"
@@ -2025,6 +4449,7 @@
         "model": "crystalblocks:block/chain_lantern_x7_z10"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "7",
         "offset_z": "10",
         "tinted_glass": "false"
@@ -2035,6 +4460,29 @@
         "model": "crystalblocks:block/chain_lantern_x7_z10_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "7",
+        "offset_z": "10",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x7_z10"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "7",
+        "offset_z": "10",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x7_z10_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "7",
         "offset_z": "10",
         "tinted_glass": "true"
@@ -2045,6 +4493,7 @@
         "model": "crystalblocks:block/chain_lantern_x7_z11"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "7",
         "offset_z": "11",
         "tinted_glass": "false"
@@ -2055,6 +4504,29 @@
         "model": "crystalblocks:block/chain_lantern_x7_z11_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "7",
+        "offset_z": "11",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x7_z11"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "7",
+        "offset_z": "11",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x7_z11_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "7",
         "offset_z": "11",
         "tinted_glass": "true"
@@ -2065,6 +4537,7 @@
         "model": "crystalblocks:block/chain_lantern_x7_z12"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "7",
         "offset_z": "12",
         "tinted_glass": "false"
@@ -2075,6 +4548,29 @@
         "model": "crystalblocks:block/chain_lantern_x7_z12_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "7",
+        "offset_z": "12",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x7_z12"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "7",
+        "offset_z": "12",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x7_z12_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "7",
         "offset_z": "12",
         "tinted_glass": "true"
@@ -2085,6 +4581,7 @@
         "model": "crystalblocks:block/chain_lantern_x8_z0"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "8",
         "offset_z": "0",
         "tinted_glass": "false"
@@ -2095,6 +4592,29 @@
         "model": "crystalblocks:block/chain_lantern_x8_z0_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "8",
+        "offset_z": "0",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x8_z0"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "8",
+        "offset_z": "0",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x8_z0_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "8",
         "offset_z": "0",
         "tinted_glass": "true"
@@ -2105,6 +4625,7 @@
         "model": "crystalblocks:block/chain_lantern_x8_z1"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "8",
         "offset_z": "1",
         "tinted_glass": "false"
@@ -2115,6 +4636,29 @@
         "model": "crystalblocks:block/chain_lantern_x8_z1_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "8",
+        "offset_z": "1",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x8_z1"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "8",
+        "offset_z": "1",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x8_z1_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "8",
         "offset_z": "1",
         "tinted_glass": "true"
@@ -2125,6 +4669,7 @@
         "model": "crystalblocks:block/chain_lantern_x8_z2"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "8",
         "offset_z": "2",
         "tinted_glass": "false"
@@ -2135,6 +4680,29 @@
         "model": "crystalblocks:block/chain_lantern_x8_z2_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "8",
+        "offset_z": "2",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x8_z2"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "8",
+        "offset_z": "2",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x8_z2_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "8",
         "offset_z": "2",
         "tinted_glass": "true"
@@ -2145,6 +4713,7 @@
         "model": "crystalblocks:block/chain_lantern_x8_z3"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "8",
         "offset_z": "3",
         "tinted_glass": "false"
@@ -2155,6 +4724,29 @@
         "model": "crystalblocks:block/chain_lantern_x8_z3_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "8",
+        "offset_z": "3",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x8_z3"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "8",
+        "offset_z": "3",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x8_z3_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "8",
         "offset_z": "3",
         "tinted_glass": "true"
@@ -2165,6 +4757,7 @@
         "model": "crystalblocks:block/chain_lantern_x8_z4"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "8",
         "offset_z": "4",
         "tinted_glass": "false"
@@ -2175,6 +4768,29 @@
         "model": "crystalblocks:block/chain_lantern_x8_z4_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "8",
+        "offset_z": "4",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x8_z4"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "8",
+        "offset_z": "4",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x8_z4_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "8",
         "offset_z": "4",
         "tinted_glass": "true"
@@ -2185,6 +4801,7 @@
         "model": "crystalblocks:block/chain_lantern_x8_z5"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "8",
         "offset_z": "5",
         "tinted_glass": "false"
@@ -2195,6 +4812,29 @@
         "model": "crystalblocks:block/chain_lantern_x8_z5_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "8",
+        "offset_z": "5",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x8_z5"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "8",
+        "offset_z": "5",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x8_z5_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "8",
         "offset_z": "5",
         "tinted_glass": "true"
@@ -2205,6 +4845,7 @@
         "model": "crystalblocks:block/chain_lantern_x8_z6"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "8",
         "offset_z": "6",
         "tinted_glass": "false"
@@ -2215,6 +4856,29 @@
         "model": "crystalblocks:block/chain_lantern_x8_z6_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "8",
+        "offset_z": "6",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x8_z6"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "8",
+        "offset_z": "6",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x8_z6_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "8",
         "offset_z": "6",
         "tinted_glass": "true"
@@ -2225,6 +4889,7 @@
         "model": "crystalblocks:block/chain_lantern_x8_z7"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "8",
         "offset_z": "7",
         "tinted_glass": "false"
@@ -2235,6 +4900,29 @@
         "model": "crystalblocks:block/chain_lantern_x8_z7_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "8",
+        "offset_z": "7",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x8_z7"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "8",
+        "offset_z": "7",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x8_z7_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "8",
         "offset_z": "7",
         "tinted_glass": "true"
@@ -2245,6 +4933,7 @@
         "model": "crystalblocks:block/chain_lantern_x8_z8"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "8",
         "offset_z": "8",
         "tinted_glass": "false"
@@ -2255,6 +4944,29 @@
         "model": "crystalblocks:block/chain_lantern_x8_z8_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "8",
+        "offset_z": "8",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x8_z8"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "8",
+        "offset_z": "8",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x8_z8_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "8",
         "offset_z": "8",
         "tinted_glass": "true"
@@ -2265,6 +4977,7 @@
         "model": "crystalblocks:block/chain_lantern_x8_z9"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "8",
         "offset_z": "9",
         "tinted_glass": "false"
@@ -2275,6 +4988,29 @@
         "model": "crystalblocks:block/chain_lantern_x8_z9_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "8",
+        "offset_z": "9",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x8_z9"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "8",
+        "offset_z": "9",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x8_z9_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "8",
         "offset_z": "9",
         "tinted_glass": "true"
@@ -2285,6 +5021,7 @@
         "model": "crystalblocks:block/chain_lantern_x8_z10"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "8",
         "offset_z": "10",
         "tinted_glass": "false"
@@ -2295,6 +5032,29 @@
         "model": "crystalblocks:block/chain_lantern_x8_z10_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "8",
+        "offset_z": "10",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x8_z10"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "8",
+        "offset_z": "10",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x8_z10_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "8",
         "offset_z": "10",
         "tinted_glass": "true"
@@ -2305,6 +5065,7 @@
         "model": "crystalblocks:block/chain_lantern_x8_z11"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "8",
         "offset_z": "11",
         "tinted_glass": "false"
@@ -2315,6 +5076,29 @@
         "model": "crystalblocks:block/chain_lantern_x8_z11_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "8",
+        "offset_z": "11",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x8_z11"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "8",
+        "offset_z": "11",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x8_z11_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "8",
         "offset_z": "11",
         "tinted_glass": "true"
@@ -2325,6 +5109,7 @@
         "model": "crystalblocks:block/chain_lantern_x8_z12"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "8",
         "offset_z": "12",
         "tinted_glass": "false"
@@ -2335,6 +5120,29 @@
         "model": "crystalblocks:block/chain_lantern_x8_z12_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "8",
+        "offset_z": "12",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x8_z12"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "8",
+        "offset_z": "12",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x8_z12_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "8",
         "offset_z": "12",
         "tinted_glass": "true"
@@ -2345,6 +5153,7 @@
         "model": "crystalblocks:block/chain_lantern_x9_z0"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "9",
         "offset_z": "0",
         "tinted_glass": "false"
@@ -2355,6 +5164,29 @@
         "model": "crystalblocks:block/chain_lantern_x9_z0_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "9",
+        "offset_z": "0",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x9_z0"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "9",
+        "offset_z": "0",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x9_z0_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "9",
         "offset_z": "0",
         "tinted_glass": "true"
@@ -2365,6 +5197,7 @@
         "model": "crystalblocks:block/chain_lantern_x9_z1"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "9",
         "offset_z": "1",
         "tinted_glass": "false"
@@ -2375,6 +5208,29 @@
         "model": "crystalblocks:block/chain_lantern_x9_z1_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "9",
+        "offset_z": "1",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x9_z1"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "9",
+        "offset_z": "1",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x9_z1_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "9",
         "offset_z": "1",
         "tinted_glass": "true"
@@ -2385,6 +5241,7 @@
         "model": "crystalblocks:block/chain_lantern_x9_z2"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "9",
         "offset_z": "2",
         "tinted_glass": "false"
@@ -2395,6 +5252,29 @@
         "model": "crystalblocks:block/chain_lantern_x9_z2_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "9",
+        "offset_z": "2",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x9_z2"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "9",
+        "offset_z": "2",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x9_z2_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "9",
         "offset_z": "2",
         "tinted_glass": "true"
@@ -2405,6 +5285,7 @@
         "model": "crystalblocks:block/chain_lantern_x9_z3"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "9",
         "offset_z": "3",
         "tinted_glass": "false"
@@ -2415,6 +5296,29 @@
         "model": "crystalblocks:block/chain_lantern_x9_z3_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "9",
+        "offset_z": "3",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x9_z3"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "9",
+        "offset_z": "3",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x9_z3_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "9",
         "offset_z": "3",
         "tinted_glass": "true"
@@ -2425,6 +5329,7 @@
         "model": "crystalblocks:block/chain_lantern_x9_z4"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "9",
         "offset_z": "4",
         "tinted_glass": "false"
@@ -2435,6 +5340,29 @@
         "model": "crystalblocks:block/chain_lantern_x9_z4_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "9",
+        "offset_z": "4",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x9_z4"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "9",
+        "offset_z": "4",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x9_z4_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "9",
         "offset_z": "4",
         "tinted_glass": "true"
@@ -2445,6 +5373,7 @@
         "model": "crystalblocks:block/chain_lantern_x9_z5"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "9",
         "offset_z": "5",
         "tinted_glass": "false"
@@ -2455,6 +5384,29 @@
         "model": "crystalblocks:block/chain_lantern_x9_z5_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "9",
+        "offset_z": "5",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x9_z5"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "9",
+        "offset_z": "5",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x9_z5_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "9",
         "offset_z": "5",
         "tinted_glass": "true"
@@ -2465,6 +5417,7 @@
         "model": "crystalblocks:block/chain_lantern_x9_z6"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "9",
         "offset_z": "6",
         "tinted_glass": "false"
@@ -2475,6 +5428,29 @@
         "model": "crystalblocks:block/chain_lantern_x9_z6_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "9",
+        "offset_z": "6",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x9_z6"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "9",
+        "offset_z": "6",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x9_z6_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "9",
         "offset_z": "6",
         "tinted_glass": "true"
@@ -2485,6 +5461,7 @@
         "model": "crystalblocks:block/chain_lantern_x9_z7"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "9",
         "offset_z": "7",
         "tinted_glass": "false"
@@ -2495,6 +5472,29 @@
         "model": "crystalblocks:block/chain_lantern_x9_z7_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "9",
+        "offset_z": "7",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x9_z7"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "9",
+        "offset_z": "7",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x9_z7_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "9",
         "offset_z": "7",
         "tinted_glass": "true"
@@ -2505,6 +5505,7 @@
         "model": "crystalblocks:block/chain_lantern_x9_z8"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "9",
         "offset_z": "8",
         "tinted_glass": "false"
@@ -2515,6 +5516,29 @@
         "model": "crystalblocks:block/chain_lantern_x9_z8_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "9",
+        "offset_z": "8",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x9_z8"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "9",
+        "offset_z": "8",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x9_z8_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "9",
         "offset_z": "8",
         "tinted_glass": "true"
@@ -2525,6 +5549,7 @@
         "model": "crystalblocks:block/chain_lantern_x9_z9"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "9",
         "offset_z": "9",
         "tinted_glass": "false"
@@ -2535,6 +5560,29 @@
         "model": "crystalblocks:block/chain_lantern_x9_z9_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "9",
+        "offset_z": "9",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x9_z9"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "9",
+        "offset_z": "9",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x9_z9_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "9",
         "offset_z": "9",
         "tinted_glass": "true"
@@ -2545,6 +5593,7 @@
         "model": "crystalblocks:block/chain_lantern_x9_z10"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "9",
         "offset_z": "10",
         "tinted_glass": "false"
@@ -2555,6 +5604,29 @@
         "model": "crystalblocks:block/chain_lantern_x9_z10_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "9",
+        "offset_z": "10",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x9_z10"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "9",
+        "offset_z": "10",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x9_z10_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "9",
         "offset_z": "10",
         "tinted_glass": "true"
@@ -2565,6 +5637,7 @@
         "model": "crystalblocks:block/chain_lantern_x9_z11"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "9",
         "offset_z": "11",
         "tinted_glass": "false"
@@ -2575,6 +5648,29 @@
         "model": "crystalblocks:block/chain_lantern_x9_z11_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "9",
+        "offset_z": "11",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x9_z11"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "9",
+        "offset_z": "11",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x9_z11_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "9",
         "offset_z": "11",
         "tinted_glass": "true"
@@ -2585,6 +5681,7 @@
         "model": "crystalblocks:block/chain_lantern_x9_z12"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "9",
         "offset_z": "12",
         "tinted_glass": "false"
@@ -2595,6 +5692,29 @@
         "model": "crystalblocks:block/chain_lantern_x9_z12_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "9",
+        "offset_z": "12",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x9_z12"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "9",
+        "offset_z": "12",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x9_z12_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "9",
         "offset_z": "12",
         "tinted_glass": "true"
@@ -2605,6 +5725,7 @@
         "model": "crystalblocks:block/chain_lantern_x10_z0"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "10",
         "offset_z": "0",
         "tinted_glass": "false"
@@ -2615,6 +5736,29 @@
         "model": "crystalblocks:block/chain_lantern_x10_z0_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "10",
+        "offset_z": "0",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x10_z0"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "10",
+        "offset_z": "0",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x10_z0_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "10",
         "offset_z": "0",
         "tinted_glass": "true"
@@ -2625,6 +5769,7 @@
         "model": "crystalblocks:block/chain_lantern_x10_z1"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "10",
         "offset_z": "1",
         "tinted_glass": "false"
@@ -2635,6 +5780,29 @@
         "model": "crystalblocks:block/chain_lantern_x10_z1_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "10",
+        "offset_z": "1",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x10_z1"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "10",
+        "offset_z": "1",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x10_z1_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "10",
         "offset_z": "1",
         "tinted_glass": "true"
@@ -2645,6 +5813,7 @@
         "model": "crystalblocks:block/chain_lantern_x10_z2"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "10",
         "offset_z": "2",
         "tinted_glass": "false"
@@ -2655,6 +5824,29 @@
         "model": "crystalblocks:block/chain_lantern_x10_z2_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "10",
+        "offset_z": "2",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x10_z2"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "10",
+        "offset_z": "2",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x10_z2_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "10",
         "offset_z": "2",
         "tinted_glass": "true"
@@ -2665,6 +5857,7 @@
         "model": "crystalblocks:block/chain_lantern_x10_z3"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "10",
         "offset_z": "3",
         "tinted_glass": "false"
@@ -2675,6 +5868,29 @@
         "model": "crystalblocks:block/chain_lantern_x10_z3_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "10",
+        "offset_z": "3",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x10_z3"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "10",
+        "offset_z": "3",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x10_z3_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "10",
         "offset_z": "3",
         "tinted_glass": "true"
@@ -2685,6 +5901,7 @@
         "model": "crystalblocks:block/chain_lantern_x10_z4"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "10",
         "offset_z": "4",
         "tinted_glass": "false"
@@ -2695,6 +5912,29 @@
         "model": "crystalblocks:block/chain_lantern_x10_z4_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "10",
+        "offset_z": "4",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x10_z4"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "10",
+        "offset_z": "4",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x10_z4_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "10",
         "offset_z": "4",
         "tinted_glass": "true"
@@ -2705,6 +5945,7 @@
         "model": "crystalblocks:block/chain_lantern_x10_z5"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "10",
         "offset_z": "5",
         "tinted_glass": "false"
@@ -2715,6 +5956,29 @@
         "model": "crystalblocks:block/chain_lantern_x10_z5_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "10",
+        "offset_z": "5",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x10_z5"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "10",
+        "offset_z": "5",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x10_z5_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "10",
         "offset_z": "5",
         "tinted_glass": "true"
@@ -2725,6 +5989,7 @@
         "model": "crystalblocks:block/chain_lantern_x10_z6"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "10",
         "offset_z": "6",
         "tinted_glass": "false"
@@ -2735,6 +6000,29 @@
         "model": "crystalblocks:block/chain_lantern_x10_z6_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "10",
+        "offset_z": "6",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x10_z6"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "10",
+        "offset_z": "6",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x10_z6_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "10",
         "offset_z": "6",
         "tinted_glass": "true"
@@ -2745,6 +6033,7 @@
         "model": "crystalblocks:block/chain_lantern_x10_z7"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "10",
         "offset_z": "7",
         "tinted_glass": "false"
@@ -2755,6 +6044,29 @@
         "model": "crystalblocks:block/chain_lantern_x10_z7_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "10",
+        "offset_z": "7",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x10_z7"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "10",
+        "offset_z": "7",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x10_z7_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "10",
         "offset_z": "7",
         "tinted_glass": "true"
@@ -2765,6 +6077,7 @@
         "model": "crystalblocks:block/chain_lantern_x10_z8"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "10",
         "offset_z": "8",
         "tinted_glass": "false"
@@ -2775,6 +6088,29 @@
         "model": "crystalblocks:block/chain_lantern_x10_z8_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "10",
+        "offset_z": "8",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x10_z8"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "10",
+        "offset_z": "8",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x10_z8_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "10",
         "offset_z": "8",
         "tinted_glass": "true"
@@ -2785,6 +6121,7 @@
         "model": "crystalblocks:block/chain_lantern_x10_z9"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "10",
         "offset_z": "9",
         "tinted_glass": "false"
@@ -2795,6 +6132,29 @@
         "model": "crystalblocks:block/chain_lantern_x10_z9_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "10",
+        "offset_z": "9",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x10_z9"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "10",
+        "offset_z": "9",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x10_z9_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "10",
         "offset_z": "9",
         "tinted_glass": "true"
@@ -2805,6 +6165,7 @@
         "model": "crystalblocks:block/chain_lantern_x10_z10"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "10",
         "offset_z": "10",
         "tinted_glass": "false"
@@ -2815,6 +6176,29 @@
         "model": "crystalblocks:block/chain_lantern_x10_z10_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "10",
+        "offset_z": "10",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x10_z10"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "10",
+        "offset_z": "10",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x10_z10_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "10",
         "offset_z": "10",
         "tinted_glass": "true"
@@ -2825,6 +6209,7 @@
         "model": "crystalblocks:block/chain_lantern_x10_z11"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "10",
         "offset_z": "11",
         "tinted_glass": "false"
@@ -2835,6 +6220,29 @@
         "model": "crystalblocks:block/chain_lantern_x10_z11_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "10",
+        "offset_z": "11",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x10_z11"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "10",
+        "offset_z": "11",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x10_z11_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "10",
         "offset_z": "11",
         "tinted_glass": "true"
@@ -2845,6 +6253,7 @@
         "model": "crystalblocks:block/chain_lantern_x10_z12"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "10",
         "offset_z": "12",
         "tinted_glass": "false"
@@ -2855,6 +6264,29 @@
         "model": "crystalblocks:block/chain_lantern_x10_z12_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "10",
+        "offset_z": "12",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x10_z12"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "10",
+        "offset_z": "12",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x10_z12_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "10",
         "offset_z": "12",
         "tinted_glass": "true"
@@ -2865,6 +6297,7 @@
         "model": "crystalblocks:block/chain_lantern_x11_z0"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "11",
         "offset_z": "0",
         "tinted_glass": "false"
@@ -2875,6 +6308,29 @@
         "model": "crystalblocks:block/chain_lantern_x11_z0_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "11",
+        "offset_z": "0",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x11_z0"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "11",
+        "offset_z": "0",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x11_z0_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "11",
         "offset_z": "0",
         "tinted_glass": "true"
@@ -2885,6 +6341,7 @@
         "model": "crystalblocks:block/chain_lantern_x11_z1"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "11",
         "offset_z": "1",
         "tinted_glass": "false"
@@ -2895,6 +6352,29 @@
         "model": "crystalblocks:block/chain_lantern_x11_z1_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "11",
+        "offset_z": "1",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x11_z1"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "11",
+        "offset_z": "1",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x11_z1_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "11",
         "offset_z": "1",
         "tinted_glass": "true"
@@ -2905,6 +6385,7 @@
         "model": "crystalblocks:block/chain_lantern_x11_z2"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "11",
         "offset_z": "2",
         "tinted_glass": "false"
@@ -2915,6 +6396,29 @@
         "model": "crystalblocks:block/chain_lantern_x11_z2_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "11",
+        "offset_z": "2",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x11_z2"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "11",
+        "offset_z": "2",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x11_z2_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "11",
         "offset_z": "2",
         "tinted_glass": "true"
@@ -2925,6 +6429,7 @@
         "model": "crystalblocks:block/chain_lantern_x11_z3"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "11",
         "offset_z": "3",
         "tinted_glass": "false"
@@ -2935,6 +6440,29 @@
         "model": "crystalblocks:block/chain_lantern_x11_z3_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "11",
+        "offset_z": "3",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x11_z3"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "11",
+        "offset_z": "3",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x11_z3_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "11",
         "offset_z": "3",
         "tinted_glass": "true"
@@ -2945,6 +6473,7 @@
         "model": "crystalblocks:block/chain_lantern_x11_z4"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "11",
         "offset_z": "4",
         "tinted_glass": "false"
@@ -2955,6 +6484,29 @@
         "model": "crystalblocks:block/chain_lantern_x11_z4_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "11",
+        "offset_z": "4",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x11_z4"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "11",
+        "offset_z": "4",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x11_z4_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "11",
         "offset_z": "4",
         "tinted_glass": "true"
@@ -2965,6 +6517,7 @@
         "model": "crystalblocks:block/chain_lantern_x11_z5"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "11",
         "offset_z": "5",
         "tinted_glass": "false"
@@ -2975,6 +6528,29 @@
         "model": "crystalblocks:block/chain_lantern_x11_z5_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "11",
+        "offset_z": "5",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x11_z5"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "11",
+        "offset_z": "5",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x11_z5_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "11",
         "offset_z": "5",
         "tinted_glass": "true"
@@ -2985,6 +6561,7 @@
         "model": "crystalblocks:block/chain_lantern_x11_z6"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "11",
         "offset_z": "6",
         "tinted_glass": "false"
@@ -2995,6 +6572,29 @@
         "model": "crystalblocks:block/chain_lantern_x11_z6_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "11",
+        "offset_z": "6",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x11_z6"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "11",
+        "offset_z": "6",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x11_z6_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "11",
         "offset_z": "6",
         "tinted_glass": "true"
@@ -3005,6 +6605,7 @@
         "model": "crystalblocks:block/chain_lantern_x11_z7"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "11",
         "offset_z": "7",
         "tinted_glass": "false"
@@ -3015,6 +6616,29 @@
         "model": "crystalblocks:block/chain_lantern_x11_z7_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "11",
+        "offset_z": "7",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x11_z7"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "11",
+        "offset_z": "7",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x11_z7_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "11",
         "offset_z": "7",
         "tinted_glass": "true"
@@ -3025,6 +6649,7 @@
         "model": "crystalblocks:block/chain_lantern_x11_z8"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "11",
         "offset_z": "8",
         "tinted_glass": "false"
@@ -3035,6 +6660,29 @@
         "model": "crystalblocks:block/chain_lantern_x11_z8_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "11",
+        "offset_z": "8",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x11_z8"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "11",
+        "offset_z": "8",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x11_z8_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "11",
         "offset_z": "8",
         "tinted_glass": "true"
@@ -3045,6 +6693,7 @@
         "model": "crystalblocks:block/chain_lantern_x11_z9"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "11",
         "offset_z": "9",
         "tinted_glass": "false"
@@ -3055,6 +6704,29 @@
         "model": "crystalblocks:block/chain_lantern_x11_z9_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "11",
+        "offset_z": "9",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x11_z9"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "11",
+        "offset_z": "9",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x11_z9_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "11",
         "offset_z": "9",
         "tinted_glass": "true"
@@ -3065,6 +6737,7 @@
         "model": "crystalblocks:block/chain_lantern_x11_z10"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "11",
         "offset_z": "10",
         "tinted_glass": "false"
@@ -3075,6 +6748,29 @@
         "model": "crystalblocks:block/chain_lantern_x11_z10_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "11",
+        "offset_z": "10",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x11_z10"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "11",
+        "offset_z": "10",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x11_z10_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "11",
         "offset_z": "10",
         "tinted_glass": "true"
@@ -3085,6 +6781,7 @@
         "model": "crystalblocks:block/chain_lantern_x11_z11"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "11",
         "offset_z": "11",
         "tinted_glass": "false"
@@ -3095,6 +6792,29 @@
         "model": "crystalblocks:block/chain_lantern_x11_z11_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "11",
+        "offset_z": "11",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x11_z11"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "11",
+        "offset_z": "11",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x11_z11_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "11",
         "offset_z": "11",
         "tinted_glass": "true"
@@ -3105,6 +6825,7 @@
         "model": "crystalblocks:block/chain_lantern_x11_z12"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "11",
         "offset_z": "12",
         "tinted_glass": "false"
@@ -3115,6 +6836,29 @@
         "model": "crystalblocks:block/chain_lantern_x11_z12_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "11",
+        "offset_z": "12",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x11_z12"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "11",
+        "offset_z": "12",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x11_z12_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "11",
         "offset_z": "12",
         "tinted_glass": "true"
@@ -3125,6 +6869,7 @@
         "model": "crystalblocks:block/chain_lantern_x12_z0"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "12",
         "offset_z": "0",
         "tinted_glass": "false"
@@ -3135,6 +6880,29 @@
         "model": "crystalblocks:block/chain_lantern_x12_z0_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "12",
+        "offset_z": "0",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x12_z0"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "12",
+        "offset_z": "0",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x12_z0_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "12",
         "offset_z": "0",
         "tinted_glass": "true"
@@ -3145,6 +6913,7 @@
         "model": "crystalblocks:block/chain_lantern_x12_z1"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "12",
         "offset_z": "1",
         "tinted_glass": "false"
@@ -3155,6 +6924,29 @@
         "model": "crystalblocks:block/chain_lantern_x12_z1_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "12",
+        "offset_z": "1",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x12_z1"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "12",
+        "offset_z": "1",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x12_z1_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "12",
         "offset_z": "1",
         "tinted_glass": "true"
@@ -3165,6 +6957,7 @@
         "model": "crystalblocks:block/chain_lantern_x12_z2"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "12",
         "offset_z": "2",
         "tinted_glass": "false"
@@ -3175,6 +6968,29 @@
         "model": "crystalblocks:block/chain_lantern_x12_z2_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "12",
+        "offset_z": "2",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x12_z2"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "12",
+        "offset_z": "2",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x12_z2_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "12",
         "offset_z": "2",
         "tinted_glass": "true"
@@ -3185,6 +7001,7 @@
         "model": "crystalblocks:block/chain_lantern_x12_z3"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "12",
         "offset_z": "3",
         "tinted_glass": "false"
@@ -3195,6 +7012,29 @@
         "model": "crystalblocks:block/chain_lantern_x12_z3_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "12",
+        "offset_z": "3",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x12_z3"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "12",
+        "offset_z": "3",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x12_z3_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "12",
         "offset_z": "3",
         "tinted_glass": "true"
@@ -3205,6 +7045,7 @@
         "model": "crystalblocks:block/chain_lantern_x12_z4"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "12",
         "offset_z": "4",
         "tinted_glass": "false"
@@ -3215,6 +7056,29 @@
         "model": "crystalblocks:block/chain_lantern_x12_z4_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "12",
+        "offset_z": "4",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x12_z4"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "12",
+        "offset_z": "4",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x12_z4_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "12",
         "offset_z": "4",
         "tinted_glass": "true"
@@ -3225,6 +7089,7 @@
         "model": "crystalblocks:block/chain_lantern_x12_z5"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "12",
         "offset_z": "5",
         "tinted_glass": "false"
@@ -3235,6 +7100,29 @@
         "model": "crystalblocks:block/chain_lantern_x12_z5_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "12",
+        "offset_z": "5",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x12_z5"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "12",
+        "offset_z": "5",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x12_z5_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "12",
         "offset_z": "5",
         "tinted_glass": "true"
@@ -3245,6 +7133,7 @@
         "model": "crystalblocks:block/chain_lantern_x12_z6"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "12",
         "offset_z": "6",
         "tinted_glass": "false"
@@ -3255,6 +7144,29 @@
         "model": "crystalblocks:block/chain_lantern_x12_z6_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "12",
+        "offset_z": "6",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x12_z6"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "12",
+        "offset_z": "6",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x12_z6_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "12",
         "offset_z": "6",
         "tinted_glass": "true"
@@ -3265,6 +7177,7 @@
         "model": "crystalblocks:block/chain_lantern_x12_z7"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "12",
         "offset_z": "7",
         "tinted_glass": "false"
@@ -3275,6 +7188,29 @@
         "model": "crystalblocks:block/chain_lantern_x12_z7_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "12",
+        "offset_z": "7",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x12_z7"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "12",
+        "offset_z": "7",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x12_z7_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "12",
         "offset_z": "7",
         "tinted_glass": "true"
@@ -3285,6 +7221,7 @@
         "model": "crystalblocks:block/chain_lantern_x12_z8"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "12",
         "offset_z": "8",
         "tinted_glass": "false"
@@ -3295,6 +7232,29 @@
         "model": "crystalblocks:block/chain_lantern_x12_z8_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "12",
+        "offset_z": "8",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x12_z8"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "12",
+        "offset_z": "8",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x12_z8_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "12",
         "offset_z": "8",
         "tinted_glass": "true"
@@ -3305,6 +7265,7 @@
         "model": "crystalblocks:block/chain_lantern_x12_z9"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "12",
         "offset_z": "9",
         "tinted_glass": "false"
@@ -3315,6 +7276,29 @@
         "model": "crystalblocks:block/chain_lantern_x12_z9_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "12",
+        "offset_z": "9",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x12_z9"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "12",
+        "offset_z": "9",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x12_z9_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "12",
         "offset_z": "9",
         "tinted_glass": "true"
@@ -3325,6 +7309,7 @@
         "model": "crystalblocks:block/chain_lantern_x12_z10"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "12",
         "offset_z": "10",
         "tinted_glass": "false"
@@ -3335,6 +7320,29 @@
         "model": "crystalblocks:block/chain_lantern_x12_z10_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "12",
+        "offset_z": "10",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x12_z10"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "12",
+        "offset_z": "10",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x12_z10_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "12",
         "offset_z": "10",
         "tinted_glass": "true"
@@ -3345,6 +7353,7 @@
         "model": "crystalblocks:block/chain_lantern_x12_z11"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "12",
         "offset_z": "11",
         "tinted_glass": "false"
@@ -3355,6 +7364,29 @@
         "model": "crystalblocks:block/chain_lantern_x12_z11_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "12",
+        "offset_z": "11",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x12_z11"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "12",
+        "offset_z": "11",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x12_z11_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "12",
         "offset_z": "11",
         "tinted_glass": "true"
@@ -3365,6 +7397,7 @@
         "model": "crystalblocks:block/chain_lantern_x12_z12"
       },
       "when": {
+        "hanging": "true",
         "offset_x": "12",
         "offset_z": "12",
         "tinted_glass": "false"
@@ -3375,6 +7408,29 @@
         "model": "crystalblocks:block/chain_lantern_x12_z12_tinted"
       },
       "when": {
+        "hanging": "true",
+        "offset_x": "12",
+        "offset_z": "12",
+        "tinted_glass": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x12_z12"
+      },
+      "when": {
+        "hanging": "false",
+        "offset_x": "12",
+        "offset_z": "12",
+        "tinted_glass": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "crystalblocks:block/chain_lantern_standing_x12_z12_tinted"
+      },
+      "when": {
+        "hanging": "false",
         "offset_x": "12",
         "offset_z": "12",
         "tinted_glass": "true"

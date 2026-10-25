@@ -15,6 +15,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.context.BlockPlaceContext;
+import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Explosion;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelReader;
@@ -33,30 +34,43 @@ import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.phys.BlockHitResult;
-import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.phys.shapes.VoxelShape;
 import net.neoforged.neoforge.common.Tags;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.function.BiConsumer;
 
 // A lantern that hangs from a chain of its size (chain beam, chain cap, a chained support beam's lower side, or a
-// vanilla chain for the small size), lined up with it. The cap versions have their own plate and hang from the
-// underside of a full block instead. Treated as an always-upright chain cap of the chain's kind, so the beam
-// maths (positions, line-up, chained support beam joins) all work unchanged.
+// vanilla chain for the small size), lined up with it. With no chain above it stands on the floor instead
+// (hanging = false), and switches back to hanging when a chain is placed on top.
+// The cap versions have their own plate and hang from the underside of a full block instead.
+// Treated as an always-upright chain cap of the chain's kind, so the beam maths (positions, line-up, chained
+// support beam joins) all work unchanged.
 // Lit: light 15 and a flame inside. Stays lit in water; wind charges and shears put it out; a torch or flint and
-// steel relights it. If its support goes it falls, and shatters on landing, starting a fire if it was lit.
+// steel relights it. If nothing holds it up it falls, and shatters on landing, starting a fire if it was lit.
 // Region 0 = metal, region 1 = glass (clear until first dyed, like the windows).
 public class CBChainLantern extends CBBoltedBeamBlock implements SimpleWaterloggedBlock, Fallable
 {
     public static final BooleanProperty LIT = BlockStateProperties.LIT;
     public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
     public static final BooleanProperty TINTED_GLASS = CBTintableWindow.TINTED_GLASS;
+    // true = hanging from above, false = standing on the floor. Cap lanterns always hang.
+    public static final BooleanProperty HANGING = BlockStateProperties.HANGING;
 
     public static final int METAL_REGION = 0;
     public static final int GLASS_REGION = 1;
+
+    // The middle of the block: what standing lanterns centre on, and where vanilla chains run
+    private static final CBPixelBox BLOCK_CENTRE = new CBPixelBox(8, 0, 8, 8, 16, 8);
+
+    // Standing lanterns only have the top loop, not the chain running up to the block above
+    private final Map<BlockState, VoxelShape> standingShapes = new HashMap<>();
 
     public CBChainLantern(Properties properties)
     {
@@ -64,14 +78,24 @@ public class CBChainLantern extends CBBoltedBeamBlock implements SimpleWaterlogg
         registerDefaultState(defaultBlockState()
                 .setValue(LIT, true)
                 .setValue(WATERLOGGED, false)
-                .setValue(TINTED_GLASS, false));
+                .setValue(TINTED_GLASS, false)
+                .setValue(HANGING, true));
+
+        List<CBPixelBox> standing = standingBoxes();
+        for (BlockState state : stateDefinition.getPossibleStates())
+        {
+            if (!state.getValue(HANGING))
+            {
+                standingShapes.put(state, CBPixelBox.union(standing.stream().map(box -> place(box, state)).toList()));
+            }
+        }
     }
 
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder)
     {
         super.createBlockStateDefinition(builder);
-        builder.add(LIT, WATERLOGGED, TINTED_GLASS);
+        builder.add(LIT, WATERLOGGED, TINTED_GLASS, HANGING);
     }
 
     // ---- Variants (must return constants: they're read while the block is being built) ----
@@ -98,7 +122,7 @@ public class CBChainLantern extends CBBoltedBeamBlock implements SimpleWaterlogg
     @Override public IntegerProperty offsetXProperty() { return size().offsetX(); }
     @Override public IntegerProperty offsetZProperty() { return size().offsetZ(); }
 
-    // Boxes as modelled: the chain part (z 0-6), the lantern body (z 6-16) and, for caps, the plate.
+    // Boxes as modelled: the chain part (z 0-6, always first), the lantern body (z 6-16) and, for caps, the plate.
     // The medium size is modelled centred at y 10 like the medium chain, so the body is lifted to match.
     @Override
     protected List<List<CBPixelBox>> regionBoxes()
@@ -126,6 +150,22 @@ public class CBChainLantern extends CBBoltedBeamBlock implements SimpleWaterlogg
         return List.of(metal, glass);
     }
 
+    // The standing model's boxes: the same, but the chain part is just the top loop (from z 2.75)
+    private List<CBPixelBox> standingBoxes()
+    {
+        List<CBPixelBox> boxes = new ArrayList<>();
+        for (List<CBPixelBox> region : regionBoxes()) boxes.addAll(region);
+        CBPixelBox chain = boxes.remove(0);
+        boxes.add(new CBPixelBox(chain.minX(), chain.minY(), 2.75, chain.maxX(), chain.maxY(), 6));
+        return boxes;
+    }
+
+    @Override
+    protected @NotNull VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context)
+    {
+        return state.getValue(HANGING) ? super.getShape(state, level, pos, context) : standingShapes.get(state);
+    }
+
     // ---- Support ----
 
     // What a hanging lantern hangs from: the chain's box in the block above (in that block's pixels; only the
@@ -138,8 +178,7 @@ public class CBChainLantern extends CBBoltedBeamBlock implements SimpleWaterlogg
         // Vanilla chains run through the middle of their block and match the small size
         if (above.getBlock() instanceof ChainBlock)
         {
-            return size() == CBChainSize.SMALL && above.getValue(ChainBlock.AXIS) == Direction.Axis.Y
-                    ? new CBPixelBox(8, 0, 8, 8, 16, 8) : null;
+            return size() == CBChainSize.SMALL && above.getValue(ChainBlock.AXIS) == Direction.Axis.Y ? BLOCK_CENTRE : null;
         }
         if (!(above.getBlock() instanceof CBBoltedBeamBlock beam) || beam instanceof CBChainLantern) return null;
 
@@ -153,6 +192,28 @@ public class CBChainLantern extends CBBoltedBeamBlock implements SimpleWaterlogg
         return beam.connectionPoint(above, Direction.DOWN, this);
     }
 
+    // A floor a standing lantern can sit on (the same check vanilla lanterns and torches use)
+    private static boolean floorBelow(LevelReader level, BlockPos pos)
+    {
+        return Block.canSupportCenter(level, pos.below(), Direction.UP);
+    }
+
+    // What a chain lantern (not a cap) should be with its current surroundings: hanging, lined up with a chain
+    // above; otherwise standing where it is, if there's a floor; otherwise null (nothing holds it, so it falls).
+    // To make a hanging lantern always fall when its chain goes, return null instead of standing when
+    // state.getValue(HANGING) is true.
+    @Nullable
+    private BlockState refit(BlockState state, LevelReader level, BlockPos pos)
+    {
+        CBPixelBox chain = chainAbove(level, pos);
+        if (chain != null)
+        {
+            BlockState hanging = state.setValue(HANGING, true);
+            return centred(worldFootprint(hanging), chain) ? hanging : bestFit(hanging, chain, true, 0);
+        }
+        return floorBelow(level, pos) ? state.setValue(HANGING, false) : null;
+    }
+
     @Override
     protected boolean canSurvive(BlockState state, LevelReader level, BlockPos pos)
     {
@@ -161,6 +222,7 @@ public class CBChainLantern extends CBBoltedBeamBlock implements SimpleWaterlogg
             BlockPos abovePos = pos.above();
             return level.getBlockState(abovePos).isFaceSturdy(level, abovePos, Direction.DOWN, SupportType.FULL);
         }
+        if (!state.getValue(HANGING)) return floorBelow(level, pos);
         CBPixelBox chain = chainAbove(level, pos);
         return chain != null && centred(worldFootprint(state), chain);
     }
@@ -174,7 +236,8 @@ public class CBChainLantern extends CBBoltedBeamBlock implements SimpleWaterlogg
 
     // ---- Placement ----
 
-    // Caps sit where you clicked (the beam rules); hanging lanterns line up with the chain above, or can't be placed
+    // Caps sit where you clicked (the beam rules). Chain lanterns line up with a chain above if there is one,
+    // otherwise stand centred on the floor, otherwise can't be placed.
     @Override
     public BlockState getStateForPlacement(BlockPlaceContext context)
     {
@@ -189,8 +252,9 @@ public class CBChainLantern extends CBBoltedBeamBlock implements SimpleWaterlogg
         else
         {
             CBPixelBox chain = chainAbove(level, pos);
-            if (chain == null) return null;
-            state = bestFit(defaultBlockState(), chain, true, 0);
+            if (chain != null) state = bestFit(defaultBlockState(), chain, true, 0);
+            else if (floorBelow(level, pos)) state = bestFit(defaultBlockState().setValue(HANGING, false), BLOCK_CENTRE, true, 0);
+            else return null;
         }
         if (state == null) return null;
         return state.setValue(WATERLOGGED, level.getFluidState(pos).getType() == Fluids.WATER);
@@ -205,6 +269,7 @@ public class CBChainLantern extends CBBoltedBeamBlock implements SimpleWaterlogg
             super.setPlacedBy(level, pos, state, placer, stack);
             return;
         }
+        if (!state.getValue(HANGING)) return;
         if (!(level.getBlockEntity(pos) instanceof CBTintBlockEntity placed) || placed.isDyed(METAL_REGION)) return;
 
         BlockPos abovePos = pos.above();
@@ -216,7 +281,7 @@ public class CBChainLantern extends CBBoltedBeamBlock implements SimpleWaterlogg
         }
     }
 
-    // ---- Losing its support: fall ----
+    // ---- Neighbours changing: switch between hanging and standing, or fall ----
 
     @Override
     protected @NotNull BlockState updateShape(BlockState state, LevelReader level, ScheduledTickAccess scheduledTickAccess,
@@ -227,18 +292,23 @@ public class CBChainLantern extends CBBoltedBeamBlock implements SimpleWaterlogg
         {
             scheduledTickAccess.scheduleTick(pos, Fluids.WATER, Fluids.WATER.getTickDelay(level));
         }
-        // Checked a tick later, like sand and gravel, so it falls after the change above has finished
-        if (direction == Direction.UP && !state.canSurvive(level, pos))
+        if (direction.getAxis() != Direction.Axis.Y) return state;
+
+        BlockState fitted = hasPlate() ? (state.canSurvive(level, pos) ? state : null) : refit(state, level, pos);
+        if (fitted == null)
         {
+            // Nothing holds it: fall a tick later, like sand and gravel, after the change has finished
             scheduledTickAccess.scheduleTick(pos, this, 1);
+            return state;
         }
-        return state;
+        return fitted;
     }
 
     @Override
     protected void tick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random)
     {
-        if (!state.canSurvive(level, pos))
+        boolean held = hasPlate() ? state.canSurvive(level, pos) : refit(state, level, pos) != null;
+        if (!held)
         {
             // disableDrop: when it lands it never places or drops, it calls onBrokenAfterFall instead
             FallingBlockEntity.fall(level, pos, state).disableDrop();

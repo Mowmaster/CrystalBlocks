@@ -21,6 +21,7 @@ import net.neoforged.neoforge.client.model.generators.template.ExtendedModelTemp
 import net.neoforged.neoforge.common.util.TransformationHelper;
 import org.joml.Quaternionf;
 
+import javax.annotation.Nullable;
 import java.util.*;
 import java.util.function.Function;
 
@@ -57,68 +58,77 @@ public class CBBoltedModels
                 model("bolted_support_beam"), model("chain_beam_half"), metalAndLog);
 
         sconce(blockModels, (CBSconce) CBBlockRegistry.SCONCE_TORCH.get());
-        lantern(blockModels, (CBChainLantern) CBBlockRegistry.CHAIN_LANTERN.get(), model("chain_lantern_hanging"));
-        lantern(blockModels, (CBChainLantern) CBBlockRegistry.CHAIN_LANTERN_CAP.get(), model("chain_lantern_hanging_cap"));
-        lantern(blockModels, (CBChainLantern) CBBlockRegistry.CHAIN_LANTERN_MEDIUM.get(), model("chain_medium_lantern_hanging"));
-        lantern(blockModels, (CBChainLantern) CBBlockRegistry.CHAIN_LANTERN_MEDIUM_CAP.get(), model("chain_medium_lantern_hanging_cap"));
-
+        lantern(blockModels, (CBChainLantern) CBBlockRegistry.CHAIN_LANTERN.get(),
+                model("chain_lantern_hanging"), model("chain_lantern"));
+        lantern(blockModels, (CBChainLantern) CBBlockRegistry.CHAIN_LANTERN_CAP.get(),
+                model("chain_lantern_hanging_cap"), null);
+        lantern(blockModels, (CBChainLantern) CBBlockRegistry.CHAIN_LANTERN_MEDIUM.get(),
+                model("chain_medium_lantern_hanging"), model("chain_medium_lantern"));
+        lantern(blockModels, (CBChainLantern) CBBlockRegistry.CHAIN_LANTERN_MEDIUM_CAP.get(),
+                model("chain_medium_lantern_hanging_cap"), null);
     }
 
     // One model copy per position, with clear and with tintable glass, moved into place with a root transform like
-    // the beams. Lit and waterlogged don't change the model (the flame is a particle), so the blockstate ignores them.
-    private static void lantern(BlockModelGenerators blockModels, CBChainLantern lantern, Identifier parent)
+    // the beams. Chain lanterns also get a standing copy, chosen by "hanging". Lit and waterlogged don't change the
+    // model (the flame is a particle), so the blockstate ignores them.
+    private static void lantern(BlockModelGenerators blockModels, CBChainLantern lantern, Identifier hangingParent,
+                                @Nullable Identifier standingParent)
     {
         Material metal = new Material(Identifier.fromNamespaceAndPath(CBReferences.MODID, "block/tintable_metal"));
         BlockState item = lantern.defaultBlockState();
         Identifier itemModel = null;
+        // Caps only ever hang
+        boolean[] hangingValues = standingParent == null ? new boolean[] { true } : new boolean[] { true, false };
 
         MultiPartGenerator blockState = MultiPartGenerator.multiPart(lantern);
         for (int x = lantern.minOffsetX(); x <= lantern.maxOffsetX(); x++)
         {
             for (int z = lantern.minOffsetZ(); z <= lantern.maxOffsetZ(); z++)
             {
-                for (boolean tinted : new boolean[] { false, true })
+                for (boolean hanging : hangingValues)
                 {
-                    Material glass = new Material(Identifier.fromNamespaceAndPath(CBReferences.MODID,
-                            "block/" + (tinted ? "tintable_glass" : "cb_glass")));
-                    TextureMapping textures = TextureMapping.cube(metal)
-                            .put(CBModelTemplates.TEXTURE_ONE, metal)
-                            .put(CBModelTemplates.TEXTURE_TWO, glass)
-                            // Untinted fastener texture; metal for now
-                            .put(CBModelTemplates.TEXTURE_THREE, metal);
+                    for (boolean tinted : new boolean[] { false, true })
+                    {
+                        Material glass = new Material(Identifier.fromNamespaceAndPath(CBReferences.MODID,
+                                "block/" + (tinted ? "tintable_glass" : "cb_glass")));
+                        TextureMapping textures = TextureMapping.cube(metal)
+                                .put(CBModelTemplates.TEXTURE_ONE, metal)
+                                .put(CBModelTemplates.TEXTURE_TWO, glass)
+                                // Untinted fastener texture; metal for now
+                                .put(CBModelTemplates.TEXTURE_THREE, metal);
 
-                    Vec3 translation = lantern.modelTranslation(x, z, 0);
-                    Identifier model = ExtendedModelTemplateBuilder.builder()
-                            .parent(parent)
-                            .requiredTextureSlot(TextureSlot.PARTICLE)
-                            .requiredTextureSlot(CBModelTemplates.TEXTURE_ONE)
-                            .requiredTextureSlot(CBModelTemplates.TEXTURE_TWO)
-                            .requiredTextureSlot(CBModelTemplates.TEXTURE_THREE)
-                            .rootTransforms(transform -> transform
-                                    .translation((float) translation.x / 16, (float) translation.y / 16, (float) translation.z / 16)
-                                    .rotation(lantern.rootRotation(0))
-                                    .origin(TransformationHelper.TransformOrigin.CENTER))
-                            .build()
-                            .create(ModelLocationUtils.getModelLocation(lantern, "_x" + x + "_z" + z + (tinted ? "_tinted" : "")),
-                                    textures, blockModels.modelOutput);
+                        Vec3 translation = lantern.modelTranslation(x, z, 0);
+                        String suffix = (hanging ? "" : "_standing") + "_x" + x + "_z" + z + (tinted ? "_tinted" : "");
+                        Identifier model = ExtendedModelTemplateBuilder.builder()
+                                .parent(hanging ? hangingParent : standingParent)
+                                .requiredTextureSlot(TextureSlot.PARTICLE)
+                                .requiredTextureSlot(CBModelTemplates.TEXTURE_ONE)
+                                .requiredTextureSlot(CBModelTemplates.TEXTURE_TWO)
+                                .requiredTextureSlot(CBModelTemplates.TEXTURE_THREE)
+                                .rootTransforms(transform -> transform
+                                        .translation((float) translation.x / 16, (float) translation.y / 16, (float) translation.z / 16)
+                                        .rotation(lantern.rootRotation(0))
+                                        .origin(TransformationHelper.TransformOrigin.CENTER))
+                                .build()
+                                .create(ModelLocationUtils.getModelLocation(lantern, suffix), textures, blockModels.modelOutput);
 
-                    blockState.with(
-                            BlockModelGenerators.condition()
-                                    .term(lantern.offsetXProperty(), x)
-                                    .term(lantern.offsetZProperty(), z)
-                                    .term(CBChainLantern.TINTED_GLASS, tinted),
-                            BlockModelGenerators.plainVariant(model));
+                        var condition = BlockModelGenerators.condition()
+                                .term(lantern.offsetXProperty(), x)
+                                .term(lantern.offsetZProperty(), z)
+                                .term(CBChainLantern.TINTED_GLASS, tinted);
+                        if (standingParent != null) condition = condition.term(CBChainLantern.HANGING, hanging);
+                        blockState.with(condition, BlockModelGenerators.plainVariant(model));
 
-                    if (!tinted && x == lantern.offsetX(item) && z == lantern.offsetZ(item)) itemModel = model;
+                        if (hanging && !tinted && x == lantern.offsetX(item) && z == lantern.offsetZ(item)) itemModel = model;
+                    }
                 }
             }
         }
         blockModels.blockStateOutput.accept(blockState);
 
-        // The item is the lantern at its default position, with clear glass
+        // The item is the hanging lantern at its default position, with clear glass
         tintedItem(blockModels, lantern, itemModel, lantern.getTintRegionCount());
     }
-
     // Six models (1-3 torches, lit and unlit textures), turned for the facing
     private static void sconce(BlockModelGenerators blockModels, CBSconce sconce)
     {

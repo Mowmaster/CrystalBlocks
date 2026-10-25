@@ -1,0 +1,23 @@
+{
+  "parent": "crystalblocks:block/chain_medium_lantern",
+  "textures": {
+    "particle": "crystalblocks:block/tintable_metal",
+    "texture_one": "crystalblocks:block/tintable_metal",
+    "texture_three": "crystalblocks:block/tintable_metal",
+    "texture_two": "crystalblocks:block/cb_glass"
+  },
+  "transform": {
+    "origin": "center",
+    "rotation": [
+      -0.70710677,
+      -0.0,
+      0.0,
+      -0.70710677
+    ],
+    "translation": [
+      0.1875,
+      0.0,
+      -0.4375
+    ]
+  }
+}
