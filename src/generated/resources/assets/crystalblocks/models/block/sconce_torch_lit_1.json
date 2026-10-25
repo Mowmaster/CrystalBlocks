@@ -1,0 +1,7 @@
+{
+  "parent": "crystalblocks:block/sconce_torch_single",
+  "textures": {
+    "texture_one": "crystalblocks:block/tintable_metal",
+    "texture_two": "crystalblocks:block/sconce_torch"
+  }
+}

@@ -1,11 +1,7 @@
 package com.mowmaster.crystalblocks.CBDataGeneration;
 
 import com.mowmaster.crystalblocks.Blocks.CBBlockRegistry;
-import com.mowmaster.crystalblocks.Blocks.Colorable.CBAccentedPillarCap;
-import com.mowmaster.crystalblocks.Blocks.Colorable.CBBoltedBeamBlock;
-import com.mowmaster.crystalblocks.Blocks.Colorable.CBBoltedSupportBeam;
-import com.mowmaster.crystalblocks.Blocks.Colorable.CBChainedSupportBeam;
-import com.mowmaster.crystalblocks.Blocks.Colorable.CBPixelBox;
+import com.mowmaster.crystalblocks.Blocks.Colorable.*;
 import com.mowmaster.crystalblocks.CBReferences;
 import net.minecraft.client.color.item.Dye;
 import net.minecraft.client.color.item.ItemTintSource;
@@ -60,6 +56,35 @@ public class CBBoltedModels
         chainedSupportBeam(blockModels, (CBChainedSupportBeam) CBBlockRegistry.CHAINED_SUPPORT_BEAM.get(),
                 model("bolted_support_beam"), model("chain_beam_half"), metalAndLog);
 
+        sconce(blockModels, (CBSconce) CBBlockRegistry.SCONCE_TORCH.get());
+
+    }
+
+    // Six models (1-3 torches, lit and unlit textures), turned for the facing
+    private static void sconce(BlockModelGenerators blockModels, CBSconce sconce)
+    {
+        ModelTemplate[] templates = { CBModelTemplates.SCONCE_SINGLE, CBModelTemplates.SCONCE_DOUBLE, CBModelTemplates.SCONCE_TRIPLE };
+        // [torches - 1][0 = unlit, 1 = lit]
+        Identifier[][] models = new Identifier[3][2];
+        for (int torches = 1; torches <= 3; torches++)
+        {
+            for (int lit = 0; lit < 2; lit++)
+            {
+                String suffix = (lit == 1 ? "_lit_" : "_unlit_") + torches;
+                TextureMapping textures = textures("tintable_metal", lit == 1 ? "sconce_torch" : "sconce_torch_off");
+                models[torches - 1][lit] = templates[torches - 1].create(
+                        ModelLocationUtils.getModelLocation(sconce, suffix), textures, blockModels.modelOutput);
+            }
+        }
+
+        // waterlogged isn't listed: it doesn't change the model
+        blockModels.blockStateOutput.accept(MultiVariantGenerator.dispatch(sconce)
+                .with(PropertyDispatch.initial(CBSconce.FACING, CBSconce.TORCHES, CBSconce.LIT)
+                        .generate((facing, torches, lit) ->
+                                rotated(models[torches - 1][lit ? 1 : 0], 0, CBPixelBox.quarterTurns(facing)))));
+
+        // The item is a single lit sconce
+        tintedItem(blockModels, sconce, models[0][1], 1);
     }
 
     // Same blockstate as the accented cap, asking the block for its rotations (this one has an extra half turn)

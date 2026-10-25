@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "condition": {
+        "type": "minecraft:survives_explosion"
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "crystalblocks:sconce_torch"
+        }
+      ],
+      "rolls": 1
+    }
+  ],
+  "random_sequence": "crystalblocks:blocks/sconce_torch"
+}

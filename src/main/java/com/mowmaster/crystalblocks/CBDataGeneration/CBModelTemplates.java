@@ -49,6 +49,10 @@ public class CBModelTemplates
     public static final ModelTemplate TINTED_PRESSURE_PLATE_UP = create("tinted_pressure_plate_up", TextureSlot.TEXTURE);
     public static final ModelTemplate TINTED_PRESSURE_PLATE_DOWN = create("tinted_pressure_plate_down", "_down", TextureSlot.TEXTURE);
 
+    public static final ModelTemplate SCONCE_SINGLE = create("sconce_torch_single", TEXTURE_ONE, TEXTURE_TWO);
+    public static final ModelTemplate SCONCE_DOUBLE = create("sconce_torch_double", TEXTURE_ONE, TEXTURE_TWO);
+    public static final ModelTemplate SCONCE_TRIPLE = create("sconce_torch_tripple", TEXTURE_ONE, TEXTURE_TWO);
+
     // Template with no suffix: the generated model is named exactly after the block
     private static ModelTemplate create(String parent, TextureSlot... slots)
     {

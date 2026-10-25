@@ -5,6 +5,7 @@ import com.mowmaster.crystalblocks.CBReferences;
 import com.mowmaster.crystalblocks.Items.CBItemRegistry;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.PushReaction;
 import net.neoforged.bus.api.IEventBus;
@@ -66,10 +67,21 @@ public class CBBlockRegistry
                 @Override public CBChainSize chainSize() { return CBChainSize.MEDIUM; }
             });
 
+    public static final DeferredBlock<Block> SCONCE_TORCH = registerBlock("sconce_torch",
+            properties -> new CBSconce(CBMaterial.METAL.apply(properties)
+                    .sound(SoundType.CHAIN)   // chain sounds for placing, breaking and stepping
+                    .strength(1f)
+                    .noCollision()            // walk through it, like a torch
+                    .noOcclusion()
+                    .lightLevel(state -> state.getValue(CBSconce.LIT) ? 15 : 0)));
+
+
+
     public static final List<DeferredBlock<Block>> BOLTED = List.of(BOLTED_CORNER_SUPPORT_CAP,
             BOLTED_I_BEAM, BOLTED_I_BEAM_CAP, BOLTED_SUPPORT_BEAM, BOLTED_SUPPORT_BEAM_CAP,
             CHAINED_SUPPORT_BEAM, CHAIN_BEAM, CHAIN_BEAM_CAP,
-            CHAIN_BEAM_MEDIUM, CHAIN_BEAM_MEDIUM_CAP, CHAIN_BEAM_LARGE, CHAIN_BEAM_LARGE_CAP, CHAINED_SUPPORT_BEAM_MEDIUM);
+            CHAIN_BEAM_MEDIUM, CHAIN_BEAM_MEDIUM_CAP, CHAIN_BEAM_LARGE, CHAIN_BEAM_LARGE_CAP, CHAINED_SUPPORT_BEAM_MEDIUM,
+            SCONCE_TORCH);
 
     // Registers every shape for one texture
     private static CBBlockSet registerSet(String name, String displayName, CBMaterial material)
