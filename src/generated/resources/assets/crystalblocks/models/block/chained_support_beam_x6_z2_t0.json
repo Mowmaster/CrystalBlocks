@@ -1,5 +1,5 @@
 {
-  "parent": "crystalblocks:block/chained_support_beam",
+  "parent": "crystalblocks:block/bolted_support_beam",
   "textures": {
     "particle": "crystalblocks:block/tintable_metal",
     "texture_one": "crystalblocks:block/tintable_metal",

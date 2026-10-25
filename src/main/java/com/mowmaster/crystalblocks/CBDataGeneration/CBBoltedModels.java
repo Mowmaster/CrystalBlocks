@@ -16,6 +16,7 @@ import net.minecraft.client.data.models.blockstates.MultiVariantGenerator;
 import net.minecraft.client.data.models.blockstates.PropertyDispatch;
 import net.minecraft.client.data.models.model.*;
 import net.minecraft.client.resources.model.sprite.Material;
+import net.minecraft.core.Direction;
 import net.minecraft.resources.Identifier;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
@@ -24,9 +25,7 @@ import net.neoforged.neoforge.client.model.generators.template.ExtendedModelTemp
 import net.neoforged.neoforge.common.util.TransformationHelper;
 import org.joml.Quaternionf;
 
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 import java.util.function.Function;
 
 // Models and blockstates for the bolted supports and chains (fixed metal + stone / metal + log textures)
@@ -50,16 +49,10 @@ public class CBBoltedModels
         beam(blockModels, (CBBoltedBeamBlock) CBBlockRegistry.CHAIN_BEAM.get(), model("chain_beam"), metalOnly);
         beam(blockModels, (CBBoltedBeamBlock) CBBlockRegistry.CHAIN_BEAM_CAP.get(), model("chain_beam_cap"), metalOnly);
 
-        // The chained support beam swaps models depending on which loops have a chain attached
-        beam(blockModels, (CBBoltedBeamBlock) CBBlockRegistry.CHAINED_SUPPORT_BEAM.get(), state -> {
-            boolean north = state.getValue(CBChainedSupportBeam.CHAIN_NORTH);
-            boolean south = state.getValue(CBChainedSupportBeam.CHAIN_SOUTH);
-            if (north && south) return new ModelChoice("_both", model("chained_support_beam_both"), 0);
-            if (south) return new ModelChoice("_one", model("chained_support_beam_top"), 0);
-            // The _top model's chain is on its south loop; half a turn moves it to the north loop
-            if (north) return new ModelChoice("_one", model("chained_support_beam_top"), 2);
-            return new ModelChoice("", model("chained_support_beam"), 0);
-        }, metalAndLog);
+        // The chained support beam: the plain support beam plus half a chain on each joined side
+        chainedSupportBeam(blockModels, (CBChainedSupportBeam) CBBlockRegistry.CHAINED_SUPPORT_BEAM.get(),
+                model("bolted_support_beam"), model("chain_beam_half"), metalAndLog);
+
     }
 
     // Same blockstate as the accented cap, asking the block for its rotations (this one has an extra half turn)
@@ -102,12 +95,6 @@ public class CBBoltedModels
             if (beam.isCap()) condition = condition.term(CBBoltedBeamBlock.FACING, beam.facing(state));
             else condition = condition.term(CBBoltedBeamBlock.AXIS, beam.facing(state).getAxis());
             if (beam.turnProperty() != null) condition = condition.term(beam.turnProperty(), beam.turn(state));
-            if (beam instanceof CBChainedSupportBeam)
-            {
-                condition = condition
-                        .term(CBChainedSupportBeam.CHAIN_NORTH, state.getValue(CBChainedSupportBeam.CHAIN_NORTH))
-                        .term(CBChainedSupportBeam.CHAIN_SOUTH, state.getValue(CBChainedSupportBeam.CHAIN_SOUTH));
-            }
 
             Identifier model = modelCopy(blockModels, beam, state, modelFor.apply(state), textures, copies);
             blockState.with(condition, rotated(model, beam.xQuarterTurns(state), beam.yQuarterTurns(state)));
@@ -118,6 +105,78 @@ public class CBBoltedModels
         BlockState item = beam.defaultBlockState();
         Identifier itemModel = modelCopy(blockModels, beam, item, modelFor.apply(item), textures, copies);
         tintedItem(blockModels, beam, itemModel, beam.getTintRegionCount());
+    }
+
+    // The beam part is the plain support beam, added once per position, turn and axis (the chain flags don't
+    // move it). Each side then gets a half-chain part, drawn whenever that side's chain flag is on.
+    private static void chainedSupportBeam(BlockModelGenerators blockModels, CBChainedSupportBeam beam,
+                                           Identifier beamModel, Identifier chainModel, TextureMapping textures)
+    {
+        Map<String, Identifier> copies = new HashMap<>();
+        Set<String> added = new HashSet<>();
+        MultiPartGenerator blockState = MultiPartGenerator.multiPart(beam);
+
+        for (BlockState state : beam.getStateDefinition().getPossibleStates())
+        {
+            int x = beam.offsetX(state);
+            int z = beam.offsetZ(state);
+            int turn = beam.turn(state);
+            Direction.Axis axis = beam.facing(state).getAxis();
+            if (!added.add(x + "_" + z + "_" + turn + "_" + axis)) continue;
+
+            int xTurns = beam.xQuarterTurns(state);
+            int yTurns = beam.yQuarterTurns(state);
+
+            // The beam
+            Identifier beamCopy = modelCopy(blockModels, beam, state, new ModelChoice("", beamModel, 0), textures, copies);
+            blockState.with(
+                    BlockModelGenerators.condition()
+                            .term(beam.offsetXProperty(), x)
+                            .term(beam.offsetZProperty(), z)
+                            .term(CBBoltedBeamBlock.AXIS, axis)
+                            .term(beam.turnProperty(), turn),
+                    rotated(beamCopy, xTurns, yTurns));
+
+            // A half-chain per side, only when a chain joins that side
+            for (Direction side : CBChainedSupportBeam.CHAIN_SIDES)
+            {
+                Vec3 translation = beam.chainTranslation(state, side);
+                String key = "_chain_" + side.getSerializedName() + "_x" + (int) translation.x + "_z" + (int) translation.z;
+                Identifier chainCopy = copies.computeIfAbsent(key, name -> chainTemplate(chainModel, translation, CBChainedSupportBeam.chainTurns(side))
+                        .create(ModelLocationUtils.getModelLocation(beam, name), textures, blockModels.modelOutput));
+
+                blockState.with(
+                        BlockModelGenerators.condition()
+                                .term(beam.offsetXProperty(), x)
+                                .term(beam.offsetZProperty(), z)
+                                .term(CBBoltedBeamBlock.AXIS, axis)
+                                .term(beam.turnProperty(), turn)
+                                .term(CBChainedSupportBeam.chainProperty(side), true),
+                        rotated(chainCopy, xTurns, yTurns));
+            }
+        }
+        blockModels.blockStateOutput.accept(blockState);
+
+        // The item is the plain beam, centred and upright
+        BlockState item = beam.defaultBlockState();
+        Identifier itemModel = modelCopy(blockModels, beam, item, new ModelChoice("", beamModel, 0), textures, copies);
+        tintedItem(blockModels, beam, itemModel, beam.getTintRegionCount());
+    }
+
+    // The south half-chain, turned round to its side and moved across with the beam (same maths as chainBox)
+    private static ModelTemplate chainTemplate(Identifier parent, Vec3 translation, int quarterTurns)
+    {
+        return ExtendedModelTemplateBuilder.builder()
+                .parent(parent)
+                .requiredTextureSlot(TextureSlot.PARTICLE)
+                .requiredTextureSlot(CBModelTemplates.TEXTURE_ONE)
+                .requiredTextureSlot(CBModelTemplates.TEXTURE_TWO)
+                .rootTransforms(transform -> transform
+                        .translation((float) translation.x / 16, 0, (float) translation.z / 16)
+                        // -90 = clockwise seen from above, the same direction as CBPixelBox.rotateY(1)
+                        .rotation(0, -90f * quarterTurns, 0, true)
+                        .origin(TransformationHelper.TransformOrigin.CENTER))
+                .build();
     }
 
     // The copy of the chosen model for this state's position and turn (made if it doesn't exist yet)

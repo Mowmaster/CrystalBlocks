@@ -179,6 +179,17 @@ public abstract class CBBoltedBeamBlock extends Block implements IColorableBlock
         return (int) Math.floor(16 - (body.maxZ() - body.minZ()) - (body.minZ() - Math.floor(body.minZ())));
     }
 
+    // The lowest offsets a beam may use. Normally 0; a beam that must stay centred along one axis raises it.
+    public int minOffsetX()
+    {
+        return 0;
+    }
+
+    public int minOffsetZ()
+    {
+        return 0;
+    }
+
     // ---- Transforms, shared with datagen ----
 
     // How far the model moves from where it was modelled, in pixels, turned along with it.
@@ -248,6 +259,16 @@ public abstract class CBBoltedBeamBlock extends Block implements IColorableBlock
         Direction direction = modelSide;
         for (int i = 0; i < modelXTurns(); i++) direction = turnX(direction);
         for (int i = 0; i < turn(state); i++) direction = turnY(direction);
+        for (int i = 0; i < xQuarterTurns(state); i++) direction = turnX(direction);
+        for (int i = 0; i < yQuarterTurns(state); i++) direction = turnY(direction);
+        return direction;
+    }
+
+    // Which world direction a side of the beam faces once the facing is applied. Sides are "as the beam stands
+    // upright after its turn" (the turn and base rotation are not applied here).
+    public Direction standardToWorld(Direction side, BlockState state)
+    {
+        Direction direction = side;
         for (int i = 0; i < xQuarterTurns(state); i++) direction = turnX(direction);
         for (int i = 0; i < yQuarterTurns(state); i++) direction = turnY(direction);
         return direction;
@@ -399,9 +420,9 @@ public abstract class CBBoltedBeamBlock extends Block implements IColorableBlock
         double bestDifference = Double.MAX_VALUE;
         for (int turn = firstTurn; turn <= lastTurn; turn++)
         {
-            for (int x = 0; x <= maxOffsetX(); x++)
+            for (int x = minOffsetX(); x <= maxOffsetX(); x++)
             {
-                for (int z = 0; z <= maxOffsetZ(); z++)
+                for (int z = minOffsetZ(); z <= maxOffsetZ(); z++)
                 {
                     BlockState candidate = state.setValue(offsetXProperty(), x).setValue(offsetZProperty(), z);
                     if (turnProperty() != null) candidate = candidate.setValue(turnProperty(), turn);

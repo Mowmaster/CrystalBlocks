@@ -12,44 +12,49 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
+import net.minecraft.world.phys.Vec3;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-// The support beam with two strap loops. A chain (vanilla chain or chain beam) running towards a loop
-// attaches to it, which swaps the model to show the chain link. Region 0 = log beam, region 1 = metal.
+// A support beam that chains can join from any side of its band. Renders the plain support beam, plus half a
+// chain from each joined side's block edge into the middle of the block, lined up with the band.
+// Region 0 = log beam, region 1 = metal (straps and chains).
 public class CBChainedSupportBeam extends CBBoltedBeamBlock
 {
-    // A chain is attached to the loop on the model's north / south side (as modelled)
+    // A chain joins that side of the band. Sides are "as the beam stands upright after its turn".
     public static final BooleanProperty CHAIN_NORTH = BooleanProperty.create("chain_north");
+    public static final BooleanProperty CHAIN_EAST = BooleanProperty.create("chain_east");
     public static final BooleanProperty CHAIN_SOUTH = BooleanProperty.create("chain_south");
+    public static final BooleanProperty CHAIN_WEST = BooleanProperty.create("chain_west");
 
-    // From models/block/chained_support_beam.json (bolts left out)
+    public static final Direction[] CHAIN_SIDES = { Direction.SOUTH, Direction.WEST, Direction.NORTH, Direction.EAST };
+
+    // A chain-sized box from the middle of the block to its south edge, at the band's height
+    private static final CBPixelBox SOUTH_CHAIN = new CBPixelBox(6.75, 6.75, 8, 9.25, 9.25, 16);
+
+    // The plain support beam's boxes (bolts left out)
     private static final List<List<CBPixelBox>> REGIONS = List.of(
             List.of(new CBPixelBox(4, 0, 4, 12, 16, 12)),
             List.of(new CBPixelBox(3.5, 6, 3.5, 4, 10, 12.5),
                     new CBPixelBox(12, 6, 3.5, 12.5, 10, 12.5),
                     new CBPixelBox(4, 6, 3.5, 12, 10, 4),
-                    new CBPixelBox(4, 6, 12, 12, 10, 12.5),
-                    new CBPixelBox(8, 6.75, 12, 8.5, 9.25, 14.5),  // south loop
-                    new CBPixelBox(8, 6.75, 1.5, 8.5, 9.25, 4)));  // north loop
-
-    // Chain-sized boxes (2.5 x 2.5, like the chain beam) centred on each loop's chain link, as modelled
-    private static final CBPixelBox SOUTH_LINK = new CBPixelBox(7, 6.75, 12, 9.5, 9.25, 16);
-    private static final CBPixelBox NORTH_LINK = new CBPixelBox(7, 6.75, 0, 9.5, 9.25, 4);
+                    new CBPixelBox(4, 6, 12, 12, 10, 12.5)));
 
     public CBChainedSupportBeam(Properties properties)
     {
         super(properties);
-        registerDefaultState(defaultBlockState().setValue(CHAIN_NORTH, false).setValue(CHAIN_SOUTH, false));
+        registerDefaultState(defaultBlockState()
+                .setValue(CHAIN_NORTH, false).setValue(CHAIN_EAST, false)
+                .setValue(CHAIN_SOUTH, false).setValue(CHAIN_WEST, false));
     }
 
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder)
     {
         super.createBlockStateDefinition(builder);
-        builder.add(CHAIN_NORTH, CHAIN_SOUTH);
+        builder.add(CHAIN_NORTH, CHAIN_EAST, CHAIN_SOUTH, CHAIN_WEST);
     }
 
     @Override public Kind kind() { return Kind.SQUARE; }
@@ -60,7 +65,72 @@ public class CBChainedSupportBeam extends CBBoltedBeamBlock
     @Override public IntegerProperty offsetXProperty() { return CBBoltedSupportBeam.OFFSET_X; }
     @Override public IntegerProperty offsetZProperty() { return CBBoltedSupportBeam.OFFSET_Z; }
 
-    // ---- Chains ----
+    public static BooleanProperty chainProperty(Direction side)
+    {
+        return switch (side)
+        {
+            case NORTH -> CHAIN_NORTH;
+            case EAST -> CHAIN_EAST;
+            case WEST -> CHAIN_WEST;
+            default -> CHAIN_SOUTH;
+        };
+    }
+
+    // Quarter turns (clockwise from above) that take the south half-chain round to that side
+    public static int chainTurns(Direction side)
+    {
+        return switch (side)
+        {
+            case WEST -> 1;
+            case NORTH -> 2;
+            case EAST -> 3;
+            default -> 0;
+        };
+    }
+
+    // ---- Where each half-chain goes (shared with datagen) ----
+
+    // The half-chain follows the beam across its side, but never along its own length,
+    // so it always starts exactly at the block's edge
+    public Vec3 chainTranslation(BlockState state, Direction side)
+    {
+        Vec3 beam = modelTranslation(offsetX(state), offsetZ(state), turn(state));
+        double dx = side.getAxis() == Direction.Axis.X ? 0 : beam.x;
+        double dz = side.getAxis() == Direction.Axis.Z ? 0 : beam.z;
+        return new Vec3(dx, 0, dz);
+    }
+
+    // Where the half-chain on that side is, in this block's pixels
+    public CBPixelBox chainBox(BlockState state, Direction side)
+    {
+        Vec3 translation = chainTranslation(state, side);
+        return SOUTH_CHAIN.rotateY(chainTurns(side))
+                .offset(translation.x, translation.y, translation.z)
+                .rotateX(xQuarterTurns(state))
+                .rotateY(yQuarterTurns(state));
+    }
+
+    // The side of the band facing that world direction, or null if it points along the beam
+    @Nullable
+    private Direction chainSideFacing(BlockState state, Direction worldSide)
+    {
+        for (Direction side : CHAIN_SIDES)
+        {
+            if (standardToWorld(side, state) == worldSide) return side;
+        }
+        return null;
+    }
+
+    // ---- Joining chains ----
+
+    // Chains snap to the half-chain's position when placed against any side of the band
+    @Override
+    public @Nullable CBPixelBox connectionPoint(BlockState state, Direction worldSide, CBBoltedBeamBlock connecting)
+    {
+        if (connecting.kind() != Kind.CHAIN) return null;
+        Direction side = chainSideFacing(state, worldSide);
+        return side == null ? null : chainBox(state, side);
+    }
 
     @Override
     public BlockState getStateForPlacement(BlockPlaceContext context)
@@ -68,7 +138,7 @@ public class CBChainedSupportBeam extends CBBoltedBeamBlock
         return withChains(super.getStateForPlacement(context), context.getLevel(), context.getClickedPos());
     }
 
-    // A neighbour changed: re-check both loops
+    // A neighbour changed: re-check every side
     @Override
     protected @NotNull BlockState updateShape(BlockState state, LevelReader level, ScheduledTickAccess scheduledTickAccess,
                                               BlockPos pos, Direction direction, BlockPos neighborPos,
@@ -79,44 +149,31 @@ public class CBChainedSupportBeam extends CBBoltedBeamBlock
 
     private BlockState withChains(BlockState state, LevelReader level, BlockPos pos)
     {
-        return state
-                .setValue(CHAIN_NORTH, chainAt(state, level, pos, worldDirection(Direction.NORTH, state)))
-                .setValue(CHAIN_SOUTH, chainAt(state, level, pos, worldDirection(Direction.SOUTH, state)));
+        BlockState result = state;
+        for (Direction side : CHAIN_SIDES)
+        {
+            result = result.setValue(chainProperty(side), chainAt(state, level, pos, side));
+        }
+        return result;
     }
 
-    // Chains snap to a loop's link when placed against it
-    @Override
-    public @Nullable CBPixelBox connectionPoint(BlockState state, Direction side, CBBoltedBeamBlock connecting)
-    {
-        return connecting.kind() == Kind.CHAIN ? linkBox(state, side) : null;
-    }
-
-    // Where the chain link on the loop facing that world side is, in this block's pixels; null if no loop faces it
-    @Nullable
-    private CBPixelBox linkBox(BlockState state, Direction worldSide)
-    {
-        if (worldDirection(Direction.SOUTH, state) == worldSide) return place(SOUTH_LINK, state);
-        if (worldDirection(Direction.NORTH, state) == worldSide) return place(NORTH_LINK, state);
-        return null;
-    }
-
-    // A chain on that side that actually runs through the loop's link: a vanilla chain (always in the middle of
-    // its block) or a chain beam, running towards this block and lined up with the link
+    // A chain on that side that lines up with the half-chain: a vanilla chain (always through the middle of its
+    // block) or a chain beam, running towards this block
     private boolean chainAt(BlockState state, LevelReader level, BlockPos pos, Direction side)
     {
-        CBPixelBox link = linkBox(state, side);
-        if (link == null) return false;
+        Direction worldSide = standardToWorld(side, state);
+        CBPixelBox chain = chainBox(state, side);
 
-        BlockState neighbor = level.getBlockState(pos.relative(side));
+        BlockState neighbor = level.getBlockState(pos.relative(worldSide));
         if (neighbor.getBlock() instanceof ChainBlock)
         {
-            return neighbor.getValue(ChainBlock.AXIS) == side.getAxis()
-                    && centresMeet(link, new CBPixelBox(8, 8, 8, 8, 8, 8), side.getAxis());
+            return neighbor.getValue(ChainBlock.AXIS) == worldSide.getAxis()
+                    && centresMeet(chain, new CBPixelBox(8, 8, 8, 8, 8, 8), worldSide.getAxis());
         }
         if (neighbor.getBlock() instanceof CBBoltedBeamBlock beam && beam.kind() == Kind.CHAIN)
         {
-            return beam.facing(neighbor).getAxis() == side.getAxis()
-                    && centresMeet(link, beam.worldFootprint(neighbor), side.getAxis());
+            return beam.facing(neighbor).getAxis() == worldSide.getAxis()
+                    && centresMeet(chain, beam.worldFootprint(neighbor), worldSide.getAxis());
         }
         return false;
     }
