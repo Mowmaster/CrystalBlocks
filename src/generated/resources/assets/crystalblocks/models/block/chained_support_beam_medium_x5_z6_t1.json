@@ -1,0 +1,22 @@
+{
+  "parent": "crystalblocks:block/bolted_support_beam",
+  "textures": {
+    "particle": "crystalblocks:block/tintable_metal",
+    "texture_one": "crystalblocks:block/tintable_metal",
+    "texture_two": "crystalblocks:block/tintable_log_one"
+  },
+  "transform": {
+    "origin": "center",
+    "rotation": [
+      0.0,
+      -0.70710677,
+      0.0,
+      0.70710677
+    ],
+    "translation": [
+      -0.125,
+      0.0,
+      0.0625
+    ]
+  }
+}

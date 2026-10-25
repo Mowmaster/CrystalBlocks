@@ -45,10 +45,31 @@ public class CBBlockRegistry
             properties -> new CBChainBeam(CBMaterial.METAL.apply(properties)));
     public static final DeferredBlock<Block> CHAIN_BEAM_CAP = registerBlock("chain_beam_cap",
             properties -> new CBChainBeamCap(CBMaterial.METAL.apply(properties)));
+    public static final DeferredBlock<Block> CHAIN_BEAM_MEDIUM = registerBlock("chain_beam_medium",
+            properties -> new CBChainBeam(CBMaterial.METAL.apply(properties)) {
+                @Override public CBChainSize size() { return CBChainSize.MEDIUM; }
+            });
+    public static final DeferredBlock<Block> CHAIN_BEAM_MEDIUM_CAP = registerBlock("chain_beam_medium_cap",
+            properties -> new CBChainBeamCap(CBMaterial.METAL.apply(properties)) {
+                @Override public CBChainSize size() { return CBChainSize.MEDIUM; }
+            });
+    public static final DeferredBlock<Block> CHAIN_BEAM_LARGE = registerBlock("chain_beam_large",
+            properties -> new CBChainBeam(CBMaterial.METAL.apply(properties)) {
+                @Override public CBChainSize size() { return CBChainSize.LARGE; }
+            });
+    public static final DeferredBlock<Block> CHAIN_BEAM_LARGE_CAP = registerBlock("chain_beam_large_cap",
+            properties -> new CBChainBeamCap(CBMaterial.METAL.apply(properties)) {
+                @Override public CBChainSize size() { return CBChainSize.LARGE; }
+            });
+    public static final DeferredBlock<Block> CHAINED_SUPPORT_BEAM_MEDIUM = registerBlock("chained_support_beam_medium",
+            properties -> new CBChainedSupportBeam(CBMaterial.METAL.apply(properties)) {
+                @Override public CBChainSize chainSize() { return CBChainSize.MEDIUM; }
+            });
 
     public static final List<DeferredBlock<Block>> BOLTED = List.of(BOLTED_CORNER_SUPPORT_CAP,
             BOLTED_I_BEAM, BOLTED_I_BEAM_CAP, BOLTED_SUPPORT_BEAM, BOLTED_SUPPORT_BEAM_CAP,
-            CHAINED_SUPPORT_BEAM, CHAIN_BEAM, CHAIN_BEAM_CAP);
+            CHAINED_SUPPORT_BEAM, CHAIN_BEAM, CHAIN_BEAM_CAP,
+            CHAIN_BEAM_MEDIUM, CHAIN_BEAM_MEDIUM_CAP, CHAIN_BEAM_LARGE, CHAIN_BEAM_LARGE_CAP, CHAINED_SUPPORT_BEAM_MEDIUM);
 
     // Registers every shape for one texture
     private static CBBlockSet registerSet(String name, String displayName, CBMaterial material)

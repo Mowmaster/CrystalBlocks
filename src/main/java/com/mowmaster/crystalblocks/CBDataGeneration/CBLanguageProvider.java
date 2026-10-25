@@ -51,5 +51,10 @@ public class CBLanguageProvider extends LanguageProvider
         addBlock(CBBlockRegistry.CHAINED_SUPPORT_BEAM, "Chained Support Beam");
         addBlock(CBBlockRegistry.CHAIN_BEAM, "Chain Beam");
         addBlock(CBBlockRegistry.CHAIN_BEAM_CAP, "Chain Beam Cap");
+        addBlock(CBBlockRegistry.CHAIN_BEAM_MEDIUM, "Medium Chain Beam");
+        addBlock(CBBlockRegistry.CHAIN_BEAM_MEDIUM_CAP, "Medium Chain Beam Cap");
+        addBlock(CBBlockRegistry.CHAIN_BEAM_LARGE, "Large Chain Beam");
+        addBlock(CBBlockRegistry.CHAIN_BEAM_LARGE_CAP, "Large Chain Beam Cap");
+        addBlock(CBBlockRegistry.CHAINED_SUPPORT_BEAM_MEDIUM, "Medium Chained Support Beam");
     }
 }

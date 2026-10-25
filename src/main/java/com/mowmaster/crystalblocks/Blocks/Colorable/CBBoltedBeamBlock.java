@@ -49,7 +49,7 @@ public abstract class CBBoltedBeamBlock extends Block implements IColorableBlock
     public static final IntegerProperty TURN_4 = IntegerProperty.create("turn", 0, 3);
 
     // Beams and caps of the same kind (same cross-section) line up with each other
-    public enum Kind { SQUARE, I_BEAM, CHAIN }
+    public enum Kind { SQUARE, I_BEAM, CHAIN, CHAIN_MEDIUM, CHAIN_LARGE }
 
     private final Map<BlockState, VoxelShape> shapes = new HashMap<>();
 

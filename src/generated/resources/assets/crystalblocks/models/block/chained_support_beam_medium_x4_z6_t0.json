@@ -1,5 +1,5 @@
 {
-  "parent": "crystalblocks:block/chain_beam_half",
+  "parent": "crystalblocks:block/bolted_support_beam",
   "textures": {
     "particle": "crystalblocks:block/tintable_metal",
     "texture_one": "crystalblocks:block/tintable_metal",
@@ -7,16 +7,10 @@
   },
   "transform": {
     "origin": "center",
-    "rotation": [
-      0.0,
-      -0.0,
-      0.0,
-      1.0
-    ],
     "translation": [
-      -0.0,
       0.0,
-      0.0
+      0.0,
+      0.125
     ]
   }
 }

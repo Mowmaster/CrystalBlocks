@@ -31,9 +31,6 @@ public class CBChainedSupportBeam extends CBBoltedBeamBlock
 
     public static final Direction[] CHAIN_SIDES = { Direction.SOUTH, Direction.WEST, Direction.NORTH, Direction.EAST };
 
-    // A chain-sized box from the middle of the block to its south edge, at the band's height
-    private static final CBPixelBox SOUTH_CHAIN = new CBPixelBox(6.75, 6.75, 8, 9.25, 9.25, 16);
-
     // The plain support beam's boxes (bolts left out)
     private static final List<List<CBPixelBox>> REGIONS = List.of(
             List.of(new CBPixelBox(4, 0, 4, 12, 16, 12)),
@@ -88,11 +85,21 @@ public class CBChainedSupportBeam extends CBBoltedBeamBlock
         };
     }
 
+    // Which chain size this beam accepts. Must return a constant; the registry makes the medium version by overriding it.
+    public CBChainSize chainSize()
+    {
+        return CBChainSize.SMALL;
+    }
+
     // ---- Where each half-chain goes (shared with datagen) ----
 
     // The half-chain follows the beam across its side, but never along its own length,
     // so it always starts exactly at the block's edge
-    public Vec3 chainTranslation(BlockState state, Direction side)
+    // ---- Where each half-chain goes ----
+
+    // The half-chain follows the beam across its side, but never along its own length,
+    // so it always starts exactly at the block's edge
+    private Vec3 chainLateral(BlockState state, Direction side)
     {
         Vec3 beam = modelTranslation(offsetX(state), offsetZ(state), turn(state));
         double dx = side.getAxis() == Direction.Axis.X ? 0 : beam.x;
@@ -100,14 +107,37 @@ public class CBChainedSupportBeam extends CBBoltedBeamBlock
         return new Vec3(dx, 0, dz);
     }
 
-    // Where the half-chain on that side is, in this block's pixels
+    // Where the half-chain on that side is, in this block's pixels: chain-sized, centred on the band
     public CBPixelBox chainBox(BlockState state, Direction side)
     {
-        Vec3 translation = chainTranslation(state, side);
-        return SOUTH_CHAIN.rotateY(chainTurns(side))
-                .offset(translation.x, translation.y, translation.z)
+        CBPixelBox chain = chainSize().footprint();
+        double halfWidth = (chain.maxX() - chain.minX()) / 2;
+        double halfHeight = (chain.maxY() - chain.minY()) / 2;
+        Vec3 lateral = chainLateral(state, side);
+        return new CBPixelBox(8 - halfWidth, 8 - halfHeight, 8, 8 + halfWidth, 8 + halfHeight, 16)
+                .rotateY(chainTurns(side))
+                .offset(lateral.x, lateral.y, lateral.z)
                 .rotateX(xQuarterTurns(state))
                 .rotateY(yQuarterTurns(state));
+    }
+
+    // The root transform translation for the half-chain model copy (in pixels). On top of following the beam,
+    // it moves the chain's modelled centre onto the band (e.g. the medium chain is modelled 2 pixels high),
+    // turned round with the half-chain.
+    public Vec3 chainModelTranslation(BlockState state, Direction side)
+    {
+        CBPixelBox chain = chainSize().footprint();
+        double correctX = 8 - (chain.minX() + chain.maxX()) / 2;
+        double correctY = 8 - (chain.minY() + chain.maxY()) / 2;
+        double correctZ = 0;
+        for (int i = 0; i < chainTurns(side); i++)
+        {
+            double oldX = correctX;
+            correctX = -correctZ;
+            correctZ = oldX;
+        }
+        Vec3 lateral = chainLateral(state, side);
+        return new Vec3(lateral.x + correctX, correctY, lateral.z + correctZ);
     }
 
     // The side of the band facing that world direction, or null if it points along the beam
@@ -127,7 +157,7 @@ public class CBChainedSupportBeam extends CBBoltedBeamBlock
     @Override
     public @Nullable CBPixelBox connectionPoint(BlockState state, Direction worldSide, CBBoltedBeamBlock connecting)
     {
-        if (connecting.kind() != Kind.CHAIN) return null;
+        if (connecting.kind() != chainSize().kind()) return null;
         Direction side = chainSideFacing(state, worldSide);
         return side == null ? null : chainBox(state, side);
     }
@@ -165,12 +195,14 @@ public class CBChainedSupportBeam extends CBBoltedBeamBlock
         CBPixelBox chain = chainBox(state, side);
 
         BlockState neighbor = level.getBlockState(pos.relative(worldSide));
+        // Vanilla chains are the small size
         if (neighbor.getBlock() instanceof ChainBlock)
         {
-            return neighbor.getValue(ChainBlock.AXIS) == worldSide.getAxis()
+            return chainSize() == CBChainSize.SMALL
+                    && neighbor.getValue(ChainBlock.AXIS) == worldSide.getAxis()
                     && centresMeet(chain, new CBPixelBox(8, 8, 8, 8, 8, 8), worldSide.getAxis());
         }
-        if (neighbor.getBlock() instanceof CBBoltedBeamBlock beam && beam.kind() == Kind.CHAIN)
+        if (neighbor.getBlock() instanceof CBBoltedBeamBlock beam && beam.kind() == chainSize().kind())
         {
             return beam.facing(neighbor).getAxis() == worldSide.getAxis()
                     && centresMeet(chain, beam.worldFootprint(neighbor), worldSide.getAxis());

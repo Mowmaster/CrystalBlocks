@@ -49,6 +49,13 @@ public class CBBoltedModels
         beam(blockModels, (CBBoltedBeamBlock) CBBlockRegistry.CHAIN_BEAM.get(), model("chain_beam"), metalOnly);
         beam(blockModels, (CBBoltedBeamBlock) CBBlockRegistry.CHAIN_BEAM_CAP.get(), model("chain_beam_cap"), metalOnly);
 
+        beam(blockModels, (CBBoltedBeamBlock) CBBlockRegistry.CHAIN_BEAM_MEDIUM.get(), model("chain_beam_medium"), metalOnly);
+        beam(blockModels, (CBBoltedBeamBlock) CBBlockRegistry.CHAIN_BEAM_MEDIUM_CAP.get(), model("chain_beam_medium_cap"), metalOnly);
+        beam(blockModels, (CBBoltedBeamBlock) CBBlockRegistry.CHAIN_BEAM_LARGE.get(), model("chain_beam_large"), metalOnly);
+        beam(blockModels, (CBBoltedBeamBlock) CBBlockRegistry.CHAIN_BEAM_LARGE_CAP.get(), model("chain_beam_large_cap"), metalOnly);
+        chainedSupportBeam(blockModels, (CBChainedSupportBeam) CBBlockRegistry.CHAINED_SUPPORT_BEAM_MEDIUM.get(),
+                model("bolted_support_beam"), model("chain_beam_medium_half"), metalAndLog);
+
         // The chained support beam: the plain support beam plus half a chain on each joined side
         chainedSupportBeam(blockModels, (CBChainedSupportBeam) CBBlockRegistry.CHAINED_SUPPORT_BEAM.get(),
                 model("bolted_support_beam"), model("chain_beam_half"), metalAndLog);
@@ -140,8 +147,9 @@ public class CBBoltedModels
             // A half-chain per side, only when a chain joins that side
             for (Direction side : CBChainedSupportBeam.CHAIN_SIDES)
             {
-                Vec3 translation = beam.chainTranslation(state, side);
-                String key = "_chain_" + side.getSerializedName() + "_x" + (int) translation.x + "_z" + (int) translation.z;
+                Vec3 translation = beam.chainModelTranslation(state, side);
+                String key = "_chain_" + side.getSerializedName()
+                        + "_x" + pixels(translation.x) + "_y" + pixels(translation.y) + "_z" + pixels(translation.z);
                 Identifier chainCopy = copies.computeIfAbsent(key, name -> chainTemplate(chainModel, translation, CBChainedSupportBeam.chainTurns(side))
                         .create(ModelLocationUtils.getModelLocation(beam, name), textures, blockModels.modelOutput));
 
@@ -172,11 +180,18 @@ public class CBBoltedModels
                 .requiredTextureSlot(CBModelTemplates.TEXTURE_ONE)
                 .requiredTextureSlot(CBModelTemplates.TEXTURE_TWO)
                 .rootTransforms(transform -> transform
-                        .translation((float) translation.x / 16, 0, (float) translation.z / 16)
+                        .translation((float) translation.x / 16, (float) translation.y / 16, (float) translation.z / 16)
                         // -90 = clockwise seen from above, the same direction as CBPixelBox.rotateY(1)
                         .rotation(0, -90f * quarterTurns, 0, true)
                         .origin(TransformationHelper.TransformOrigin.CENTER))
                 .build();
+    }
+
+    // A pixel amount for a model file name: 2 -> "2", -2 -> "m2", 0.5 -> "0p5"
+    private static String pixels(double value)
+    {
+        String text = value == Math.rint(value) ? String.valueOf((int) value) : String.valueOf(value);
+        return text.replace("-", "m").replace(".", "p");
     }
 
     // The copy of the chosen model for this state's position and turn (made if it doesn't exist yet)
