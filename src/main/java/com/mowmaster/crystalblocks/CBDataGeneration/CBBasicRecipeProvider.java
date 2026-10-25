@@ -13,6 +13,8 @@ import net.minecraft.world.item.crafting.Recipe;
 import net.minecraft.world.level.block.Blocks;
 import com.mowmaster.crystalblocks.Blocks.CBBlockSet;
 import net.minecraft.world.level.block.Block;
+import com.mowmaster.crystalblocks.Recipes.CBPickedDyeRecipe;
+import net.minecraft.data.recipes.SpecialRecipeBuilder;
 
 public class CBBasicRecipeProvider extends RecipeProvider
 {
@@ -52,6 +54,10 @@ public class CBBasicRecipeProvider extends RecipeProvider
         for (CBBlockSet set : CBBlockRegistry.SETS) {
             shapeRecipes(set);
         }
+
+        // Colour picker -> custom dye (the picker is returned reset)
+        SpecialRecipeBuilder.special(() -> CBPickedDyeRecipe.INSTANCE)
+                .save(output, CBReferences.MODID + ".picked_dye");
     }
 
     private void shapeRecipes(CBBlockSet set) {

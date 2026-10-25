@@ -7,7 +7,6 @@ import net.minecraft.util.StringRepresentable;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
@@ -386,7 +385,7 @@ public class CBTintableWindow extends Block implements IColorableBlock
     {
         // The first dye on the glass swaps the clear glass texture for the tintable one.
         // Same block, so the block entity (and the frame's colour) is kept.
-        if (!level.isClientSide() && DyeColor.getColor(stack) != null && !state.getValue(TINTED_GLASS)
+        if (!level.isClientSide() && IColorableBlock.dyeColorOf(stack) != null && !state.getValue(TINTED_GLASS)
                 && getTintRegion(state, hitResult) == GLASS_REGION)
         {
             level.setBlock(pos, state.setValue(TINTED_GLASS, true), Block.UPDATE_ALL);

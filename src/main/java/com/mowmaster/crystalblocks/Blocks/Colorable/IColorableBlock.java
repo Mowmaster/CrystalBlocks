@@ -1,17 +1,22 @@
 package com.mowmaster.crystalblocks.Blocks.Colorable;
 
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.component.DyedItemColor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.EntityBlock;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
+import com.mowmaster.crystalblocks.Items.CBItemRegistry;
+import com.mowmaster.crystalblocks.Items.Tools.CBColorPickerItem;
+import org.jetbrains.annotations.Nullable;
 
 // Implement this on any block (full block, stairs, slab, wall...) that can be dyed.
 // Extending EntityBlock means implementing this interface is all a block needs to get a CBTintBlockEntity.
@@ -60,26 +65,42 @@ public interface IColorableBlock extends EntityBlock
     default InteractionResult tryDyeBlock(ItemStack stack, BlockState state, Level level, BlockPos pos,
                                           Player player, BlockHitResult hit)
     {
-        // NeoForge addition: handles vanilla dyes and modded items tagged as dyes. Returns null if not a dye.
-        DyeColor dye = DyeColor.getColor(stack);
-        if (dye == null) return InteractionResult.TRY_WITH_EMPTY_HAND;
+        // The colour picker reads colours instead of applying them: let the item handle the click
+        if (stack.getItem() instanceof CBColorPickerItem) return InteractionResult.PASS;
+
+        Integer dyeColor = dyeColorOf(stack);
+        if (dyeColor == null) return InteractionResult.TRY_WITH_EMPTY_HAND;
         if (!(level.getBlockEntity(pos) instanceof CBTintBlockEntity tintEntity)) return InteractionResult.PASS;
 
         if (!level.isClientSide())
         {
             int region = getTintRegion(state, hit);
-            tintEntity.setColor(region, mixDye(tintEntity.getColor(region), dye));
+            tintEntity.setColor(region, mixDye(tintEntity.getColor(region), dyeColor));
             level.playSound(null, pos, SoundEvents.DYE_USE, SoundSource.BLOCKS, 1f, 1f);
         }
         // SUCCESS on both sides so the client swings the arm
         return InteractionResult.SUCCESS;
     }
 
+    // The colour an item dyes with: vanilla (and tagged modded) dyes, or a Custom Dye. Null if it isn't a dye.
+    @Nullable
+    static Integer dyeColorOf(ItemStack stack)
+    {
+        DyeColor dye = DyeColor.getColor(stack);
+        if (dye != null) return dye.getTextureDiffuseColor() & 0xFFFFFF;
+
+        if (stack.is(CBItemRegistry.CUSTOM_DYE.get()))
+        {
+            DyedItemColor color = stack.get(DataComponents.DYED_COLOR);
+            if (color != null) return color.rgb() & 0xFFFFFF;
+        }
+        return null;
+    }
+
     // Same mixing maths as leather armour: average the channels, then restore the average brightness
     // so mixing doesn't keep getting darker. An undyed region takes the dye colour directly.
-    static int mixDye(int currentColor, DyeColor dye)
+    static int mixDye(int currentColor, int dyeColor)
     {
-        int dyeColor = dye.getTextureDiffuseColor() & 0xFFFFFF; // strip alpha, keep RGB
         if (currentColor == CBTintBlockEntity.UNDYED) return dyeColor;
 
         int red = (red(currentColor) + red(dyeColor)) / 2;

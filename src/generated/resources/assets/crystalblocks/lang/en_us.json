@@ -83,5 +83,9 @@
   "block.crystalblocks.tintable_stone_wall": "Crystal Stone Wall",
   "block.crystalblocks.tintable_stone_window": "Crystal Stone Window",
   "item.crystalblocks.base_chisel": "Chisel (Basic)",
-  "itemGroup.crystalblocks": "Crystal Blocks"
+  "item.crystalblocks.color_picker": "Color Picker",
+  "item.crystalblocks.custom_dye": "Custom Dye",
+  "itemGroup.crystalblocks": "Crystal Blocks",
+  "message.crystalblocks.color_picker.none": "This block has no color to pick",
+  "message.crystalblocks.color_picker.picked": "Picked color %s"
 }

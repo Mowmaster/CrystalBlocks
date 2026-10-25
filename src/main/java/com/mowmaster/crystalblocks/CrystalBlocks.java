@@ -3,6 +3,7 @@ package com.mowmaster.crystalblocks;
 import com.mowmaster.crystalblocks.Blocks.CBBlockEntityRegistry;
 import com.mowmaster.crystalblocks.Blocks.CBBlockRegistry;
 import com.mowmaster.crystalblocks.Items.CBItemRegistry;
+import com.mowmaster.crystalblocks.Recipes.CBRecipeRegistry;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -34,6 +35,7 @@ public class CrystalBlocks {
         CBItemRegistry.register(modEventBus);
         CBBlockRegistry.register(modEventBus);
         CBBlockEntityRegistry.register(modEventBus);
+        CBRecipeRegistry.register(modEventBus);
 
         NeoForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::addCreative);
@@ -60,6 +62,10 @@ public class CrystalBlocks {
             for (DeferredBlock<Block> block : CBBlockRegistry.BOLTED) {
                 event.accept(block);
             }
+        }
+        if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+            event.accept(CBItemRegistry.COLOR_PICKER);
+            event.accept(CBItemRegistry.CUSTOM_DYE);
         }
     }
 
