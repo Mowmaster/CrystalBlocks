@@ -67,13 +67,14 @@ public class CBBoltedModels
         lantern(blockModels, (CBChainLantern) CBBlockRegistry.CHAIN_LANTERN_MEDIUM_CAP.get(),
                 model("chain_medium_lantern_hanging_cap"), null);
 
-        techBlock(blockModels, CBBlockRegistry.TINTABLE_BLOCK_TECH.get());
+        techBlock(blockModels, CBBlockRegistry.TINTABLE_BLOCK_TECH.get(), CBModelTemplates.BLOCK_TECH);
+        techBlock(blockModels, CBBlockRegistry.TINTABLE_BLOCK_TECH_3D.get(), CBModelTemplates.BLOCK_TECH_3D);
     }
 
     // A single plain model; the "_textured" suffix keeps it from having the same name as the hand-made parent
-    private static void techBlock(BlockModelGenerators blockModels, Block block)
+    private static void techBlock(BlockModelGenerators blockModels, Block block, ModelTemplate template)
     {
-        Identifier model = CBModelTemplates.BLOCK_TECH.create(ModelLocationUtils.getModelLocation(block, "_textured"),
+        Identifier model = template.create(ModelLocationUtils.getModelLocation(block, "_textured"),
                 textures("tintable_stone", "tintable_pulsing"), blockModels.modelOutput);
         blockModels.blockStateOutput.accept(MultiVariantGenerator.dispatch(block, BlockModelGenerators.plainVariant(model)));
         tintedItem(blockModels, block, model, 2);

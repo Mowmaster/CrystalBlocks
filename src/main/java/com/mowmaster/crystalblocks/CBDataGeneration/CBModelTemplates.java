@@ -58,7 +58,7 @@ public class CBModelTemplates
     public static final ModelTemplate SCONCE_TRIPLE = create("sconce_torch_tripple", TEXTURE_ONE, TEXTURE_TWO);
 
     public static final ModelTemplate BLOCK_TECH = create("tintable_block_tech", TEXTURE_ONE, TEXTURE_TWO);
-
+    public static final ModelTemplate BLOCK_TECH_3D = create("tintable_block_tech_3d", TEXTURE_ONE, TEXTURE_TWO);
 
 
 

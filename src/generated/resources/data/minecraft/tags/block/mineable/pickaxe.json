@@ -32,6 +32,7 @@
     "crystalblocks:chain_lantern_medium",
     "crystalblocks:chain_lantern_medium_cap",
     "crystalblocks:tintable_block_tech",
+    "crystalblocks:tintable_block_tech_3d",
     "crystalblocks:tintable_brick_large",
     "crystalblocks:tintable_brick_large_stairs",
     "crystalblocks:tintable_brick_large_slab",
@@ -64,6 +65,7 @@
     "crystalblocks:chain_lantern_medium",
     "crystalblocks:chain_lantern_medium_cap",
     "crystalblocks:tintable_block_tech",
+    "crystalblocks:tintable_block_tech_3d",
     "crystalblocks:tintable_brick_medium",
     "crystalblocks:tintable_brick_medium_stairs",
     "crystalblocks:tintable_brick_medium_slab",
@@ -96,6 +98,7 @@
     "crystalblocks:chain_lantern_medium",
     "crystalblocks:chain_lantern_medium_cap",
     "crystalblocks:tintable_block_tech",
+    "crystalblocks:tintable_block_tech_3d",
     "crystalblocks:tintable_brick_small",
     "crystalblocks:tintable_brick_small_stairs",
     "crystalblocks:tintable_brick_small_slab",
@@ -128,6 +131,7 @@
     "crystalblocks:chain_lantern_medium",
     "crystalblocks:chain_lantern_medium_cap",
     "crystalblocks:tintable_block_tech",
+    "crystalblocks:tintable_block_tech_3d",
     "crystalblocks:bolted_corner_support_cap",
     "crystalblocks:bolted_i_beam",
     "crystalblocks:bolted_i_beam_cap",
@@ -147,6 +151,7 @@
     "crystalblocks:chain_lantern_medium",
     "crystalblocks:chain_lantern_medium_cap",
     "crystalblocks:tintable_block_tech",
+    "crystalblocks:tintable_block_tech_3d",
     "crystalblocks:tintable_metal",
     "crystalblocks:tintable_metal_stairs",
     "crystalblocks:tintable_metal_slab",
@@ -178,6 +183,7 @@
     "crystalblocks:chain_lantern_cap",
     "crystalblocks:chain_lantern_medium",
     "crystalblocks:chain_lantern_medium_cap",
-    "crystalblocks:tintable_block_tech"
+    "crystalblocks:tintable_block_tech",
+    "crystalblocks:tintable_block_tech_3d"
   ]
 }
