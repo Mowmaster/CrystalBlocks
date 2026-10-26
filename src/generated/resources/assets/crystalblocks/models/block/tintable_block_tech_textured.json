@@ -1,0 +1,7 @@
+{
+  "parent": "crystalblocks:block/tintable_block_tech",
+  "textures": {
+    "texture_one": "crystalblocks:block/tintable_stone",
+    "texture_two": "crystalblocks:block/tintable_pulsing"
+  }
+}

@@ -62,5 +62,6 @@ public class CBLanguageProvider extends LanguageProvider
         addBlock(CBBlockRegistry.CHAIN_LANTERN_CAP, "Chain Lantern Cap");
         addBlock(CBBlockRegistry.CHAIN_LANTERN_MEDIUM, "Medium Chain Lantern");
         addBlock(CBBlockRegistry.CHAIN_LANTERN_MEDIUM_CAP, "Medium Chain Lantern Cap");
+        addBlock(CBBlockRegistry.TINTABLE_BLOCK_TECH, "Crystal Tech Block");
     }
 }

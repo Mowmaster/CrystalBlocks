@@ -91,12 +91,15 @@ public class CBBlockRegistry
                 @Override public boolean hasPlate() { return true; }
             });
 
+    public static final DeferredBlock<Block> TINTABLE_BLOCK_TECH = registerBlock("tintable_block_tech",
+            properties -> new CBTintableTechBlock(CBMaterial.METAL.apply(properties).strength(5f, 6f)));
+
 
     public static final List<DeferredBlock<Block>> BOLTED = List.of(BOLTED_CORNER_SUPPORT_CAP,
             BOLTED_I_BEAM, BOLTED_I_BEAM_CAP, BOLTED_SUPPORT_BEAM, BOLTED_SUPPORT_BEAM_CAP,
             CHAINED_SUPPORT_BEAM, CHAIN_BEAM, CHAIN_BEAM_CAP,
             CHAIN_BEAM_MEDIUM, CHAIN_BEAM_MEDIUM_CAP, CHAIN_BEAM_LARGE, CHAIN_BEAM_LARGE_CAP, CHAINED_SUPPORT_BEAM_MEDIUM,
-            SCONCE_TORCH, CHAIN_LANTERN, CHAIN_LANTERN_CAP, CHAIN_LANTERN_MEDIUM, CHAIN_LANTERN_MEDIUM_CAP);
+            SCONCE_TORCH, CHAIN_LANTERN, CHAIN_LANTERN_CAP, CHAIN_LANTERN_MEDIUM, CHAIN_LANTERN_MEDIUM_CAP, TINTABLE_BLOCK_TECH);
 
     // Registers every shape for one texture
     private static CBBlockSet registerSet(String name, String displayName, CBMaterial material)

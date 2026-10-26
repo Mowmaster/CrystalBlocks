@@ -57,6 +57,12 @@ public class CBModelTemplates
     public static final ModelTemplate SCONCE_DOUBLE = create("sconce_torch_double", TEXTURE_ONE, TEXTURE_TWO);
     public static final ModelTemplate SCONCE_TRIPLE = create("sconce_torch_tripple", TEXTURE_ONE, TEXTURE_TWO);
 
+    public static final ModelTemplate BLOCK_TECH = create("tintable_block_tech", TEXTURE_ONE, TEXTURE_TWO);
+
+
+
+
+
     // Template with no suffix: the generated model is named exactly after the block
     private static ModelTemplate create(String parent, TextureSlot... slots)
     {
