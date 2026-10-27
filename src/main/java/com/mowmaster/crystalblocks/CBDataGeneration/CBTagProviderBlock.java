@@ -38,6 +38,11 @@ public class CBTagProviderBlock extends BlockTagsProvider {
                 tag(CBMaterial.METAL.mineableTag()).add(block.key());
                 tag(CBTags.Blocks.CB_BLOCKS_DYABLE).add(block.key());
             }
+            // Storage blocks: wooden, mined with an axe
+            for (DeferredBlock<Block> block : CBBlockRegistry.STORAGE) {
+                tag(BlockTags.MINEABLE_WITH_AXE).add(block.key());
+                tag(CBTags.Blocks.CB_BLOCKS_DYABLE).add(block.key());
+            }
         }
     }
 }

@@ -96,6 +96,12 @@ public class CBBlockRegistry
     public static final DeferredBlock<Block> TINTABLE_BLOCK_TECH_3D = registerBlock("tintable_block_tech_3d",
             properties -> new CBTintableTech3DBlock(CBMaterial.METAL.apply(properties).strength(5f, 6f)));
 
+    public static final DeferredBlock<Block> TINTABLE_BARREL = registerBlock("tintable_barrel",
+            properties -> new CBTintableBarrel(CBMaterial.WOOD.apply(properties).strength(2.5f).noOcclusion()));
+    public static final DeferredBlock<Block> TINTABLE_CHEST = registerBlock("tintable_chest",
+            properties -> new CBTintableChest(CBMaterial.WOOD.apply(properties).strength(2.5f).noOcclusion()));
+
+    public static final List<DeferredBlock<Block>> STORAGE = List.of(TINTABLE_BARREL, TINTABLE_CHEST);
     public static final List<DeferredBlock<Block>> BOLTED = List.of(BOLTED_CORNER_SUPPORT_CAP,
             BOLTED_I_BEAM, BOLTED_I_BEAM_CAP, BOLTED_SUPPORT_BEAM, BOLTED_SUPPORT_BEAM_CAP,
             CHAINED_SUPPORT_BEAM, CHAIN_BEAM, CHAIN_BEAM_CAP,

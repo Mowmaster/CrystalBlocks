@@ -19,7 +19,7 @@ import net.minecraft.world.level.storage.ValueOutput;
 
 import java.util.Arrays;
 
-public class CBTintBlockEntity extends BlockEntity
+public class CBTintBlockEntity extends BlockEntity implements ITintHolder
 {
     // Colours are stored as 0xRRGGBB with no alpha, so -1 can never be a real colour
     public static final int UNDYED = -1;
@@ -60,7 +60,8 @@ public class CBTintBlockEntity extends BlockEntity
                 ? colorable.getRegionForTintIndex(state, tintIndex)
                 : tintIndex;
         int color = getColor(region);
-        return color != UNDYED ? color : DEFAULT_TINT;
+        if (color != UNDYED) return color;
+        return state.getBlock() instanceof IColorableBlock colorable ? colorable.getDefaultColor(region) : DEFAULT_TINT;
     }
 
     public void setColor(int region, int color)

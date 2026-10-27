@@ -19,6 +19,7 @@ import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
+import com.mowmaster.crystalblocks.Blocks.Colorable.ITintHolder;
 import org.jetbrains.annotations.Nullable;
 
 // Right-click a block to store its colour; craft the picker on its own for a Custom Dye of that colour
@@ -63,10 +64,11 @@ public class CBColorPickerItem extends Item
     @Nullable
     public static Integer pickColor(Level level, BlockPos pos, BlockState state, BlockHitResult hit)
     {
-        if (state.getBlock() instanceof IColorableBlock colorable && level.getBlockEntity(pos) instanceof CBTintBlockEntity tintEntity)
+        if (state.getBlock() instanceof IColorableBlock colorable && level.getBlockEntity(pos) instanceof ITintHolder tintEntity)
         {
-            int color = tintEntity.getColor(colorable.getTintRegion(state, hit));
-            return color == CBTintBlockEntity.UNDYED ? CBTintBlockEntity.DEFAULT_TINT : color;
+            int region = colorable.getTintRegion(state, hit);
+            int color = tintEntity.getColor(region);
+            return color == CBTintBlockEntity.UNDYED ? colorable.getDefaultColor(region) : color;
         }
         CBBlockColor entry = state.getBlock().builtInRegistryHolder().getData(CBDataMaps.BLOCK_COLORS);
         return entry != null ? entry.rgb() : null;

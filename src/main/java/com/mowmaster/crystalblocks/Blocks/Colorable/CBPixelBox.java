@@ -91,4 +91,10 @@ public record CBPixelBox(double minX, double minY, double minZ, double maxX, dou
                 (location.y - pos.getY()) * 16 - face.getStepY() * nudge,
                 (location.z - pos.getZ()) * 16 - face.getStepZ() * nudge);
     }
+
+    // Mirrored east-west (x -> 16 - x)
+    public CBPixelBox mirrorX()
+    {
+        return new CBPixelBox(16 - maxX, minY, minZ, 16 - minX, maxY, maxZ);
+    }
 }

@@ -6,6 +6,7 @@ import net.minecraft.client.renderer.block.BlockAndTintGetter;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.block.state.BlockState;
 import org.jetbrains.annotations.NotNull;
+import com.mowmaster.crystalblocks.Blocks.Colorable.ITintHolder;
 
 public class CBBlockEntityTintSource implements BlockTintSource
 {
@@ -27,7 +28,7 @@ public class CBBlockEntityTintSource implements BlockTintSource
     @Override
     public int colorInWorld(@NotNull BlockState state, BlockAndTintGetter level, BlockPos pos)
     {
-        if (level.getBlockEntity(pos) instanceof CBTintBlockEntity tintEntity)
+        if (level.getBlockEntity(pos) instanceof ITintHolder tintEntity)
         {
             return 0xFF000000 | tintEntity.getTint(tintIndex); // add full alpha
         }

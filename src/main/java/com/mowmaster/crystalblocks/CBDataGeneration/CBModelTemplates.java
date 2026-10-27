@@ -60,6 +60,15 @@ public class CBModelTemplates
     public static final ModelTemplate BLOCK_TECH = create("tintable_block_tech", TEXTURE_ONE, TEXTURE_TWO);
     public static final ModelTemplate BLOCK_TECH_3D = create("tintable_block_tech_3d", TEXTURE_ONE, TEXTURE_TWO);
 
+    public static final ModelTemplate BARREL_CLOSED = create("tinted_barrel_closed", TEXTURE_ONE, TEXTURE_TWO, TEXTURE_THREE);
+    public static final ModelTemplate BARREL_OPEN = create("tinted_barrel_open", TEXTURE_ONE, TEXTURE_TWO, TEXTURE_THREE);
+    public static final ModelTemplate CHEST_LID = create("tintable_chest_lid", TEXTURE_ONE, TEXTURE_TWO, TEXTURE_THREE);
+    public static final ModelTemplate CHEST_BOTTOM = create("tintable_chest_bottom", TEXTURE_ONE, TEXTURE_TWO, TEXTURE_THREE);
+    public static final ModelTemplate CHEST_DOUBLE_RIGHT_LID = create("tintable_chest_double_right_lid", TEXTURE_ONE, TEXTURE_TWO, TEXTURE_THREE);
+    public static final ModelTemplate CHEST_DOUBLE_RIGHT_BOTTOM = create("tintable_chest_double_right_bottom", TEXTURE_ONE, TEXTURE_TWO, TEXTURE_THREE);
+    public static final ModelTemplate CHEST_DOUBLE_LEFT_LID = create("tintable_chest_double_left_lid", TEXTURE_ONE, TEXTURE_TWO, TEXTURE_THREE);
+    public static final ModelTemplate CHEST_DOUBLE_LEFT_BOTTOM = create("tintable_chest_double_left_bottom", TEXTURE_ONE, TEXTURE_TWO, TEXTURE_THREE);
+
 
 
 

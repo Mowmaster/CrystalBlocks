@@ -69,6 +69,8 @@ public class CBBoltedModels
 
         techBlock(blockModels, CBBlockRegistry.TINTABLE_BLOCK_TECH.get(), CBModelTemplates.BLOCK_TECH);
         techBlock(blockModels, CBBlockRegistry.TINTABLE_BLOCK_TECH_3D.get(), CBModelTemplates.BLOCK_TECH_3D);
+
+        CBStorageModels.generate(blockModels);
     }
 
     // A single plain model; the "_textured" suffix keeps it from having the same name as the hand-made parent

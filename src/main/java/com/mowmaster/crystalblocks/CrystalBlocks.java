@@ -62,6 +62,9 @@ public class CrystalBlocks {
             for (DeferredBlock<Block> block : CBBlockRegistry.BOLTED) {
                 event.accept(block);
             }
+            for (DeferredBlock<Block> block : CBBlockRegistry.STORAGE) {
+                event.accept(block);
+            }
         }
         if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
             event.accept(CBItemRegistry.COLOR_PICKER);

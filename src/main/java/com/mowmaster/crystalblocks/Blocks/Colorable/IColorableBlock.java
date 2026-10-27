@@ -59,6 +59,18 @@ public interface IColorableBlock extends EntityBlock
         return NO_REGION;
     }
 
+    // The colour an undyed region shows (white leaves the texture as it is), e.g. the chest knob's light grey
+    default int getDefaultColor(int region)
+    {
+        return CBTintBlockEntity.DEFAULT_TINT;
+    }
+
+    // false for blocks with their own block entity (chest, barrel) instead of the plain CBTintBlockEntity
+    default boolean usesTintBlockEntity()
+    {
+        return true;
+    }
+
     // ---- Dyeing ----
 
     // Call this from the block's useItemOn override.
@@ -70,7 +82,7 @@ public interface IColorableBlock extends EntityBlock
 
         Integer dyeColor = dyeColorOf(stack);
         if (dyeColor == null) return InteractionResult.TRY_WITH_EMPTY_HAND;
-        if (!(level.getBlockEntity(pos) instanceof CBTintBlockEntity tintEntity)) return InteractionResult.PASS;
+        if (!(level.getBlockEntity(pos) instanceof ITintHolder tintEntity)) return InteractionResult.PASS;
 
         if (!level.isClientSide())
         {

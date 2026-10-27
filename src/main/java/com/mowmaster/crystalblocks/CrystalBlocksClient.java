@@ -1,21 +1,28 @@
 package com.mowmaster.crystalblocks;
 
+import com.mowmaster.crystalblocks.Blocks.CBBlockEntityRegistry;
 import com.mowmaster.crystalblocks.Blocks.CBBlockRegistry;
 import com.mowmaster.crystalblocks.ClientSide.CBBlockEntityTintSource;
+import com.mowmaster.crystalblocks.ClientSide.CBTintableChestRenderer;
 import com.mowmaster.crystalblocks.CrystalBlocks;
 import net.minecraft.client.Minecraft;
+import net.minecraft.world.level.block.state.properties.ChestType;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
+import net.neoforged.neoforge.client.event.EntityRenderersEvent;
+import net.neoforged.neoforge.client.event.ModelEvent;
 import net.neoforged.neoforge.client.event.RegisterColorHandlersEvent;
 import net.neoforged.neoforge.client.gui.ConfigurationScreen;
 import net.neoforged.neoforge.client.gui.IConfigScreenFactory;
 import com.mowmaster.crystalblocks.Blocks.Colorable.IColorableBlock;
 import net.minecraft.client.color.block.BlockTintSource;
 import net.minecraft.world.level.block.Block;
+import net.neoforged.neoforge.client.model.standalone.SimpleUnbakedStandaloneModel;
+
 import java.util.ArrayList;
 
 import java.util.List;
@@ -55,6 +62,23 @@ public class CrystalBlocksClient {
                 }
                 event.register(sources, block);
             }
+        }
+    }
+
+    @SubscribeEvent
+    public static void registerRenderers(EntityRenderersEvent.RegisterRenderers event)
+    {
+        event.registerBlockEntityRenderer(CBBlockEntityRegistry.TINTABLE_CHEST.get(), CBTintableChestRenderer::new);
+    }
+
+    // The chest lids aren't used by any blockstate, so they're loaded as standalone models for the lid renderer
+    @SubscribeEvent
+    public static void registerStandaloneModels(ModelEvent.RegisterStandalone event)
+    {
+        for (ChestType type : ChestType.values())
+        {
+            event.register(CBTintableChestRenderer.lidKey(type),
+                    SimpleUnbakedStandaloneModel.simpleModelWrapper(CBTintableChestRenderer.lidModel(type)));
         }
     }
 }
