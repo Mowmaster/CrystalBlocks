@@ -2,12 +2,16 @@
   "values": [
     "crystalblocks:tintable_barrel",
     "crystalblocks:tintable_chest",
+    "crystalblocks:tintable_log_pile",
     "crystalblocks:tintable_barrel",
     "crystalblocks:tintable_chest",
+    "crystalblocks:tintable_log_pile",
     "crystalblocks:tintable_barrel",
     "crystalblocks:tintable_chest",
+    "crystalblocks:tintable_log_pile",
     "crystalblocks:tintable_barrel",
     "crystalblocks:tintable_chest",
+    "crystalblocks:tintable_log_pile",
     "crystalblocks:tintable_log_one",
     "crystalblocks:tintable_log_one_stairs",
     "crystalblocks:tintable_log_one_slab",
@@ -23,7 +27,9 @@
     "crystalblocks:tintable_log_one_window",
     "crystalblocks:tintable_barrel",
     "crystalblocks:tintable_chest",
+    "crystalblocks:tintable_log_pile",
     "crystalblocks:tintable_barrel",
-    "crystalblocks:tintable_chest"
+    "crystalblocks:tintable_chest",
+    "crystalblocks:tintable_log_pile"
   ]
 }

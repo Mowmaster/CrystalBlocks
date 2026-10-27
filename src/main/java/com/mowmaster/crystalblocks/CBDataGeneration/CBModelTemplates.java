@@ -69,6 +69,7 @@ public class CBModelTemplates
     public static final ModelTemplate CHEST_DOUBLE_LEFT_LID = create("tintable_chest_double_left_lid", TEXTURE_ONE, TEXTURE_TWO, TEXTURE_THREE);
     public static final ModelTemplate CHEST_DOUBLE_LEFT_BOTTOM = create("tintable_chest_double_left_bottom", TEXTURE_ONE, TEXTURE_TWO, TEXTURE_THREE);
     public static final ModelTemplate INGOT_PILE = create("tinted_storage_ingot", TEXTURE_ONE, TEXTURE_TWO);
+    public static final ModelTemplate LOG_PILE = create("tinted_storage_log", TEXTURE_ONE, TEXTURE_TWO);
 
 
 

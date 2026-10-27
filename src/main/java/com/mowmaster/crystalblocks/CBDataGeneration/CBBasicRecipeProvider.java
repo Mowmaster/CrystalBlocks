@@ -8,6 +8,7 @@ import net.minecraft.core.registries.MultiRegistryBootstrap;
 import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeProvider;
 import net.minecraft.data.worldgen.BootstrapContext;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Recipe;
 import net.minecraft.world.level.block.Blocks;
@@ -50,10 +51,16 @@ public class CBBasicRecipeProvider extends RecipeProvider
                 .unlockedBy(getHasName(Items.AMETHYST_SHARD), has(Items.AMETHYST_SHARD))
                 .save(output, CBReferences.MODID + ".crystal_stone_from_amethyst");
 
-        // Shapes made from each base block, the same for every set
-        for (CBBlockSet set : CBBlockRegistry.SETS) {
-            shapeRecipes(set);
-        }
+        shaped(RecipeCategory.BUILDING_BLOCKS, CBBlockRegistry.LOG_ONE.base().get(), 8)
+                .pattern("DDD")
+                .pattern("DID")
+                .pattern("DDD")
+                .define('D', ItemTags.LOGS)
+                .define('I', Items.AMETHYST_SHARD)
+                .unlockedBy(getHasName(Items.AMETHYST_SHARD), has(Items.AMETHYST_SHARD))
+                .save(output, CBReferences.MODID + ".crystal_log_from_amethyst");
+
+
 
         // Colour picker -> custom dye (the picker is returned reset)
         SpecialRecipeBuilder.special(() -> CBPickedDyeRecipe.INSTANCE)

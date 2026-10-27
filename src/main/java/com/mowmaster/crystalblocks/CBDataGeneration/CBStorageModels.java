@@ -33,19 +33,21 @@ public class CBStorageModels
     {
         barrel(blockModels, CBBlockRegistry.TINTABLE_BARREL.get());
         chest(blockModels, CBBlockRegistry.TINTABLE_CHEST.get());
-        ingotPile(blockModels, CBBlockRegistry.TINTABLE_INGOT_PILE.get());
+        // texture_one / texture_two: pallet + ingots, and bark + end grain
+        pile(blockModels, CBBlockRegistry.TINTABLE_INGOT_PILE.get(), CBModelTemplates.INGOT_PILE, "tintable_plank", "tintable_metal");
+        pile(blockModels, CBBlockRegistry.TINTABLE_LOG_PILE.get(), CBModelTemplates.LOG_PILE, "tintable_log_one", "tintable_plank");
     }
 
     // One model, no rotations
-    private static void ingotPile(BlockModelGenerators blockModels, Block pile)
+    private static void pile(BlockModelGenerators blockModels, Block pile, ModelTemplate template, String textureOne, String textureTwo)
     {
         // texture_one = plank pallet, texture_two = metal ingots (the third slot isn't used by this model)
-        TextureMapping textures = textures("tintable_plank", "tintable_metal", "tintable_metal");
-        Identifier model = CBModelTemplates.INGOT_PILE.create(ModelLocationUtils.getModelLocation(pile, "_textured"), textures, blockModels.modelOutput);
+        TextureMapping textures = textures(textureOne, textureTwo, textureTwo);
+        Identifier model = template.create(ModelLocationUtils.getModelLocation(pile, "_textured"), textures, blockModels.modelOutput);
         blockModels.blockStateOutput.accept(MultiVariantGenerator.dispatch(pile, BlockModelGenerators.plainVariant(model)));
         blockModels.itemModelOutput.accept(pile.asItem(), ItemModelUtils.tintedModel(model, UNDYED, UNDYED));
     }
-
+    
     // Closed and open models, turned for the 6-way facing like vanilla's barrel
     private static void barrel(BlockModelGenerators blockModels, Block barrel)
     {

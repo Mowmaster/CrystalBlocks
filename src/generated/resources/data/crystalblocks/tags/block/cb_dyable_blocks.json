@@ -36,6 +36,7 @@
     "crystalblocks:tintable_ingot_pile",
     "crystalblocks:tintable_barrel",
     "crystalblocks:tintable_chest",
+    "crystalblocks:tintable_log_pile",
     "crystalblocks:tintable_brick_large",
     "crystalblocks:tintable_brick_large_stairs",
     "crystalblocks:tintable_brick_large_slab",
@@ -72,6 +73,7 @@
     "crystalblocks:tintable_ingot_pile",
     "crystalblocks:tintable_barrel",
     "crystalblocks:tintable_chest",
+    "crystalblocks:tintable_log_pile",
     "crystalblocks:tintable_brick_medium",
     "crystalblocks:tintable_brick_medium_stairs",
     "crystalblocks:tintable_brick_medium_slab",
@@ -108,6 +110,7 @@
     "crystalblocks:tintable_ingot_pile",
     "crystalblocks:tintable_barrel",
     "crystalblocks:tintable_chest",
+    "crystalblocks:tintable_log_pile",
     "crystalblocks:tintable_brick_small",
     "crystalblocks:tintable_brick_small_stairs",
     "crystalblocks:tintable_brick_small_slab",
@@ -144,6 +147,7 @@
     "crystalblocks:tintable_ingot_pile",
     "crystalblocks:tintable_barrel",
     "crystalblocks:tintable_chest",
+    "crystalblocks:tintable_log_pile",
     "crystalblocks:tintable_log_one",
     "crystalblocks:tintable_log_one_stairs",
     "crystalblocks:tintable_log_one_slab",
@@ -180,6 +184,7 @@
     "crystalblocks:tintable_ingot_pile",
     "crystalblocks:tintable_barrel",
     "crystalblocks:tintable_chest",
+    "crystalblocks:tintable_log_pile",
     "crystalblocks:tintable_metal",
     "crystalblocks:tintable_metal_stairs",
     "crystalblocks:tintable_metal_slab",
@@ -215,6 +220,7 @@
     "crystalblocks:tintable_block_tech_3d",
     "crystalblocks:tintable_ingot_pile",
     "crystalblocks:tintable_barrel",
-    "crystalblocks:tintable_chest"
+    "crystalblocks:tintable_chest",
+    "crystalblocks:tintable_log_pile"
   ]
 }

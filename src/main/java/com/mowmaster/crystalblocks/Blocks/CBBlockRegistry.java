@@ -2,6 +2,7 @@ package com.mowmaster.crystalblocks.Blocks;
 
 import com.mowmaster.crystalblocks.Blocks.Colorable.*;
 import com.mowmaster.crystalblocks.Blocks.Storage.CBIngotPile;
+import com.mowmaster.crystalblocks.Blocks.Storage.CBLogPile;
 import com.mowmaster.crystalblocks.CBReferences;
 import com.mowmaster.crystalblocks.Items.CBItemRegistry;
 import net.minecraft.world.item.BlockItem;
@@ -105,14 +106,20 @@ public class CBBlockRegistry
     // Chain sound when broken, metal sounds otherwise
     private static final SoundType INGOT_PILE_SOUND = new SoundType(1f, 1f, SoundType.CHAIN.getBreakSound(),
             SoundType.METAL.getStepSound(), SoundType.METAL.getPlaceSound(), SoundType.METAL.getHitSound(), SoundType.METAL.getFallSound());
+    private static final SoundType LOG_PILE_SOUND = new SoundType(1f, 1f, SoundType.WOOD.getBreakSound(),
+            SoundType.WOOD.getStepSound(), SoundType.WOOD.getPlaceSound(), SoundType.WOOD.getHitSound(), SoundType.WOOD.getFallSound());
 
     // Half obsidian's mining time (50 -> 25), explosion-proof (bedrock's resistance); pickaxe via the metal material
     public static final DeferredBlock<Block> TINTABLE_INGOT_PILE = registerBlock("tintable_ingot_pile",
             properties -> new CBIngotPile(CBMaterial.METAL.apply(properties).strength(25f, 3_600_000f)
                     .sound(INGOT_PILE_SOUND).noOcclusion()));
 
+    // Same properties as the ingot pile
+    public static final DeferredBlock<Block> TINTABLE_LOG_PILE = registerBlock("tintable_log_pile",
+            properties -> new CBLogPile(CBMaterial.WOOD.apply(properties).strength(25f, 3_600_000f)
+                    .sound(LOG_PILE_SOUND).noOcclusion()));
 
-    public static final List<DeferredBlock<Block>> STORAGE = List.of(TINTABLE_BARREL, TINTABLE_CHEST);
+    public static final List<DeferredBlock<Block>> STORAGE = List.of(TINTABLE_BARREL, TINTABLE_CHEST, TINTABLE_LOG_PILE);
     public static final List<DeferredBlock<Block>> BOLTED = List.of(BOLTED_CORNER_SUPPORT_CAP,
             BOLTED_I_BEAM, BOLTED_I_BEAM_CAP, BOLTED_SUPPORT_BEAM, BOLTED_SUPPORT_BEAM_CAP,
             CHAINED_SUPPORT_BEAM, CHAIN_BEAM, CHAIN_BEAM_CAP,
