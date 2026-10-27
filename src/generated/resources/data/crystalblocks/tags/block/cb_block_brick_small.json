@@ -1,0 +1,17 @@
+{
+  "values": [
+    "crystalblocks:tintable_brick_small",
+    "crystalblocks:tintable_brick_small_stairs",
+    "crystalblocks:tintable_brick_small_slab",
+    "crystalblocks:tintable_brick_small_vertical_slab",
+    "crystalblocks:tintable_brick_small_wall",
+    "crystalblocks:tintable_brick_small_button",
+    "crystalblocks:tintable_brick_small_pressureplate",
+    "crystalblocks:tintable_brick_small_column",
+    "crystalblocks:tintable_brick_small_accented_pillar",
+    "crystalblocks:tintable_brick_small_accented_pillar_cap",
+    "crystalblocks:tintable_brick_small_stepped_pillar",
+    "crystalblocks:tintable_brick_small_stepped_pillar_cap",
+    "crystalblocks:tintable_brick_small_window"
+  ]
+}

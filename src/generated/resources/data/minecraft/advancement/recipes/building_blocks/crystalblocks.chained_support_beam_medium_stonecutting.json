@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_cb_block_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#crystalblocks:cb_block_log"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipes": "minecraft:crystalblocks.chained_support_beam_medium_stonecutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_cb_block_log"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:crystalblocks.chained_support_beam_medium_stonecutting"
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "S": "crystalblocks:tintable_stone",
+    "T": "minecraft:torch"
+  },
+  "pattern": [
+    "TTT",
+    "TST",
+    "TTT"
+  ],
+  "result": {
+    "count": 8,
+    "id": "crystalblocks:sconce_torch"
+  }
+}

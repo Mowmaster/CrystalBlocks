@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_cb_block_metal": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#crystalblocks:cb_block_metal"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipes": "minecraft:crystalblocks.tintable_metal_stepped_pillar_cap_stonecutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_cb_block_metal"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:crystalblocks.tintable_metal_stepped_pillar_cap_stonecutting"
+    ]
+  }
+}

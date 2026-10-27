@@ -5,7 +5,6 @@ import com.mowmaster.crystalblocks.CBReferences;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
-import net.minecraft.tags.TagKey;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import com.mowmaster.crystalblocks.Blocks.CBBlockSet;
 import com.mowmaster.crystalblocks.Blocks.CBMaterial;
@@ -35,15 +34,22 @@ public class CBTagProviderBlock extends BlockTagsProvider {
             tag(BlockTags.WALLS).add(set.wall().key());
             tag(material.buttonTag()).add(set.button().key());
             tag(material.pressurePlateTag()).add(set.pressurePlate().key());
-            for (DeferredBlock<Block> block : CBBlockRegistry.BOLTED) {
-                tag(CBMaterial.METAL.mineableTag()).add(block.key());
-                tag(CBTags.Blocks.CB_BLOCKS_DYABLE).add(block.key());
+
+            // The set's own tag: its blocks plus its extras
+            for (DeferredBlock<Block> block : CBTags.members(set)) {
+                tag(CBTags.forSet(set).blocks()).add(block.key());
             }
-            // Storage blocks: wooden, mined with an axe
-            for (DeferredBlock<Block> block : CBBlockRegistry.STORAGE) {
-                tag(BlockTags.MINEABLE_WITH_AXE).add(block.key());
-                tag(CBTags.Blocks.CB_BLOCKS_DYABLE).add(block.key());
-            }
+        }
+
+        // Bolted supports, chains, sconce, lanterns, tech blocks, piles: metal, mined with a pickaxe
+        for (DeferredBlock<Block> block : CBBlockRegistry.BOLTED) {
+            tag(CBMaterial.METAL.mineableTag()).add(block.key());
+            tag(CBTags.Blocks.CB_BLOCKS_DYABLE).add(block.key());
+        }
+        // Storage blocks: wooden, mined with an axe
+        for (DeferredBlock<Block> block : CBBlockRegistry.STORAGE) {
+            tag(BlockTags.MINEABLE_WITH_AXE).add(block.key());
+            tag(CBTags.Blocks.CB_BLOCKS_DYABLE).add(block.key());
         }
     }
 }

@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "#crystalblocks:cb_block_stone",
+  "result": {
+    "id": "crystalblocks:tintable_stone_button"
+  }
+}

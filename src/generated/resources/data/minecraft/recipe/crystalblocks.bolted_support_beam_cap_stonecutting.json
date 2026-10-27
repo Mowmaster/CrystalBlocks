@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "#crystalblocks:cb_block_log",
+  "result": {
+    "id": "crystalblocks:bolted_support_beam_cap"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "#crystalblocks:cb_block_brick_small",
+  "result": {
+    "id": "crystalblocks:tintable_brick_small_accented_pillar_cap"
+  }
+}

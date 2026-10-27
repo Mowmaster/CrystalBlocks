@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "#crystalblocks:cb_block_brick_large",
+  "result": {
+    "id": "crystalblocks:tintable_brick_large_button"
+  }
+}

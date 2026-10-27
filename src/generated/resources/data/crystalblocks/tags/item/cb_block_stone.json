@@ -1,0 +1,17 @@
+{
+  "values": [
+    "crystalblocks:tintable_stone",
+    "crystalblocks:tintable_stone_stairs",
+    "crystalblocks:tintable_stone_slab",
+    "crystalblocks:tintable_stone_vertical_slab",
+    "crystalblocks:tintable_stone_wall",
+    "crystalblocks:tintable_stone_button",
+    "crystalblocks:tintable_stone_pressureplate",
+    "crystalblocks:tintable_stone_column",
+    "crystalblocks:tintable_stone_accented_pillar",
+    "crystalblocks:tintable_stone_accented_pillar_cap",
+    "crystalblocks:tintable_stone_stepped_pillar",
+    "crystalblocks:tintable_stone_stepped_pillar_cap",
+    "crystalblocks:tintable_stone_window"
+  ]
+}
