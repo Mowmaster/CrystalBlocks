@@ -21,6 +21,12 @@ public class CBTags
 
     public static class Blocks {
         public static final TagKey<Block> CB_BLOCKS_DYABLE = createTag("cb_dyable_blocks");
+        public static final TagKey<Block> CB_BLOCKS_STONE = createTag("cb_block_stone");
+        public static final TagKey<Block> CB_BLOCKS_BRICK_LARGE = createTag("cb_block_brick_large");
+        public static final TagKey<Block> CB_BLOCKS_BRICK_MEDIUM = createTag("cb_block_brick_medium");
+        public static final TagKey<Block> CB_BLOCKS_BRICK_SMALL = createTag("cb_block_brick_small");
+        public static final TagKey<Block> CB_BLOCKS_LOG = createTag("cb_block_log");
+        public static final TagKey<Block> CB_BLOCKS_METAL = createTag("cb_block_metal");
 
         public static TagKey<Block> createTag(String name)
         {
