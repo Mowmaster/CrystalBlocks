@@ -49,5 +49,7 @@ public class CBCapabilities
                 CBBlockRegistry.TINTABLE_CHEST.get());
         event.registerBlockEntity(Capabilities.Item.BLOCK, CBBlockEntityRegistry.TINTABLE_BARREL.get(),
                 (barrel, side) -> VanillaContainerWrapper.of(barrel));
+        event.registerBlockEntity(Capabilities.Item.BLOCK, CBBlockEntityRegistry.BULK_STORAGE.get(),
+                (storage, side) -> storage.getItems());
     }
 }

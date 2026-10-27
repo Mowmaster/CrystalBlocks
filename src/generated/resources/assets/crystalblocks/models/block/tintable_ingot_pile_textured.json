@@ -1,0 +1,7 @@
+{
+  "parent": "crystalblocks:block/tinted_storage_ingot",
+  "textures": {
+    "texture_one": "crystalblocks:block/tintable_plank",
+    "texture_two": "crystalblocks:block/tintable_metal"
+  }
+}

@@ -4,6 +4,8 @@ import com.mowmaster.crystalblocks.Blocks.Colorable.CBTintBlockEntity;
 import com.mowmaster.crystalblocks.Blocks.Colorable.CBTintableBarrelBlockEntity;
 import com.mowmaster.crystalblocks.Blocks.Colorable.CBTintableChestBlockEntity;
 import com.mowmaster.crystalblocks.Blocks.Colorable.IColorableBlock;
+import com.mowmaster.crystalblocks.Blocks.Storage.CBBulkStorageBlock;
+import com.mowmaster.crystalblocks.Blocks.Storage.CBBulkStorageBlockEntity;
 import com.mowmaster.crystalblocks.CBReferences;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.level.block.Block;
@@ -42,5 +44,20 @@ public class CBBlockEntityRegistry
     public static void register(IEventBus eventBus)
     {
         CBBLOCKENTITIES.register(eventBus);
+    }
+
+    // Shared by every bulk storage block (the ingot pile and later ones); the block decides capacity and filter
+    public static final Supplier<BlockEntityType<CBBulkStorageBlockEntity>> BULK_STORAGE = CBBLOCKENTITIES.register("bulk_storage",
+            () -> new BlockEntityType<>(CBBulkStorageBlockEntity::new, bulkStorageBlocks()));
+
+    // Every CBBulkStorageBlock in our register, so new ones are picked up automatically
+    private static Block[] bulkStorageBlocks()
+    {
+        List<Block> blocks = new ArrayList<>();
+        for (var holder : CBBlockRegistry.BCBLOCKS.getEntries())
+        {
+            if (holder.get() instanceof CBBulkStorageBlock) blocks.add(holder.get());
+        }
+        return blocks.toArray(new Block[0]);
     }
 }
