@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "D": "crystalblocks:tintable_brick_medium"
+  },
+  "pattern": [
+    "DD",
+    "DD"
+  ],
+  "result": {
+    "count": 8,
+    "id": "crystalblocks:tintable_brick_small"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipes": "minecraft:crystalblocks.tintable_barrel_from_tintable_chest_stonecutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_tintable_chest": {
+      "conditions": {
+        "items": [
+          {
+            "items": "crystalblocks:tintable_chest"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_tintable_chest"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:crystalblocks.tintable_barrel_from_tintable_chest_stonecutting"
+    ]
+  }
+}

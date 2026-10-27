@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_chain_lantern_medium_cap": {
+      "conditions": {
+        "items": [
+          {
+            "items": "crystalblocks:chain_lantern_medium_cap"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipes": "minecraft:crystalblocks.chain_lantern_medium_from_chain_lantern_medium_cap_stonecutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_chain_lantern_medium_cap"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:crystalblocks.chain_lantern_medium_from_chain_lantern_medium_cap_stonecutting"
+    ]
+  }
+}

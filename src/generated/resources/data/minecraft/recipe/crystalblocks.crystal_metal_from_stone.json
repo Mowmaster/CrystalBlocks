@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "D": "crystalblocks:tintable_stone",
+    "I": "minecraft:iron_ingot"
+  },
+  "pattern": [
+    "DDD",
+    "DID",
+    "DDD"
+  ],
+  "result": {
+    "count": 8,
+    "id": "crystalblocks:tintable_metal"
+  }
+}
