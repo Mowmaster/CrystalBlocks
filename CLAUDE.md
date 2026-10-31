@@ -20,6 +20,10 @@ NeoForge 26.3.0.94, Minecraft 26.3. I'm coming from 1.20 and JDK 8. Explain new 
 - Chain lanterns (`CBChainLantern`, an `alwaysUpright` chain-kind beam): small/medium via `size()`, cap versions via `hasPlate()`. Chain lanterns hang under a matching chain beam/cap, a chained support beam's lower side, or a vanilla chain (small), lined up and copying the chain's metal colour; with no chain they stand on the floor (`hanging=false`, models `chain_lantern` / `chain_medium_lantern`) and switch back when a chain is placed above. Caps hang under full-face blocks. Unsupported lanterns fall (`FallingBlockEntity.fall(...).disableDrop()`) and on landing shatter, lighting a fire if lit (`Fallable.onBrokenAfterFall`). `lit` stays on in water; wind charge or shears put it out, torch / flint and steel relights. Glass works like windows (`tinted_glass`). Region 0 metal, region 1 glass; `texture_three` (fasteners, untinted) is metal for now.
 - Model conventions: tinted faces need `"tintindex"` (0 = metal/body, 1 = glass/accent); texture keys reference slots with `#` (`"1": "#texture_two"`). Chain-style models are made running north-south with the top at the north end (`modelXTurns() = 3`).
 - Tech blocks (`CBTintableTechBlock`, `CBTintableTech3DBlock`): full metal blocks, region 0 stone base, region 1 glowing lines (`tintable_pulsing`). Glow elements use element-level `"light_emission": 15` + `"neoforge_data": { "ambient_occlusion": false }`. Flat version: base faces inset 0.01 under the glow faces (coplanar opaque faces z-fight); click region comes from a 16x16 pattern mapped per face. Raised version: lines stand 1px out of a stone core; a click in the outer layer on exactly one axis is a line.
+- Storage: `ITintHolder` is what dyeing/picker/tint sources read; `CBTintData` holds colours for block entities that extend vanilla containers. `IColorableBlock#usesTintBlockEntity()` false for those, `getDefaultColor(region)` for non-white defaults.
+- Chest (`CBTintableChest`, extends vanilla `ChestBlock`): bottom is a block model, lid drawn by `CBTintableChestRenderer` from standalone models (`*_lid_textured`). Diamond/gold on the knob locks it to the placer (diamond: no automation, owner-only breaking; both explosion-proof). Barrel (`CBTintableBarrel`): opens for players or redstone.
+- Bulk storage (`Blocks/Storage`): `CBBulkItemHandler` (NeoForge transfer API, one item type per slot, any amount), `CBBulkStorageBlock` (+ block entity, shared `bulk_storage` type). New piles = subclass with shape/tint regions, capacity + item tag in the constructor (`CBIngotPile` c:ingots, `CBLogPile` minecraft:logs).
+- Recipes: set blocks only come from the stonecutter, 1:1 within each set's item tag (`CBTags.SET_TAGS`, extras listed per set). Keep stonecutter counts at 1 to avoid dupes. Only stone and log have a recipe for their first block.
 
 ## 26.x notes
 - Render layer (solid/cutout/translucent) is chosen per face from the texture's alpha; models no longer set a render type. Use `noOcclusion()` on see-through blocks.
@@ -38,7 +42,18 @@ NeoForge 26.3.0.94, Minecraft 26.3. I'm coming from 1.20 and JDK 8. Explain new 
 - Easier colouring of many blocks at once
 - Tool to reset window glass back to `cb_glass` (set `tinted_glass=false`)
 - Chisel: right-click swaps a block to the same shape in the next `CBBlockSet` (`withPropertiesOf` + copy block entity colours)
-- 
+-
+
+## MowLib (shared library)
+- This mod depends on MowLib (mod id `mowlib`, package `com.mowmaster.mowlib`), bundled with Jar-in-Jar from
+  mavenLocal (`com.mowmaster.mowlib:mowlib`, range `[0.0.1,1.0.0)`). Source: `Mowmaster/MowLib`, branch
+  `NeoForge-26x`; the version this project builds against is the tag matching `prefer` in build.gradle.
+- Before writing a shared system (tinting, storage, filters, transport, paging, knapping, bonus drops, tooltips,
+  renderers...), clone MowLib and check whether it already exists there. Use it; don't copy it into this mod.
+- Don't edit MowLib from this project's session. If something belongs in MowLib, or MowLib needs a change, write
+  it up as a `mowlib-from-<mod id>.zip` (MowLib files + notes + migration), the same way as before.
+- MowLib's CLAUDE.md lists what it contains and its rules.
+
 ## Working with Claude
 - Pull and read the repo only; never commit or push. I handle git.
 - To check 26.- For simple model fixes (a missing `tintindex`, `#`, texture key), just tell me the line to change; only send a model file when the geometry changes.

@@ -48,6 +48,21 @@ public class CBBasicRecipeProvider extends RecipeProvider
                 .unlockedBy(getHasName(Items.IRON_INGOT), has(Items.IRON_INGOT))
                 .save(output, CBReferences.MODID + ".base_chisel");
 
+        shapeless(RecipeCategory.TOOLS, CBItemRegistry.COLOR_PICKER.get(),1)
+                .requires(Items.GLASS_BOTTLE)
+                .requires(CBBlockRegistry.STONE.base().get())
+                .unlockedBy(getHasName(CBBlockRegistry.STONE.base().get()), has(CBBlockRegistry.STONE.base().get()))
+                .save(output, CBReferences.MODID + ".color_picker");
+
+        shaped(RecipeCategory.BUILDING_BLOCKS, CBItemRegistry.COLOR_PICKER.get(), 1)
+                .pattern("  S")
+                .pattern(" S ")
+                .pattern("II ")
+                .define('S', Items.STICK)
+                .define('I', Items.IRON_INGOT)
+                .unlockedBy(getHasName(Items.IRON_INGOT), has(Items.IRON_INGOT))
+                .save(output, CBReferences.MODID + ".base_chisel");
+
         // How each texture's base block is first made (the only crafting-table recipes for the sets).
         // Add one for each new set, or it can only be cut from blocks it already has.
         shaped(RecipeCategory.BUILDING_BLOCKS, CBBlockRegistry.STONE.base().get(), 8)
