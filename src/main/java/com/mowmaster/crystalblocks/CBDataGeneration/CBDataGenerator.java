@@ -5,7 +5,6 @@ import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.loot.LootTableProvider;
 import net.minecraft.resources.Identifier;
-import net.minecraft.server.packs.PackType;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
@@ -26,8 +25,6 @@ public class CBDataGenerator
         generator.addProvider(true, new CBTagProviderItem(packOutput,lookupProvider));
         generator.addProvider(true, new CBTagProviderBlock(packOutput,lookupProvider));
         generator.addProvider(true, new CBLanguageProvider(packOutput));
-        generator.addProvider(true, new com.mowmaster.crystalblocks.CBDataGeneration.CBBlockColorProvider(packOutput, lookupProvider,
-                event.getResourceManager(PackType.CLIENT_RESOURCES)));
 
     }
 

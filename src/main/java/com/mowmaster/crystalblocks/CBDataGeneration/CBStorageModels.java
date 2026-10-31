@@ -1,7 +1,8 @@
 package com.mowmaster.crystalblocks.CBDataGeneration;
 
+import com.mowmaster.mowlib.util.CBPixelBox;
+
 import com.mowmaster.crystalblocks.Blocks.CBBlockRegistry;
-import com.mowmaster.crystalblocks.Blocks.Colorable.CBPixelBox;
 import com.mowmaster.crystalblocks.Blocks.Colorable.CBTintableBarrel;
 import com.mowmaster.crystalblocks.Blocks.Colorable.CBTintableChest;
 import com.mowmaster.crystalblocks.CBReferences;

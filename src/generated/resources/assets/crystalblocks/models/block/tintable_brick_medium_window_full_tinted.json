@@ -1,7 +1,0 @@
-{
-  "parent": "crystalblocks:block/window_tintable_singlepane_full",
-  "textures": {
-    "texture_one": "crystalblocks:block/tintable_brick_medium",
-    "texture_two": "crystalblocks:block/tintable_glass"
-  }
-}

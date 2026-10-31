@@ -1,5 +1,7 @@
 package com.mowmaster.crystalblocks.Blocks.Colorable;
 
+import com.mowmaster.mowlib.tint.IColorableBlock;
+
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;

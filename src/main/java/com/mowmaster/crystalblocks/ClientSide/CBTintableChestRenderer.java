@@ -1,8 +1,9 @@
 package com.mowmaster.crystalblocks.ClientSide;
 
+import com.mowmaster.mowlib.util.CBPixelBox;
+
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Axis;
-import com.mowmaster.crystalblocks.Blocks.Colorable.CBPixelBox;
 import com.mowmaster.crystalblocks.Blocks.Colorable.CBTintableChestBlockEntity;
 import com.mowmaster.crystalblocks.CBReferences;
 import net.minecraft.client.Minecraft;

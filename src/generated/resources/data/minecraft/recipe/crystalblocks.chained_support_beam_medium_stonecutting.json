@@ -1,7 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": "#crystalblocks:cb_block_log",
-  "result": {
-    "id": "crystalblocks:chained_support_beam_medium"
-  }
-}

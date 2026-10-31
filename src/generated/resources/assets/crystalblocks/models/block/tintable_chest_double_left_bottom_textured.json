@@ -1,8 +1,0 @@
-{
-  "parent": "crystalblocks:block/tintable_chest_double_left_bottom",
-  "textures": {
-    "texture_one": "crystalblocks:block/tintable_plank",
-    "texture_three": "crystalblocks:block/tintable_stone",
-    "texture_two": "crystalblocks:block/tintable_metal"
-  }
-}

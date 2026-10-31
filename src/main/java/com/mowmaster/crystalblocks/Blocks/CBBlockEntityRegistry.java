@@ -1,12 +1,12 @@
 package com.mowmaster.crystalblocks.Blocks;
 
-import com.mowmaster.crystalblocks.Blocks.Colorable.CBTintBlockEntity;
 import com.mowmaster.crystalblocks.Blocks.Colorable.CBTintableBarrelBlockEntity;
 import com.mowmaster.crystalblocks.Blocks.Colorable.CBTintableChestBlockEntity;
-import com.mowmaster.crystalblocks.Blocks.Colorable.IColorableBlock;
-import com.mowmaster.crystalblocks.Blocks.Storage.CBBulkStorageBlock;
-import com.mowmaster.crystalblocks.Blocks.Storage.CBBulkStorageBlockEntity;
 import com.mowmaster.crystalblocks.CBReferences;
+import com.mowmaster.mowlib.storage.CBBulkStorageBlock;
+import com.mowmaster.mowlib.storage.CBBulkStorageBlockEntity;
+import com.mowmaster.mowlib.tint.CBTintBlockEntity;
+import com.mowmaster.mowlib.tint.IColorableBlock;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.entity.BlockEntityType;

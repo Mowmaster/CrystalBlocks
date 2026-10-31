@@ -1,8 +1,0 @@
-{
-  "parent": "crystalblocks:block/tinted_outer_stairs",
-  "textures": {
-    "bottom": "crystalblocks:block/tintable_brick_large",
-    "side": "crystalblocks:block/tintable_brick_large",
-    "top": "crystalblocks:block/tintable_brick_large"
-  }
-}

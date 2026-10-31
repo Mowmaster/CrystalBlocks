@@ -1,7 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": "crystalblocks:chain_lantern_cap",
-  "result": {
-    "id": "crystalblocks:chain_lantern"
-  }
-}

@@ -1,7 +1,8 @@
 package com.mowmaster.crystalblocks.Items.Tools;
 
+import com.mowmaster.mowlib.tint.IColorableBlock;
+
 import com.mowmaster.crystalblocks.Blocks.CBBlockRegistry;
-import com.mowmaster.crystalblocks.Blocks.Colorable.IColorableBlock;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionResult;

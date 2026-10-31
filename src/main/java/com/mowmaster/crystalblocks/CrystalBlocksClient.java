@@ -1,8 +1,6 @@
 package com.mowmaster.crystalblocks;
 
 import com.mowmaster.crystalblocks.Blocks.CBBlockEntityRegistry;
-import com.mowmaster.crystalblocks.Blocks.CBBlockRegistry;
-import com.mowmaster.crystalblocks.ClientSide.CBBlockEntityTintSource;
 import com.mowmaster.crystalblocks.ClientSide.CBTintableChestRenderer;
 import com.mowmaster.crystalblocks.CrystalBlocks;
 import net.minecraft.client.Minecraft;
@@ -15,17 +13,9 @@ import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 import net.neoforged.neoforge.client.event.ModelEvent;
-import net.neoforged.neoforge.client.event.RegisterColorHandlersEvent;
 import net.neoforged.neoforge.client.gui.ConfigurationScreen;
 import net.neoforged.neoforge.client.gui.IConfigScreenFactory;
-import com.mowmaster.crystalblocks.Blocks.Colorable.IColorableBlock;
-import net.minecraft.client.color.block.BlockTintSource;
-import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.client.model.standalone.SimpleUnbakedStandaloneModel;
-
-import java.util.ArrayList;
-
-import java.util.List;
 
 // This class will not load on dedicated servers. Accessing client side code from here is safe.
 @Mod(value = CBReferences.MODID, dist = Dist.CLIENT)
@@ -44,25 +34,6 @@ public class CrystalBlocksClient {
         // Some client setup code
         CrystalBlocks.LOGGER.info("HELLO FROM CLIENT SETUP");
         CrystalBlocks.LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
-    }
-
-    // Every colourable block gets one tint source per tint region (region N = model tintindex N)
-    @SubscribeEvent
-    public static void registerTintBlocks(RegisterColorHandlersEvent.BlockTintSources event)
-    {
-        for (var holder : CBBlockRegistry.BCBLOCKS.getEntries())
-        {
-            Block block = holder.get();
-            if (block instanceof IColorableBlock colorable)
-            {
-                List<BlockTintSource> sources = new ArrayList<>();
-                for (int region = 0; region < colorable.getTintRegionCount(); region++)
-                {
-                    sources.add(new CBBlockEntityTintSource(region));
-                }
-                event.register(sources, block);
-            }
-        }
     }
 
     @SubscribeEvent

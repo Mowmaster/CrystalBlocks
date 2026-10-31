@@ -1,6 +1,8 @@
 package com.mowmaster.crystalblocks.Blocks.Storage;
 
-import com.mowmaster.crystalblocks.Blocks.Colorable.CBPixelBox;
+import com.mowmaster.mowlib.storage.CBBulkStorageBlock;
+import com.mowmaster.mowlib.util.CBPixelBox;
+
 import net.minecraft.core.BlockPos;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;

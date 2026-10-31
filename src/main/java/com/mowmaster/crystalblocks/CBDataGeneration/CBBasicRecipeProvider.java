@@ -4,13 +4,12 @@ import com.mowmaster.crystalblocks.Blocks.CBBlockRegistry;
 import com.mowmaster.crystalblocks.Blocks.CBBlockSet;
 import com.mowmaster.crystalblocks.CBReferences;
 import com.mowmaster.crystalblocks.Items.CBItemRegistry;
-import com.mowmaster.crystalblocks.Recipes.CBPickedDyeRecipe;
+import com.mowmaster.mowlib.registry.MowLibItems;
 import net.minecraft.advancements.Advancement;
 import net.minecraft.core.registries.MultiRegistryBootstrap;
 import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeProvider;
 import net.minecraft.data.recipes.SingleItemRecipeBuilder;
-import net.minecraft.data.recipes.SpecialRecipeBuilder;
 import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
@@ -48,20 +47,12 @@ public class CBBasicRecipeProvider extends RecipeProvider
                 .unlockedBy(getHasName(Items.IRON_INGOT), has(Items.IRON_INGOT))
                 .save(output, CBReferences.MODID + ".base_chisel");
 
-        shapeless(RecipeCategory.TOOLS, CBItemRegistry.COLOR_PICKER.get(),1)
+        // MowLib's colour picker, made from CrystalBlocks blocks
+        shapeless(RecipeCategory.TOOLS, MowLibItems.COLOR_PICKER.get(), 1)
                 .requires(Items.GLASS_BOTTLE)
                 .requires(CBBlockRegistry.STONE.base().get())
                 .unlockedBy(getHasName(CBBlockRegistry.STONE.base().get()), has(CBBlockRegistry.STONE.base().get()))
                 .save(output, CBReferences.MODID + ".color_picker");
-
-        shaped(RecipeCategory.BUILDING_BLOCKS, CBItemRegistry.COLOR_PICKER.get(), 1)
-                .pattern("  S")
-                .pattern(" S ")
-                .pattern("II ")
-                .define('S', Items.STICK)
-                .define('I', Items.IRON_INGOT)
-                .unlockedBy(getHasName(Items.IRON_INGOT), has(Items.IRON_INGOT))
-                .save(output, CBReferences.MODID + ".base_chisel");
 
         // How each texture's base block is first made (the only crafting-table recipes for the sets).
         // Add one for each new set, or it can only be cut from blocks it already has.
@@ -127,10 +118,6 @@ public class CBBasicRecipeProvider extends RecipeProvider
         for (CBBlockSet set : CBBlockRegistry.SETS) {
             stonecutterRecipes(set);
         }
-
-        // Colour picker -> custom dye (the picker is returned reset)
-        SpecialRecipeBuilder.special(() -> CBPickedDyeRecipe.INSTANCE)
-                .save(output, CBReferences.MODID + ".picked_dye");
     }
 
     // Any block in a set's tag cuts into any other block in that tag, one for one.

@@ -1,5 +1,7 @@
 package com.mowmaster.crystalblocks.Blocks.Colorable;
 
+import com.mowmaster.mowlib.util.CBPixelBox;
+
 import net.minecraft.core.Direction;
 import net.minecraft.world.level.block.state.properties.Half;
 

@@ -1,5 +1,7 @@
 package com.mowmaster.crystalblocks.Blocks.Colorable;
 
+import com.mowmaster.mowlib.util.CBPixelBox;
+
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.Vec3;

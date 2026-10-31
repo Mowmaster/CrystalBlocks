@@ -1,8 +1,0 @@
-{
-  "parent": "crystalblocks:block/tinted_barrel_open",
-  "textures": {
-    "texture_one": "crystalblocks:block/tintable_log_one",
-    "texture_three": "crystalblocks:block/tintable_plank",
-    "texture_two": "crystalblocks:block/tintable_metal"
-  }
-}

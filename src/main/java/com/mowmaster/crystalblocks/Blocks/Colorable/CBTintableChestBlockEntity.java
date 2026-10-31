@@ -1,5 +1,8 @@
 package com.mowmaster.crystalblocks.Blocks.Colorable;
 
+import com.mowmaster.mowlib.tint.CBTintData;
+import com.mowmaster.mowlib.tint.ITintHolder;
+
 import com.mowmaster.crystalblocks.Blocks.CBBlockEntityRegistry;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.HolderLookup;

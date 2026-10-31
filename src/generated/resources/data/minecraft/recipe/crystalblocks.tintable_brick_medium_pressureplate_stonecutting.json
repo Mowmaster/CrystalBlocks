@@ -1,7 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": "#crystalblocks:cb_block_brick_medium",
-  "result": {
-    "id": "crystalblocks:tintable_brick_medium_pressureplate"
-  }
-}

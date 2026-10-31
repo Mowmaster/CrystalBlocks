@@ -1,7 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": "#crystalblocks:cb_block_metal",
-  "result": {
-    "id": "crystalblocks:tintable_metal_accented_pillar"
-  }
-}

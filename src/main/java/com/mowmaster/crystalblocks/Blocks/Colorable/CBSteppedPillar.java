@@ -1,5 +1,7 @@
 package com.mowmaster.crystalblocks.Blocks.Colorable;
 
+import com.mowmaster.mowlib.util.CBPixelBox;
+
 import java.util.List;
 
 // Same placement and rotation as the accented pillar, with four stepped layers each tinted separately

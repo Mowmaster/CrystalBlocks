@@ -1,8 +1,0 @@
-{
-  "parent": "crystalblocks:block/tinted_slab_double",
-  "textures": {
-    "bottom": "crystalblocks:block/tintable_metal",
-    "side": "crystalblocks:block/tintable_metal",
-    "top": "crystalblocks:block/tintable_metal"
-  }
-}

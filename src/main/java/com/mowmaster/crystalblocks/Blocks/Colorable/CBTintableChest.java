@@ -1,5 +1,9 @@
 package com.mowmaster.crystalblocks.Blocks.Colorable;
 
+import com.mowmaster.mowlib.tint.CBTintBlockEntity;
+import com.mowmaster.mowlib.tint.IColorableBlock;
+import com.mowmaster.mowlib.util.CBPixelBox;
+
 import com.mowmaster.crystalblocks.Blocks.CBBlockEntityRegistry;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;

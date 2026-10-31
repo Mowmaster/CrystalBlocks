@@ -1,7 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": "crystalblocks:chain_beam_medium_cap",
-  "result": {
-    "id": "crystalblocks:chain_beam_medium"
-  }
-}

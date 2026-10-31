@@ -1,7 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": "crystalblocks:tintable_ingot_pile",
-  "result": {
-    "id": "crystalblocks:tintable_chest"
-  }
-}
