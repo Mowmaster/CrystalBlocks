@@ -14,8 +14,8 @@ import net.neoforged.neoforge.transfer.item.ItemResource;
 import net.neoforged.neoforge.transfer.item.VanillaContainerWrapper;
 import org.jetbrains.annotations.Nullable;
 
-// Lets other mods' pipes and similar reach our storage blocks' inventories (vanilla hoppers use the Container
-// directly and don't need this). Same as NeoForge does for vanilla chests and barrels.
+// Lets other mods' pipes and similar reach the chest and barrel inventories (vanilla hoppers use the Container
+// directly and don't need this). Same as NeoForge does for vanilla chests and barrels. MowLib registers the piles'.
 @EventBusSubscriber(modid = CBReferences.MODID)
 public class CBCapabilities
 {
@@ -49,7 +49,5 @@ public class CBCapabilities
                 CBBlockRegistry.TINTABLE_CHEST.get());
         event.registerBlockEntity(Capabilities.Item.BLOCK, CBBlockEntityRegistry.TINTABLE_BARREL.get(),
                 (barrel, side) -> VanillaContainerWrapper.of(barrel));
-        event.registerBlockEntity(Capabilities.Item.BLOCK, CBBlockEntityRegistry.BULK_STORAGE.get(),
-                (storage, side) -> storage.getItems());
     }
 }
