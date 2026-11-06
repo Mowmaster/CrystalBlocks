@@ -23,6 +23,8 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.ItemLike;
 
+import java.util.List;
+
 public class CBBasicRecipeProvider extends RecipeProvider
 {
 
@@ -47,23 +49,24 @@ public class CBBasicRecipeProvider extends RecipeProvider
                 .unlockedBy(getHasName(Items.IRON_INGOT), has(Items.IRON_INGOT))
                 .save(output, CBReferences.MODID + ".base_chisel");
 
-        // Tamper: a crystal metal block on two sticks
+        // Tamper: a block of iron on two sticks, laid out like a shovel
         shaped(RecipeCategory.TOOLS, CBItemRegistry.TAMPER.get(), 1)
+                .pattern("B")
                 .pattern("S")
                 .pattern("S")
-                .pattern("M")
+                .define('B', Items.IRON_BLOCK)
                 .define('S', Items.STICK)
-                .define('M', CBBlockRegistry.METAL.base().get())
-                .unlockedBy(getHasName(CBBlockRegistry.METAL.base().get()), has(CBBlockRegistry.METAL.base().get()))
+                .unlockedBy(getHasName(Items.IRON_BLOCK), has(Items.IRON_BLOCK))
                 .save(output, CBReferences.MODID + ".tamper_tool");
 
-        // Wrench: an open jaw of iron ingots on an iron handle
+        // Wrench: a jaw of copper nuggets on a copper ingot handle
         shaped(RecipeCategory.TOOLS, CBItemRegistry.WRENCH.get(), 1)
-                .pattern("I I")
-                .pattern(" I ")
-                .pattern(" I ")
-                .define('I', Items.IRON_INGOT)
-                .unlockedBy(getHasName(Items.IRON_INGOT), has(Items.IRON_INGOT))
+                .pattern("N N")
+                .pattern(" N ")
+                .pattern(" C ")
+                .define('N', Items.COPPER_NUGGET)
+                .define('C', Items.COPPER_INGOT)
+                .unlockedBy(getHasName(Items.COPPER_INGOT), has(Items.COPPER_INGOT))
                 .save(output, CBReferences.MODID + ".wrench");
 
         // MowLib's colour picker, made from CrystalBlocks blocks
@@ -164,7 +167,7 @@ public class CBBasicRecipeProvider extends RecipeProvider
     }
 
     // Tinted chest: the vanilla chest recipe with crystal stone in the middle.
-    // In the stonecutter it turns into the barrel or either pile, and each of those turns back into the chest.
+    // In the stonecutter every storage block cuts straight into every other one, one for one.
     private void storageRecipes() {
         Block chest = CBBlockRegistry.TINTABLE_CHEST.get();
         Block crystalStone = CBBlockRegistry.STONE.base().get();
@@ -178,10 +181,16 @@ public class CBBasicRecipeProvider extends RecipeProvider
                 .unlockedBy(getHasName(crystalStone), has(crystalStone))
                 .save(output, CBReferences.MODID + ".tintable_chest");
 
-        stonecutterPair(chest, CBBlockRegistry.TINTABLE_BARREL.get());
-        stonecutterPair(chest, CBBlockRegistry.TINTABLE_LOG_PILE.get());
-        stonecutterPair(chest, CBBlockRegistry.TINTABLE_INGOT_PILE.get());
-        stonecutterPair(chest, CBBlockRegistry.TINTABLE_ORE_PILE.get());
+        // List.of makes a fixed list; each block gets a recipe into each of the others
+        List<Block> storage = List.of(chest, CBBlockRegistry.TINTABLE_BARREL.get(), CBBlockRegistry.TINTABLE_LOG_PILE.get(),
+                CBBlockRegistry.TINTABLE_INGOT_PILE.get(), CBBlockRegistry.TINTABLE_ORE_PILE.get());
+        for (Block from : storage)
+        {
+            for (Block to : storage)
+            {
+                if (from != to) stonecutOne(from, to);
+            }
+        }
     }
 
     // Chains and lanterns: crafted (shapeless), then cut between the plain and _cap versions in a stonecutter

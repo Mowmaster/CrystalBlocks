@@ -2,13 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
-    "M": "crystalblocks:tintable_metal",
+    "B": "minecraft:iron_block",
     "S": "minecraft:stick"
   },
   "pattern": [
+    "B",
     "S",
-    "S",
-    "M"
+    "S"
   ],
   "result": {
     "id": "crystalblocks:tamper_tool"

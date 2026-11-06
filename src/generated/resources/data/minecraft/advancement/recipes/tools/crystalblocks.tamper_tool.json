@@ -1,27 +1,27 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
+    "has_iron_block": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:iron_block"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
     "has_the_recipe": {
       "conditions": {
         "recipes": "minecraft:crystalblocks.tamper_tool"
       },
       "trigger": "minecraft:recipe_unlocked"
-    },
-    "has_tintable_metal": {
-      "conditions": {
-        "items": [
-          {
-            "items": "crystalblocks:tintable_metal"
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
     }
   },
   "requirements": [
     [
       "has_the_recipe",
-      "has_tintable_metal"
+      "has_iron_block"
     ]
   ],
   "rewards": {

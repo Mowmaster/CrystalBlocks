@@ -17,7 +17,8 @@ public class CBLanguageProvider extends LanguageProvider
     @Override
     protected void addTranslations()
     {
-        add("itemGroup.crystalblocks", "Crystal Blocks");
+        add("itemGroup.crystalblocks.blocks", "Crystal Blocks");
+        add("itemGroup.crystalblocks.items", "Crystal Items");
         addItem(CBItemRegistry.CRYSTAL_CHISEL_BASE, "Chisel (Basic)");
 
         // Every set's blocks are named "<display name> <shape>"

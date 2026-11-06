@@ -8,7 +8,6 @@ import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
 
-import net.minecraft.world.item.CreativeModeTabs;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.Mod;
@@ -16,11 +15,7 @@ import net.neoforged.fml.config.ModConfig;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
-import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
-import com.mowmaster.crystalblocks.Blocks.CBBlockSet;
-import net.minecraft.world.level.block.Block;
-import net.neoforged.neoforge.registries.DeferredBlock;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
 @Mod(CBReferences.MODID)
@@ -36,9 +31,10 @@ public class CrystalBlocks {
         CBBlockRegistry.register(modEventBus);
         CBBlockEntityRegistry.register(modEventBus);
         CBLootModifiers.register(modEventBus);
+        // Our own two tabs (blocks, items) instead of adding to vanilla's
+        CBCreativeTabs.register(modEventBus);
 
         NeoForge.EVENT_BUS.register(this);
-        modEventBus.addListener(this::addCreative);
         modContainer.registerConfig(ModConfig.Type.LOCAL, Config.SPEC);
     }
 
@@ -50,29 +46,6 @@ public class CrystalBlocks {
         LOGGER.info("{}{}", Config.MAGIC_NUMBER_INTRODUCTION.get(), Config.MAGIC_NUMBER.getAsInt());
 
         Config.ITEM_STRINGS.get().forEach((item) -> LOGGER.info("ITEM >> {}", item));
-    }
-
-    private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
-            for (CBBlockSet set : CBBlockRegistry.SETS) {
-                for (DeferredBlock<Block> block : set.blocks()) {
-                    event.accept(block);
-                }
-            }
-            for (DeferredBlock<Block> block : CBBlockRegistry.BOLTED) {
-                event.accept(block);
-            }
-            for (DeferredBlock<Block> block : CBBlockRegistry.STORAGE) {
-                event.accept(block);
-            }
-            for (DeferredBlock<Block> block : CBBlockRegistry.PATHS) {
-                event.accept(block);
-            }
-        }
-        if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
-            event.accept(CBItemRegistry.TAMPER);
-            event.accept(CBItemRegistry.WRENCH);
-        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

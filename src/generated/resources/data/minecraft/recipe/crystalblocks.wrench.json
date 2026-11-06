@@ -2,12 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
-    "I": "minecraft:iron_ingot"
+    "C": "minecraft:copper_ingot",
+    "N": "minecraft:copper_nugget"
   },
   "pattern": [
-    "I I",
-    " I ",
-    " I "
+    "N N",
+    " N ",
+    " C "
   ],
   "result": {
     "id": "crystalblocks:wrench"
