@@ -119,6 +119,10 @@ public class CBBlockRegistry
             properties -> new CBLogPile(CBMaterial.WOOD.apply(properties).strength(25f, 3_600_000f)
                     .sound(LOG_PILE_SOUND).noOcclusion()));
 
+    // Like vanilla rails: no collision, quick to break
+    public static final DeferredBlock<Block> TINTABLE_RAIL = registerBlock("tintable_rail",
+            properties -> new CBTintableRail(properties.noCollision().strength(0.7f).sound(SoundType.METAL)));
+
     public static final List<DeferredBlock<Block>> STORAGE = List.of(TINTABLE_BARREL, TINTABLE_CHEST, TINTABLE_LOG_PILE);
     public static final List<DeferredBlock<Block>> BOLTED = List.of(BOLTED_CORNER_SUPPORT_CAP,
             BOLTED_I_BEAM, BOLTED_I_BEAM_CAP, BOLTED_SUPPORT_BEAM, BOLTED_SUPPORT_BEAM_CAP,

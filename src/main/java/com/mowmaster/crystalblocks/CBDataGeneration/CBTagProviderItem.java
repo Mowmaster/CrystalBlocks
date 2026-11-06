@@ -8,6 +8,7 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceKey;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.data.ItemTagsProvider;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -31,5 +32,7 @@ public class CBTagProviderItem extends ItemTagsProvider {
                 tag(CBTags.forSet(set).items()).add(ResourceKey.create(Registries.ITEM, block.getId()));
             }
         }
+
+        tag(ItemTags.RAILS).add(ResourceKey.create(Registries.ITEM, CBBlockRegistry.TINTABLE_RAIL.getId()));
     }
 }

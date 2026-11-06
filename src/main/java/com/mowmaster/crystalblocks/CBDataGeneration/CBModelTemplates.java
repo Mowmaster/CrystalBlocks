@@ -71,6 +71,10 @@ public class CBModelTemplates
     public static final ModelTemplate INGOT_PILE = create("tinted_storage_ingot", TEXTURE_ONE, TEXTURE_TWO);
     public static final ModelTemplate LOG_PILE = create("tinted_storage_log", TEXTURE_ONE, TEXTURE_TWO);
 
+    public static final ModelTemplate RAIL_FLAT = create("iron_rails", TEXTURE_ONE, TEXTURE_TWO);
+    public static final ModelTemplate RAIL_RAISED_NE = create("iron_rails_raised_ne", TEXTURE_ONE, TEXTURE_TWO);
+    public static final ModelTemplate RAIL_RAISED_SW = create("iron_rails_raised_sw", TEXTURE_ONE, TEXTURE_TWO);
+    public static final ModelTemplate RAIL_CORNER = create("iron_rails_corner", TEXTURE_ONE, TEXTURE_TWO);
 
 
 

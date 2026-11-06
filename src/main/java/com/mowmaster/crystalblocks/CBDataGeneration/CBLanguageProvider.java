@@ -66,5 +66,7 @@ public class CBLanguageProvider extends LanguageProvider
 
         addBlock(CBBlockRegistry.TINTABLE_INGOT_PILE, "Crystal Ingot Pile");
         addBlock(CBBlockRegistry.TINTABLE_LOG_PILE, "Crystal Log Pile");
+
+        addBlock(CBBlockRegistry.TINTABLE_RAIL, "Crystal Rail");
     }
 }
