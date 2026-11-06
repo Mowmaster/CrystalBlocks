@@ -66,6 +66,7 @@ public class CBTamperItem extends Item
         if (block == Blocks.RED_SAND) return CBBlockRegistry.RED_SAND_PATH.get();
         if (block == Blocks.CLAY) return CBBlockRegistry.CLAY_PATH.get();
         if (block == Blocks.MUD) return CBBlockRegistry.MUD_PATH.get();
+        if (block == Blocks.PACKED_MUD) return CBBlockRegistry.PACKED_MUD_PATH.get();
         return null;
     }
 }

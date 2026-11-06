@@ -2,9 +2,9 @@
 	"format_version": "26.3",
 	"credit": "Made with Blockbench",
 	"textures": {
-		"metal": "crystalblocks:block/tintable_metal",
-		"wood": "crystalblocks:block/tintable_log_large",
-		"particle": "crystalblocks:block/tintable_metal"
+		"metal": "minecraft:block/iron_block",
+		"wood": "minecraft:block/oak_log",
+		"particle": "minecraft:block/iron_block"
 	},
 	"elements": [
 		{

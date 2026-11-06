@@ -57,6 +57,15 @@ public class CBBasicRecipeProvider extends RecipeProvider
                 .unlockedBy(getHasName(CBBlockRegistry.METAL.base().get()), has(CBBlockRegistry.METAL.base().get()))
                 .save(output, CBReferences.MODID + ".tamper_tool");
 
+        // Wrench: an open jaw of iron ingots on an iron handle
+        shaped(RecipeCategory.TOOLS, CBItemRegistry.WRENCH.get(), 1)
+                .pattern("I I")
+                .pattern(" I ")
+                .pattern(" I ")
+                .define('I', Items.IRON_INGOT)
+                .unlockedBy(getHasName(Items.IRON_INGOT), has(Items.IRON_INGOT))
+                .save(output, CBReferences.MODID + ".wrench");
+
         // MowLib's colour picker, made from CrystalBlocks blocks
         shapeless(RecipeCategory.TOOLS, MowLibItems.COLOR_PICKER.get(), 1)
                 .requires(Items.GLASS_BOTTLE)
@@ -172,6 +181,7 @@ public class CBBasicRecipeProvider extends RecipeProvider
         stonecutterPair(chest, CBBlockRegistry.TINTABLE_BARREL.get());
         stonecutterPair(chest, CBBlockRegistry.TINTABLE_LOG_PILE.get());
         stonecutterPair(chest, CBBlockRegistry.TINTABLE_INGOT_PILE.get());
+        stonecutterPair(chest, CBBlockRegistry.TINTABLE_ORE_PILE.get());
     }
 
     // Chains and lanterns: crafted (shapeless), then cut between the plain and _cap versions in a stonecutter

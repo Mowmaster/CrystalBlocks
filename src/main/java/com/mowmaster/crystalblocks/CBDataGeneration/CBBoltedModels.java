@@ -191,6 +191,22 @@ public class CBBoltedModels
         tintedItem(blockModels, cap, model, cap.getTintRegionCount());
     }
 
+    // One model per set (the hand-made corner_beam with the set's texture), turned by the blockstate for each
+    // facing and half. CBCornerBeam works out the same rotations for its shape, so the two always agree.
+    public static void cornerBeam(BlockModelGenerators blockModels, CBCornerBeam corner, TextureMapping textures)
+    {
+        Identifier model = CBModelTemplates.CORNER_BEAM.create(corner, textures, blockModels.modelOutput);
+        blockModels.blockStateOutput.accept(MultiVariantGenerator.dispatch(corner)
+                .with(PropertyDispatch.initial(CBCornerBeam.FACING, CBCornerBeam.HALF)
+                        .generate((facing, half) -> {
+                            BlockState state = corner.defaultBlockState()
+                                    .setValue(CBCornerBeam.FACING, facing)
+                                    .setValue(CBCornerBeam.HALF, half);
+                            return rotated(model, CBCornerBeam.xQuarterTurns(state), CBCornerBeam.yQuarterTurns(state));
+                        })));
+        tintedItem(blockModels, corner, model, 1);
+    }
+
     // A beam that always uses the same hand-made model
     public static void beam(BlockModelGenerators blockModels, CBBoltedBeamBlock beam, Identifier parent, TextureMapping textures)
     {

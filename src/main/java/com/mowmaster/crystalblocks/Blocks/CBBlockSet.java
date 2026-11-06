@@ -18,6 +18,7 @@ public record CBBlockSet(
         DeferredBlock<Block> button,
         DeferredBlock<Block> pressurePlate,
         DeferredBlock<Block> column,
+        DeferredBlock<Block> cornerBeam,
         DeferredBlock<Block> accentedPillar,
         DeferredBlock<Block> accentedPillarCap,
         DeferredBlock<Block> steppedPillar,
@@ -28,6 +29,6 @@ public record CBBlockSet(
     public List<DeferredBlock<Block>> blocks()
     {
         return List.of(base, stairs, slab, verticalSlab, wall, button, pressurePlate,
-                column, accentedPillar, accentedPillarCap, steppedPillar, steppedPillarCap, window);
+                column, cornerBeam, accentedPillar, accentedPillarCap, steppedPillar, steppedPillarCap, window);
     }
 }

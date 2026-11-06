@@ -4,6 +4,7 @@ import com.mowmaster.crystalblocks.Blocks.Colorable.*;
 import com.mowmaster.crystalblocks.Blocks.Path.CBPathBlock;
 import com.mowmaster.crystalblocks.Blocks.Storage.CBIngotPile;
 import com.mowmaster.crystalblocks.Blocks.Storage.CBLogPile;
+import com.mowmaster.crystalblocks.Blocks.Storage.CBOrePile;
 import com.mowmaster.crystalblocks.CBReferences;
 import com.mowmaster.crystalblocks.Items.CBItemRegistry;
 import net.minecraft.world.item.BlockItem;
@@ -118,6 +119,11 @@ public class CBBlockRegistry
             properties -> new CBIngotPile(CBMaterial.METAL.apply(properties).strength(25f, 3_600_000f)
                     .sound(INGOT_PILE_SOUND).noOcclusion()));
 
+    // Same strength as the ingot pile; stone, so mined with a pickaxe
+    public static final DeferredBlock<Block> TINTABLE_ORE_PILE = registerBlock("tintable_ore_pile",
+            properties -> new CBOrePile(CBMaterial.STONE.apply(properties).strength(25f, 3_600_000f)
+                    .noOcclusion()));
+
     // Same properties as the ingot pile
     public static final DeferredBlock<Block> TINTABLE_LOG_PILE = registerBlock("tintable_log_pile",
             properties -> new CBLogPile(CBMaterial.WOOD.apply(properties).strength(25f, 3_600_000f)
@@ -133,9 +139,10 @@ public class CBBlockRegistry
     public static final DeferredBlock<Block> RED_SAND_PATH = registerPath("red_sand_path", () -> Blocks.RED_SAND, MapColor.COLOR_ORANGE, SoundType.SAND);
     public static final DeferredBlock<Block> CLAY_PATH = registerPath("clay_path", () -> Blocks.CLAY, MapColor.CLAY, SoundType.GRAVEL);
     public static final DeferredBlock<Block> MUD_PATH = registerPath("mud_path", () -> Blocks.MUD, MapColor.TERRACOTTA_CYAN, SoundType.MUD);
+    public static final DeferredBlock<Block> PACKED_MUD_PATH = registerPath("packed_mud_path", () -> Blocks.PACKED_MUD, MapColor.DIRT, SoundType.PACKED_MUD);
 
     // Every path (creative tab, models, tags, loot)
-    public static final List<DeferredBlock<Block>> PATHS = List.of(GRAVEL_PATH, SAND_PATH, RED_SAND_PATH, CLAY_PATH, MUD_PATH);
+    public static final List<DeferredBlock<Block>> PATHS = List.of(GRAVEL_PATH, SAND_PATH, RED_SAND_PATH, CLAY_PATH, MUD_PATH, PACKED_MUD_PATH);
 
     public static final List<DeferredBlock<Block>> STORAGE = List.of(TINTABLE_BARREL, TINTABLE_CHEST, TINTABLE_LOG_PILE);
     public static final List<DeferredBlock<Block>> BOLTED = List.of(BOLTED_CORNER_SUPPORT_CAP,
@@ -143,7 +150,7 @@ public class CBBlockRegistry
             CHAINED_SUPPORT_BEAM, CHAIN_BEAM, CHAIN_BEAM_CAP,
             CHAIN_BEAM_MEDIUM, CHAIN_BEAM_MEDIUM_CAP, CHAIN_BEAM_LARGE, CHAIN_BEAM_LARGE_CAP, CHAINED_SUPPORT_BEAM_MEDIUM,
             SCONCE_TORCH, CHAIN_LANTERN, CHAIN_LANTERN_CAP, CHAIN_LANTERN_MEDIUM, CHAIN_LANTERN_MEDIUM_CAP, TINTABLE_BLOCK_TECH,
-            TINTABLE_BLOCK_TECH_3D, TINTABLE_INGOT_PILE);
+            TINTABLE_BLOCK_TECH_3D, TINTABLE_INGOT_PILE, TINTABLE_ORE_PILE);
 
     // A path over its source block: the source's map colour and sound, the dirt path's hardness, and (like the dirt
     // path) it suffocates anything stuck inside it, like a full block
@@ -177,6 +184,8 @@ public class CBBlockRegistry
                                 .sound(material.sound()).strength(0.5f).noCollision().forceSolidOn().pushReaction(PushReaction.POPPED))),
                 registerBlock(name + "_column",
                         properties -> new CBTintableColumn(material.apply(properties))),
+                registerBlock(name + "_corner_beam",
+                        properties -> new CBCornerBeam(material.apply(properties))),
                 registerBlock(name + "_accented_pillar",
                         properties -> new CBAccentedPillar(material.apply(properties))),
                 registerBlock(name + "_accented_pillar_cap",

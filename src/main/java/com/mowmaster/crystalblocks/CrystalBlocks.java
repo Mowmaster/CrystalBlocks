@@ -71,6 +71,7 @@ public class CrystalBlocks {
         }
         if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
             event.accept(CBItemRegistry.TAMPER);
+            event.accept(CBItemRegistry.WRENCH);
         }
     }
 

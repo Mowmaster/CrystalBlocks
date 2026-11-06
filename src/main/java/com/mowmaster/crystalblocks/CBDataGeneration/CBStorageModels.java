@@ -38,6 +38,15 @@ public class CBStorageModels
         // texture_one / texture_two: pallet + ingots, and bark + end grain
         pile(blockModels, CBBlockRegistry.TINTABLE_INGOT_PILE.get(), CBModelTemplates.INGOT_PILE, "tintable_plank", "tintable_metal");
         pile(blockModels, CBBlockRegistry.TINTABLE_LOG_PILE.get(), CBModelTemplates.LOG_PILE, "tintable_log_one", "tintable_plank");
+        orePile(blockModels, CBBlockRegistry.TINTABLE_ORE_PILE.get());
+    }
+
+    // The hand-made model is used as it is (it names its own greyscale texture); auto_tint doesn't change the model
+    private static void orePile(BlockModelGenerators blockModels, Block pile)
+    {
+        Identifier model = Identifier.fromNamespaceAndPath(CBReferences.MODID, "block/ore_pile");
+        blockModels.blockStateOutput.accept(MultiVariantGenerator.dispatch(pile, BlockModelGenerators.plainVariant(model)));
+        blockModels.itemModelOutput.accept(pile.asItem(), ItemModelUtils.tintedModel(model, UNDYED));
     }
 
     // One model, no rotations

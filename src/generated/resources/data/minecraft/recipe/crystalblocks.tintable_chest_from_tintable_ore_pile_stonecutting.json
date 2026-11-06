@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "crystalblocks:tintable_ore_pile",
+  "result": {
+    "id": "crystalblocks:tintable_chest"
+  }
+}

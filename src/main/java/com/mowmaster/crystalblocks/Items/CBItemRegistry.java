@@ -4,6 +4,7 @@ import com.mowmaster.crystalblocks.CBReferences;
 import com.mowmaster.mowlib.MowLibReferences;
 import com.mowmaster.crystalblocks.Items.Tools.BaseChisel;
 import com.mowmaster.crystalblocks.Items.Tools.CBTamperItem;
+import com.mowmaster.crystalblocks.Items.Tools.CBWrenchItem;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -24,6 +25,8 @@ public class CBItemRegistry {
     public static final DeferredItem<Item> CRYSTAL_CHISEL_BASE = CBITEMS.registerItem("base_chisel", properties -> new BaseChisel(properties.durability(100)));
     // Makes paths; as durable as an iron shovel
     public static final DeferredItem<Item> TAMPER = CBITEMS.registerItem("tamper_tool", properties -> new CBTamperItem(properties.durability(250)));
+    // Turns blocks; no durability
+    public static final DeferredItem<Item> WRENCH = CBITEMS.registerItem("wrench", properties -> new CBWrenchItem(properties.stacksTo(1)));
 
 
     public static void register(IEventBus eventBus)

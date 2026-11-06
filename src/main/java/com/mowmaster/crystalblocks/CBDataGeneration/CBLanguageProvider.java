@@ -32,6 +32,7 @@ public class CBLanguageProvider extends LanguageProvider
             addBlock(set.button(), name + " Button");
             addBlock(set.pressurePlate(), name + " Pressure Plate");
             addBlock(set.column(), name + " Column");
+            addBlock(set.cornerBeam(), name + " Corner Beam");
             addBlock(set.accentedPillar(), name + " Accented Pillar");
             addBlock(set.accentedPillarCap(), name + " Accented Pillar Cap");
             addBlock(set.steppedPillar(), name + " Stepped Pillar");
@@ -66,6 +67,7 @@ public class CBLanguageProvider extends LanguageProvider
 
         addBlock(CBBlockRegistry.TINTABLE_INGOT_PILE, "Crystal Ingot Pile");
         addBlock(CBBlockRegistry.TINTABLE_LOG_PILE, "Crystal Log Pile");
+        addBlock(CBBlockRegistry.TINTABLE_ORE_PILE, "Crystal Ore Pile");
 
         addBlock(CBBlockRegistry.TINTABLE_RAIL, "Crystal Rail");
         addBlock(CBBlockRegistry.GRAVEL_PATH, "Gravel Path");
@@ -73,7 +75,13 @@ public class CBLanguageProvider extends LanguageProvider
         addBlock(CBBlockRegistry.RED_SAND_PATH, "Red Sand Path");
         addBlock(CBBlockRegistry.CLAY_PATH, "Clay Path");
         addBlock(CBBlockRegistry.MUD_PATH, "Mud Path");
+        addBlock(CBBlockRegistry.PACKED_MUD_PATH, "Packed Mud Path");
         addItem(CBItemRegistry.TAMPER, "Tamper");
+        addItem(CBItemRegistry.WRENCH, "Wrench");
+        add("message.crystalblocks.wrench.cannot_rotate", "This block can't be turned that way");
+        add("tooltip.crystalblocks.wrench.click", "Right-click: turn around the clicked face");
+        add("tooltip.crystalblocks.wrench.keys", "%s: X axis, %s: Z axis, %s: Y axis");
+        add("tooltip.crystalblocks.wrench.sneak", "Sneak to turn the other way");
         add("enchantment.crystalblocks.path_runner", "Path Runner");
     }
 }

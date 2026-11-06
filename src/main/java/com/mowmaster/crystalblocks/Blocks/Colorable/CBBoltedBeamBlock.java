@@ -45,7 +45,7 @@ import java.util.Map;
 //   always points at the surface they were placed against
 // Datagen makes one copy of the hand-made model per position and turn, moved with a NeoForge root transform,
 // and rotates it for the facing in the blockstate. Shapes, clicks and placement all use the same maths.
-public abstract class CBBoltedBeamBlock extends Block implements IColorableBlock
+public abstract class CBBoltedBeamBlock extends Block implements IColorableBlock, CBBeamConnector
 {
     public static final EnumProperty<Direction> FACING = BlockStateProperties.FACING;
     public static final EnumProperty<Direction.Axis> AXIS = BlockStateProperties.AXIS;
@@ -287,6 +287,7 @@ public abstract class CBBoltedBeamBlock extends Block implements IColorableBlock
 
     // A spot on this beam that another kind of beam can attach to on the given world side (e.g. a chained
     // support beam's loop, for chains). Returns that spot's box in this block's pixels, or null if there isn't one.
+    @Override
     @Nullable
     public CBPixelBox connectionPoint(BlockState state, Direction side, CBBoltedBeamBlock connecting)
     {
@@ -362,12 +363,12 @@ public abstract class CBBoltedBeamBlock extends Block implements IColorableBlock
         Direction clickedFace = context.getClickedFace();
         Direction facing = isCap() ? clickedFace.getOpposite() : clickedFace;
         BlockState state = withFacing(defaultBlockState(), facing);
-        // Placed against another beam's connection point (e.g. a chain against a chained support's loop):
-        // line up with that point
+        // Placed against another beam's connection point (e.g. a chain against a chained support's loop, or a
+        // column against a corner beam's end): line up with that point
         if (!context.replacingClickedOnBlock() && facing.getAxis() == clickedFace.getAxis())
         {
             BlockState clicked = level.getBlockState(pos.relative(clickedFace.getOpposite()));
-            if (clicked.getBlock() instanceof CBBoltedBeamBlock other)
+            if (clicked.getBlock() instanceof CBBeamConnector other)
             {
                 CBPixelBox point = other.connectionPoint(clicked, clickedFace, this);
                 if (point != null) return bestFit(state, point, true, turn(state));
@@ -482,6 +483,20 @@ public abstract class CBBoltedBeamBlock extends Block implements IColorableBlock
                 Direction.fromAxisAndDirection(axis, Direction.AxisDirection.NEGATIVE),
                 Direction.fromAxisAndDirection(axis, Direction.AxisDirection.POSITIVE) })
         {
+            // A corner beam whose end lines up with this beam: copy its one colour into region 0
+            BlockState next = level.getBlockState(pos.relative(side));
+            if (next.getBlock() instanceof CBCornerBeam corner)
+            {
+                CBPixelBox end = corner.connectionPoint(next, side.getOpposite(), this);
+                if (end != null && crossSectionDifference(worldFootprint(state), end, axis) < 0.01
+                        && level.getBlockEntity(pos.relative(side)) instanceof CBTintBlockEntity source && source.isDyed(0))
+                {
+                    placed.setColor(0, source.getColor(0));
+                    return;
+                }
+                continue;
+            }
+
             BlockPos neighborPos = alignedNeighbor(level, pos, state, side);
             if (neighborPos == null || !neighborPos.equals(pos.relative(side))) continue;
 

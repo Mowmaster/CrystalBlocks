@@ -2,6 +2,7 @@ package com.mowmaster.crystalblocks.CBDataGeneration;
 
 import com.mowmaster.crystalblocks.Blocks.CBBlockRegistry;
 import com.mowmaster.crystalblocks.Blocks.Colorable.CBBoltedBeamBlock;
+import com.mowmaster.crystalblocks.Blocks.Colorable.CBCornerBeam;
 import com.mowmaster.crystalblocks.CBReferences;
 import com.mowmaster.crystalblocks.Items.CBItemRegistry;
 import net.minecraft.client.color.item.Dye;
@@ -25,6 +26,7 @@ public class CBBasicModelProvider  extends ModelProvider {
         // The tamper's model is hand-made (models/item/tamper_tool.json)
         itemModels.itemModelOutput.accept(CBItemRegistry.TAMPER.get(),
                 net.minecraft.client.data.models.model.ItemModelUtils.plainModel(CBReferences.id("item/tamper_tool")));
+        itemModels.generateFlatItem(CBItemRegistry.WRENCH.get(), ModelTemplates.FLAT_ITEM);
         CBPathModels.generate(blockModels);
         // Shared by every set's column copies; created once so the file is only written once
         Identifier columnTemplate = CBBoltedModels.columnTemplate(blockModels);
@@ -45,6 +47,8 @@ public class CBBasicModelProvider  extends ModelProvider {
             // The window's frame uses the set's own texture
             CBWindowModels.generate(blockModels, set.window().get(), set.name());
             CBBoltedModels.beam(blockModels, (CBBoltedBeamBlock) set.column().get(), columnTemplate,
+                    CBBoltedModels.textures(set.name(), set.name()));
+            CBBoltedModels.cornerBeam(blockModels, (CBCornerBeam) set.cornerBeam().get(),
                     CBBoltedModels.textures(set.name(), set.name()));
         }
         CBBoltedModels.generate(blockModels);
