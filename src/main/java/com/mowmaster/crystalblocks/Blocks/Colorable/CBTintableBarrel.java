@@ -107,27 +107,11 @@ public class CBTintableBarrel extends Block implements IColorableBlock
         return state.getValue(OPEN) || state.getValue(POWERED);
     }
 
-    // ---- Rotations, shared with datagen: up as modelled, down = x 180, sideways = x 90 then y ----
-
-    public static int xQuarterTurns(Direction facing)
-    {
-        return switch (facing)
-        {
-            case UP -> 0;
-            case DOWN -> 2;
-            default -> 1;
-        };
-    }
-
-    public static int yQuarterTurns(Direction facing)
-    {
-        return facing.getAxis().isVertical() ? 0 : CBPixelBox.quarterTurns(facing);
-    }
-
+    // The model is made opening upwards; MowLib's six-way "from up" rotations turn it to the facing
+    // (up as modelled, down = x 180, sideways = x 90 then y), the same as the blockstate
     private static CBPixelBox place(CBPixelBox box, BlockState state)
     {
-        Direction facing = state.getValue(FACING);
-        return box.rotateX(xQuarterTurns(facing)).rotateY(yQuarterTurns(facing));
+        return box.rotateFromUp(state.getValue(FACING));
     }
 
     private static List<List<CBPixelBox>> regions(BlockState state)

@@ -46,13 +46,16 @@ NeoForge 26.3.0.94, Minecraft 26.3. I'm coming from 1.20 and JDK 8. Explain new 
 
 ## MowLib (shared library)
 - This mod depends on MowLib (mod id `mowlib`, package `com.mowmaster.mowlib`), bundled with Jar-in-Jar from
-  mavenLocal (`com.mowmaster.mowlib:mowlib`, range `[0.0.1,1.0.0)`). Source: `Mowmaster/MowLib`, branch
+  mavenLocal (`com.mowmaster.mowlib:mowlib`, range `[0.0.4,1.0.0)`, built against 0.0.4). Source: `Mowmaster/MowLib`, branch
   `NeoForge-26x`; the version this project builds against is the tag matching `prefer` in build.gradle.
 - Before writing a shared system (tinting, storage, filters, transport, paging, knapping, bonus drops, tooltips,
   renderers...), clone MowLib and check whether it already exists there. Use it; don't copy it into this mod.
 - Don't edit MowLib from this project's session. If something belongs in MowLib, or MowLib needs a change, write
   it up as a `mowlib-from-<mod id>.zip` (MowLib files + notes + migration), the same way as before.
-- MowLib's CLAUDE.md lists what it contains and its rules. This mod doesn't use MowLib's filters, work cards or their
+- MowLib's CLAUDE.md lists what it contains and its rules. When MowLib updates, read its `CHANGELOG.md` (the "Check" lines) and refactor here.
+- From MowLib 0.0.4: horizontal facing helpers come from `com.mowmaster.mowlib.block.HorizontalFacing` (`FACING`,
+  `quarterTurns`, `rotate`, `mirror`; `CBPixelBox.quarterTurns` is deprecated). Six-way models built facing up (barrel,
+  bolted beams) turn with `CBPixelBox.xQuarterTurnsFromUp` / `yQuarterTurnsFromUp` / `rotateFromUp`. This mod doesn't use MowLib's filters, work cards or their
   tools.
 - Moved to MowLib (deleted here): `IColorableBlock`, `ITintHolder`, `CBTintData`, `CBTintBlockEntity`, `CBPixelBox`,
   `CBBulkItemHandler`, `CBBulkStorageBlock(Entity)`, the colour picker, custom dye, picked dye recipe, block colour

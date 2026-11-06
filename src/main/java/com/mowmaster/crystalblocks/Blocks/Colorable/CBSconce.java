@@ -2,6 +2,7 @@ package com.mowmaster.crystalblocks.Blocks.Colorable;
 
 import com.mowmaster.mowlib.tint.IColorableBlock;
 import com.mowmaster.mowlib.util.CBPixelBox;
+import com.mowmaster.mowlib.block.HorizontalFacing;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -55,7 +56,7 @@ import java.util.function.BiConsumer;
 public class CBSconce extends Block implements IColorableBlock, SimpleWaterloggedBlock
 {
     // The side the back plate is on (against the wall)
-    public static final EnumProperty<Direction> FACING = BlockStateProperties.HORIZONTAL_FACING;
+    public static final EnumProperty<Direction> FACING = HorizontalFacing.FACING;
     public static final BooleanProperty LIT = BlockStateProperties.LIT;
     public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
     public static final IntegerProperty TORCHES = IntegerProperty.create("torches", 1, 3);
@@ -86,7 +87,7 @@ public class CBSconce extends Block implements IColorableBlock, SimpleWaterlogge
 
         for (BlockState state : stateDefinition.getPossibleStates())
         {
-            int turns = CBPixelBox.quarterTurns(state.getValue(FACING));
+            int turns = HorizontalFacing.quarterTurns(state.getValue(FACING));
             CBPixelBox torches = TORCH_AREAS.get(state.getValue(TORCHES) - 1);
             shapes.put(state, CBPixelBox.union(List.of(PLATE.rotateY(turns), torches.rotateY(turns))));
         }
@@ -243,7 +244,7 @@ public class CBSconce extends Block implements IColorableBlock, SimpleWaterlogge
     {
         if (!state.getValue(LIT)) return;
 
-        int turns = CBPixelBox.quarterTurns(state.getValue(FACING));
+        int turns = HorizontalFacing.quarterTurns(state.getValue(FACING));
         for (Vec3 flame : FLAMES.get(state.getValue(TORCHES) - 1))
         {
             Vec3 point = rotateY(flame, turns);
@@ -281,12 +282,12 @@ public class CBSconce extends Block implements IColorableBlock, SimpleWaterlogge
     @Override
     protected @NotNull BlockState rotate(BlockState state, Rotation rotation)
     {
-        return state.setValue(FACING, rotation.rotate(state.getValue(FACING)));
+        return HorizontalFacing.rotate(state, rotation);
     }
 
     @Override
     protected @NotNull BlockState mirror(BlockState state, Mirror mirror)
     {
-        return state.rotate(mirror.getRotation(state.getValue(FACING)));
+        return HorizontalFacing.mirror(state, mirror);
     }
 }

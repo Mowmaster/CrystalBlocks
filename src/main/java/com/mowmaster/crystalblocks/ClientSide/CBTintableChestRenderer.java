@@ -1,6 +1,6 @@
 package com.mowmaster.crystalblocks.ClientSide;
 
-import com.mowmaster.mowlib.util.CBPixelBox;
+import com.mowmaster.mowlib.block.HorizontalFacing;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Axis;
@@ -105,7 +105,7 @@ public class CBTintableChestRenderer implements BlockEntityRenderer<CBTintableCh
         poseStack.pushPose();
         // Turn for the facing (the model faces north), around the block's centre
         poseStack.translate(0.5, 0, 0.5);
-        poseStack.rotate(Axis.YP.rotationDegrees(-90f * CBPixelBox.quarterTurns(state.facing)));
+        poseStack.rotate(Axis.YP.rotationDegrees(-90f * HorizontalFacing.quarterTurns(state.facing)));
         poseStack.translate(-0.5, 0, -0.5);
         // Swing the front up around the hinge
         poseStack.translate(0, HINGE_Y, HINGE_Z);

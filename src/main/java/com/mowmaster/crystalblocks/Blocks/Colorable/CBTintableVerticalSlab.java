@@ -1,6 +1,7 @@
 package com.mowmaster.crystalblocks.Blocks.Colorable;
 
 import com.mowmaster.mowlib.tint.IColorableBlock;
+import com.mowmaster.mowlib.block.HorizontalFacing;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -34,7 +35,7 @@ import org.jetbrains.annotations.NotNull;
 public class CBTintableVerticalSlab extends Block implements IColorableBlock, SimpleWaterloggedBlock
 {
     // FACING = the half of the block space the slab fills, e.g. NORTH fills the north half
-    public static final EnumProperty<Direction> FACING = BlockStateProperties.HORIZONTAL_FACING;
+    public static final EnumProperty<Direction> FACING = HorizontalFacing.FACING;
     public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 
     // Block.box takes pixel coordinates (0-16) and converts them to a 0-1 VoxelShape
@@ -149,13 +150,13 @@ public class CBTintableVerticalSlab extends Block implements IColorableBlock, Si
     @Override
     protected @NotNull BlockState rotate(BlockState state, Rotation rotation)
     {
-        return state.setValue(FACING, rotation.rotate(state.getValue(FACING)));
+        return HorizontalFacing.rotate(state, rotation);
     }
 
     @Override
     protected @NotNull BlockState mirror(BlockState state, Mirror mirror)
     {
-        return state.rotate(mirror.getRotation(state.getValue(FACING)));
+        return HorizontalFacing.mirror(state, mirror);
     }
 
     // ---- Dyeing ----

@@ -3,6 +3,7 @@ package com.mowmaster.crystalblocks.Blocks.Colorable;
 import com.mowmaster.mowlib.tint.CBTintBlockEntity;
 import com.mowmaster.mowlib.tint.IColorableBlock;
 import com.mowmaster.mowlib.util.CBPixelBox;
+import com.mowmaster.mowlib.block.HorizontalFacing;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -237,18 +238,12 @@ public abstract class CBBoltedBeamBlock extends Block implements IColorableBlock
     // sideways = x 90 (top to north) then y to the right side
     public int xQuarterTurns(BlockState state)
     {
-        return switch (facing(state))
-        {
-            case UP -> 0;
-            case DOWN -> 2;
-            default -> 1;
-        };
+        return CBPixelBox.xQuarterTurnsFromUp(facing(state));
     }
 
     public int yQuarterTurns(BlockState state)
     {
-        Direction facing = facing(state);
-        return facing.getAxis().isVertical() ? 0 : CBPixelBox.quarterTurns(facing);
+        return CBPixelBox.yQuarterTurnsFromUp(facing(state));
     }
 
     // A model box moved to where it really is in this state: base rotation, turn, move, then the blockstate rotations
@@ -391,7 +386,7 @@ public abstract class CBBoltedBeamBlock extends Block implements IColorableBlock
         // Otherwise: upright beams turn to match the way the player is looking...
         if (turnProperty() != null && facing.getAxis().isVertical())
         {
-            state = state.setValue(turnProperty(), CBPixelBox.quarterTurns(context.getHorizontalDirection()) % turnCount());
+            state = state.setValue(turnProperty(), HorizontalFacing.quarterTurns(context.getHorizontalDirection()) % turnCount());
         }
         // ...and centre on the clicked pixel (as close as the block allows)
         Vec3 click = context.getClickLocation().subtract(Vec3.atLowerCornerOf(pos)).scale(16);

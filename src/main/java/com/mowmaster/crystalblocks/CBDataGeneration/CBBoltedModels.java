@@ -1,6 +1,7 @@
 package com.mowmaster.crystalblocks.CBDataGeneration;
 
 import com.mowmaster.mowlib.util.CBPixelBox;
+import com.mowmaster.mowlib.block.HorizontalFacing;
 
 import com.mowmaster.crystalblocks.Blocks.CBBlockRegistry;
 import com.mowmaster.crystalblocks.Blocks.Colorable.*;
@@ -166,7 +167,7 @@ public class CBBoltedModels
         blockModels.blockStateOutput.accept(MultiVariantGenerator.dispatch(sconce)
                 .with(PropertyDispatch.initial(CBSconce.FACING, CBSconce.TORCHES, CBSconce.LIT)
                         .generate((facing, torches, lit) ->
-                                rotated(models[torches - 1][lit ? 1 : 0], 0, CBPixelBox.quarterTurns(facing)))));
+                                rotated(models[torches - 1][lit ? 1 : 0], 0, HorizontalFacing.quarterTurns(facing)))));
 
         // The item is a single lit sconce
         tintedItem(blockModels, sconce, models[0][1], 1);

@@ -1,6 +1,7 @@
 package com.mowmaster.crystalblocks.Blocks.Colorable;
 
 import com.mowmaster.mowlib.util.CBPixelBox;
+import com.mowmaster.mowlib.block.HorizontalFacing;
 
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.context.BlockPlaceContext;
@@ -18,7 +19,7 @@ import java.util.List;
 
 public class CBAccentedPillarCap extends CBAccentedBlock
 {
-    public static final EnumProperty<Direction> FACING = BlockStateProperties.HORIZONTAL_FACING;
+    public static final EnumProperty<Direction> FACING = HorizontalFacing.FACING;
     // BOTTOM = the model as made; TOP = turned upside down
     public static final EnumProperty<Half> HALF = BlockStateProperties.HALF;
 
@@ -65,7 +66,7 @@ public class CBAccentedPillarCap extends CBAccentedBlock
     // ...so an upside-down cap gets an extra half turn of y to put its back where it belongs
     public static int yTurnsFor(Direction facing, Half half)
     {
-        return CBPixelBox.quarterTurns(facing) + (half == Half.TOP ? 2 : 0);
+        return HorizontalFacing.quarterTurns(facing) + (half == Half.TOP ? 2 : 0);
     }
 
     @Override
@@ -108,12 +109,12 @@ public class CBAccentedPillarCap extends CBAccentedBlock
     @Override
     protected @NotNull BlockState rotate(BlockState state, Rotation rotation)
     {
-        return state.setValue(FACING, rotation.rotate(state.getValue(FACING)));
+        return HorizontalFacing.rotate(state, rotation);
     }
 
     @Override
     protected @NotNull BlockState mirror(BlockState state, Mirror mirror)
     {
-        return state.rotate(mirror.getRotation(state.getValue(FACING)));
+        return HorizontalFacing.mirror(state, mirror);
     }
 }

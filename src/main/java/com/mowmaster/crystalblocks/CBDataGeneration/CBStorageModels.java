@@ -1,5 +1,6 @@
 package com.mowmaster.crystalblocks.CBDataGeneration;
 
+import com.mowmaster.mowlib.block.HorizontalFacing;
 import com.mowmaster.mowlib.util.CBPixelBox;
 
 import com.mowmaster.crystalblocks.Blocks.CBBlockRegistry;
@@ -60,7 +61,7 @@ public class CBStorageModels
         blockModels.blockStateOutput.accept(MultiVariantGenerator.dispatch(barrel)
                 .with(PropertyDispatch.initial(CBTintableBarrel.FACING, CBTintableBarrel.OPEN, CBTintableBarrel.POWERED)
                         .generate((facing, isOpen, powered) -> rotated(isOpen || powered ? open : closed,
-                                CBTintableBarrel.xQuarterTurns(facing), CBTintableBarrel.yQuarterTurns(facing)))));
+                                CBPixelBox.xQuarterTurnsFromUp(facing), CBPixelBox.yQuarterTurnsFromUp(facing)))));
 
         blockModels.itemModelOutput.accept(barrel.asItem(), ItemModelUtils.tintedModel(closed, UNDYED, UNDYED, UNDYED));
     }
@@ -101,7 +102,7 @@ public class CBStorageModels
         // waterlogged isn't listed: it doesn't change the model
         blockModels.blockStateOutput.accept(MultiVariantGenerator.dispatch(chest)
                 .with(PropertyDispatch.initial(ChestBlock.FACING, ChestBlock.TYPE)
-                        .generate((facing, type) -> rotated(bottoms.get(type), 0, CBPixelBox.quarterTurns(facing)))));
+                        .generate((facing, type) -> rotated(bottoms.get(type), 0, HorizontalFacing.quarterTurns(facing)))));
 
         // The item is the single chest's bottom and lid together; the knob starts light grey
         ItemTintSource knob = new Dye(0xFF000000 | CBTintableChest.KNOB_DEFAULT);

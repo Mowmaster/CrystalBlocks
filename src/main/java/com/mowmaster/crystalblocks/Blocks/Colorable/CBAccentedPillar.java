@@ -1,6 +1,7 @@
 package com.mowmaster.crystalblocks.Blocks.Colorable;
 
 import com.mowmaster.mowlib.util.CBPixelBox;
+import com.mowmaster.mowlib.block.HorizontalFacing;
 
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.context.BlockPlaceContext;
@@ -67,7 +68,7 @@ public class CBAccentedPillar extends CBAccentedBlock
         {
             return axis == Direction.Axis.X ? 1 : 0;
         }
-        return CBPixelBox.quarterTurns(facing);
+        return HorizontalFacing.quarterTurns(facing);
     }
 
     @Override

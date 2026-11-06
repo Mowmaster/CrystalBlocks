@@ -3,6 +3,7 @@ package com.mowmaster.crystalblocks.Blocks.Colorable;
 import com.mowmaster.mowlib.tint.CBTintBlockEntity;
 import com.mowmaster.mowlib.tint.IColorableBlock;
 import com.mowmaster.mowlib.util.CBPixelBox;
+import com.mowmaster.mowlib.block.HorizontalFacing;
 
 import com.mowmaster.crystalblocks.Blocks.CBBlockEntityRegistry;
 import net.minecraft.core.BlockPos;
@@ -120,7 +121,7 @@ public class CBTintableChest extends ChestBlock implements IColorableBlock
     // The models face north and are turned for the facing in the blockstate
     private static CBPixelBox place(CBPixelBox px, BlockState state)
     {
-        return px.rotateY(CBPixelBox.quarterTurns(state.getValue(FACING)));
+        return px.rotateY(HorizontalFacing.quarterTurns(state.getValue(FACING)));
     }
 
     // The bottom renders as a normal block model (vanilla chests are drawn entirely by their renderer)
