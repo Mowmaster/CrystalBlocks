@@ -1,0 +1,7 @@
+{
+  "parent": "crystalblocks:block/iron_rails_raised_sw",
+  "textures": {
+    "texture_one": "crystalblocks:block/tintable_metal",
+    "texture_two": "crystalblocks:block/tintable_log_large"
+  }
+}

@@ -3,6 +3,12 @@ package com.mowmaster.crystalblocks.Blocks.Colorable;
 import com.mowmaster.mowlib.tint.CBTintBlockEntity;
 import com.mowmaster.mowlib.tint.IColorableBlock;
 import com.mowmaster.mowlib.util.CBPixelBox;
+import com.mojang.datafixers.util.Pair;
+import com.mowmaster.mowlib.tint.ITintHolder;
+import net.minecraft.core.Vec3i;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.vehicle.minecart.AbstractMinecart;
+import org.jetbrains.annotations.Nullable;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
@@ -133,5 +139,54 @@ public class CBTintableRail extends RailBlock implements IColorableBlock
                                                    Player player, InteractionHand hand, BlockHitResult hitResult)
     {
         return tryDyeBlock(stack, state, level, pos, player, hitResult);
+    }
+
+    // ---- Placing: take on the colours of a Crystal Rail this one connects to ----
+
+    // By now vanilla has turned the rail to connect to its neighbours, so its two exits are the rails it joins.
+    // The first connected Crystal Rail that has any colour is copied; a rail placed from a dyed item keeps its own.
+    @Override
+    public void setPlacedBy(Level level, BlockPos pos, BlockState state, @Nullable LivingEntity placer, ItemStack stack)
+    {
+        super.setPlacedBy(level, pos, state, placer, stack);
+        if (level.isClientSide() || !(level.getBlockEntity(pos) instanceof ITintHolder placed)) return;
+        for (int region = 0; region < getTintRegionCount(); region++)
+        {
+            if (placed.isDyed(region)) return;
+        }
+
+        // Re-read the state: connecting may have changed the shape after the item placed it
+        BlockState placedState = level.getBlockState(pos);
+        if (!placedState.is(this)) return;
+        Pair<Vec3i, Vec3i> exits = AbstractMinecart.exits(placedState.getValue(SHAPE));
+        for (Vec3i exit : new Vec3i[] { exits.getFirst(), exits.getSecond() })
+        {
+            // A rail one block up or down counts too (slopes)
+            for (int dy = -1; dy <= 1; dy++)
+            {
+                BlockPos neighborPos = pos.offset(exit.getX(), dy, exit.getZ());
+                if (level.getBlockState(neighborPos).getBlock() instanceof CBTintableRail
+                        && level.getBlockEntity(neighborPos) instanceof ITintHolder source
+                        && copyColors(source, placed))
+                {
+                    return;
+                }
+            }
+        }
+    }
+
+    // Copies every dyed region; false if the source has no colour at all (so the next neighbour is tried)
+    private boolean copyColors(ITintHolder source, ITintHolder target)
+    {
+        boolean copied = false;
+        for (int region = 0; region < getTintRegionCount(); region++)
+        {
+            if (source.isDyed(region))
+            {
+                target.setColor(region, source.getColor(region));
+                copied = true;
+            }
+        }
+        return copied;
     }
 }

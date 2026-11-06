@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "M": "crystalblocks:tintable_metal",
+    "S": "minecraft:stick"
+  },
+  "pattern": [
+    "MSM",
+    "MSM",
+    "MSM"
+  ],
+  "result": {
+    "count": 6,
+    "id": "crystalblocks:tintable_rail"
+  }
+}

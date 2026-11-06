@@ -113,9 +113,9 @@ public class CBBasicRecipeProvider extends RecipeProvider
         // 6 sticks around a crystal metal block: 6 rails
         Block metal = CBBlockRegistry.METAL.base().get();
         shaped(RecipeCategory.TRANSPORTATION, CBBlockRegistry.TINTABLE_RAIL.get(), 6)
-                .pattern("S S")
-                .pattern("SMS")
-                .pattern("S S")
+                .pattern("MSM")
+                .pattern("MSM")
+                .pattern("MSM")
                 .define('S', Items.STICK)
                 .define('M', metal)
                 .unlockedBy(getHasName(metal), has(metal))
