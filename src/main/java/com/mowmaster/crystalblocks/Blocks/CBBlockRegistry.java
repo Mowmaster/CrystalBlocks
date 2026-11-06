@@ -1,14 +1,17 @@
 package com.mowmaster.crystalblocks.Blocks;
 
 import com.mowmaster.crystalblocks.Blocks.Colorable.*;
+import com.mowmaster.crystalblocks.Blocks.Path.CBPathBlock;
 import com.mowmaster.crystalblocks.Blocks.Storage.CBIngotPile;
 import com.mowmaster.crystalblocks.Blocks.Storage.CBLogPile;
 import com.mowmaster.crystalblocks.CBReferences;
 import com.mowmaster.crystalblocks.Items.CBItemRegistry;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -16,6 +19,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.List;
 import java.util.function.Function;
+import java.util.function.Supplier;
 
 public class CBBlockRegistry
 {
@@ -123,6 +127,16 @@ public class CBBlockRegistry
     public static final DeferredBlock<Block> TINTABLE_RAIL = registerBlock("tintable_rail",
             properties -> new CBTintableRail(properties.noCollision().strength(0.7f).sound(SoundType.METAL)));
 
+    // ---- Paths: made with the tamper, like vanilla's dirt path (which the tamper also makes) ----
+    public static final DeferredBlock<Block> GRAVEL_PATH = registerPath("gravel_path", () -> Blocks.GRAVEL, MapColor.STONE, SoundType.GRAVEL);
+    public static final DeferredBlock<Block> SAND_PATH = registerPath("sand_path", () -> Blocks.SAND, MapColor.SAND, SoundType.SAND);
+    public static final DeferredBlock<Block> RED_SAND_PATH = registerPath("red_sand_path", () -> Blocks.RED_SAND, MapColor.COLOR_ORANGE, SoundType.SAND);
+    public static final DeferredBlock<Block> CLAY_PATH = registerPath("clay_path", () -> Blocks.CLAY, MapColor.CLAY, SoundType.GRAVEL);
+    public static final DeferredBlock<Block> MUD_PATH = registerPath("mud_path", () -> Blocks.MUD, MapColor.TERRACOTTA_CYAN, SoundType.MUD);
+
+    // Every path (creative tab, models, tags, loot)
+    public static final List<DeferredBlock<Block>> PATHS = List.of(GRAVEL_PATH, SAND_PATH, RED_SAND_PATH, CLAY_PATH, MUD_PATH);
+
     public static final List<DeferredBlock<Block>> STORAGE = List.of(TINTABLE_BARREL, TINTABLE_CHEST, TINTABLE_LOG_PILE);
     public static final List<DeferredBlock<Block>> BOLTED = List.of(BOLTED_CORNER_SUPPORT_CAP,
             BOLTED_I_BEAM, BOLTED_I_BEAM_CAP, BOLTED_SUPPORT_BEAM, BOLTED_SUPPORT_BEAM_CAP,
@@ -130,6 +144,14 @@ public class CBBlockRegistry
             CHAIN_BEAM_MEDIUM, CHAIN_BEAM_MEDIUM_CAP, CHAIN_BEAM_LARGE, CHAIN_BEAM_LARGE_CAP, CHAINED_SUPPORT_BEAM_MEDIUM,
             SCONCE_TORCH, CHAIN_LANTERN, CHAIN_LANTERN_CAP, CHAIN_LANTERN_MEDIUM, CHAIN_LANTERN_MEDIUM_CAP, TINTABLE_BLOCK_TECH,
             TINTABLE_BLOCK_TECH_3D, TINTABLE_INGOT_PILE);
+
+    // A path over its source block: the source's map colour and sound, the dirt path's hardness, and (like the dirt
+    // path) it suffocates anything stuck inside it, like a full block
+    private static DeferredBlock<Block> registerPath(String name, Supplier<Block> source, MapColor mapColor, SoundType sound)
+    {
+        return registerBlock(name, properties -> new CBPathBlock(properties.mapColor(mapColor).strength(0.65f).sound(sound)
+                .isSuffocating((state, level, pos) -> true), source));
+    }
 
     // Registers every shape for one texture
     private static CBBlockSet registerSet(String name, String displayName, CBMaterial material)

@@ -68,5 +68,12 @@ public class CBLanguageProvider extends LanguageProvider
         addBlock(CBBlockRegistry.TINTABLE_LOG_PILE, "Crystal Log Pile");
 
         addBlock(CBBlockRegistry.TINTABLE_RAIL, "Crystal Rail");
+        addBlock(CBBlockRegistry.GRAVEL_PATH, "Gravel Path");
+        addBlock(CBBlockRegistry.SAND_PATH, "Sand Path");
+        addBlock(CBBlockRegistry.RED_SAND_PATH, "Red Sand Path");
+        addBlock(CBBlockRegistry.CLAY_PATH, "Clay Path");
+        addBlock(CBBlockRegistry.MUD_PATH, "Mud Path");
+        addItem(CBItemRegistry.TAMPER, "Tamper");
+        add("enchantment.crystalblocks.path_runner", "Path Runner");
     }
 }

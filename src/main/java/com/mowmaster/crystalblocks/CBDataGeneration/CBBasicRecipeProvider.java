@@ -47,6 +47,16 @@ public class CBBasicRecipeProvider extends RecipeProvider
                 .unlockedBy(getHasName(Items.IRON_INGOT), has(Items.IRON_INGOT))
                 .save(output, CBReferences.MODID + ".base_chisel");
 
+        // Tamper: a crystal metal block on two sticks
+        shaped(RecipeCategory.TOOLS, CBItemRegistry.TAMPER.get(), 1)
+                .pattern("S")
+                .pattern("S")
+                .pattern("M")
+                .define('S', Items.STICK)
+                .define('M', CBBlockRegistry.METAL.base().get())
+                .unlockedBy(getHasName(CBBlockRegistry.METAL.base().get()), has(CBBlockRegistry.METAL.base().get()))
+                .save(output, CBReferences.MODID + ".tamper_tool");
+
         // MowLib's colour picker, made from CrystalBlocks blocks
         shapeless(RecipeCategory.TOOLS, MowLibItems.COLOR_PICKER.get(), 1)
                 .requires(Items.GLASS_BOTTLE)

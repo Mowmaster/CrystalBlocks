@@ -3,6 +3,7 @@ package com.mowmaster.crystalblocks;
 import com.mowmaster.crystalblocks.Blocks.CBBlockEntityRegistry;
 import com.mowmaster.crystalblocks.Blocks.CBBlockRegistry;
 import com.mowmaster.crystalblocks.Items.CBItemRegistry;
+import com.mowmaster.crystalblocks.Loot.CBLootModifiers;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -34,6 +35,7 @@ public class CrystalBlocks {
         CBItemRegistry.register(modEventBus);
         CBBlockRegistry.register(modEventBus);
         CBBlockEntityRegistry.register(modEventBus);
+        CBLootModifiers.register(modEventBus);
 
         NeoForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::addCreative);
@@ -63,6 +65,12 @@ public class CrystalBlocks {
             for (DeferredBlock<Block> block : CBBlockRegistry.STORAGE) {
                 event.accept(block);
             }
+            for (DeferredBlock<Block> block : CBBlockRegistry.PATHS) {
+                event.accept(block);
+            }
+        }
+        if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+            event.accept(CBItemRegistry.TAMPER);
         }
     }
 

@@ -25,6 +25,9 @@ NeoForge 26.3.0.94, Minecraft 26.3. I'm coming from 1.20 and JDK 8. Explain new 
 - Bulk storage: MowLib's `CBBulkItemHandler` and `CBBulkStorageBlock` (+ block entity, MowLib's `mowlib:bulk_storage` type and item capability). This mod's piles (`Blocks/Storage`) subclass it with shape/tint regions, capacity + item tag in the constructor (`CBIngotPile` c:ingots, `CBLogPile` minecraft:logs).
 - Recipes: set blocks only come from the stonecutter, 1:1 within each set's item tag (`CBTags.SET_TAGS`, extras listed per set). Keep stonecutter counts at 1 to avoid dupes. Only stone and log have a recipe for their first block.
 
+- Paths (`Blocks/Path/CBPathBlock`, `CBBlockRegistry.PATHS`): gravel, sand, red sand, clay and mud paths like vanilla's dirt path (turn back into the source block under something solid, drop it). Models reuse `minecraft:block/dirt_path` with the source texture (`CBPathModels`). The tamper (`CBTamperItem`) makes them, and dirt paths. `#crystalblocks:path_blocks` = all paths incl. dirt path.
+- Path Runner enchantment (`Enchantments/`): definition from datagen (`CBEnchantments.bootstrap`, registry entry), effect in `CBPathRunner` (player tick: Soul Speed's speed on `#crystalblocks:path_blocks`, half its boot wear). Treasure tag is a hand-written `data/minecraft/tags/enchantment/treasure.json`. Only source: dungeon chests via the `CBDungeonBookModifier` global loot modifier (`Loot/`, data from `CBLootModifierProvider`).
+
 ## 26.x notes
 - Render layer (solid/cutout/translucent) is chosen per face from the texture's alpha; models no longer set a render type. Use `noOcclusion()` on see-through blocks.
 - Multipart blockstates: `MultiPartGenerator.multiPart(block).with(BlockModelGenerators.condition().term(...).term(...), variant)`; chained terms are ANDed.
@@ -63,6 +66,7 @@ NeoForge 26.3.0.94, Minecraft 26.3. I'm coming from 1.20 and JDK 8. Explain new 
   `crystalblocks:` ids (tint_block_entity, bulk_storage, color_picker, custom_dye) to MowLib's, so old worlds load.
 
 ## Working with Claude
+- Deliver changes as a zip of whole files at their repo paths (plus a DELETE.txt listing files to remove), not as snippets to paste.
 - Pull and read the repo only; never commit or push. I handle git.
 - For simple model fixes (a missing `tintindex`, `#`, texture key), just tell me the line to change; only send a model file when the geometry changes.
 - A stop hook flags my local merge commit `98f7959` as unverified; ignore it (don't amend or push).

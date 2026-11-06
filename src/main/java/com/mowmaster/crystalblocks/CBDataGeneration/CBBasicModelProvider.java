@@ -22,6 +22,10 @@ public class CBBasicModelProvider  extends ModelProvider {
     protected void registerModels(BlockModelGenerators blockModels, ItemModelGenerators itemModels) {
 
         itemModels.generateFlatItem(CBItemRegistry.CRYSTAL_CHISEL_BASE.get(), ModelTemplates.FLAT_ITEM);
+        // The tamper's model is hand-made (models/item/tamper_tool.json)
+        itemModels.itemModelOutput.accept(CBItemRegistry.TAMPER.get(),
+                net.minecraft.client.data.models.model.ItemModelUtils.plainModel(CBReferences.id("item/tamper_tool")));
+        CBPathModels.generate(blockModels);
         // Shared by every set's column copies; created once so the file is only written once
         Identifier columnTemplate = CBBoltedModels.columnTemplate(blockModels);
 

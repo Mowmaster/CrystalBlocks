@@ -6,12 +6,13 @@ import net.minecraft.data.loot.LootTableSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SlabBlock;
+import com.mowmaster.crystalblocks.Blocks.Path.CBPathBlock;
 
 import java.util.Set;
 
 public class CBBlockLootProvider extends BlockLootSubProvider
 {
-    public CBBlockLootProvider(LootTableSubProvider.Context output)
+    public CBBlockLootProvider(Context output)
     {
         super(
                 // Items that ignore the "survives explosion" check (none for us)
@@ -29,7 +30,11 @@ public class CBBlockLootProvider extends BlockLootSubProvider
         for (var holder : CBBlockRegistry.BCBLOCKS.getEntries())
         {
             Block block = holder.get();
-            if (block instanceof SlabBlock)
+            if (block instanceof CBPathBlock path)
+            {
+                dropOther(block, path.source());
+            }
+            else if (block instanceof SlabBlock)
             {
                 add(block, createSlabItemTable(block));
             }

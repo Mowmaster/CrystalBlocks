@@ -36,6 +36,8 @@ public class CBTags
 
     public static class Blocks {
         public static final TagKey<Block> CB_BLOCKS_DYABLE = createTag("cb_dyable_blocks");
+        // Every path block (vanilla's dirt path and ours): where Path Runner works
+        public static final TagKey<Block> PATH_BLOCKS = createTag("path_blocks");
         public static final TagKey<Block> CB_BLOCKS_STONE = createTag("cb_block_stone");
         public static final TagKey<Block> CB_BLOCKS_BRICK_LARGE = createTag("cb_block_brick_large");
         public static final TagKey<Block> CB_BLOCKS_BRICK_MEDIUM = createTag("cb_block_brick_medium");

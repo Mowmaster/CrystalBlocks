@@ -1,6 +1,8 @@
 package com.mowmaster.crystalblocks.CBDataGeneration;
 
 import com.mowmaster.crystalblocks.CBReferences;
+import com.mowmaster.crystalblocks.Enchantments.CBEnchantments;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.loot.LootTableProvider;
@@ -25,6 +27,7 @@ public class CBDataGenerator
         generator.addProvider(true, new CBTagProviderItem(packOutput,lookupProvider));
         generator.addProvider(true, new CBTagProviderBlock(packOutput,lookupProvider));
         generator.addProvider(true, new CBLanguageProvider(packOutput));
+        generator.addProvider(true, new CBLootModifierProvider(packOutput, lookupProvider));
 
     }
 
@@ -32,6 +35,7 @@ public class CBDataGenerator
     public static void gatherDataRegistryEntries(GatherDataRegistryEntriesEvent event) {
         event.gatherFor(CBReferences.MODID, Identifier.DEFAULT_NAMESPACE)
                 .add(CBBasicRecipeProvider.create())
+                .add(Registries.ENCHANTMENT, CBEnchantments::bootstrap)
                 .lootTable(new LootTableProvider.SubProviderEntry(CBBlockLootProvider::new, LootContextParamSets.BLOCK));
     }
 

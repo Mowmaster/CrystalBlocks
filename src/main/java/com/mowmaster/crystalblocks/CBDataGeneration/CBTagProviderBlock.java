@@ -50,6 +50,13 @@ public class CBTagProviderBlock extends BlockTagsProvider {
 
         tag(BlockTags.RAILS).add(CBBlockRegistry.TINTABLE_RAIL.key());
 
+        // Paths: dug with a shovel like their source blocks; all of them (and vanilla's) count for Path Runner
+        var paths = tag(CBTags.Blocks.PATH_BLOCKS).add(net.minecraft.world.level.block.Blocks.DIRT_PATH.builtInRegistryHolder().key());
+        for (DeferredBlock<Block> block : CBBlockRegistry.PATHS) {
+            tag(BlockTags.MINEABLE_WITH_SHOVEL).add(block.key());
+            paths.add(block.key());
+        }
+
         // Storage blocks: wooden, mined with an axe
         for (DeferredBlock<Block> block : CBBlockRegistry.STORAGE) {
             tag(BlockTags.MINEABLE_WITH_AXE).add(block.key());

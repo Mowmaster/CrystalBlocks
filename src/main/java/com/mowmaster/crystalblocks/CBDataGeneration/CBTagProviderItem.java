@@ -34,5 +34,7 @@ public class CBTagProviderItem extends ItemTagsProvider {
         }
 
         tag(ItemTags.RAILS).add(ResourceKey.create(Registries.ITEM, CBBlockRegistry.TINTABLE_RAIL.getId()));
+        // The tamper takes Unbreaking and Mending
+        tag(ItemTags.DURABILITY_ENCHANTABLE).add(CBItemRegistry.TAMPER.key());
     }
 }
